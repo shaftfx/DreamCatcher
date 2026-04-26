@@ -1,0 +1,11 @@
+.env
+.env.*
+*.local
+*.log
+__pycache__/
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*~
