@@ -55,12 +55,7 @@ For open positions: are they still on thesis? Any whose stop has crept too close
 
 ### Step 5 — Strategy adjustments
 
-If a pattern emerges (e.g. "all my catalyst-only entries lost"), propose a specific change:
-- "Going forward, require fundamental + catalyst (not catalyst alone)"
-- "Tighten R/R requirement from 2:1 to 2.5:1"
-- "Add sector to the rejection criteria when sector is in regulatory headwind"
-
-These are PROPOSALS — don't edit `STRATEGY.md` or `RULES.md` autonomously. The user reads the recap and accepts/rejects. If you really must encode a change, do it in `learnings.md` with the date and rationale, and flag it in the recap.
+If a pattern emerges (e.g. "all my catalyst-only entries lost"), propose a specific change. These are PROPOSALS — don't edit `STRATEGY.md` or `RULES.md` autonomously. Encode in `learnings.md` with date and rationale.
 
 ### Step 6 — Update `learnings.md`
 
@@ -68,33 +63,37 @@ Add 1–3 generalizable lessons from the week. Format per the file's template.
 
 ### Step 7 — Overwrite `memory/weekly_review.md`
 
-Write the full review into the file (overwriting the previous week's). The file's format is in its own header.
+Write the full review into the file (overwriting the previous week's).
 
 ### Step 8 — Open a GitHub Issue
 
+Do NOT use `gh` — use curl with the GitHub REST API. Build the JSON body with Python3 to avoid shell quoting issues:
+
 ```bash
-gh issue create \
-  --repo shaftfx/DreamCatcher \
-  --title "Weekly Review $(date -u +%G-W%V)" \
-  --label "weekly-recap" \
-  --body "$(cat <<EOF
-## Week of <Mon Apr 22 → Fri Apr 26 2026>
+python3 << 'PYEOF'
+import json, datetime
+
+week = datetime.date.today().strftime("%G-W%V")
+title = f"Weekly Review {week}"
+
+# Replace this body string with the actual recap content
+body = """## Week of (fill dates)
 
 ### Performance
-- Starting equity: \$X,XXX
-- Ending equity: \$X,XXX
+- Starting equity: $X,XXX
+- Ending equity: $X,XXX
 - Week return: ±X.XX%
 - SPY week return: ±X.XX%
 - **Excess vs SPY: ±X.XX%**
 - Drawdown low: ±X.XX%
 
 ### Trades
-- Entries: <N>
-- Exits: <N>
-- Wins / Losses: <W> / <L>
-- Avg R per closed: <R>
-- Best: TICKER (+\$XXX, +X.XR)
-- Worst: TICKER (-\$XXX, -X.XR)
+- Entries: N
+- Exits: N
+- Wins / Losses: W / L
+- Avg R per closed: R
+- Best: TICKER (+$XXX, +X.XR)
+- Worst: TICKER (-$XXX, -X.XR)
 
 ### Open positions
 | Ticker | Qty | Cost | Current | Unrl % | Days |
@@ -106,8 +105,8 @@ gh issue create \
 ### What didn't
 - ...
 
-### Self-grade: <A/B/C/D/F>
-<reasoning>
+### Self-grade: A/B/C/D/F
+reasoning
 
 ### Strategy adjustments proposed
 - ...
@@ -118,16 +117,30 @@ gh issue create \
 ### Notes for next week
 - Catalysts to watch: ...
 - Watchlist priorities: ...
-EOF
-)"
+"""
+
+with open('/tmp/issue_weekly.json', 'w') as f:
+    json.dump({'title': title, 'body': body, 'labels': ['weekly-recap']}, f)
+print('wrote /tmp/issue_weekly.json')
+PYEOF
+
+curl -s -X POST \
+  -H "Authorization: token $GITHUB_TOKEN" \
+  -H "Accept: application/vnd.github+json" \
+  -H "Content-Type: application/json" \
+  https://api.github.com/repos/shaftfx/DreamCatcher/issues \
+  -d @/tmp/issue_weekly.json
 ```
 
 ### Step 9 — Commit and push
 
 ```bash
-git add -A
-git -c user.name="Bull" -c user.email="bull@dreamcatcher.local" commit -m "weekly $(date -u +%G-W%V): review + grade"
-git push origin main
+REPO="/tmp/dreamcatcher"
+git -C "$REPO" add -A
+git -C "$REPO" -c user.name="Bull" -c user.email="bull@dreamcatcher.local" \
+  commit -m "weekly $(date -u +%G-W%V): review + grade"
+git -C "$REPO" remote set-url origin "https://x-access-token:${GITHUB_TOKEN}@github.com/shaftfx/DreamCatcher.git"
+git -C "$REPO" push origin main
 ```
 
 ---
@@ -138,3 +151,4 @@ git push origin main
 - If you graded yourself "F," the user will want to know why in **specifics** — name names, cite trades.
 - Lessons go in `learnings.md` — that's the asset that compounds across weeks.
 - Strategy changes are PROPOSALS until the user merges them.
+- First run: memory files will be empty templates. Grade = C (no violations, no data). Still post the Issue.

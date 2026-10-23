@@ -26,36 +26,33 @@ Pull Alpaca account + positions. Compute:
 - `peak_equity` (max of prior peak vs today's close)
 - For each open position: current value, unrealized P&L $, unrealized %, days held, current trail level
 - `daily_return_pct` = (today_close − today_open) / today_open
-- `spy_daily_return_pct` (fetch SPY's daily change via Alpaca bars: `GET $ALPACA_BASE_URL/stocks/SPY/bars?timeframe=1Day&limit=1`)
+- `spy_daily_return_pct` (fetch SPY's daily change via Alpaca bars)
 - `excess_vs_spy_pct` = daily_return − spy_daily_return
 
 Update `memory/portfolio.md` with all of these.
 
 ### Step 3 — Weekly loss check (RULES.md D4)
 
-If running 5-day return ≤ −5% from prior Friday close: set `weekly_defensive: YES`. (Reset to NO on Monday morning by premarket if conditions improved.)
+If running 5-day return ≤ −5% from prior Friday close: set `weekly_defensive: YES`.
 
 ### Step 4 — Compose the recap
 
-In your head, draft the daily recap. It should answer:
-
-1. **What happened today?** Trades placed, trades closed, today's P&L.
-2. **How does the portfolio look right now?** Open positions table with cost basis, current, P&L, stop level, days held.
-3. **vs SPY today and week-to-date.**
-4. **Risk posture.** Any flags raised? Any rules close to triggering?
-5. **What's queued for tomorrow?** Any premarket-flagged ideas the open routine will consider.
-6. **One observation worth remembering.** A small lesson, even if just "my watchlist is too short, I should add 3 names tomorrow."
+Draft the daily recap covering: trades placed/closed, open positions table, vs SPY, risk posture flags, tomorrow's watchlist queue, one observation worth remembering.
 
 ### Step 5 — Open a GitHub Issue
 
+Do NOT use `gh` — use curl with the GitHub REST API. Build the JSON body with Python3:
+
 ```bash
-gh issue create \
-  --repo shaftfx/DreamCatcher \
-  --title "Recap $(date -u +%F)" \
-  --label "daily-recap" \
-  --body "$(cat <<EOF
-## Today's P&L
-- Equity: \$X,XXX (peak \$X,XXX)
+python3 << 'PYEOF'
+import json, datetime, os
+
+today = datetime.date.today().strftime('%Y-%m-%d')
+title = f"Recap {today}"
+
+# Replace this body string with the actual recap content
+body = """## Today's P&L
+- Equity: $X,XXX (peak $X,XXX)
 - Daily return: ±X.XX%
 - SPY today: ±X.XX%
 - **Excess vs SPY: ±X.XX%**
@@ -63,62 +60,62 @@ gh issue create \
 ## Trades placed
 | Side | Ticker | Qty | Fill | Reason |
 |---|---|---|---|---|
-| ... |
 
 ## Trades closed
 | Side | Ticker | Qty | Exit | P&L | Reason |
 |---|---|---|---|---|---|
-| ... |
 
 ## Open positions
 | Ticker | Qty | Avg Cost | Current | Unrl P&L | Unrl % | Stop | Days |
 |---|---|---|---|---|---|---|---|
-| ... |
 
 ## Posture
-- Halt today: <YES/NO>
-- Weekly defensive: <YES/NO>
+- Halt today: YES/NO
+- Weekly defensive: YES/NO
 - Drawdown from peak: ±X.XX%
 - New entries this week: N / 3
 
 ## Watchlist queued for tomorrow
-- TICKER — thesis (catalyst <date>)
+- TICKER — thesis (catalyst date)
 
 ## One thing I noticed
-<one paragraph>
-EOF
-)"
-```
+one paragraph
+"""
 
-If `gh` is not authenticated in the cloud environment, fall back to the GitHub REST API:
+with open('/tmp/issue_eod.json', 'w') as f:
+    json.dump({'title': title, 'body': body, 'labels': ['daily-recap']}, f)
+print('wrote /tmp/issue_eod.json')
+PYEOF
 
-```bash
-curl -s -X POST -H "Authorization: token $GITHUB_TOKEN" \
+curl -s -X POST \
+  -H "Authorization: token $GITHUB_TOKEN" \
   -H "Accept: application/vnd.github+json" \
+  -H "Content-Type: application/json" \
   https://api.github.com/repos/shaftfx/DreamCatcher/issues \
-  -d "$(jq -n --arg title "Recap $(date -u +%F)" --arg body "<body>" \
-        '{title: $title, body: $body, labels: ["daily-recap"]}')"
+  -d @/tmp/issue_eod.json
 ```
-
-(In practice, Claude Code's cloud routine has GitHub access via the same auth used for repo pushes; `gh` should work.)
 
 ### Step 6 — Reset daily flags
 
-Set `halt_today: NO` in `portfolio.md`. (Premarket will re-evaluate weekly_defensive on Monday.)
+Set `halt_today: NO` in `portfolio.md`.
 
 ### Step 7 — Commit and push
 
 ```bash
-git add -A
-git -c user.name="Bull" -c user.email="bull@dreamcatcher.local" commit -m "eod $(date -u +%F): recap + portfolio snapshot"
-git push origin main
+REPO="/tmp/dreamcatcher"
+git -C "$REPO" add -A
+git -C "$REPO" -c user.name="Bull" -c user.email="bull@dreamcatcher.local" \
+  commit -m "eod $(date -u +%F): recap + portfolio snapshot"
+git -C "$REPO" remote set-url origin "https://x-access-token:${GITHUB_TOKEN}@github.com/shaftfx/DreamCatcher.git"
+git -C "$REPO" push origin main
 ```
 
 ---
 
 ## Critical reminders
 
-- The Issue title format is fixed: `Recap YYYY-MM-DD`. Don't deviate — the user filters by this.
-- The label `daily-recap` is fixed (Friday weekly review uses `weekly-recap` instead).
-- Keep the body honest. Don't paper over a losing day. The user wants signal, not optimism.
-- One paragraph for "what I noticed" — not three. Brevity wins.
+- Issue title format is fixed: `Recap YYYY-MM-DD`. Don't deviate.
+- Label `daily-recap` is fixed (Friday weekly uses `weekly-recap`).
+- Keep honest. Don't paper over a losing day.
+- One paragraph for "what I noticed" — brevity wins.
+- First run: memory files empty. Still post the Issue with $100,000 starting equity from Alpaca.
