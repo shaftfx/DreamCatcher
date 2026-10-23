@@ -47,23 +47,20 @@ Parse out:
 - `rsi_14` = computed from 14-day Wilder's smoothing of gains/losses (formula in `KNOWLEDGE/indicators.md`)
 - `recent_candle_pattern` = a one-line read of yesterday's daily candle (hammer / engulfing / doji / normal — see `KNOWLEDGE/candlestick_patterns.md`)
 
-### 3. Run Perplexity research — thesis + catalyst
+### 3. Web research — thesis + catalyst
 
-```bash
-RESEARCH=$(curl -s https://api.perplexity.ai/chat/completions \
-  -H "Authorization: Bearer $PERPLEXITY_API_KEY" \
-  -H "Content-Type: application/json" \
-  -d '{
-    "model": "sonar-reasoning-pro",
-    "messages": [
-      {"role":"system","content":"You are a financial research analyst. Be precise, cite sources, prefer SEC filings and primary sources."},
-      {"role":"user","content":"For ticker <TICKER>: (1) what is the current bull case over the next 4-8 weeks, (2) what specific upcoming catalyst supports it (earnings, product, regulatory, macro), (3) what are the top 2 risks, (4) what is the most recent EPS, revenue, and guidance commentary? Cite sources."}
-    ],
-    "temperature": 0.2
-  }')
-```
+Use WebSearch to gather: bull case, upcoming catalyst, top risks, recent EPS/revenue/guidance.
 
-Save the full response (with citations) for inclusion in the research log entry.
+Run these searches in sequence:
+
+1. `<TICKER> bull case catalyst next 60 days site:seekingalpha.com OR site:fool.com OR site:investors.com`
+2. `<TICKER> earnings date next quarter 2026`
+3. `<TICKER> recent earnings EPS revenue guidance beat miss`
+4. `<TICKER> analyst upgrade downgrade 2026`
+
+Then WebFetch the company's IR page (`<TICKER> investor relations`) for the most recent earnings release if the searches return thin results.
+
+Synthesize into a 2-3 sentence thesis covering: fundamental health, upcoming catalyst with date, top risk. Note all sources used.
 
 ### 4. Apply the three-leg entry framework (`STRATEGY.md`)
 
@@ -112,7 +109,7 @@ Use this exact format (newest first; insert at the top of the "Research Entries"
 ```markdown
 ### YYYY-MM-DD HH:MM UTC — premarket — TICKER
 
-**Thesis:** <2–3 sentences synthesized from Perplexity research.>
+**Thesis:** <2–3 sentences synthesized from web research.>
 
 **Catalyst:** <event> on <date>
 
@@ -142,8 +139,8 @@ Use this exact format (newest first; insert at the top of the "Research Entries"
 - Half-size flag: yes/no
 
 **Sources:**
-- <perplexity citation 1>
-- <perplexity citation 2>
+- <url 1>
+- <url 2>
 
 **Decision:** queued | passed | rejected (<reason>)
 ```
@@ -156,7 +153,7 @@ If decision is `queued`: ensure the ticker is in the Active Watchlist table at t
 
 ## Failure modes & fallbacks
 
-- **Perplexity 429 (rate limit):** retry once after 30s. If still failing, fall back to WebSearch + WebFetch on the company's IR page and a financial news source. Note the fallback in the entry.
+- **WebSearch returns thin results:** WebFetch the company's IR page directly + a financial news source (Reuters, Bloomberg, CNBC). Note source quality in the entry.
 - **Alpaca returns 403 / 401:** auth failure. Abort the routine, log to `research_log.md` with `error: auth_failure`, push, exit. Do not invent fake data.
 - **Bars endpoint returns < 50 bars:** the ticker is too new (recent IPO). Decision = `rejected (insufficient history)`.
 - **All three legs fail:** decision = `passed` (not rejected — the name might earn its way back later). Don't add to active watchlist.
