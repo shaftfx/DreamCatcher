@@ -9,7 +9,7 @@
 - **Cash:** $100,000.00
 - **Equity:** $100,000.00 (last_equity $100,000.00)
 - **Peak equity:** $100,000.00 (set 2026-10-26)
-- **Buying power:** $400,000.00 — ⚠️ margin multiplier 4× (fails RULES.md A4 `buying_power == cash`; size all entries off $100k equity, not buying power)
+- **Buying power:** $100,000.00 — margin multiplier 1× ✅ (RULES.md A4 satisfied)
 
 ## Flags
 
