@@ -137,7 +137,7 @@ curl -s -X POST \
 ```bash
 REPO="/tmp/dreamcatcher"
 git -C "$REPO" add -A
-git -C "$REPO" -c user.name="Bull" -c user.email="bull@dreamcatcher.local" \
+git -C "$REPO" -c user.name="Claude" -c user.email="noreply@anthropic.com" \
   commit -m "weekly $(date -u +%G-W%V): review + grade"
 git -C "$REPO" remote set-url origin "https://x-access-token:${GITHUB_TOKEN}@github.com/shaftfx/DreamCatcher.git"
 git -C "$REPO" push origin main
