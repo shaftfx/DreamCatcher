@@ -5,11 +5,11 @@
 ## Account
 
 - **Mode:** paper
-- **Last refresh (UTC):** _none yet_
-- **Cash:** _none yet_
-- **Equity:** _none yet_
-- **Peak equity:** _none yet_
-- **Buying power:** _none yet_
+- **Last refresh (UTC):** 2026-10-26 11:15 (premarket — recovered)
+- **Cash:** $100,000.00
+- **Equity:** $100,000.00 (last_equity $100,000.00)
+- **Peak equity:** $100,000.00 (set 2026-10-26)
+- **Buying power:** $400,000.00 — ⚠️ margin multiplier 4× (fails RULES.md A4 `buying_power == cash`; size all entries off $100k equity, not buying power)
 
 ## Flags
 
@@ -19,25 +19,19 @@
 
 ## Open positions
 
-_none yet_
-
-<!-- When populated, format as:
-| Ticker | Qty | Avg Cost | Current | Unrl P&L | Unrl % | Stop (trail) | Days Held | Thesis |
-|---|---|---|---|---|---|---|---|---|
-| AAPL  | 14 | 178.20  | 184.50  | +88.20   | +3.5%  | 10%          | 3         | iPhone 17 launch + raised guidance |
--->
+_none_
 
 ## Today's P&L
 
-- Daily return: _none yet_
-- SPY daily return: _none yet_
-- Excess vs SPY: _none yet_
+- Daily return: 0.00%
+- SPY daily return: −0.55% (Fri 2026-10-23)
+- Excess vs SPY: +0.55%
 
 ## Week to date
 
-- Week return: _none yet_
-- SPY week return: _none yet_
-- Excess vs SPY: _none yet_
+- Week return: 0.00%
+- SPY week return: −0.46% (since 10/16 close)
+- Excess vs SPY: +0.46%
 
 ## New entries this week
 
