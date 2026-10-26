@@ -86,8 +86,8 @@ For each watchlist name with a catalyst within the next 5 trading days:
 ### Step 7 — Commit and push
 
 ```bash
-git -C "$REPO" -c user.name="Bull" -c user.email="bull@dreamcatcher.local" add -A
-git -C "$REPO" -c user.name="Bull" -c user.email="bull@dreamcatcher.local" \
+git -C "$REPO" add -A
+git -C "$REPO" -c user.name="Claude" -c user.email="noreply@anthropic.com" \
   commit -m "premarket $(date -u +%F): research + watchlist refresh"
 git -C "$REPO" remote set-url origin "https://x-access-token:${GITHUB_TOKEN}@github.com/shaftfx/DreamCatcher.git"
 git -C "$REPO" push origin main
