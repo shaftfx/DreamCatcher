@@ -32,9 +32,7 @@ The base URL for paper trading is `https://paper-api.alpaca.markets/v2`.
 
 ## Step 2 — Perplexity API key
 
-1. Go to **perplexity.ai** → sign in → **Settings** → **API**.
-2. Subscribe to the API tier (~$5/mo for hobby) or use existing credits.
-3. **Generate New Key** → copy it. This becomes `PERPLEXITY_API_KEY`.
+> **Note (2026-10-26):** Perplexity is no longer used — routines use WebSearch instead. You can skip this step. Do not add `PERPLEXITY_API_KEY` to the Trading environment.
 
 ---
 
@@ -53,31 +51,32 @@ Cloud environments hold your secrets so they're available to remote routines wit
 1. In the desktop app: **New Routine** → at the top, switch to **Remote** (not Local).
 2. Click **Cloud Environments** → **Add One**.
 3. Name it: **`trading`**.
-4. **Network access**: full (the routine needs to reach Alpaca, Perplexity, and GitHub).
-5. **Environment variables** — add **all four**, names exactly as below (case-sensitive):
+4. **Network access**: full (the routine needs to reach Alpaca and GitHub).
+5. **Environment variables** — add exactly these (case-sensitive):
 
    | Name | Value |
    |---|---|
    | `ALPACA_API_KEY` | (from Step 1) |
    | `ALPACA_SECRET_KEY` | (from Step 1) |
    | `ALPACA_BASE_URL` | `https://paper-api.alpaca.markets/v2` |
-   | `PERPLEXITY_API_KEY` | (from Step 2) |
+   | `ALPACA_DATA_URL` | `https://data.alpaca.markets/v2` |
 
-   ⚠️ The transcript flagged this as a common gotcha: a single typo or extra space in a variable name will break the routine silently. Double-check.
+   ⚠️ A single typo or extra space in a variable name will break the routine silently. Double-check.
 
 6. Save the environment.
 
 ---
 
-## Step 5 — (Optional but recommended) `GITHUB_TOKEN`
+## Step 5 — `GITHUB_TOKEN` (required for Issue creation fallback)
 
-The routines try `gh` first for opening Issues, then fall back to the REST API. Most cloud routines have `gh` working out of the box, but if Issue creation fails:
+The routines post daily recap Issues via the built-in GitHub MCP connector (installed automatically). `GITHUB_TOKEN` is a fallback for the `gh` CLI inside the container.
 
+> **Known issue (2026-10-26):** `gh auth status` in the cloud container returns "Failed to log in to github.com using token (GITHUB_TOKEN)" even when the token is set. Issues are posted successfully via the built-in connector instead. The `GITHUB_TOKEN` fallback path in `skills/post-recap-issue.md` is not currently working. To fix: regenerate the token with `repo` scope at github.com → Settings → Developer settings → Personal access tokens → Tokens (classic), and update the Trading environment variable.
+
+To add or replace the token:
 1. Go to **github.com → Settings → Developer settings → Personal access tokens → Tokens (classic)**.
-2. **Generate new token (classic)** with scope: `repo` (full control of private repositories) — even though our repo is public, this scope covers issue creation.
+2. **Generate new token (classic)** with scope: `repo`.
 3. Copy the token. Add to the `trading` cloud environment as `GITHUB_TOKEN`.
-
-(You can skip this and add it later if `gh` works.)
 
 ---
 
@@ -99,9 +98,9 @@ For each routine:
 2. **Schedule** → cron string from the table → timezone `America/New_York`
 3. **Repository** → `shaftfx/DreamCatcher`, branch `main`
 4. **Cloud environment** → `trading` (the one you made in Step 4)
-5. **Model** → **Claude Opus 4.7** (best for agentic financial reasoning per the benchmarks)
+5. **Model** → **Claude Opus 5.5**
 6. **Prompt** → paste the entire contents of the corresponding `routines/*.md` file. The full file IS the prompt.
-7. **Permissions** → toggle **"allow unrestricted branch pushes" ON** ⚠️ (this is critical — without it, Claude can only push to `claude/*` branches and the next routine won't see updates)
+7. **Permissions** → toggle **"allow unrestricted branch pushes" ON** ⚠️ (critical — without it, Claude can only push to `claude/*` branches and the next routine won't see updates)
 8. Save.
 
 ---
@@ -116,7 +115,7 @@ Don't wait until 6am Monday to find out a typo broke everything.
    - Read the boot files
    - Pull Alpaca account state (verifies all 3 Alpaca env vars work)
    - Compute a (mostly empty) weekly review
-   - Open a GitHub Issue (verifies `gh` / `GITHUB_TOKEN` works)
+   - Open a GitHub Issue (verifies GitHub connector works)
    - Push to `main` (verifies the unrestricted-pushes permission)
 4. Go to **github.com/shaftfx/DreamCatcher/issues** — you should see the issue.
 5. Go to **github.com/shaftfx/DreamCatcher/commits** — you should see a new commit on `main` from the routine.
@@ -127,9 +126,8 @@ If any step fails, the live view shows the error. Common issues:
 |---|---|
 | `401 Unauthorized` from Alpaca | Re-check `ALPACA_API_KEY` / `ALPACA_SECRET_KEY` in the cloud env (no leading/trailing spaces) |
 | Push fails with permission error | Toggle "allow unrestricted branch pushes" ON for the routine |
-| `gh` command not found | Add `GITHUB_TOKEN` to the cloud env (Step 5) |
-| Perplexity 401/403 | Re-check `PERPLEXITY_API_KEY` and your account has API access |
-| Routine completes but nothing happens | Check the routine's "model" — must be Claude Opus 4.7 |
+| Issue creation fails | Check that the Claude GitHub App is installed on `shaftfx/DreamCatcher` (github.com/apps/claude/installations/select_target) |
+| `gh` returns "Failed to log in" | Known issue — see Step 5. Issue creation still works via built-in connector. |
 
 ---
 
