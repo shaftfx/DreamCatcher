@@ -112,7 +112,7 @@ If a stop fails to attach (RULES.md S4), close the position immediately at marke
 
 ```bash
 git add -A
-git -c user.name="Bull" -c user.email="bull@dreamcatcher.local" commit -m "open $(date -u +%F): <N> entries placed"
+git -c user.name="Claude" -c user.email="noreply@anthropic.com" commit -m "open $(date -u +%F): <N> entries placed"
 git push origin main
 ```
 
