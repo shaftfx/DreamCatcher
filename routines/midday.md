@@ -64,7 +64,7 @@ For each open position, check open orders for that symbol. If no SELL trailing s
 
 ```bash
 git add -A
-git -c user.name="Bull" -c user.email="bull@dreamcatcher.local" commit -m "midday $(date -u +%F): position management"
+git -c user.name="Claude" -c user.email="noreply@anthropic.com" commit -m "midday $(date -u +%F): position management"
 git push origin main
 ```
 
