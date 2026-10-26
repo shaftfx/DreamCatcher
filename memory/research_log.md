@@ -91,3 +91,9 @@ All passed don't-chase (TXN close at 0.3% below the limit). Also note C1 would h
 ### 2026-10-26 14:37 UTC — OPEN — SCHEDULED RE-FIRE (no-op)
 
 Scheduled open routine fired after the 13:53 UTC run had already processed today's queue. No `decision: queued` entries remain (all 6 rejected on volume gate earlier). Alpaca confirmed: equity $100,000, 0 positions, 0 orders today. No action taken.
+
+### 2026-10-26 20:15 UTC — EOD — RECAP
+
+Equity $100,000.00 (flat), cash 100%, 0 positions, 0 trades today. SPY +0.71% → excess −0.71% (day and WTD). D1/D4/D5 clear; `halt_today` reset to NO; `weekly_defensive: NO`. `gh` CLI auth failed (GITHUB_TOKEN rejected), so the issue was posted via the GitHub MCP integration instead.
+
+- 2026-10-26 20:15 UTC — Issue posted: https://github.com/shaftfx/DreamCatcher/issues/3
