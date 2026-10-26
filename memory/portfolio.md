@@ -5,7 +5,7 @@
 ## Account
 
 - **Mode:** paper
-- **Last refresh (UTC):** 2026-10-26 11:15 (premarket — recovered)
+- **Last refresh (UTC):** 2026-10-26 13:53 (open)
 - **Cash:** $100,000.00
 - **Equity:** $100,000.00 (last_equity $100,000.00)
 - **Peak equity:** $100,000.00 (set 2026-10-26)
