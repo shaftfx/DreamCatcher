@@ -87,3 +87,7 @@ Method: Alpaca free data is IEX-only, so full-day consolidated volume isn't avai
 | UNP | 294.73 | 292.87 | 297.26 | 0.51× | 0.62× | rejected (volume) |
 
 All passed don't-chase (TXN close at 0.3% below the limit). Also note C1 would have capped entries at 3/6 regardless. Watchlist stays live; FOMC Wed and GDP/PCE Thu are no-entry days, so the next entry window is Tue 10/27 or Fri 10/30.
+
+### 2026-10-26 14:37 UTC — OPEN — SCHEDULED RE-FIRE (no-op)
+
+Scheduled open routine fired after the 13:53 UTC run had already processed today's queue. No `decision: queued` entries remain (all 6 rejected on volume gate earlier). Alpaca confirmed: equity $100,000, 0 positions, 0 orders today. No action taken.
