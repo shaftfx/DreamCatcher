@@ -213,3 +213,9 @@ Method: IEX 1-min bars 09:30–09:41 ET today vs the same window over the prior 
 Context: SPY 767.94 (rel vol 0.59× median) — broad market quiet into FOMC. UPS (101.13, 12.7× rel vol) and ITW (271.20, 47.8×) are trading heavily on their earnings prints; UNP/MMM were rejected on volume before the read-through mattered. Next entry window is Fri 10/30 (Wed FOMC, Thu GDP/PCE are no-entry days). Watchlist stays live for Fri premarket to re-queue with fresh technicals.
 
 Observation for weekly review: two straight entry days, 12/12 rejections on the 1.5× gate, best 1.12×. In a pre-FOMC tape the gate may be structurally unreachable for large caps; worth reviewing whether 1.5× is the right threshold (user decision — not changed at runtime).
+
+### 2026-10-27 21:16 UTC — EOD — RECAP
+
+Equity $100,000.00 (flat), cash 100%, 0 positions, 0 orders today (all 6 queued entries rejected at open on the volume gate). SPY +0.58% on the day → excess −0.58%; WTD SPY +1.30% → excess −1.30%. D1/D4/D5 clear; `halt_today` reset to NO; `weekly_defensive: NO`. Wed (FOMC) and Thu (GDP/PCE) are no-entry days; next entry window Fri 10/30. Issue posted via GitHub MCP.
+
+- 2026-10-27 21:16 UTC — Issue posted: https://github.com/shaftfx/DreamCatcher/issues/4
