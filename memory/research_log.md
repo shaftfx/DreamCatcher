@@ -157,3 +157,8 @@ Equity $100,000.00 (flat), cash 100%, 0 positions, 0 trades today. SPY +0.71% �
 ### 2026-10-27 06:06 UTC — EOD — OFF-SCHEDULE FIRE #2 (no-op)
 
 `bull-eod` fired again at 02:06 ET Tue, about 25 min after the 05:43 UTC off-schedule fire. Market closed (Alpaca clock: next open 09:30 ET today). Alpaca confirmed paper mode: equity $100,000, cash $100,000, buying power $100,000, 0 positions, 0 orders since 10/27 00:00 UTC. No recap issue posted, portfolio.md and flags unchanged (`halt_today: NO`). The real EOD should run after 16:00 ET today. The schedule looks misconfigured: it has now fired twice overnight.
+
+
+### 2026-10-27 06:06 UTC — WEEKLY — OFF-SCHEDULE FIRE (no-op)
+
+`bull-weekly` fired at 02:06 ET Tue 10/27, outside its `0 22 * * 5` UTC (Fri) schedule. All five bull-* routines fired within ~4s of each other at 06:05 UTC, right after each trigger was updated around 05:45 UTC. That pattern points to a manual/batch fire, not cron. The trading week is only 1 session old: Mon 10/26 equity was flat at $100,000 and SPY was +0.71%. A review now would grade a partial week, so `weekly_review.md` was NOT overwritten, no `weekly-recap` issue was posted, and `learnings.md` is unchanged. Alpaca (paper) confirmed: equity $100,000, cash $100,000, buying_power = cash, 0 positions, 0 orders since 10/26. The scheduled Friday 10/30 22:00 UTC run will do the real review.
