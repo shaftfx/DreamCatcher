@@ -8,12 +8,12 @@ _Last refreshed: 2026-10-27 premarket (re-verified 07:11 ET scheduled run; plans
 
 | Ticker | Added | Thesis (1 line) | Catalyst | Catalyst Date | Status |
 |---|---|---|---|---|---|
-| TXN | 2026-10-26 | Q3 beat ($2.62 vs $2.42); Q4 guide $5.8–6.3B / EPS $2.45–2.79 now confirmed | none within 8w | — | queued half — entry $298.02, stop $274.18, tgt $345.70, 8 sh, chase ≤ $302.49 |
-| DHR | 2026-10-26 | Q3 beat+raised, life-sciences recovery | none within 8w | — | queued half — entry $233.01, stop $214.37, tgt $270.29, 10 sh, chase ≤ $236.51 |
-| UNP | 2026-10-26 | Q3 beat, rail pricing power | none within 8w | — | queued half — entry $296.96, stop $273.20, tgt $344.47, 8 sh, chase ≤ $301.41 |
-| ELV | 2026-10-27 | Q3 beat, FY26 adj EPS guide raised to ≥ $29.00 | none within 8w | — | queued half — entry $431.37, stop $396.86, tgt $500.39, 5 sh, chase ≤ $437.84 |
-| UNH | 2026-10-26 | Q3 beat ($4.69); FY guide *maintained* ~$20.50 (not raised — correction) | none within 8w | — | queued half — entry $410.45, stop $377.61, tgt $476.12, 6 sh, chase ≤ $416.61 |
-| MMM | 2026-10-26 | Q3 beat ($2.50 vs $2.39), FY guide raised to $9.10–9.15 | none within 8w | — | queued half — entry $172.77, stop $159.49, tgt $199.33, 14 sh, chase ≤ $175.36 |
+| TXN | 2026-10-26 | Q3 beat ($2.62 vs $2.42); Q4 guide $5.8–6.3B / EPS $2.45–2.79 now confirmed | none within 8w | — | rejected at open 10/27 (volume gate 0.44× median; also last $302.51 > chase $302.49) — was: queued half — entry $298.02, stop $274.18, tgt $345.70, 8 sh, chase ≤ $302.49 |
+| DHR | 2026-10-26 | Q3 beat+raised, life-sciences recovery | none within 8w | — | rejected at open 10/27 (volume gate 0.57× median) — was: queued half — entry $233.01, stop $214.37, tgt $270.29, 10 sh, chase ≤ $236.51 |
+| UNP | 2026-10-26 | Q3 beat, rail pricing power | none within 8w | — | rejected at open 10/27 (volume gate 0.17× median) — was: queued half — entry $296.96, stop $273.20, tgt $344.47, 8 sh, chase ≤ $301.41 |
+| ELV | 2026-10-27 | Q3 beat, FY26 adj EPS guide raised to ≥ $29.00 | none within 8w | — | rejected at open 10/27 (volume gate 0.77× median) — was: queued half — entry $431.37, stop $396.86, tgt $500.39, 5 sh, chase ≤ $437.84 |
+| UNH | 2026-10-26 | Q3 beat ($4.69); FY guide *maintained* ~$20.50 (not raised — correction) | none within 8w | — | rejected at open 10/27 (volume gate 1.00× median) — was: queued half — entry $410.45, stop $377.61, tgt $476.12, 6 sh, chase ≤ $416.61 |
+| MMM | 2026-10-26 | Q3 beat ($2.50 vs $2.39), FY guide raised to $9.10–9.15 | none within 8w | — | rejected at open 10/27 (volume gate 0.79× median) — was: queued half — entry $172.77, stop $159.49, tgt $199.33, 14 sh, chase ≤ $175.36 |
 | NOC | 2026-10-26 | Q3 beat+raised (FY adj EPS $29.35–29.75) | none within 8w | — | **watch only** — RSI 71.6 (>70), +8.4% above 50d; technical leg fails → 1 of 3 legs. Revisit on pullback |
 
 ---
@@ -194,3 +194,22 @@ This is the actual scheduled premarket (07:11 ET). The 05:45 UTC run did the ful
 
 **Decision:** TXN, DHR, UNP, ELV, UNH and MMM stay `queued half` per the 05:45 plans, with the same chase limits and the 1.5× time-of-day relative-volume gate (median). C1 caps the week at 3 entries, and at most one of UNH/ELV can be taken. NOC stays watch-only. Reminder: today's open cron fires at 10:35 ET (EDT), so the volume window is 09:30–10:35.
 
+### 2026-10-27 13:42 UTC — OPEN — EXECUTION SUMMARY
+
+**Account (Alpaca, paper, `paper-api` confirmed):** equity $100,000, cash = buying power, multiplier 1 (A4 ✅), ACTIVE. 0 positions, 0 orders today. No halt flags; not a blackout day (FOMC decision Wed). Market open (fired 09:41 ET; cron now landing at 09:35 ET as intended, not 10:35).
+**Result:** 0 orders placed. All 6 queued entries rejected on the volume gate (time-of-day relative volume ≥ 1.5×, median of prior 20 sessions).
+
+Method: IEX 1-min bars 09:30–09:41 ET today vs the same window over the prior 20 sessions (same feed). Short window (11 min) — noisy, but no name was close.
+
+| Ticker | Last | Chase limit | Rel vol (mean) | Rel vol (median) | Result |
+|---|---|---|---|---|---|
+| TXN | 302.51 | 302.49 | 0.35× | 0.44× | rejected (volume + over chase limit) |
+| DHR | 230.82 | 236.51 | 0.34× | 0.57× | rejected (volume) |
+| UNP | 295.60 | 301.41 | 0.14× | 0.17× | rejected (volume) |
+| ELV | 431.31 | 437.84 | 0.58× | 0.77× | rejected (volume) |
+| UNH | 410.60 | 416.61 | 0.57× | 1.00× | rejected (volume) |
+| MMM | 172.09 | 175.36 | 0.38× | 0.79× | rejected (volume) |
+
+Context: SPY 767.94 (rel vol 0.59× median) — broad market quiet into FOMC. UPS (101.13, 12.7× rel vol) and ITW (271.20, 47.8×) are trading heavily on their earnings prints; UNP/MMM were rejected on volume before the read-through mattered. Next entry window is Fri 10/30 (Wed FOMC, Thu GDP/PCE are no-entry days). Watchlist stays live for Fri premarket to re-queue with fresh technicals.
+
+Observation for weekly review: two straight entry days, 12/12 rejections on the 1.5× gate, best 1.12×. In a pre-FOMC tape the gate may be structurally unreachable for large caps; worth reviewing whether 1.5× is the right threshold (user decision — not changed at runtime).
