@@ -150,3 +150,7 @@ Equity $100,000.00 (flat), cash 100%, 0 positions, 0 trades today. SPY +0.71% �
 ### 2026-10-27 05:43 UTC — EOD — OFF-SCHEDULE FIRE (no-op)
 
 `bull-eod` fired at 01:43 ET Tue (alongside `bull-premarket`), outside its `15 21 * * 1-5` UTC schedule. Market not yet open for 10/27; Monday's EOD already ran and posted issue #3. Alpaca confirmed: equity $100,000, cash $100,000, 0 positions, 0 orders since 10/27 00:00 UTC, no 10/27 SPY bar yet. No recap issue posted (would cover a session that hasn't traded); portfolio.md unchanged; flags unchanged (`halt_today: NO`). Scheduled EOD at 21:15 UTC will do today's real recap.
+
+### 2026-10-27 06:06 UTC — Midday — OFF-SCHEDULE FIRE (no-op)
+
+`bull-midday` fired at 02:06 ET Tue, market closed (opens 09:30 ET). Alpaca (paper) confirmed: equity $100,000 = peak, cash $100,000, multiplier 1, 0 positions, 0 open orders. D1: no session P&L yet → `halt_today: NO`. D5: equity = peak → clear. S2/S3/S4: no positions → nothing to cut, tighten, or re-stop. No orders placed; flags unchanged. Scheduled midday at 12:30 ET will do the real check.
