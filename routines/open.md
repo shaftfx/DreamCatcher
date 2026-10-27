@@ -39,6 +39,7 @@ For every entry with `decision: queued` in `research_log.md`:
    - Fundamental thesis still intact? (no overnight news that breaks it)
    - Catalyst window still in range?
    - Technical: price > 50-day SMA, RSI 40–70, 4EMA stack intact?
+   - **Do NOT check intraday volume here.** Volume was validated during premarket research. Re-checking volume 5–10 minutes into the session is noise, not signal — a quiet open on a macro day is not a rejection reason.
 3. Re-run the rule gates (`RULES.md`):
    - P1: position size ≤ 5% equity?
    - P2: total ticker exposure (incl. existing) ≤ 15%?
@@ -128,3 +129,4 @@ If at least one order was placed, append a brief note to `research_log.md` (not 
 - A bracket order is **one** API call but the fills come as separate events — wait for the parent order to fill before reasoning about whether the child stop attached.
 - If you can't verify a stop is attached after 60s, **close the position**. No naked positions.
 - Never place if any halt flag is set.
+- **Do NOT re-check intraday volume.** Volume was validated in premarket. The only price check at open is the chase limit (current price > planned entry × 1.015). A quiet open on a macro/Fed day is not a rejection reason.
