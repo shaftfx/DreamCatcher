@@ -79,6 +79,6 @@ For an entry, look for this stack of confirmations:
 | RSI(14) | Between 40 and 70 |
 | MACD | Line above signal, ideally above zero |
 | Stochastic | Not above 80 |
-| Volume | Day's volume ≥ 1.5× 20-day avg on entry candle |
+| Volume | Day's volume ≥ 1.5× 20-day avg — validated in **premarket only**; never re-checked at open |
 
 This isn't a pixel-perfect checklist — it's the picture of a healthy, non-overextended uptrend. Two of these failing (e.g. MACD just below signal, but RSI 60 and 4EMA fine) is fine. Three+ failing means **wait**.
