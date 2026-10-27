@@ -5,7 +5,7 @@
 ## Account
 
 - **Mode:** paper
-- **Last refresh (UTC):** 2026-10-27 13:42 (scheduled open — Alpaca: no positions, no orders; 0 entries placed, all 6 queued rejected on volume gate)
+- **Last refresh (UTC):** 2026-10-27 17:42 (scheduled midday — Alpaca: no positions, no open orders; D1 day P&L 0.00%, D5 equity 100% of peak; nothing to cut/tighten/re-stop)
 - **Cash:** $100,000.00
 - **Equity:** $100,000.00 (last_equity $100,000.00)
 - **Peak equity:** $100,000.00 (set 2026-10-26)
