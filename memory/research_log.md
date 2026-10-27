@@ -97,3 +97,7 @@ Scheduled open routine fired after the 13:53 UTC run had already processed today
 Equity $100,000.00 (flat), cash 100%, 0 positions, 0 trades today. SPY +0.71% → excess −0.71% (day and WTD). D1/D4/D5 clear; `halt_today` reset to NO; `weekly_defensive: NO`. `gh` CLI auth failed (GITHUB_TOKEN rejected), so the issue was posted via the GitHub MCP integration instead.
 
 - 2026-10-26 20:15 UTC — Issue posted: https://github.com/shaftfx/DreamCatcher/issues/3
+
+### 2026-10-27 05:43 UTC — EOD — OFF-SCHEDULE FIRE (no-op)
+
+`bull-eod` fired at 01:43 ET Tue (alongside `bull-premarket`), outside its `15 21 * * 1-5` UTC schedule. Market not yet open for 10/27; Monday's EOD already ran and posted issue #3. Alpaca confirmed: equity $100,000, cash $100,000, 0 positions, 0 orders since 10/27 00:00 UTC, no 10/27 SPY bar yet. No recap issue posted (would cover a session that hasn't traded); portfolio.md unchanged; flags unchanged (`halt_today: NO`). Scheduled EOD at 21:15 UTC will do today's real recap.
