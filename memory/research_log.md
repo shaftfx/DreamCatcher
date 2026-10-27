@@ -4,7 +4,7 @@ Dated entries. Premarket appends new research; other routines append rejected id
 
 ## Active Watchlist
 
-_Last refreshed: 2026-10-27 premarket (06:00 ET run, data as of 10/26 close, IEX feed). Today (Tue 10/27) is an entry day — not a blackout. Wed 10/28 FOMC and Thu 10/29 GDP+PCE are no-entry days; Fri 10/30 is the next window after today. None has a dated catalyst within 8 weeks (all reported Q3 already), so everything queued is **half size** (fundamental + technical). Entry gate unchanged: time-of-day relative volume ≥ 1.5× (median of prior 20 sessions, same window) — see learnings 2026-10-26. C1 caps the week at 3 entries — if more than 3 clear, take them in table order._
+_Last refreshed: 2026-10-27 premarket (re-verified 07:11 ET scheduled run; plans from 01:45 ET run, data as of 10/26 close, IEX feed). Today (Tue 10/27) is an entry day — not a blackout. Wed 10/28 FOMC and Thu 10/29 GDP+PCE are no-entry days; Fri 10/30 is the next window after today. None has a dated catalyst within 8 weeks (all reported Q3 already), so everything queued is **half size** (fundamental + technical). Entry gate unchanged: time-of-day relative volume ≥ 1.5× (median of prior 20 sessions, same window) — see learnings 2026-10-26. C1 caps the week at 3 entries — if more than 3 clear, take them in table order._
 
 | Ticker | Added | Thesis (1 line) | Catalyst | Catalyst Date | Status |
 |---|---|---|---|---|---|
@@ -174,4 +174,23 @@ Schedule note for the user: `bull-open` cron is `35 14 * * 1-5` UTC. That is **1
 ### 2026-10-27 06:06 UTC — PREMARKET — DUPLICATE FIRE (no-op)
 
 `bull-premarket` fired again at 02:06 ET, 21 min after the 05:45 UTC premarket had already completed today's full research and watchlist refresh. Alpaca re-checked (paper): equity $100,000, cash = buying power, multiplier 1, 0 positions, 0 open orders. D5 clear, no halt flags. Today's watchlist and queued plans above stand unchanged. No new research, because overnight news is unchanged at this hour and the 05:45 run's data is still current. The open routine should act on the 05:45 entry.
+
+### 2026-10-27 11:11 UTC — PREMARKET — SCHEDULED RUN (refresh, no changes to queue)
+
+This is the actual scheduled premarket (07:11 ET). The 05:45 UTC run did the full research and technicals. This run re-verified them and checked overnight and morning news.
+
+**Account (Alpaca, paper, confirmed with `paper-api`):** equity $100,000, cash = buying power, multiplier 1 (A4 ✅), status ACTIVE. 0 positions, 0 orders since 10/26. D5 clear (equity = peak). No halt flags. Today is not a blackout day (FOMC decision is Wed).
+
+**Technicals:** Alpaca IEX snapshots show the latest trades are still the 10/26 closes (TXN 298.02, DHR 233.01, UNP 296.96, ELV 431.37, UNH 410.45, MMM 172.77, NOC 565.67, SPY 765.23), identical to the 05:45 inputs. SMA50, RSI and swing lows from that run stand, so nothing was recomputed or carried over from older entries.
+
+**News since 05:45 UTC:**
+- **CNC (Centene) Q3, 06:00 ET today:** adj EPS $0.58, revenue ~$50.6B, HBR 92.7%. FY26 adj EPS guide **raised** to > $5.20 (from > $4.80; Reuters consensus ~$4.88), and the FY HBR range lowered to 90.4–91.1%. Coverage conflicts on whether the quarter beat. The raised guide and lower cost ratio read as a **positive** sector signal for UNH/ELV. That doesn't change the at-most-one-of-UNH/ELV rule, and ELV is still preferred. HCA (07:30) and UHS (after close) also report today; check whether managed care gaps on the CNC print and confirm the move with volume before entering. [Centene IR](https://investors.centene.com/2026-10-27-CENTENE-CORPORATION-REPORTS-THIRD-QUARTER-2026-RESULTS), [KSL/Reuters](https://www.ksl.com/article/51641497/centene-lifts-annual-profit-forecast-reports-upbeat-third-quarter-results), [GuruFocus](https://www.gurufocus.com/news/9144143/centene-corp-reports-q3-loss-of-014-eps-and-revenue-of-506-billion-adjusted-eps-of-058-falls-short-of-analyst-expectations)
+- **Read-throughs for the industrial names, all reporting premarket today:** UPS, ITW, PCAR, JCI, XYL, PNR and HUBB matter for UNP (rail and freight volumes, via UPS and PCAR) and MMM (ITW). Their results weren't checked at this hour because most report 07:00–08:00 ET. **Open routine:** before entering UNP or MMM, take a quick look at how UPS and ITW reacted. A sharp miss or freight-volume warning is a reason to skip. [Newsquawk calendar](https://www.newsquawk.com/headlines/newsquawk-daily-us-earnings-estimates---27th-october-2026-ko-glw-spgi-ba-stx-v)
+- **Other big reporters today:** KO, BA, SPGI, PYPL, SHW, GLW and FCX premarket, then V, NXPI, STX and WM after close. None are on the watchlist. NXPI reports after close, which is an analog-semis read-through for TXN *tomorrow*, but tomorrow is an FOMC no-entry day anyway.
+- **Macro:** Durable Goods (08:30), Consumer Confidence and New Home Sales (10:00) are due today, and none were out at run time. FOMC starts today, with the decision Wed at 14:00 ET. Oil is lower on hopes of a US–Iran resolution, but Brent is still near six-month highs (Business Standard). Tone is cautious.
+- **Search quality:** thin. No dated 10/27 upgrade roundup or futures report was found, and Schwab's market page returned an auth error. Absence of news is **not** confirmation.
+
+**Watchlist:** unchanged. Nothing was added or removed, and all theses are intact. PH and CTAS (from 05:45) still haven't had a technical check and can wait until Fri's premarket.
+
+**Decision:** TXN, DHR, UNP, ELV, UNH and MMM stay `queued half` per the 05:45 plans, with the same chase limits and the 1.5× time-of-day relative-volume gate (median). C1 caps the week at 3 entries, and at most one of UNH/ELV can be taken. NOC stays watch-only. Reminder: today's open cron fires at 10:35 ET (EDT), so the volume window is 09:30–10:35.
 

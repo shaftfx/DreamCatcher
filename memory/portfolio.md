@@ -5,7 +5,7 @@
 ## Account
 
 - **Mode:** paper
-- **Last refresh (UTC):** 2026-10-27 06:06 (midday + premarket off-schedule fires — Alpaca: no positions, no open orders; D5 clear, equity = peak)
+- **Last refresh (UTC):** 2026-10-27 11:11 (scheduled premarket — Alpaca: no positions, no open orders; D5 clear, equity = peak)
 - **Cash:** $100,000.00
 - **Equity:** $100,000.00 (last_equity $100,000.00)
 - **Peak equity:** $100,000.00 (set 2026-10-26)
