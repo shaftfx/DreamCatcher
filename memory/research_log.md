@@ -162,3 +162,10 @@ Equity $100,000.00 (flat), cash 100%, 0 positions, 0 trades today. SPY +0.71% �
 ### 2026-10-27 06:06 UTC — WEEKLY — OFF-SCHEDULE FIRE (no-op)
 
 `bull-weekly` fired at 02:06 ET Tue 10/27, outside its `0 22 * * 5` UTC (Fri) schedule. All five bull-* routines fired within ~4s of each other at 06:05 UTC, right after each trigger was updated around 05:45 UTC. That pattern points to a manual/batch fire, not cron. The trading week is only 1 session old: Mon 10/26 equity was flat at $100,000 and SPY was +0.71%. A review now would grade a partial week, so `weekly_review.md` was NOT overwritten, no `weekly-recap` issue was posted, and `learnings.md` is unchanged. Alpaca (paper) confirmed: equity $100,000, cash $100,000, buying_power = cash, 0 positions, 0 orders since 10/26. The scheduled Friday 10/30 22:00 UTC run will do the real review.
+
+
+### 2026-10-27 06:06 UTC — OPEN — OFF-SCHEDULE FIRE (no-op)
+
+`bull-open` fired at 02:06 ET Tue. All five Bull routines fired together at 06:05 UTC, roughly 20 minutes after their triggers were updated at 05:45 UTC. The market is closed (opens 09:30 ET). No orders were placed. A market order now would fill at the open price without the chase-limit check or the time-of-day volume gate, so the queue is left **untouched**. TXN/DHR/UNP/ELV/UNH/MMM stay `queued half` for the scheduled open. Alpaca shows equity $100,000, cash = buying power, multiplier 1, 0 positions, 0 orders. Flags unchanged.
+
+Schedule note for the user: `bull-open` cron is `35 14 * * 1-5` UTC. That is **10:35 ET** while EDT is in effect (through Sun 11/1) and 09:35 ET after the switch to EST. Today's real open run therefore lands at 10:35 ET, one hour later than the routine's intended 09:35. The volume-gate window will be 09:30–10:35, which is still valid.
