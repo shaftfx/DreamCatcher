@@ -154,6 +154,7 @@ Equity $100,000.00 (flat), cash 100%, 0 positions, 0 trades today. SPY +0.71% �
 ### 2026-10-27 06:06 UTC — Midday — OFF-SCHEDULE FIRE (no-op)
 
 `bull-midday` fired at 02:06 ET Tue, market closed (opens 09:30 ET). Alpaca (paper) confirmed: equity $100,000 = peak, cash $100,000, multiplier 1, 0 positions, 0 open orders. D1: no session P&L yet → `halt_today: NO`. D5: equity = peak → clear. S2/S3/S4: no positions → nothing to cut, tighten, or re-stop. No orders placed; flags unchanged. Scheduled midday at 12:30 ET will do the real check.
+
 ### 2026-10-27 06:06 UTC — EOD — OFF-SCHEDULE FIRE #2 (no-op)
 
 `bull-eod` fired again at 02:06 ET Tue, about 25 min after the 05:43 UTC off-schedule fire. Market closed (Alpaca clock: next open 09:30 ET today). Alpaca confirmed paper mode: equity $100,000, cash $100,000, buying power $100,000, 0 positions, 0 orders since 10/27 00:00 UTC. No recap issue posted, portfolio.md and flags unchanged (`halt_today: NO`). The real EOD should run after 16:00 ET today. The schedule looks misconfigured: it has now fired twice overnight.
@@ -169,3 +170,8 @@ Equity $100,000.00 (flat), cash 100%, 0 positions, 0 trades today. SPY +0.71% �
 `bull-open` fired at 02:06 ET Tue. All five Bull routines fired together at 06:05 UTC, roughly 20 minutes after their triggers were updated at 05:45 UTC. The market is closed (opens 09:30 ET). No orders were placed. A market order now would fill at the open price without the chase-limit check or the time-of-day volume gate, so the queue is left **untouched**. TXN/DHR/UNP/ELV/UNH/MMM stay `queued half` for the scheduled open. Alpaca shows equity $100,000, cash = buying power, multiplier 1, 0 positions, 0 orders. Flags unchanged.
 
 Schedule note for the user: `bull-open` cron is `35 14 * * 1-5` UTC. That is **10:35 ET** while EDT is in effect (through Sun 11/1) and 09:35 ET after the switch to EST. Today's real open run therefore lands at 10:35 ET, one hour later than the routine's intended 09:35. The volume-gate window will be 09:30–10:35, which is still valid.
+
+### 2026-10-27 06:06 UTC — PREMARKET — DUPLICATE FIRE (no-op)
+
+`bull-premarket` fired again at 02:06 ET, 21 min after the 05:45 UTC premarket had already completed today's full research and watchlist refresh. Alpaca re-checked (paper): equity $100,000, cash = buying power, multiplier 1, 0 positions, 0 open orders. D5 clear, no halt flags. Today's watchlist and queued plans above stand unchanged. No new research, because overnight news is unchanged at this hour and the 05:45 run's data is still current. The open routine should act on the 05:45 entry.
+
