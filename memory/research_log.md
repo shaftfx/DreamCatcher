@@ -229,3 +229,9 @@ Equity $100,000.00 (flat), cash 100%, 0 positions, 0 orders today (all 6 queued 
 **Watchlist:** unchanged. TXN, DHR, UNP, ELV, UNH and MMM stay on the list. Each was rejected at the 10/27 open on the volume gate, which isn't a thesis break, and none has hit the 30-day removal window. NOC stays watch-only. No name has a dated catalyst within 5 trading days, so Step 6 drafts nothing. **Nothing is `decision: queued` for today's open.** The Fri 10/30 premarket must recompute SMA50/RSI/swing lows from Alpaca bars, since post-FOMC moves will make the 10/26 plans stale. It should also check the NXPI (10/27 AMC) read-through for TXN and the technicals for PH and CTAS.
 
 **Decision:** no entries queued. The open routine should no-op today.
+
+### 2026-10-28 13:52 UTC — OPEN — FOMC BLACKOUT (no-op)
+
+**Account (Alpaca, paper, `paper-api` confirmed):** equity $100,000, cash = buying power, multiplier 1 (A4 ✅), ACTIVE. 0 positions, 0 open orders. D5 clear. Halt flags all NO.
+**Halt check:** Wed 10/28 is FOMC decision day → RULES.md D3 blackout, no new entries. Premarket queued nothing anyway.
+**Result:** 0 orders placed. Next entry window is Fri 10/30.

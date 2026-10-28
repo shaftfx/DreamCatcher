@@ -5,7 +5,7 @@
 ## Account
 
 - **Mode:** paper
-- **Last refresh (UTC):** 2026-10-28 11:24 (scheduled premarket — Alpaca paper: equity $100,000, 0 positions, 0 orders since 10/27; D5 clear; Wed 10/28 FOMC blackout)
+- **Last refresh (UTC):** 2026-10-28 13:52 (scheduled open — Alpaca paper: equity $100,000, 0 positions, 0 open orders; D5 clear; Wed 10/28 FOMC blackout, no entries)
 - **Cash:** $100,000.00
 - **Equity:** $100,000.00 (last_equity $100,000.00)
 - **Peak equity:** $100,000.00 (set 2026-10-26)
