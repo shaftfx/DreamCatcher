@@ -4,7 +4,7 @@ Dated entries. Premarket appends new research; other routines append rejected id
 
 ## Active Watchlist
 
-_Last refreshed: 2026-10-27 premarket (re-verified 07:11 ET scheduled run; plans from 01:45 ET run, data as of 10/26 close, IEX feed). Today (Tue 10/27) is an entry day — not a blackout. Wed 10/28 FOMC and Thu 10/29 GDP+PCE are no-entry days; Fri 10/30 is the next window after today. None has a dated catalyst within 8 weeks (all reported Q3 already), so everything queued is **half size** (fundamental + technical). Entry gate unchanged: time-of-day relative volume ≥ 1.5× (median of prior 20 sessions, same window) — see learnings 2026-10-26. C1 caps the week at 3 entries — if more than 3 clear, take them in table order._
+_Status check 2026-10-28 premarket (FOMC blackout — no research, no queue; table unchanged, Fri 10/30 premarket re-queues with fresh bars). Last full refresh: 2026-10-27 premarket (re-verified 07:11 ET scheduled run; plans from 01:45 ET run, data as of 10/26 close, IEX feed). Today (Tue 10/27) is an entry day — not a blackout. Wed 10/28 FOMC and Thu 10/29 GDP+PCE are no-entry days; Fri 10/30 is the next window after today. None has a dated catalyst within 8 weeks (all reported Q3 already), so everything queued is **half size** (fundamental + technical). Entry gate unchanged: time-of-day relative volume ≥ 1.5× (median of prior 20 sessions, same window) — see learnings 2026-10-26. C1 caps the week at 3 entries — if more than 3 clear, take them in table order._
 
 | Ticker | Added | Thesis (1 line) | Catalyst | Catalyst Date | Status |
 |---|---|---|---|---|---|
@@ -219,3 +219,13 @@ Observation for weekly review: two straight entry days, 12/12 rejections on the 
 Equity $100,000.00 (flat), cash 100%, 0 positions, 0 orders today (all 6 queued entries rejected at open on the volume gate). SPY +0.58% on the day → excess −0.58%; WTD SPY +1.30% → excess −1.30%. D1/D4/D5 clear; `halt_today` reset to NO; `weekly_defensive: NO`. Wed (FOMC) and Thu (GDP/PCE) are no-entry days; next entry window Fri 10/30. Issue posted via GitHub MCP.
 
 - 2026-10-27 21:16 UTC — Issue posted: https://github.com/shaftfx/DreamCatcher/issues/4
+
+### 2026-10-28 11:24 UTC — PREMARKET — FOMC BLACKOUT (no research, no queue)
+
+**Account (Alpaca, `paper-api` confirmed):** ACTIVE, equity $100,000 = last_equity = peak, cash = buying power, multiplier 1 (A4 ✅). 0 positions, 0 orders since 10/27 00:00 UTC. D5 clear (0.00% drawdown). Flags: `halt_today: NO`, `halt_until_human: NO`, `weekly_defensive: NO`.
+
+**Blackout:** today (Wed 10/28) is FOMC decision day (14:00 ET) → RULES.md D3, no new entries. Per the premarket routine, Step 4 catalyst research is skipped. Thu 10/29 (GDP Q3 advance + PCE) is also a no-entry day per the week flags.
+
+**Watchlist:** unchanged. TXN, DHR, UNP, ELV, UNH and MMM stay on the list. Each was rejected at the 10/27 open on the volume gate, which isn't a thesis break, and none has hit the 30-day removal window. NOC stays watch-only. No name has a dated catalyst within 5 trading days, so Step 6 drafts nothing. **Nothing is `decision: queued` for today's open.** The Fri 10/30 premarket must recompute SMA50/RSI/swing lows from Alpaca bars, since post-FOMC moves will make the 10/26 plans stale. It should also check the NXPI (10/27 AMC) read-through for TXN and the technicals for PH and CTAS.
+
+**Decision:** no entries queued. The open routine should no-op today.
