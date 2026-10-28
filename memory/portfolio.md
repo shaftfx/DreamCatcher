@@ -5,7 +5,7 @@
 ## Account
 
 - **Mode:** paper
-- **Last refresh (UTC):** 2026-10-28 17:42 (scheduled midday — Alpaca paper: equity $100,000, 0 positions, 0 open orders; day P&L 0.00%, D1 clear; D5 clear (0.00% DD); no position actions)
+- **Last refresh (UTC):** 2026-10-28 21:18 (scheduled EOD — Alpaca paper: equity $100,000, 0 positions, 0 orders today; day P&L 0.00%, D1 clear; D4 clear; D5 clear (0.00% DD); halt_today reset NO)
 - **Cash:** $100,000.00
 - **Equity:** $100,000.00 (last_equity $100,000.00)
 - **Peak equity:** $100,000.00 (set 2026-10-26)
@@ -21,19 +21,19 @@
 
 _none_
 
-## Today's P&L (2026-10-27 close)
+## Today's P&L (2026-10-28 close)
 
 - Today open equity: $100,000.00 → close equity: $100,000.00
 - Daily return: 0.00%
-- SPY daily return: +0.58% (765.225 → 769.70)
-- Excess vs SPY: −0.58%
+- SPY daily return: +0.34% (769.70 → 772.28, IEX)
+- Excess vs SPY: −0.34%
 - Drawdown from peak: 0.00%
 
 ## Week to date (since Fri 10/23 close)
 
 - Week return: 0.00% (prior Friday close equity $100,000.00)
-- SPY week return: +1.30% (759.83 → 769.70)
-- Excess vs SPY: −1.30%
+- SPY week return: +1.64% (759.83 → 772.28)
+- Excess vs SPY: −1.64%
 - D4 weekly loss check: 0.00% > −5% → `weekly_defensive: NO`
 
 ## New entries this week
