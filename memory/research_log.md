@@ -216,7 +216,7 @@ Observation for weekly review: two straight entry days, 12/12 rejections on the 
 
 ### 2026-10-27 21:16 UTC — EOD — RECAP
 
-Equity $100,000.00 (flat), cash 100%, 0 positions, 0 orders today (all 6 queued entries rejected at open on the volume gate). SPY +0.58% on the day → excess −0.58%; WTD SPY +1.30% → excess −1.30%. D1/D4/D5 clear; `halt_today` reset to NO; `weekly_defensive: NO`. Wed (FOMC) and Thu (GDP/PCE) are no-entry days; next entry window Fri 10/30. Issue posted via GitHub REST.
+Equity $100,000.00 (flat), cash 100%, 0 positions, 0 orders today (all 6 queued entries rejected at open on the volume gate). SPY +0.58% on the day → excess −0.58%; WTD SPY +1.30% → excess −1.30%. D1/D4/D5 clear; `halt_today` reset to NO; `weekly_defensive: NO`. Wed (FOMC) and Thu (GDP/PCE) are no-entry days; next entry window Fri 10/30. Issue posted via GitHub MCP.
 
 - 2026-10-27 21:16 UTC — Issue posted: https://github.com/shaftfx/DreamCatcher/issues/4
 
@@ -238,6 +238,6 @@ Equity $100,000.00 (flat), cash 100%, 0 positions, 0 orders today (all 6 queued 
 
 ### 2026-10-28 21:18 UTC — EOD — RECAP
 
-Equity $100,000.00 (flat), cash 100%, 0 positions, 0 orders today (FOMC blackout, RULES.md D3). SPY +0.34% on the day (769.70 → 772.28) → excess −0.34%; WTD SPY +1.64% → excess −1.64%. D1/D4/D5 clear; `halt_today` reset to NO; `weekly_defensive: NO`. Thu 10/29 (GDP/PCE) is a no-entry day; next entry window Fri 10/30.
+Equity $100,000.00 (flat), cash 100%, 0 positions, 0 orders today (FOMC blackout, RULES.md D3). SPY +0.34% on the day (769.70 → 772.28) → excess −0.34%; WTD SPY +1.64% → excess −1.64%. D1/D4/D5 clear; `halt_today` reset to NO; `weekly_defensive: NO`. Thu 10/29 (GDP/PCE) is a no-entry day; next entry window Fri 10/30. Issue posted via GitHub REST.
 
 - 2026-10-28 21:19 UTC — Issue posted: https://github.com/shaftfx/DreamCatcher/issues/5
