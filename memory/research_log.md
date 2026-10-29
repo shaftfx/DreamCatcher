@@ -278,3 +278,9 @@ Equity $100,000.00 (flat), cash 100%, 0 positions, 0 orders today (FOMC blackout
 **Account (Alpaca, paper, `paper-api` confirmed):** ACTIVE, equity $100,000 = last_equity = peak, cash = buying power, multiplier 1 (A4 ✅). 0 positions, 0 orders since 10/28. D5 clear. Halt flags all NO.
 **Day status:** Thu 10/29 (GDP Q3 + PCE) is a no-entry day per the week flags, and premarket queued nothing.
 **Result:** 0 orders placed. Next entry window is Fri 10/30.
+
+### 2026-10-29 21:17 UTC — EOD — RECAP
+
+Equity $100,000.00 (flat), cash 100%, 0 positions, 0 orders today (GDP/PCE no-entry day). SPY −0.36% on the day (772.28 → 769.49) → excess +0.36%; WTD SPY +1.27% → excess −1.27%. D1/D4/D5 clear; `halt_today` reset to NO; `weekly_defensive: NO`. Fri 10/30 is the next entry window; C1 0/3. I couldn't find a reliable post-close recap of the GDP/PCE prints, so the Fri premarket must source them itself before queuing.
+
+- 2026-10-29 21:18 UTC — Issue posted: https://github.com/shaftfx/DreamCatcher/issues/6
