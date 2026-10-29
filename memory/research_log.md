@@ -272,3 +272,9 @@ Equity $100,000.00 (flat), cash 100%, 0 positions, 0 orders today (FOMC blackout
 3. ELV: if it closes below its 50d (~$409.6), its technical leg fails, so drop it to watch.
 
 **Decision:** no entries queued for today (Thu 10/29). NOC was promoted to active, CTAS was added, TXN was demoted to watch-only, and PH was rejected on the technical leg.
+
+### 2026-10-29 13:51 UTC — OPEN — NO-ENTRY DAY (no-op)
+
+**Account (Alpaca, paper, `paper-api` confirmed):** ACTIVE, equity $100,000 = last_equity = peak, cash = buying power, multiplier 1 (A4 ✅). 0 positions, 0 orders since 10/28. D5 clear. Halt flags all NO.
+**Day status:** Thu 10/29 (GDP Q3 + PCE) is a no-entry day per the week flags, and premarket queued nothing.
+**Result:** 0 orders placed. Next entry window is Fri 10/30.
