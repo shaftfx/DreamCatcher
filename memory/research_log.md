@@ -4,17 +4,20 @@ Dated entries. Premarket appends new research; other routines append rejected id
 
 ## Active Watchlist
 
-_Status check 2026-10-28 premarket (FOMC blackout — no research, no queue; table unchanged, Fri 10/30 premarket re-queues with fresh bars). Last full refresh: 2026-10-27 premarket (re-verified 07:11 ET scheduled run; plans from 01:45 ET run, data as of 10/26 close, IEX feed). Today (Tue 10/27) is an entry day — not a blackout. Wed 10/28 FOMC and Thu 10/29 GDP+PCE are no-entry days; Fri 10/30 is the next window after today. None has a dated catalyst within 8 weeks (all reported Q3 already), so everything queued is **half size** (fundamental + technical). Entry gate unchanged: time-of-day relative volume ≥ 1.5× (median of prior 20 sessions, same window) — see learnings 2026-10-26. C1 caps the week at 3 entries — if more than 3 clear, take them in table order._
+_Last refresh: 2026-10-29 premarket (Thu, GDP Q3 + PCE day). Technicals recomputed from Alpaca IEX daily bars through the 10/28 close. **Today is a no-entry day per the week flags. It is not a RULES.md D3 blackout, but it was set as a cautious day by the 10/27 premarket. Nothing is `decision: queued` for today's open.** None of the names has a dated catalyst within 5 trading days, so Step 6 drafts no plans. The Fri 10/30 premarket must recompute entry, stop and target from that morning's bars and re-queue half size (fundamental + technical). Entry gate unchanged: time-of-day relative volume ≥ 1.5× (median of the prior 20 sessions). C1: 0/3 used this week. At most one of UNH/ELV._
 
-| Ticker | Added | Thesis (1 line) | Catalyst | Catalyst Date | Status |
+| Ticker | Added | Thesis (1 line) | Catalyst | Catalyst Date | Status (10/28 close · SMA50 · RSI14 · 20-bar swing low) |
 |---|---|---|---|---|---|
-| TXN | 2026-10-26 | Q3 beat ($2.62 vs $2.42); Q4 guide $5.8–6.3B / EPS $2.45–2.79 now confirmed | none within 8w | — | rejected at open 10/27 (volume gate 0.44× median; also last $302.51 > chase $302.49) — was: queued half — entry $298.02, stop $274.18, tgt $345.70, 8 sh, chase ≤ $302.49 |
-| DHR | 2026-10-26 | Q3 beat+raised, life-sciences recovery | none within 8w | — | rejected at open 10/27 (volume gate 0.57× median) — was: queued half — entry $233.01, stop $214.37, tgt $270.29, 10 sh, chase ≤ $236.51 |
-| UNP | 2026-10-26 | Q3 beat, rail pricing power | none within 8w | — | rejected at open 10/27 (volume gate 0.17× median) — was: queued half — entry $296.96, stop $273.20, tgt $344.47, 8 sh, chase ≤ $301.41 |
-| ELV | 2026-10-27 | Q3 beat, FY26 adj EPS guide raised to ≥ $29.00 | none within 8w | — | rejected at open 10/27 (volume gate 0.77× median) — was: queued half — entry $431.37, stop $396.86, tgt $500.39, 5 sh, chase ≤ $437.84 |
-| UNH | 2026-10-26 | Q3 beat ($4.69); FY guide *maintained* ~$20.50 (not raised — correction) | none within 8w | — | rejected at open 10/27 (volume gate 1.00× median) — was: queued half — entry $410.45, stop $377.61, tgt $476.12, 6 sh, chase ≤ $416.61 |
-| MMM | 2026-10-26 | Q3 beat ($2.50 vs $2.39), FY guide raised to $9.10–9.15 | none within 8w | — | rejected at open 10/27 (volume gate 0.79× median) — was: queued half — entry $172.77, stop $159.49, tgt $199.33, 14 sh, chase ≤ $175.36 |
-| NOC | 2026-10-26 | Q3 beat+raised (FY adj EPS $29.35–29.75) | none within 8w | — | **watch only** — RSI 71.6 (>70), +8.4% above 50d; technical leg fails → 1 of 3 legs. Revisit on pullback |
+| DHR | 2026-10-26 | Q3 beat+raised, life-sciences recovery | none within 8w | — | active, F+T ✅ — 234.06 · 218.03 (+7.4%) · 62.4 · 211.20 |
+| UNP | 2026-10-26 | Q3 beat, rail pricing power | none within 8w | — | active, F+T ✅ — 297.59 · 287.46 (+3.5%) · 64.3 · 268.73 |
+| MMM | 2026-10-26 | Q3 beat ($2.50 vs $2.39), FY guide raised to $9.10–9.15 | none within 8w | — | active, F+T ✅ — 172.76 · 168.61 (+2.5%) · 58.6 · 159.49 |
+| UNH | 2026-10-26 | Q3 beat ($4.69); FY guide *maintained* ~$20.50 | none within 8w | — | active, F+T ✅ — 407.05 · 389.29 (+4.6%) · 57.0 · 362.66 |
+| ELV | 2026-10-27 | Q3 beat, FY26 adj EPS guide raised to ≥ $29.00 | none within 8w | — | active, F+T ✅ but weakening — 414.33 · 409.61 (+1.2%) · 47.2 · 376.19; −1.7% on 10/28, down 4% from 10/26. Recheck that it holds the 50d on Fri |
+| NOC | 2026-10-26 | Q3 beat+raised (FY adj EPS $29.35–29.75) | none within 8w | — | **promoted from watch-only to active, F+T ✅**. Pulled back: 552.68 · 520.91 (+6.1%) · RSI 63.8 (was 71.6) · 470.54 |
+| CTAS | 2026-10-29 | Q1 FY27 beat (adj EPS $1.39, +15.8%; rev +10.9%), FY27 guide raised to rev $12.15–12.27B and adj EPS $5.45–5.54 | Q2 FY27 earnings (late Dec, date unconfirmed); FTC review of the UniFirst deal (close expected by end of 2026) | ~late Dec | **new**, active, F+T ✅ — 212.78 · 203.83 (+4.4%) · 54.5 · 191.85 |
+| TXN | 2026-10-26 | Q3 beat ($2.62 vs $2.42); Q4 guide $5.8–6.3B / EPS $2.45–2.79 | none within 8w | — | **demoted to watch-only**. Technical fails: 309.66 · 274.03 (+13.0%) · RSI 70.3 (>70). NXPI read-through is lukewarm. Revisit on a pullback |
+
+_Removed: none. PH was checked and not added: 912.59 vs SMA50 960.04 (−4.9%) and RSI 41.3, so the technical leg fails. Stretched names to watch for a pullback: ROP (RSI 76.5, +12.9% vs 50d) and LMT (RSI 77.0, +16.3%)._
 
 ---
 
@@ -23,6 +26,7 @@ _Status check 2026-10-28 premarket (FOMC blackout — no research, no queue; tab
 - **Tue 10/27:** Durable Goods + New Home Sales — entry day (not a blackout). FOMC meeting begins.
 - **Wed 10/28:** FOMC decision 14:00 ET — no new entries
 - **Thu 10/29:** GDP Q3 advance + PCE — cautious, no new entries
+- **Fri 10/30:** next entry window (NFP first-Friday is 11/6, so 10/30 is not a blackout)
 - **Excluded (earnings this week):** MSFT, GOOGL, AMZN, AAPL (11/2), KO, LLY, BA; also semis reporting this week (NVDA/AMD/INTC/AVGO/MRVL per TheStreet — dates unconfirmed)
 - **Stretched, watch for pullback:** LMT (RSI 82.7, +17.5% vs 50d), ROP (beat+raise 10/22, RSI 81.1, +13.7% vs 50d), NOC (RSI 71.6)
 
@@ -241,3 +245,30 @@ Equity $100,000.00 (flat), cash 100%, 0 positions, 0 orders today (all 6 queued 
 Equity $100,000.00 (flat), cash 100%, 0 positions, 0 orders today (FOMC blackout, RULES.md D3). SPY +0.34% on the day (769.70 → 772.28) → excess −0.34%; WTD SPY +1.64% → excess −1.64%. D1/D4/D5 clear; `halt_today` reset to NO; `weekly_defensive: NO`. Thu 10/29 (GDP/PCE) is a no-entry day; next entry window Fri 10/30. Issue posted via GitHub REST.
 
 - 2026-10-28 21:19 UTC — Issue posted: https://github.com/shaftfx/DreamCatcher/issues/5
+
+### 2026-10-29 11:18 UTC — PREMARKET — WATCHLIST REFRESH (no-entry day, nothing queued)
+
+**Account (Alpaca, `paper-api` confirmed):** ACTIVE, equity $100,000 = last_equity = peak, cash = buying power, multiplier 1 (A4 ✅). 0 positions, 0 orders since 10/28 00:00 UTC. D5 clear (0.00% drawdown). Flags all NO.
+
+**Day status:** Thu 10/29 has GDP Q3 advance and PCE, and the week flags (set 10/27) make it a no-entry day. This isn't a strict RULES.md D3 blackout (FOMC, CPI and NFP only), so Step 4 research was run to prepare Friday. **Nothing is queued for today's open.**
+
+**FOMC outcome (10/28):** the Fed held at 3.75–4.00% on a **10–2 vote**. Cook and Hammack dissented, both in favor of a 25 bp **hike**. Chair Warsh called growth strong and inflation elevated, and gave no guidance for December. Futures still price a high chance of a hike on 12/9. The S&P closed +0.28% at 7,743.98. Read: hawkish hold. Today's PCE print matters for that December pricing, so a hot PCE is a reason for Friday's open to be extra strict on the volume gate. [Admiral Markets](https://admiralmarkets.com/analytics/traders-blog/warsh-press-conference-october-2026), [Star-Advertiser/AP](https://www.staradvertiser.com/2026/10/28/breaking-news/wall-street-rises-as-fed-holds-rates-steady-earnings-in-focus/), [ATFX](https://www.atfxcapital.com/en/analysis/market-news/fed-holds-rates-and-warsh-outlines-the-plan-for-fewer-rate-votes)
+
+**Read-through for TXN, NXPI Q3 (10/27 AMC):** revenue ~$3.8B (+19% y/y), adj EPS $4.20 vs $4.12, plus a $5B buyback increase. The Q4 revenue guide is $3.75–3.95B, against ~$3.86B consensus. The guide comes from one German source (Goldesel) and isn't confirmed. The stock fell ~4.6%. Analog demand is fine, but the guide leaves little upside. TXN is demoted to watch-only on RSI anyway. [NXP 8-K](https://www.sec.gov/Archives/edgar/data/0001413447/000141344726000057/nxp3q26exhibit991.htm), [Goldesel](https://goldesel.de/aktien/news/nxp-semiconductors-nv-aktie-q3-ergebnis-ubertrifft-erwartungen-doch-ausblick-bremst)
+
+**New: CTAS.** The 9/23 Q1 FY27 release raised the FY27 guide: revenue to $12.15–12.27B (from $12.10–12.25B) and adj EPS to $5.45–5.54 (from $5.36–5.50). That's the sixth straight beat, and Baird raised its PT to $222. Guidance **raised** is cited from the company's 8-K. The guide excludes the UniFirst deal, which is under FTC review. A blocked deal isn't a thesis break, but treat the FTC decision as an event risk. [Cintas 8-K](https://www.sec.gov/Archives/edgar/data/0000723254/000072325426000044/ex992026-8x31.htm), [247wallst](https://247wallst.com/cards/cintas-q1-2027-earnings-ctas-01m3749hmh0zfj3ea0etv3fqrx)
+
+**Technicals:** all values come from Alpaca IEX daily bars through the 10/28 close, computed this run. Nothing is carried over from prior entries (learnings 2026-10-27). Values are in the watchlist table above. Changes since the 10/26 close:
+- NOC's RSI fell from 71.6 to 63.8, so its technical leg now passes.
+- TXN's RSI rose from 64.4 to 70.3, so its technical leg now fails.
+- ELV slid to +1.2% over its 50d.
+- SPY is 772.28 against its 50d of 767.61 (+0.6%), RSI 53.3.
+
+**Search quality:** thin for today. I found no 10/29 futures or premarket wrap, no confirmed list of this week's mega-cap earnings dates, and no 10/28–29 upgrade roundup. Mega-cap tech reports this week, and those names stay excluded. The absence of news is **not** confirmation.
+
+**Notes for the Fri 10/30 premarket and open:**
+1. Recompute entry, stop and target from fresh bars and re-queue DHR, UNP, MMM, UNH/ELV (at most one), NOC and CTAS at half size. C1 allows at most 3 entries, so take them in table order unless the Friday premarket re-ranks them.
+2. Check the PCE/GDP reaction and the mega-cap earnings reaction before queuing.
+3. ELV: if it closes below its 50d (~$409.6), its technical leg fails, so drop it to watch.
+
+**Decision:** no entries queued for today (Thu 10/29). NOC was promoted to active, CTAS was added, TXN was demoted to watch-only, and PH was rejected on the technical leg.
