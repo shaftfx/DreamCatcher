@@ -5,7 +5,7 @@
 ## Account
 
 - **Mode:** paper
-- **Last refresh (UTC):** 2026-10-29 21:17 (scheduled EOD — Alpaca paper: equity $100,000, 0 positions, 0 orders today; D1/D4/D5 clear; `halt_today` reset to NO)
+- **Last refresh (UTC):** 2026-10-30 11:08 (scheduled premarket — Alpaca paper: equity $100,000, 0 positions, 0 orders since 10/29; D5 clear; no trades — premarket)
 - **Cash:** $100,000.00
 - **Equity:** $100,000.00 (last_equity $100,000.00)
 - **Peak equity:** $100,000.00 (set 2026-10-26)

@@ -4,31 +4,34 @@ Dated entries. Premarket appends new research; other routines append rejected id
 
 ## Active Watchlist
 
-_Last refresh: 2026-10-29 premarket (Thu, GDP Q3 + PCE day). Technicals recomputed from Alpaca IEX daily bars through the 10/28 close. **Today is a no-entry day per the week flags. It is not a RULES.md D3 blackout, but it was set as a cautious day by the 10/27 premarket. Nothing is `decision: queued` for today's open.** None of the names has a dated catalyst within 5 trading days, so Step 6 drafts no plans. The Fri 10/30 premarket must recompute entry, stop and target from that morning's bars and re-queue half size (fundamental + technical). Entry gate unchanged: time-of-day relative volume ≥ 1.5× (median of the prior 20 sessions). C1: 0/3 used this week. At most one of UNH/ELV._
+_Last refresh: 2026-10-30 premarket (Fri). Technicals recomputed this run from Alpaca IEX daily bars through the 10/29 close. **Today is an entry day** (not a D3 blackout; NFP first-Friday is 11/6). Tape is risk-off: S&P futures about −0.9% and Nasdaq-100 about −2% on AMZN/INTC, hot September PCE (headline +3.6% y/y), Brent above $117, and December hike bets. Thursday's rotation was *into* health care, industrials and staples, and every active name closed up on 10/29 while SPY fell 0.36%. Six names are `decision: queued half` (F+T, no dated catalyst within 5 days). Gate unchanged: time-of-day relative volume ≥ 1.5× (median of prior 20 sessions). C1: 0/3 this week. At most one of UNH/ELV._
 
-| Ticker | Added | Thesis (1 line) | Catalyst | Catalyst Date | Status (10/28 close · SMA50 · RSI14 · 20-bar swing low) |
+| Ticker | Added | Thesis (1 line) | Catalyst | Catalyst Date | Status (10/29 close · SMA50 · RSI14 · 20-bar swing low) |
 |---|---|---|---|---|---|
-| DHR | 2026-10-26 | Q3 beat+raised, life-sciences recovery | none within 8w | — | active, F+T ✅ — 234.06 · 218.03 (+7.4%) · 62.4 · 211.20 |
-| UNP | 2026-10-26 | Q3 beat, rail pricing power | none within 8w | — | active, F+T ✅ — 297.59 · 287.46 (+3.5%) · 64.3 · 268.73 |
-| MMM | 2026-10-26 | Q3 beat ($2.50 vs $2.39), FY guide raised to $9.10–9.15 | none within 8w | — | active, F+T ✅ — 172.76 · 168.61 (+2.5%) · 58.6 · 159.49 |
-| UNH | 2026-10-26 | Q3 beat ($4.69); FY guide *maintained* ~$20.50 | none within 8w | — | active, F+T ✅ — 407.05 · 389.29 (+4.6%) · 57.0 · 362.66 |
-| ELV | 2026-10-27 | Q3 beat, FY26 adj EPS guide raised to ≥ $29.00 | none within 8w | — | active, F+T ✅ but weakening — 414.33 · 409.61 (+1.2%) · 47.2 · 376.19; −1.7% on 10/28, down 4% from 10/26. Recheck that it holds the 50d on Fri |
-| NOC | 2026-10-26 | Q3 beat+raised (FY adj EPS $29.35–29.75) | none within 8w | — | **promoted from watch-only to active, F+T ✅**. Pulled back: 552.68 · 520.91 (+6.1%) · RSI 63.8 (was 71.6) · 470.54 |
-| CTAS | 2026-10-29 | Q1 FY27 beat (adj EPS $1.39, +15.8%; rev +10.9%), FY27 guide raised to rev $12.15–12.27B and adj EPS $5.45–5.54 | Q2 FY27 earnings (late Dec, date unconfirmed); FTC review of the UniFirst deal (close expected by end of 2026) | ~late Dec | **new**, active, F+T ✅ — 212.78 · 203.83 (+4.4%) · 54.5 · 191.85 |
-| TXN | 2026-10-26 | Q3 beat ($2.62 vs $2.42); Q4 guide $5.8–6.3B / EPS $2.45–2.79 | none within 8w | — | **demoted to watch-only**. Technical fails: 309.66 · 274.03 (+13.0%) · RSI 70.3 (>70). NXPI read-through is lukewarm. Revisit on a pullback |
+| DHR | 2026-10-26 | Q3 beat+raised, life-sciences recovery | none within 8w | — | **queued half #1**, F+T ✅ — 236.98 · 218.54 (+8.4%) · 64.9 · 211.72; closed at a 20-day high |
+| CTAS | 2026-10-29 | Q1 FY27 beat, FY27 guide raised (8-K) | Q2 FY27 earnings (~late Dec, unconfirmed); FTC review of UniFirst deal | ~late Dec | **queued half #2**, F+T ✅ — 218.00 · 204.13 (+6.8%) · 60.1 · 191.85 |
+| ELV | 2026-10-27 | Q3 beat, FY26 adj EPS guide raised to ≥ $29.00 | none within 8w | — | **queued half #3**, F+T ✅ (recovered) — 422.00 · 410.08 (+2.9%) · 52.0 · 381.21. Preferred over UNH |
+| MMM | 2026-10-26 | Q3 beat ($2.50 vs $2.39), FY guide raised to $9.10–9.15 | none within 8w | — | **queued half #4**, F+T ✅ — 177.38 · 168.54 (+5.2%) · 65.0 · 159.49; at a 20-day high |
+| UNP | 2026-10-26 | Q3 beat, rail pricing power | none within 8w | — | **queued half #5**, F+T ✅ but near limit — 301.90 · 287.46 (+5.0%) · RSI 68.1 · 273.69 |
+| NOC | 2026-10-26 | Q3 beat+raised (FY adj EPS $29.35–29.75) | US midterms 11/3 (event *risk*, not a thesis catalyst) | 2026-11-03 | **queued half #6**, F+T ✅ — 562.41 · 520.49 (+8.1%) · 66.7 · 470.54 |
+| UNH | 2026-10-26 | Q3 beat ($4.69); FY guide *maintained* ~$20.50 | none within 8w | — | active, F+T ✅ — 410.91 · 389.74 (+5.4%) · 59.2 · 364.64. **Alternate only**: take UNH only if ELV fails its gate/chase and C1 has room |
+| TXN | 2026-10-26 | Q3 beat ($2.62 vs $2.42); Q4 guide $5.8–6.3B / EPS $2.45–2.79 | none within 8w | — | watch-only. Technical fails: 312.92 · 274.94 (+13.8%) · RSI 71.8. Semis −1.4% 10/29 and INTC −20%+ AH; revisit on a pullback |
 
-_Removed: none. PH was checked and not added: 912.59 vs SMA50 960.04 (−4.9%) and RSI 41.3, so the technical leg fails. Stretched names to watch for a pullback: ROP (RSI 76.5, +12.9% vs 50d) and LMT (RSI 77.0, +16.3%)._
+_Removed: none. Re-checked and not added: PH 928.84 vs SMA50 958.16 (−3.1%), RSI 46.3 → technical fails. Still stretched: ROP (RSI 78.7, +14.9% vs 50d), LMT (RSI 79.1, +18.6%)._
 
 ---
 
-## Week flags (2026-10-26 week)
+## Week flags (2026-11-02 week)
 
-- **Tue 10/27:** Durable Goods + New Home Sales — entry day (not a blackout). FOMC meeting begins.
-- **Wed 10/28:** FOMC decision 14:00 ET — no new entries
-- **Thu 10/29:** GDP Q3 advance + PCE — cautious, no new entries
-- **Fri 10/30:** next entry window (NFP first-Friday is 11/6, so 10/30 is not a blackout)
-- **Excluded (earnings this week):** MSFT, GOOGL, AMZN, AAPL (11/2), KO, LLY, BA; also semis reporting this week (NVDA/AMD/INTC/AVGO/MRVL per TheStreet — dates unconfirmed)
-- **Stretched, watch for pullback:** LMT (RSI 82.7, +17.5% vs 50d), ROP (beat+raise 10/22, RSI 81.1, +13.7% vs 50d), NOC (RSI 71.6)
+- **Mon 11/2:** AAPL reports after close (per one preview). Entry day.
+- **Tue 11/3:** US midterm elections. Not a D3 blackout, but a binary event for defense (NOC) and managed care (UNH/ELV). Treat as cautious; prefer no new NOC/UNH/ELV entries that day.
+- **Wed 11/4:** post-election reaction. Entry day if the tape settles.
+- **Fri 11/6:** NFP first-Friday → **D3 blackout**, no new entries.
+- **DST ends Sun 11/1:** UTC crons shift one hour earlier in ET from Monday.
+
+## Week flags (2026-10-26 week, closing)
+
+- Tue 10/27 entry day (0 entries, volume gate); Wed 10/28 FOMC blackout; Thu 10/29 GDP/PCE no-entry; **Fri 10/30 entry day** (this premarket queues).
 
 ---
 
@@ -284,3 +287,42 @@ Equity $100,000.00 (flat), cash 100%, 0 positions, 0 orders today (FOMC blackout
 Equity $100,000.00 (flat), cash 100%, 0 positions, 0 orders today (GDP/PCE no-entry day). SPY −0.36% on the day (772.28 → 769.49) → excess +0.36%; WTD SPY +1.27% → excess −1.27%. D1/D4/D5 clear; `halt_today` reset to NO; `weekly_defensive: NO`. Fri 10/30 is the next entry window; C1 0/3. I couldn't find a reliable post-close recap of the GDP/PCE prints, so the Fri premarket must source them itself before queuing.
 
 - 2026-10-29 21:18 UTC — Issue posted: https://github.com/shaftfx/DreamCatcher/issues/6
+
+### 2026-10-30 11:08 UTC — PREMARKET — WATCHLIST REFRESH + QUEUE (entry day, risk-off tape)
+
+**Account (Alpaca, `paper-api` confirmed):** ACTIVE, equity $100,000 = last_equity = peak, cash = buying power, multiplier 1 (A4 ✅). 0 positions, 0 orders since 10/29 00:00 UTC. D5 clear (0.00% drawdown). Flags all NO. Market opens 09:30 ET.
+
+**Day status:** Fri 10/30 is an entry day. It isn't a D3 blackout, because NFP first-Friday is 11/6.
+
+**Macro (sourced this run):**
+- **GDP Q3 advance (10/29):** +3.4% annualized (Q2 +2.2%), and the quarterly PCE price index was +2.1%. [BEA](https://www.bea.gov/news/2026/gdp-advance-estimate-3rd-quarter-2026)
+- **September PCE (10/29), hot:** headline +0.5% m/m and +3.6% y/y, core +0.3% m/m and +3.1% y/y. Real spending was roughly flat (<0.1%). [BEA](https://www.bea.gov/news/2026/personal-income-and-outlays-september-2026)
+- **Thursday's close:** S&P 500 −0.30% (7,720), Nasdaq −1.37%, Russell 2000 +1.0%, with NYSE breadth about 2:1 positive. GOOGL fell 12.6% on a revenue miss and AI capex burn, and semis fell 1.4%. Money rotated into health care (LLY +6.6%, MRK +3.8%), real estate and staples. CAT fell 9.3% after leaving targets unchanged. [MarketScreener/Reuters](https://www.marketscreener.com/news/wall-street-slides-as-alphabet-revenue-miss-revives-ai-capex-jitters-ce785fdadd89ff24), [Yahoo](https://finance.yahoo.com/markets/stocks/articles/stock-market-today-oct-29-134623155.html)
+- **This morning:** S&P futures about −0.9% and Nasdaq-100 about −2%. AMZN is down after a Q3 miss, about −$42B FCF and a maintained $220B capex plan. INTC is down 20%+ on a weak forecast. Brent is above $117 and WTI above $103, and FXStreet cites December hike bets. XOM, CVX, ABBV and AZN report before the open, and none are on the watchlist. [CNBC](https://www.cnbc.com/2026/10/29/stock-market-today-live-updates.html), [TipRanks](https://www.tipranks.com/news/stock-futures-fall-as-amazon-earnings-disappoint-investors-oil-prices-rise), [FXStreet](https://fxstreet.com/news/dow-jones-futures-fall-as-tech-earnings-disappoint-fed-hike-bets-202610300807)
+- **Read:** stagflation-flavored, risk-off at the index level, driven by mega-cap tech. Our watchlist sits on the side money is rotating *into*: every active name closed up on 10/29 while SPY fell. SPY closed at 769.49 against a 50d of 767.62 (+0.2%, RSI 50.7), so a −0.9% open puts SPY **below its 50d**.
+
+**Event risk next week:** the US midterms are Tue 11/3. Coverage from 10/20 (247wallst) tied the Aug–Oct defense selloff (ITA −18%) to bets on a Democratic sweep. NOC has since recovered to +8% over its 50d, but the election is binary for defense and managed care. [247wallst](https://247wallst.com/investing/2026/10/20/defense-stocks-are-tumbling-as-wall-street-bets-on-a-democratic-sweep/)
+
+**Search quality:** no 10/29–30 upgrade/downgrade roundup was found, and nothing name-specific came up for any watchlist ticker. The absence of news is **not** confirmation.
+
+**Draft entry plans:** all half size, F+T with no dated catalyst. Entry is the 10/29 close. Stop = max(20-bar swing low, entry × 0.92), which is the 8% floor in every case. Target = entry + 2 × risk (R/R 2.0, P4 ✅). Shares = floor($2,500 / entry), which is about 50% of the P1 5% cap. Risk per trade is ≤ $199 (0.2% of equity, P3 ✅). Chase limit = entry × 1.015. The 10% trailing stop goes on at fill (S1).
+
+| Rank | Ticker | Entry | Stop | Target | Chase limit | Shares | $ | Risk $ | decision |
+|---|---|---|---|---|---|---|---|---|---|
+| 1 | DHR | 236.98 | 218.02 | 274.90 | 240.53 | 10 | 2,370 | 190 | queued half |
+| 2 | CTAS | 218.00 | 200.56 | 252.88 | 221.27 | 11 | 2,398 | 192 | queued half |
+| 3 | ELV | 422.00 | 388.24 | 489.52 | 428.33 | 5 | 2,110 | 169 | queued half |
+| 4 | MMM | 177.38 | 163.19 | 205.76 | 180.04 | 14 | 2,483 | 199 | queued half |
+| 5 | UNP | 301.90 | 277.75 | 350.20 | 306.43 | 8 | 2,415 | 193 | queued half |
+| 6 | NOC | 562.41 | 517.42 | 652.40 | 570.85 | 4 | 2,250 | 180 | queued half |
+| alt | UNH | 410.91 | 378.04 | 476.66 | 417.07 | 6 | 2,465 | 197 | alternate to ELV only |
+
+Ranking rationale: DHR and ELV are health care, which led Thursday's rotation. CTAS has a cited raised guide and room on RSI. MMM and UNP are near RSI 65–68 and at their 20-day highs, which leaves less room. NOC ranks last because of the election binary on Tue.
+
+**Notes for the open routine:**
+1. C1 allows at most 3 entries this week. Take the first 3 *in rank order* that clear the gate and the chase limit. At most one of ELV/UNH.
+2. Recompute stop, target and shares from the actual fill. If a name gaps down, the plan still holds as long as it is above its 50d SMA; if it opens below the 50d, skip it (technical leg fails).
+3. With SPY likely opening below its 50d on a hot PCE, the volume gate is strict: **1.5× median, no rounding.** Rel vol on a down-market open can be inflated by selling. Require the name to be **green on the day or above its prior close** at decision time, so the volume isn't distribution.
+4. Before-open earnings from XOM, CVX, ABBV and AZN don't touch the watchlist. ABBV is a health care read-through only.
+
+**Decision:** DHR, CTAS, ELV, MMM, UNP and NOC are `queued half`, with UNH as alternate to ELV. TXN stays watch-only (RSI 71.8). PH not added (below its 50d). Nothing was removed.
