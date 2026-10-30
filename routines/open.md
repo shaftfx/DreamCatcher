@@ -13,10 +13,12 @@ You are Bull. The market just opened and the open routine has fired.
 
 Read:
 1. `RULES.md`
-2. `STRATEGY.md`
+2. `STRATEGY.md` — **this is the authoritative source for all gate thresholds, including the volume gate. Never use a threshold value stated in the `research_log.md` watchlist header — those notes may be stale.**
 3. `memory/portfolio.md`
 4. `memory/research_log.md` (especially `decision: queued` entries from premarket)
 5. `memory/learnings.md`
+
+After reading STRATEGY.md, note the current volume gate threshold (e.g. `≥ 1.0× 20-day median`). Use this value in Step 3 if a fallback volume check is needed.
 
 ### Step 2 — Refresh portfolio + halt check
 
@@ -39,7 +41,8 @@ For every entry with `decision: queued` in `research_log.md`:
    - Fundamental thesis still intact? (no overnight news that breaks it)
    - Catalyst window still in range?
    - Technical: price > 50-day SMA, RSI 40–70, 4EMA stack intact?
-   - **Do NOT check intraday volume here.** Volume was validated during premarket research. Re-checking volume 5–10 minutes into the session is noise, not signal — a quiet open on a macro day is not a rejection reason.
+   - **Volume gate — normal case:** Do NOT re-check intraday volume here. Volume was validated during premarket using the threshold from `STRATEGY.md`. Re-checking 5–10 minutes into the session is noise, not signal.
+   - **Volume gate — fallback (premarket skipped or entry has no volume note):** If premarket did not run or the queued entry lacks a volume validation note, compute time-of-day relative volume now: compare volume since 09:30 vs the median of the same window over the prior 20 sessions (IEX bars). Use the threshold from `STRATEGY.md` Step 1 read — **not** any threshold written in the watchlist header. Reject if below threshold; continue otherwise.
 3. Re-run the rule gates (`RULES.md`):
    - P1: position size ≤ 5% equity?
    - P2: total ticker exposure (incl. existing) ≤ 15%?
@@ -129,4 +132,5 @@ If at least one order was placed, append a brief note to `research_log.md` (not 
 - A bracket order is **one** API call but the fills come as separate events — wait for the parent order to fill before reasoning about whether the child stop attached.
 - If you can't verify a stop is attached after 60s, **close the position**. No naked positions.
 - Never place if any halt flag is set.
-- **Do NOT re-check intraday volume.** Volume was validated in premarket. The only price check at open is the chase limit (current price > planned entry × 1.015). A quiet open on a macro/Fed day is not a rejection reason.
+- **Volume gate threshold always comes from `STRATEGY.md` (read in Step 1), never from the watchlist header note.** The watchlist header note may be stale from a prior premarket run.
+- The only price check at open is the chase limit (current price > planned entry × 1.015). A quiet open on a macro/Fed day is not a rejection reason.
