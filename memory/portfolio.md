@@ -5,9 +5,9 @@
 ## Account
 
 - **Mode:** paper
-- **Last refresh (UTC):** 2026-10-30 13:40 (open routine — 3 entries filled: DHR, ELV, MMM; 10% trailing stops verified on Alpaca)
+- **Last refresh (UTC):** 2026-10-30 17:42 (midday routine — no cuts, no stop tightening; all 3 trailing stops verified)
 - **Cash:** $93,019.35
-- **Equity:** $99,995.38 (last_equity $100,000.00)
+- **Equity:** $99,888.27 (last_equity $100,000.00)
 - **Peak equity:** $100,000.00 (set 2026-10-26)
 - **Buying power:** $93,019.35 (= cash) — margin multiplier 1× ✅ (RULES.md A4 satisfied)
 
@@ -24,6 +24,16 @@
 | DHR | 10 | 236.01 | 2026-10-30 | 2,360.10 | 212.41 (hwm 236.01) | 273.77 | 236 | Q3 beat+raise, life-sciences recovery (half size, F+T) |
 | ELV | 5 | 425.85 | 2026-10-30 | 2,129.25 | 382.65 (hwm 425.17) | 493.99 | 216 | Q3 beat, FY26 guide raised ≥ $29 (half size, F+T) |
 | MMM | 14 | 177.95 | 2026-10-30 | 2,491.30 | 160.16 (hwm 177.95) | 206.43 | 249 | Q3 beat, FY guide raised $9.10–9.15 (half size, F+T) |
+
+### Midday snapshot (2026-10-30 17:42 UTC)
+
+| Ticker | Current | Unrealized P&L | % from entry | Alpaca stop (hwm) | S2 (≤−7%) | S3 (≥+15%) |
+|---|---|---|---|---|---|---|
+| DHR | 231.73 | −$42.85 | −1.82% | 213.05 (hwm 236.72) | no | no |
+| ELV | 420.95 | −$24.50 | −1.15% | 384.09 (hwm 426.77) | no | no |
+| MMM | 174.78 | −$44.38 | −1.78% | 160.91 (hwm 178.79) | no | no |
+
+Intraday P&L: −$111.73 (−0.11% vs open equity $100,000.00). D1 not breached. Drawdown from peak −0.11% (D5 threshold −10%).
 
 Total deployed $6,980.65 (≈7.0% of equity). Total open risk at stops ≈ $701 (0.70%). Open positions 3/8 (C2).
 
