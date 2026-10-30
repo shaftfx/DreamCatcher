@@ -348,3 +348,7 @@ Ranking rationale: DHR and ELV are health care, which led Thursday's rotation. C
 **Execution:** OTO market buys with an 8% static stop, all filled 13:37:45Z: DHR 10 @ 236.01, ELV 5 @ 425.85, MMM 14 @ 177.95. Each static stop leg was cancelled (204) and replaced with a GTC 10% trailing stop (`bull-20261030-<T>-trail`). Re-queried open orders and all 3 trailing stops are live: DHR 212.41, ELV 382.65, MMM 160.16. S1/S4 satisfied, no naked positions.
 
 **Notes for next routines:** C1 is full for the week of 10/26, and the count resets Mon 11/2. ELV is managed care going into the 11/3 midterms; position management only, there's no rule trigger to exit. Midday: apply S2 (−7%) and S3 (+15%).
+
+### 2026-10-30 21:16 UTC — EOD — RECAP
+
+Equity $99,880.38 (−0.12% on the day) vs SPY −1.79% (769.49 → 755.72) → excess **+1.67%**. Week: −0.12% vs SPY −0.54% → excess +0.42%. Three entries today (DHR, ELV, MMM, half size), all modestly red (−1.4% to −2.1%) but well clear of S2 (−7%); all three 10% trailing stops live on Alpaca (DHR 213.05, ELV 384.09, MMM 160.91). D1/D4/D5 clear; `halt_today` reset to NO; `weekly_defensive: NO`. C1 resets Mon 11/2. Carry-forward candidates for Monday's premarket: UNP (C1-blocked today, RSI 69.9), CTAS and NOC (chase-limit rejects), UNH (alternate; now overlaps ELV sector + midterm risk). All need full re-validation from fresh bars. Issue posted via GitHub REST.
