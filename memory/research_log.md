@@ -326,3 +326,25 @@ Ranking rationale: DHR and ELV are health care, which led Thursday's rotation. C
 4. Before-open earnings from XOM, CVX, ABBV and AZN don't touch the watchlist. ABBV is a health care read-through only.
 
 **Decision:** DHR, CTAS, ELV, MMM, UNP and NOC are `queued half`, with UNH as alternate to ELV. TXN stays watch-only (RSI 71.8). PH not added (below its 50d). Nothing was removed.
+
+### 2026-10-30 13:40 UTC — OPEN — EXECUTION SUMMARY (3 entries)
+
+**Boot:** Alpaca `paper-api` (O5 ✅). Equity $100,000, cash = BP, multiplier 1 (A4 ✅), 0 positions, 0 orders. Flags all NO, not a blackout. Clock open, 09:36 ET. SPY 760.0 (−1.2% vs 769.49 prior close, below its 50d).
+
+**Re-validation:** live IEX price vs chase limit, then SMA50/RSI14/8-12-21-55 EMA recomputed from Alpaca daily bars plus the live print. Per the open routine I did **not** re-check intraday volume, and I did not apply premarket note 3's "green on the day" condition: the routine names the chase limit as the only price check at open. Overnight-news check: a web search for DHR/ELV/MMM found nothing dated 10/29–30. Perplexity returned an error and WebSearch was the fallback.
+
+| Rank | Ticker | Live | Chase | SMA50 | RSI | EMA 8>12>21>55 | decision |
+|---|---|---|---|---|---|---|---|
+| 1 | DHR | 236.17 | 240.53 ✅ | 218.94 ✅ | 63.6 ✅ | intact, px > 8 ✅ | **placed** |
+| 2 | CTAS | 222.18 | 221.27 ❌ | — | — | — | **rejected**: chase limit (+1.9% vs 10/29 close) |
+| 3 | ELV | 424.64 | 428.33 ✅ | 410.65 ✅ | 53.6 ✅ | intact, px fractionally below 8 EMA (425.55); one soft miss, acceptable per indicators.md | **placed** |
+| 4 | MMM | 177.79 | 180.04 ✅ | 168.53 ✅ | 65.5 ✅ | intact ✅ | **placed** |
+| 5 | UNP | 303.99 | 306.43 | 287.46 | 69.9 | intact | **not placed**: C1 cap (3/3) reached. RSI 69.9 is at the limit anyway |
+| 6 | NOC | 574.12 | 570.85 ❌ | — | 69.9 | — | **rejected**: chase limit, and C1 |
+| alt | UNH | 414.34 | — | — | — | — | not used (ELV passed; one of UNH/ELV) |
+
+**Rule gates (all ✅):** P1 positions are 2.4%/2.1%/2.5% of equity. P2 has no existing exposure. P3 risk at the 10% trail is $236/$216/$249 (≤ 0.25% each). P4 2R targets are set off the 8% initial stop. C1 is 3/3 and C2 is 3/8. C3: no existing positions. A1–A6 are clean (US large-cap equities, > $5).
+
+**Execution:** OTO market buys with an 8% static stop, all filled 13:37:45Z: DHR 10 @ 236.01, ELV 5 @ 425.85, MMM 14 @ 177.95. Each static stop leg was cancelled (204) and replaced with a GTC 10% trailing stop (`bull-20261030-<T>-trail`). Re-queried open orders and all 3 trailing stops are live: DHR 212.41, ELV 382.65, MMM 160.16. S1/S4 satisfied, no naked positions.
+
+**Notes for next routines:** C1 is full for the week of 10/26, and the count resets Mon 11/2. ELV is managed care going into the 11/3 midterms; position management only, there's no rule trigger to exit. Midday: apply S2 (−7%) and S3 (+15%).
