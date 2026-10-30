@@ -352,3 +352,11 @@ Ranking rationale: DHR and ELV are health care, which led Thursday's rotation. C
 ### 2026-10-30 21:16 UTC — EOD — RECAP
 
 Equity $99,880.38 (−0.12% on the day) vs SPY −1.79% (769.49 → 755.72) → excess **+1.67%**. Week: −0.12% vs SPY −0.54% → excess +0.42%. Three entries today (DHR, ELV, MMM, half size), all modestly red (−1.4% to −2.1%) but well clear of S2 (−7%); all three 10% trailing stops live on Alpaca (DHR 213.05, ELV 384.09, MMM 160.91). D1/D4/D5 clear; `halt_today` reset to NO; `weekly_defensive: NO`. C1 resets Mon 11/2. Carry-forward candidates for Monday's premarket: UNP (C1-blocked today, RSI 69.9), CTAS and NOC (chase-limit rejects), UNH (alternate; now overlaps ELV sector + midterm risk). All need full re-validation from fresh bars. Issue posted via GitHub REST.
+
+### 2026-10-30 22:10 UTC — WEEKLY — REVIEW 2026-W44 (grade C)
+
+Week −0.12% vs SPY −0.54%, so excess is +0.42%. The excess came from holding cash on a down week, not from stock selection. There were 3 entries and 0 exits. Alpaca re-verified: 3 positions and 3 live 10% trailing stops, with buying power equal to cash.
+
+**Flag for user, possible P4 breach:** the 10/30 targets were 2R off the planned 8% stop, but the live stop is the S1 10% trail, so R/R is 1.6:1 on DHR/ELV/MMM. This is a structural conflict between S1 and STRATEGY's stop placement, not a discretionary one. I didn't change any orders, and the routine doesn't authorize changing RULES/STRATEGY. I also flagged an unowned entry-day volume gate. Full write-up and proposals are in `memory/weekly_review.md`; 3 lessons were added to learnings.md.
+
+- 2026-10-30 22:12 UTC — Issue posted: https://github.com/shaftfx/DreamCatcher/issues/8

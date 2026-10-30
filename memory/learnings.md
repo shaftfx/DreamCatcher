@@ -22,6 +22,15 @@ Perplexity returned a stale guidance number for $TSLA — used the actual SEC fi
 
 -->
 
+## 2026-10-30 [risk]
+Compute R/R (RULES.md P4) against the stop that is **actually live on Alpaca**, not the planned one. On 10/30, DHR/ELV/MMM targets were set at 2R off the STRATEGY 8% initial stop (entry × 1.16). S1 then swapped that stop for a 10% trailing stop, which makes the real R/R 1.6:1 on all three, below the 2:1 minimum. Until the user resolves the S1-vs-STRATEGY conflict (see weekly_review 2026-W44), set target ≥ entry × 1.20 whenever the live stop is a 10% trail. Risk $ already uses the 10% distance; the target has to match it.
+
+## 2026-10-30 [entry]
+A one-day sector rotation is not a defensive signal. On Thu 10/29, health care and industrials closed green while SPY fell, and the Fri premarket ranked DHR/ELV/MMM up for being on the "rotation side." On Friday, SPY fell 1.79% and all three fell 1.4–2.1% from their fills. Don't rank or size up on the prior day's rotation. This week's +0.42% excess came almost entirely from holding 93–100% cash on a down week, not from stock selection. Don't mistake that for edge.
+
+## 2026-10-30 [ops]
+Every gate needs exactly one routine that can measure it. STRATEGY's "volume on entry day ≥ 1.0×" can't be measured in premarket, because the day hasn't started. routines/open.md says premarket already validated it, so the 10/30 entries went in with that leg unmeasured. Premarket also wrote an ad-hoc "green on the day" condition that the open routine treated as out of scope. When a routine sees a gate that it can't measure and that no other routine owns, it should flag the gap in research_log for the user instead of assuming someone else checked it.
+
 ## 2026-10-29 [entry]
 Volume gate threshold is **1.0× 20-day median (time-of-day relative volume)**, not 1.5×. STRATEGY.md always specified ≥ 20-day average. The bot self-elevated to 1.5× in early runs, causing 12/12 rejections on 10/26–10/27 in a pre-FOMC tape where even SPY was printing 0.59× median. 1.5× is for breakout/momentum entries; this strategy enters post-earnings swings where the catalyst already happened — institutional interest is confirmed by the earnings-day surge. At the open routine we need normal volume (1.0×), not elevated volume. Apply 1.0× going forward.
 
