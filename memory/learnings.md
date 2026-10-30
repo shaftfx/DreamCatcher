@@ -22,6 +22,9 @@ Perplexity returned a stale guidance number for $TSLA — used the actual SEC fi
 
 -->
 
+## 2026-10-29 [entry]
+Volume gate threshold is **1.0× 20-day median (time-of-day relative volume)**, not 1.5×. STRATEGY.md always specified ≥ 20-day average. The bot self-elevated to 1.5× in early runs, causing 12/12 rejections on 10/26–10/27 in a pre-FOMC tape where even SPY was printing 0.59× median. 1.5× is for breakout/momentum entries; this strategy enters post-earnings swings where the catalyst already happened — institutional interest is confirmed by the earnings-day surge. At the open routine we need normal volume (1.0×), not elevated volume. Apply 1.0× going forward.
+
 ## 2026-10-27 [research]
 The 10/26 premarket wrote down NOC as "RSI 26, −9% below the 50d." Alpaca bars showed it was *above* its 50d with RSI in the 60s–70s. It also called UNH's guidance "raised" when it was only maintained. Those numbers can't be trusted unless they are computed from Alpaca bars in the same run. Don't carry technical numbers forward from a prior log entry or a web summary. Recompute SMA50, RSI and swing low from `data.alpaca.markets` bars every premarket, and cite a source for every guidance claim ("raised" vs "maintained" changes the fundamental leg).
 

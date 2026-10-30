@@ -32,18 +32,18 @@ A new position requires **at least 2 of 3** to align before the open routine act
 - Beating earnings the prior 2 quarters with raised guidance, OR
 - Sector-specific tailwind (regulatory, policy, demand shock), OR
 - Reasonable valuation (P/E, P/S, or PEG within sector norms — not a high-flier we're chasing)
-- Source: Perplexity research + recent SEC filings via WebFetch
+- Source: WebSearch + recent SEC filings via WebFetch
 
 ### 2. Catalyst within window
 - Earnings, FDA, product launch, court decision, conference, fed event
 - Should land within the planned hold window — entering 8 weeks before a catalyst is fine; 8 months is too far
-- Source: Perplexity catalyst search + Premarket research
+- Source: WebSearch catalyst search + Premarket research
 
 ### 3. Technical confirmation
 - Price above its 50-day SMA (uptrend baseline)
 - Recent pullback to support **or** breakout from chart pattern (bull flag, ascending triangle, cup-and-handle, falling wedge — see `KNOWLEDGE/chart_patterns.md`)
 - RSI between 40 and 70 (not over-extended on either side; see `KNOWLEDGE/indicators.md`)
-- Volume on entry day ≥ 20-day average
+- Volume on entry day ≥ 1.0× 20-day median (time-of-day relative volume, same window). **Do not use 1.5× — that threshold is for breakout/momentum entries and is not this strategy.**
 
 If only the fundamental + technical legs align without a near-term catalyst, the position is sized at **half** the normal size (per P3).
 
