@@ -5,11 +5,11 @@
 ## Account
 
 - **Mode:** paper
-- **Last refresh (UTC):** 2026-10-30 21:16 (EOD routine)
-- **Cash:** $93,019.35
-- **Equity:** $99,880.38 (close; last_equity $100,000.00)
-- **Peak equity:** $100,000.00 (set 2026-10-26; today's close below peak)
-- **Buying power:** $93,019.35 (= cash), multiplier 1× ✅ (RULES.md A4)
+- **Last refresh (UTC):** 2026-11-02 11:20 (premarket routine; market closed, opens 09:30 ET)
+- **Cash:** $93,019.34
+- **Equity:** $99,890.86 (premarket mark; last_equity $99,882.75 at Fri close per Alpaca)
+- **Peak equity:** $100,000.00 (set 2026-10-26; current equity −0.11% from peak, D5 clear)
+- **Buying power:** $93,019.34 (= cash), multiplier 1× ✅ (RULES.md A4)
 
 ## Flags
 
@@ -24,6 +24,16 @@
 | DHR | 10 | 236.01 | 2026-10-30 | 2,360.10 | 213.05 (hwm 236.72) | 273.77 | 230 | Q3 beat+raise, life-sciences recovery (half size, F+T) |
 | ELV | 5 | 425.85 | 2026-10-30 | 2,129.25 | 384.09 (hwm 426.77) | 493.99 | 209 | Q3 beat, FY26 guide raised ≥ $29 (half size, F+T) |
 | MMM | 14 | 177.95 | 2026-10-30 | 2,491.30 | 160.91 (hwm 178.79) | 206.43 | 239 | Q3 beat, FY guide raised $9.10–9.15 (half size, F+T) |
+
+### Premarket snapshot (2026-11-02 11:20 UTC, Alpaca marks)
+
+| Ticker | Current | Unrealized P&L | % from entry | Alpaca trail stop (hwm) |
+|---|---|---|---|---|
+| DHR | 232.23 | −$37.80 | −1.60% | 213.05 (236.72) |
+| ELV | 421.02 | −$24.15 | −1.13% | 384.09 (426.77) |
+| MMM | 174.58 | −$47.18 | −1.89% | 160.91 (178.79) |
+
+Total unrealized −$109.13. All 3 GTC trailing stops are live (S1/S4 ✅). None are near S2 (−7%) or S3 (+15%).
 
 ### EOD snapshot (2026-10-30 close)
 
@@ -53,6 +63,5 @@ Total unrealized −$119.62. Deployed $6,861.03 (6.9% of equity). Open risk to s
 
 ## New entries this week
 
-- Count: 3 / 3 (RULES.md C1) — **cap reached; no more new entries this week**
-- Tickers: DHR, ELV, MMM (all 2026-10-30)
-- Week of 11/2: counter resets to 0/3 on Mon 11/2 (Fri 11/6 is NFP D3 blackout).
+- **Week of 11/2:** 0 / 3 (RULES.md C1). Fri 11/6 is the NFP D3 blackout.
+- Prior week (10/26): 3/3, DHR, ELV, MMM (all 2026-10-30).
