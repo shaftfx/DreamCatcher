@@ -446,3 +446,13 @@ Week −0.12% vs SPY −0.54%, so excess is +0.42%. The excess came from holding
 Equity $99,891.68 vs Fri close $99,882.75, so the day is +0.01% (D1 clear). Peak $100,000, so drawdown is −0.11% (D5 clear). No S2 cuts: the worst position is ELV at −3.07%, then DHR at −2.72%. No S3 tightening: the best is KO at +0.74%. All 5 positions have a live GTC 10% SELL trailing stop (DHR, ELV, MMM, MRK, KO). MMM's hwm rose to 180.11 (stop 162.10) and KO's to 95.58 (stop 86.02). No orders placed or cancelled.
 
 Timing: this routine fired at 12:56 ET, about 26 min after the 12:30 ET target. That's consistent with the UTC/DST trigger offset flagged in the open entry. The user still needs to fix it.
+
+## 2026-11-02 EOD (fired 21:16 UTC = 16:16 ET)
+
+Close equity $99,883.51 vs Fri close $99,882.75, so the day is +0.00% (+$0.76). SPY fell 0.49% (755.72 → 752.04 IEX), so excess is +0.49%. Drawdown from peak is −0.12% (D5 clear), D1 is clear, and D4's week-to-date is +0.00%, so `weekly_defensive: NO`. `halt_today` stays NO. No exits today. Entries: MRK and KO at the open (C1 2/3). All 5 GTC 10% trailing stops are live. KO's hwm rose to 96.26 (stop 86.63) and MRK's to 149.40 (stop 134.46). The weakest positions are DHR at −3.41% and ELV at −2.88%; neither is near S2.
+
+Honest attribution: the +0.49% excess again comes from being 88% cash on a down day, not from stock picks. The 5 positions together lost about −0.3% on the day (DHR −1.8% and ELV −1.5% vs Fri close; KO +1.9% was the offset).
+
+Timing: this EOD fired on time, at 16:16 ET. The UTC/DST offset flagged in the open entry still appears to affect open/midday.
+
+Queue for Wed 11/4 (Tue 11/3 is the midterm election, so the plan is no entry Tue; it isn't a D3 blackout but premarket set Wed/Thu as the window): CTAS and NOC lead, with TMO as the alternate. All need re-validation from fresh bars. One C1 slot is left.

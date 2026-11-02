@@ -5,10 +5,10 @@
 ## Account
 
 - **Mode:** paper
-- **Last refresh (UTC):** 2026-11-02 17:56 (midday routine)
+- **Last refresh (UTC):** 2026-11-02 21:16 (EOD routine)
 - **Cash:** $88,174.39
-- **Equity:** $99,891.68 (last_equity $99,882.75 at Fri close per Alpaca)
-- **Peak equity:** $100,000.00 (set 2026-10-26; current equity −0.11% from peak, D5 clear)
+- **Equity:** $99,883.51 (Mon 11/2 close; last_equity $99,882.75 at Fri close per Alpaca)
+- **Peak equity:** $100,000.00 (set 2026-10-26; current equity −0.12% from peak, D5 clear)
 - **Buying power:** $88,174.39 (= cash), multiplier 1× ✅ (RULES.md A4)
 
 ## Flags
@@ -23,11 +23,23 @@
 |---|---|---|---|---|---|---|---|---|
 | DHR | 10 | 236.01 | 2026-10-30 | 2,360.10 | 213.05 (hwm 236.72) | 273.77 | 230 | Q3 beat+raise, life-sciences recovery (half size, F+T) |
 | ELV | 5 | 425.85 | 2026-10-30 | 2,129.25 | 384.09 (hwm 426.77) | 493.99 | 209 | Q3 beat, FY26 guide raised ≥ $29 (half size, F+T) |
-| MMM | 14 | 177.95 | 2026-10-30 | 2,491.30 | 160.91 (hwm 178.79) | 206.43 | 239 | Q3 beat, FY guide raised $9.10–9.15 (half size, F+T) |
-| MRK | 16 | 148.82 | 2026-11-02 | 2,381.12 | 134.27 (hwm 149.19) | 178.58 | 238 | Q3 beat, FY26 adj EPS guide raised $2.77–2.82 (half size, F+T) |
-| KO | 26 | 94.76 | 2026-11-02 | 2,463.83 | 85.46 (hwm 94.95) | 113.72 | 246 | Q3 beat, comparable EPS growth guide raised ≥11% (half size, F+T) |
+| MMM | 14 | 177.95 | 2026-10-30 | 2,491.30 | 162.10 (hwm 180.11) | 206.43 | 239 | Q3 beat, FY guide raised $9.10–9.15 (half size, F+T) |
+| MRK | 16 | 148.82 | 2026-11-02 | 2,381.12 | 134.46 (hwm 149.40) | 178.58 | 238 | Q3 beat, FY26 adj EPS guide raised $2.77–2.82 (half size, F+T) |
+| KO | 26 | 94.76 | 2026-11-02 | 2,463.83 | 86.63 (hwm 96.26) | 113.72 | 246 | Q3 beat, comparable EPS growth guide raised ≥11% (half size, F+T) |
 
-Open positions: 5/8 (C2). All 5 GTC 10% trailing stops are verified live on Alpaca as of 14:39 UTC 11/2 (S1/S4 ✅).
+Open positions: 5/8 (C2). All 5 GTC 10% trailing stops are verified live on Alpaca as of 21:16 UTC 11/2 EOD (S1/S4 ✅).
+
+### EOD snapshot (2026-11-02 close)
+
+| Ticker | Close | Value | Unrealized P&L | % from entry | Days held | Alpaca trail stop (hwm) |
+|---|---|---|---|---|---|---|
+| DHR | 227.97 | $2,279.70 | −$80.40 | −3.41% | 1 | 213.05 (236.72) |
+| ELV | 413.60 | $2,068.00 | −$61.25 | −2.88% | 1 | 384.09 (426.77) |
+| MMM | 178.36 | $2,497.04 | +$5.74 | +0.23% | 1 | 162.10 (180.11) |
+| MRK | 148.30 | $2,372.80 | −$8.32 | −0.35% | 0 | 134.46 (149.40) |
+| KO | 95.83 | $2,491.58 | +$27.75 | +1.13% | 0 | 86.63 (96.26) |
+
+Total unrealized −$116.48. Deployed $11,709.12 (11.7% of equity). Open risk to stops ≈ $985 (0.99%). Open positions 5/8 (C2).
 
 ### Midday snapshot (2026-11-02 17:56 UTC, 12:56 ET, Alpaca marks)
 
@@ -61,7 +73,23 @@ Total unrealized −$109.13. All 3 GTC trailing stops are live (S1/S4 ✅). None
 
 Total unrealized −$119.62. Deployed $6,861.03 (6.9% of equity). Open risk to stops ≈ $678 (0.68%). Open positions 3/8 (C2).
 
-## Today's P&L (2026-10-30 close)
+## Today's P&L (2026-11-02 close)
+
+- Today open equity: $99,882.75 → close equity: $99,883.51
+- Daily return: +0.00% (+$0.76)
+- SPY daily return: −0.49% (755.72 → 752.04, IEX)
+- Excess vs SPY: +0.49%
+- Drawdown from peak: −0.12% (D5 threshold −10%)
+- D1 daily loss cap: +0.00% > −2% → not breached
+
+## Week to date (since Fri 10/30 close)
+
+- Week return: +0.00% (prior Friday close equity $99,882.75)
+- SPY week return: −0.49% (755.72 → 752.04)
+- Excess vs SPY: +0.49%
+- D4 weekly loss check: +0.00% > −5% → `weekly_defensive: NO`
+
+## Prior day P&L (2026-10-30 close)
 
 - Today open equity: $100,000.00 → close equity: $99,880.38
 - Daily return: −0.12%
@@ -70,7 +98,7 @@ Total unrealized −$119.62. Deployed $6,861.03 (6.9% of equity). Open risk to s
 - Drawdown from peak: −0.12% (D5 threshold −10%)
 - D1 daily loss cap: −0.12% > −2% → not breached
 
-## Week to date (since Fri 10/23 close) — week closed
+## Prior week (since Fri 10/23 close) — week closed
 
 - Week return: −0.12% (prior Friday close equity $100,000.00)
 - SPY week return: −0.54% (759.83 → 755.72)
