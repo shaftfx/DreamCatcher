@@ -439,3 +439,10 @@ Week −0.12% vs SPY −0.54%, so excess is +0.42%. The excess came from holding
 1. C1 is 2/3, and the last slot is for Wed 11/4 or Thu 11/5. Tue is the midterms and Fri is the NFP blackout. CTAS and NOC lead the re-queue; re-validate both from fresh bars.
 2. The KO ×1.20 target-realism flag from premarket still stands; it needs the user's S1-vs-STRATEGY decision.
 3. Midday: apply S2 (−7%) and S3 (+15%) across all 5 positions.
+
+
+## 2026-11-02 midday (fired 17:56 UTC = 12:56 ET)
+
+Equity $99,891.68 vs Fri close $99,882.75, so the day is +0.01% (D1 clear). Peak $100,000, so drawdown is −0.11% (D5 clear). No S2 cuts: the worst position is ELV at −3.07%, then DHR at −2.72%. No S3 tightening: the best is KO at +0.74%. All 5 positions have a live GTC 10% SELL trailing stop (DHR, ELV, MMM, MRK, KO). MMM's hwm rose to 180.11 (stop 162.10) and KO's to 95.58 (stop 86.02). No orders placed or cancelled.
+
+Timing: this routine fired at 12:56 ET, about 26 min after the 12:30 ET target. That's consistent with the UTC/DST trigger offset flagged in the open entry. The user still needs to fix it.

@@ -5,10 +5,10 @@
 ## Account
 
 - **Mode:** paper
-- **Last refresh (UTC):** 2026-11-02 14:39 (open routine, after MRK/KO fills)
+- **Last refresh (UTC):** 2026-11-02 17:56 (midday routine)
 - **Cash:** $88,174.39
-- **Equity:** $99,916.90 (last_equity $99,882.75 at Fri close per Alpaca)
-- **Peak equity:** $100,000.00 (set 2026-10-26; current equity −0.08% from peak, D5 clear)
+- **Equity:** $99,891.68 (last_equity $99,882.75 at Fri close per Alpaca)
+- **Peak equity:** $100,000.00 (set 2026-10-26; current equity −0.11% from peak, D5 clear)
 - **Buying power:** $88,174.39 (= cash), multiplier 1× ✅ (RULES.md A4)
 
 ## Flags
@@ -28,6 +28,18 @@
 | KO | 26 | 94.76 | 2026-11-02 | 2,463.83 | 85.46 (hwm 94.95) | 113.72 | 246 | Q3 beat, comparable EPS growth guide raised ≥11% (half size, F+T) |
 
 Open positions: 5/8 (C2). All 5 GTC 10% trailing stops are verified live on Alpaca as of 14:39 UTC 11/2 (S1/S4 ✅).
+
+### Midday snapshot (2026-11-02 17:56 UTC, 12:56 ET, Alpaca marks)
+
+| Ticker | Current | Unrealized P&L | % from entry | Alpaca trail stop (hwm) |
+|---|---|---|---|---|
+| DHR | 229.59 | −$64.20 | −2.72% | 213.05 (236.72) |
+| ELV | 412.80 | −$65.28 | −3.07% | 384.09 (426.77) |
+| MMM | 178.46 | +$7.14 | +0.29% | 162.10 (180.11) |
+| MRK | 148.56 | −$4.24 | −0.18% | 134.27 (149.19) |
+| KO | 95.47 | +$18.26 | +0.74% | 86.02 (95.58) |
+
+Total unrealized −$108.32. Intraday P&L vs Fri close equity: +$8.93 (+0.01%), so D1 is clear. Drawdown −0.11% from peak, so D5 is clear. No position is at S2 (−7%) or S3 (+15%). All 5 GTC 10% trailing stops are live (S4 ✅).
 
 ### Premarket snapshot (2026-11-02 11:20 UTC, Alpaca marks)
 
