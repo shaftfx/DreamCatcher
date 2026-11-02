@@ -411,3 +411,31 @@ Week −0.12% vs SPY −0.54%, so excess is +0.42%. The excess came from holding
 4. ISM Manufacturing is at 10:00 ET, after the open run. AAPL/PLTR report after the close; neither is on the watchlist.
 
 **Decision:** MRK, KO, CTAS, TMO, UNP and NOC are `queued half`. UNH was demoted to watch-only, and TXN stays watch-only. MRK, KO and TMO were added. DHR, ELV and MMM came off the watchlist because they're now positions.
+
+### 2026-11-02 14:39 UTC — OPEN — EXECUTION SUMMARY (2 entries)
+
+**Timing ⚠️:** this routine fired at 14:19 UTC, which was **09:19 ET, before the open**. It was scheduled for 13:35 UTC, which is 08:35 ET now that DST has ended (11/1). The trigger's cron appears to be in UTC and still assumes EDT (UTC−4). I waited in-session until 09:35 ET (14:35 UTC) before validating or placing anything. **User action needed:** move the open trigger to 14:35 UTC (or `CRON_TZ=America/New_York 35 9 * * 1-5`). The premarket, midday, EOD and weekly triggers likely shifted by an hour too.
+
+**Boot:** Alpaca `paper-api` (O5 ✅). Equity $99,912 at boot, cash = BP, multiplier 1 (A4 ✅). Peak $100,000, so drawdown is −0.09% (D5 clear). Flags all NO. Mon 11/2 isn't a D3 blackout; ISM Mfg is at 10:00 ET and isn't on the blackout list. 3 positions, each with a live trailing stop. SPY was 759.50 at 09:35, up 0.5% but still below its 50d (766.68), RSI 43.8.
+
+**Overnight news:** WebSearch for MRK, KO, CTAS and the futures turned up nothing dated 11/1–11/2. Perplexity was unavailable. The absence of news is **not** confirmation.
+
+**Re-validation:** live IEX price vs chase limit, then SMA50, RSI14 and the 8/12/21/55 EMAs recomputed from Alpaca daily bars plus the live print. Per the open routine I did **not** re-check intraday volume. Premarket note 3 says the open routine owns the 1.0× volume measurement, but routines/open.md explicitly forbids it. That's the same unowned-gate conflict flagged in learnings 2026-10-30 and it still needs a user decision. I followed the routine file.
+
+| Rank | Ticker | Live 09:35 | Chase | SMA50 | RSI | EMA 8>12>21>55 | decision |
+|---|---|---|---|---|---|---|---|
+| 1 | MRK | 148.68 | 151.78 ✅ | 146.53 ✅ | 55.5 ✅ | intact, px > 8 ✅ | **placed** |
+| 2 | KO | 94.42 | 95.53 ✅ | 89.38 ✅ | 63.7 ✅ | intact, px > 8 ✅ | **placed** |
+| 3 | CTAS | 220.48 | 223.12 ✅ | 204.79 ✅ | 62.6 ✅ | intact ✅ | **passed, held back**: keeping the last C1 slot for Wed/Thu (premarket note 1). FTC headline risk. Re-queue Wed. |
+| 4 | TMO | 689.15 | 707.36 ✅ | 655.80 ✅ | 55.4 ✅ | px below the 8 EMA (692.74) | held back: lower rank, duplicates DHR exposure |
+| 5 | UNP | 305.12 | 308.52 | 287.25 | **70.9** ❌ | — | **rejected**: RSI > 70 |
+| 6 | NOC | 555.37 | 566.07 | 520.21 | 62.7 | — | held back: election binary Tue; Wed/Thu only |
+
+**Rule gates for MRK/KO (all ✅):** P1: 2.4% and 2.5% of equity. P2: no existing exposure. P3: risk at the 10% trail is $238 and $246 (≤ 0.25% each). P4: target ×1.20 vs the live 10% trail = 2.0R. C1 is 2/3, C2 is 5/8. C3: neither is an existing position. A1–A6 clean.
+
+**Execution:** OTO market buys (day) with a static stop at entry × 0.90. MRK filled 16 @ 148.82 (14:36:52Z). KO filled 26 @ 94.7627 (14:38:04Z, after a partial fill). Each static stop leg was cancelled (204) and replaced with a GTC 10% trailing stop (`bull-20261102-<T>-trail`): MRK stop 134.27 (hwm 149.19), KO stop 85.46 (hwm 94.95). I re-queried open orders and all 5 trailing stops are live. No naked positions.
+
+**Notes for next routines:**
+1. C1 is 2/3, and the last slot is for Wed 11/4 or Thu 11/5. Tue is the midterms and Fri is the NFP blackout. CTAS and NOC lead the re-queue; re-validate both from fresh bars.
+2. The KO ×1.20 target-realism flag from premarket still stands; it needs the user's S1-vs-STRATEGY decision.
+3. Midday: apply S2 (−7%) and S3 (+15%) across all 5 positions.

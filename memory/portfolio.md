@@ -5,11 +5,11 @@
 ## Account
 
 - **Mode:** paper
-- **Last refresh (UTC):** 2026-11-02 11:20 (premarket routine; market closed, opens 09:30 ET)
-- **Cash:** $93,019.34
-- **Equity:** $99,890.86 (premarket mark; last_equity $99,882.75 at Fri close per Alpaca)
-- **Peak equity:** $100,000.00 (set 2026-10-26; current equity −0.11% from peak, D5 clear)
-- **Buying power:** $93,019.34 (= cash), multiplier 1× ✅ (RULES.md A4)
+- **Last refresh (UTC):** 2026-11-02 14:39 (open routine, after MRK/KO fills)
+- **Cash:** $88,174.39
+- **Equity:** $99,916.90 (last_equity $99,882.75 at Fri close per Alpaca)
+- **Peak equity:** $100,000.00 (set 2026-10-26; current equity −0.08% from peak, D5 clear)
+- **Buying power:** $88,174.39 (= cash), multiplier 1× ✅ (RULES.md A4)
 
 ## Flags
 
@@ -24,6 +24,10 @@
 | DHR | 10 | 236.01 | 2026-10-30 | 2,360.10 | 213.05 (hwm 236.72) | 273.77 | 230 | Q3 beat+raise, life-sciences recovery (half size, F+T) |
 | ELV | 5 | 425.85 | 2026-10-30 | 2,129.25 | 384.09 (hwm 426.77) | 493.99 | 209 | Q3 beat, FY26 guide raised ≥ $29 (half size, F+T) |
 | MMM | 14 | 177.95 | 2026-10-30 | 2,491.30 | 160.91 (hwm 178.79) | 206.43 | 239 | Q3 beat, FY guide raised $9.10–9.15 (half size, F+T) |
+| MRK | 16 | 148.82 | 2026-11-02 | 2,381.12 | 134.27 (hwm 149.19) | 178.58 | 238 | Q3 beat, FY26 adj EPS guide raised $2.77–2.82 (half size, F+T) |
+| KO | 26 | 94.76 | 2026-11-02 | 2,463.83 | 85.46 (hwm 94.95) | 113.72 | 246 | Q3 beat, comparable EPS growth guide raised ≥11% (half size, F+T) |
+
+Open positions: 5/8 (C2). All 5 GTC 10% trailing stops are verified live on Alpaca as of 14:39 UTC 11/2 (S1/S4 ✅).
 
 ### Premarket snapshot (2026-11-02 11:20 UTC, Alpaca marks)
 
@@ -63,5 +67,5 @@ Total unrealized −$119.62. Deployed $6,861.03 (6.9% of equity). Open risk to s
 
 ## New entries this week
 
-- **Week of 11/2:** 0 / 3 (RULES.md C1). Fri 11/6 is the NFP D3 blackout.
+- **Week of 11/2:** 2 / 3 (RULES.md C1): MRK and KO on Mon 11/2. One slot is left for Wed/Thu. Fri 11/6 is the NFP D3 blackout.
 - Prior week (10/26): 3/3, DHR, ELV, MMM (all 2026-10-30).
