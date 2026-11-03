@@ -21,9 +21,9 @@
 
 | Ticker | Qty | Entry | Entry date | Cost | Stop (trail 10%) | Target (2R) | Risk $ at stop | Thesis |
 |---|---|---|---|---|---|---|---|---|
-| DHR | 10 | 236.01 | 2026-10-30 | 2,360.10 | 213.05 (hwm 236.72) | 273.77 | 230 | Q3 beat+raise, life-sciences recovery (half size, F+T) |
-| ELV | 5 | 425.85 | 2026-10-30 | 2,129.25 | 384.09 (hwm 426.77) | 493.99 | 209 | Q3 beat, FY26 guide raised ≥ $29 (half size, F+T) |
-| MMM | 14 | 177.95 | 2026-10-30 | 2,491.30 | 162.10 (hwm 180.11) | 206.43 | 239 | Q3 beat, FY guide raised $9.10–9.15 (half size, F+T) |
+| DHR | 10 | 236.01 | 2026-10-30 | 2,360.10 | 213.05 (hwm 236.72) | 283.21 | 230 | Q3 beat+raise, life-sciences recovery (half size, F+T) |
+| ELV | 5 | 425.85 | 2026-10-30 | 2,129.25 | 384.09 (hwm 426.77) | 511.02 | 209 | Q3 beat, FY26 guide raised ≥ $29 (half size, F+T) |
+| MMM | 14 | 177.95 | 2026-10-30 | 2,491.30 | 162.10 (hwm 180.11) | 213.54 | 239 | Q3 beat, FY guide raised $9.10–9.15 (half size, F+T) |
 | MRK | 16 | 148.82 | 2026-11-02 | 2,381.12 | 134.46 (hwm 149.40) | 178.58 | 238 | Q3 beat, FY26 adj EPS guide raised $2.77–2.82 (half size, F+T) |
 | KO | 26 | 94.76 | 2026-11-02 | 2,463.83 | 86.63 (hwm 96.26) | 113.72 | 246 | Q3 beat, comparable EPS growth guide raised ≥11% (half size, F+T) |
 
@@ -32,7 +32,7 @@ Open positions: 5/8 (C2). All 5 GTC 10% trailing stops are verified live on Alpa
 ### Open-routine snapshot (2026-11-03 13:36 UTC = 08:36 ET, pre-open marks)
 
 | Ticker | Current | Unrealized P&L | % from entry | Alpaca trail stop (hwm) |
-|---|---|---|---|---|
+|---|---|---|---|
 | DHR | 226.55 | −$94.60 | −4.01% | 213.05 (236.72) |
 | ELV | 411.50 | −$71.75 | −3.37% | 384.09 (426.77) |
 | MMM | 178.47 | +$7.28 | +0.29% | 162.10 (180.11) |
