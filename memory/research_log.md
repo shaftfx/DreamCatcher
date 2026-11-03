@@ -4,20 +4,18 @@ Dated entries. Premarket appends new research; other routines append rejected id
 
 ## Active Watchlist
 
-_Last refresh: 2026-11-02 premarket (Mon). Technicals recomputed this run from Alpaca IEX daily bars through the 10/30 close. **Today is an entry day** (not a D3 blackout). C1: 0/3 this week. DHR, ELV and MMM are now positions, so they're off the watchlist. Live stop on every new entry is the S1 10% trail, so per learnings 2026-10-30 every target is set at entry × 1.20 (2R vs the live stop). SPY closed 755.72, −1.5% below its 50d (767.48), RSI 40.2: the index is in a downtrend while defensives hold up._
+_Last refresh: 2026-11-03 premarket (Tue, US midterms). Technicals recomputed this run from Alpaca IEX daily bars through the **11/2 close**. **Today is not a D3 blackout, but the plan is no new entries today** (election binary; premarket 11/2 set Wed/Thu as the window). C1 is 2/3 this week, so one slot is left for Wed 11/4 or Thu 11/5. Fri 11/6 is the NFP D3 blackout. MRK and KO are now positions and came off the watchlist. Live stop on every new entry is the S1 10% trail, so every target is entry × 1.20 (2R vs the live stop). SPY closed 752.04, −2.0% below its 50d (767.21), RSI 38.0: the index downtrend is deepening._
 
-| Ticker | Added | Thesis (1 line) | Catalyst | Catalyst Date | Status (10/30 close · SMA50 · RSI14 · 20-bar swing low) |
+| Ticker | Added | Thesis (1 line) | Catalyst | Catalyst Date | Status (11/2 close · SMA50 · RSI14 · 20-bar swing low) |
 |---|---|---|---|---|---|
-| MRK | 2026-11-02 | Q3 beat (adj EPS $2.49 vs $2.09), FY26 adj EPS guide **raised** to $2.77–2.82 | none within 8w | — | **queued half #1**, F+T ✅ — 149.54 · 146.87 (+1.8%) · 56.9 · 138.82 |
-| KO | 2026-11-02 | Q3 beat ($0.91 vs $0.88), comparable EPS growth guide **raised** to ≥ 11%, FCF ≥ $13.0B | none within 8w | — | **queued half #2**, F+T ✅ — 94.12 · 89.47 (+5.2%) · 62.6 · 85.13 |
-| CTAS | 2026-10-29 | Q1 FY27 beat, FY27 guide raised (8-K) | FTC decision on UniFirst (reported intent to sue 10/27; no close before 12/11) | ~mid-Dec | **queued half #3**, F+T ✅ — 219.83 · 204.46 (+7.5%) · 61.9 · 192.40. Event risk only |
-| TMO | 2026-11-02 | Q3 beat ($6.68 vs $6.40), FY26 guide **raised** to $25.13–25.43 | none within 8w | — | **queued half #4**, F+T ✅ — 696.91 · 654.75 (+6.4%) · 59.0 · 635.73. Overlaps DHR (life-sci tools) |
-| UNP | 2026-10-26 | Q3 beat, rail pricing power | none within 8w | — | **queued half #5**, F+T ✅ at the limit — 303.96 · 287.46 (+5.7%) · RSI 69.8 · 274.52; skip if RSI > 70 on the live print |
-| NOC | 2026-10-26 | Q3 beat+raised (FY adj EPS $29.35–29.75) | US midterms 11/3 (event *risk*) | 2026-11-03 | **queued half #6**, F+T ✅ — 557.70 · 520.37 (+7.2%) · 64.0 · 471.57. Not Tue 11/3 |
-| UNH | 2026-10-26 | Q3 beat ($4.69); FY guide *maintained* ~$20.50 | none within 8w | — | **watch-only**: we already hold ELV (managed care), and the midterms are binary for the sector. 406.92 · 390.18 (+4.3%) · 55.9 |
-| TXN | 2026-10-26 | Q3 beat ($2.62 vs $2.42); Q4 guide $5.8–6.3B / EPS $2.45–2.79 | none within 8w | — | watch-only. Technical now passes (301.11 · 275.65 +9.2% · RSI 60.0) but semis are weak (INTC −28%, AMD −10.9% 10/30) and AMD/QCOM report this week. Revisit next premarket |
+| CTAS | 2026-10-29 | Q1 FY27 beat, FY27 guide raised (8-K) | FTC decision on UniFirst (no filed suit found as of 11/3; no close before 12/11) | ~mid-Dec | **queued half #1 (Wed/Thu)**, F+T ✅ — 224.79 · 204.88 (+9.7%) · 66.4 · 194.35. +2.3% on 11/2; close to the RSI 70 cap |
+| NOC | 2026-10-26 | Q3 beat+raised (FY adj EPS $29.35–29.75) | US midterms 11/3 (event *risk*) | 2026-11-03 | **queued half #2 (Wed/Thu only)**, F+T ✅ — 555.51 · 520.46 (+6.7%) · 62.7 · 471.57. Prediction markets >75% Democratic sweep; skip if the post-election reaction takes it below the 50d |
+| TMO | 2026-11-02 | Q3 beat ($6.68 vs $6.40), FY26 guide **raised** to $25.13–25.43 | none within 8w | — | **queued half #3 (alternate)**, F+T ✅ — 682.76 · 655.82 (+4.1%) · 52.8 · 635.73. −2.0% on 11/2, below its 8 EMA (691.32). Overlaps DHR |
+| UNP | 2026-10-26 | Q3 beat, rail pricing power | none within 8w | — | **watch-only**: RSI 72.2 > 70 (technical fails). 307.00 · 287.43 (+6.8%) |
+| UNH | 2026-10-26 | Q3 beat ($4.69); FY guide *maintained* ~$20.50 | none within 8w | — | **watch-only**: overlaps ELV, and a Democratic sweep is a managed-care headline risk. 400.46 · 390.39 (+2.6%) · 51.0 |
+| TXN | 2026-10-26 | Q3 beat ($2.62 vs $2.42); Q4 guide $5.8–6.3B / EPS $2.45–2.79 | none within 8w | — | **watch-only**: technical passes (301.96 · 276.40 +9.2% · RSI 60.5), but the Nasdaq-100 is in correction (−10% from Oct high), AMD reports tonight and QCOM Wed. Revisit Thu premarket |
 
-_Removed: DHR, ELV, MMM (became positions 10/30). Re-checked and not added: WM (Q3 EPS miss, guide only reaffirmed), HCA (guide "upper half"; whether it was raised is disputed, plus managed-care/hospital overlap with ELV), PH (−5.9% below 50d), ROP (RSI 82.2), LMT (RSI 75.5), LLY (RSI 77.9), ABBV (RSI 72.8), AZN (RSI 75.1). MCK and COR not considered: fiscal-quarter reports likely within 5 trading days (pre-earnings blackout); unverified, so check next premarket._
+_Removed: MRK, KO (became positions 11/2). Not added: COR (Cencora reports FY Q4 on Wed 11/4 before the open, so it's in pre-earnings blackout), MCK (date unconfirmed, probably within 5 trading days). JCI (beat+raise found, but undated; its fiscal Q4 report is likely within 5 trading days), ROP (RSI was 82 last check). The new-candidate search was thin, and no fresh name with cited beat+raise and a clean chart turned up._
 
 ---
 
@@ -456,3 +454,39 @@ Honest attribution: the +0.49% excess again comes from being 88% cash on a down 
 Timing: this EOD fired on time, at 16:16 ET. The UTC/DST offset flagged in the open entry still appears to affect open/midday.
 
 Queue for Wed 11/4 (Tue 11/3 is the midterm election, so the plan is no entry Tue; it isn't a D3 blackout but premarket set Wed/Thu as the window): CTAS and NOC lead, with TMO as the alternate. All need re-validation from fresh bars. One C1 slot is left.
+
+### 2026-11-03 11:08 UTC — PREMARKET — WATCHLIST REFRESH (Tue, midterm election day)
+
+**Account (Alpaca, `paper-api` confirmed):** ACTIVE, equity $99,842.08 pre-open (last_equity $99,884.46), cash = buying power $88,174.38, multiplier 1 (A4 ✅). Peak $100,000, so drawdown is −0.16% and D5 is clear. Flags all NO. 5 positions (DHR −3.4%, ELV −2.9%, MRK −0.9%, MMM −0.3%, KO +0.5%), each with a live GTC 10% trailing stop. Market opens 09:30 ET.
+
+**Day status:** Tue 11/3 is **not** a D3 blackout (no FOMC/CPI/NFP). The plan from 11/2 is still **no new entries today** because of the midterm binary. There's nothing queued for today's open. C1 is 2/3, and the last slot is for Wed 11/4 or Thu 11/5.
+
+**Macro (sourced this run):**
+- **Mon 11/2:** the S&P 500 fell 0.5%, the Nasdaq about 1.1%, and the Dow rose 0.4%. Semis and hardware led the losses, and money rotated into cyclicals, financials and staples. The Nasdaq-100 is now more than 10% below its October high, in correction. Oil fell about 8% (Brent < $105) on hopes of a US–Iran deal. ISM Manufacturing came in at **55.5** vs 54.5 expected, and production hit its highest since Nov 2021. [Yahoo live](https://finance.yahoo.com/markets/live/stock-market-today-monday-november-2-dow-sp-500-nasdaq-091835095.html), [CNBC](https://www.cnbc.com/2026/11/01/stock-market-today-live-updates.html)
+- **AAPL (after close 11/2):** EPS $2.10 vs $2.00 and revenue $114.48B vs $113.47B, but margin guidance was weak and Greater China missed. Shares fell about 4.5% premarket. PLTR beat and raised but also slid premarket. [CNBC](https://www.cnbc.com/2026/11/02/apple-aapl-q4-2026-earnings-live-updates.html), [TipRanks](https://www.tipranks.com/news/stock-market-today-nov-3-futures-mixed-on-midterm-election-day-apple-and-palantir-shares-slide-after-earnings)
+- **Tue 11/3 premarket:** futures are mixed to lower (one report has Dow −0.5% and S&P −0.1%). The 10-year is at 4.91%, and Brent is back to ~$105.8. Prediction markets show >75% odds of a **Democratic sweep of Congress**. JOLTS is at 10:00 ET, and AMD reports after the close (est. $1.96 EPS / $13.2B). [Yahoo live](https://finance.yahoo.com/markets/live/stock-market-today-tuesday-november-3-dow-sp-500-nasdaq-midterms-amd-090846378.html), [Stocktwits](https://stocktwits.com/news-articles/markets/equity/us-stock-futures-trade-mixed-premarket-as-aapl-margin-concerns-weigh-on-tech-pltr-amd-aehr-in-focus/cNGXG5HR95L)
+- **Rest of week:** UBER and MCD report before the open Wed, QCOM after the close Wed, and COR before the open Wed. ADP and ISM Services are Wed, and claims Thu. NFP is Fri (D3). [Newsquawk](https://www.newsquawk.com/headlines/newsquawk-weekly-us-earnings-estimates-earnings-season-continues-with-highlights-including-aapl-amd-pltr-and-qcom), [Tickzen](https://tickzen.app/stock-analysis/earnings-calendar/november-2026)
+
+**Election read-through for what we hold (position management only, no rule trigger):** a Democratic sweep is usually read as headline risk for drug pricing (MRK) and managed care (ELV, and watch-only UNH), and as mixed for defense (NOC). That's a judgment call, not a sourced forecast. Nothing in RULES or STRATEGY triggers on it. S2 (−7%) and the 10% trails are the mechanical protection, and ELV is the closest at −2.9%. Midday should check whether any thesis-breaking headline lands Wed (STRATEGY exit trigger #4), not just the price.
+
+**Existing names re-checked:**
+- **CTAS:** no newer FTC news than the 10/27 Semafor report. There's no filed suit and no FTC vote, and the parties won't close before 12/11. A $350M reverse termination fee applies if the deal is terminated on antitrust grounds (a suit alone doesn't trigger it). The stock rose 2.3% on 11/2 to 224.79 and is now 9.7% above its 50d with RSI 66.4. [TIKR](https://www.tikr.com/blog/cintas-sinks-5-as-ftc-moves-to-block-its-5-5-billion-unifirst-deal), [ASI](https://members.asicentral.com/news/industry-news/october-2026/ftc-sources-say-regulator-will-sue-to-block-cintas-unifirst-deal/)
+- **NOC, TMO, UNH, TXN, UNP:** no new company-specific news found. UNP is now RSI 72.2, so it's demoted to watch-only.
+
+**Search quality:** thin again. No dated 11/2–11/3 analyst-upgrade roundup was found, and the new-candidate search returned undated or off-window items only. Perplexity isn't used (no key in env); WebSearch only. The absence of news is **not** confirmation.
+
+**Draft entry plans (for Wed 11/4 or Thu 11/5, not today):** all half size, F+T with no dated upside catalyst. Entry is the 11/2 close. Stop is the live S1 10% trail (entry × 0.90); every 20-bar swing low sits below the trail, so the trail is the true risk. Target = entry × 1.20 (2.0R, P4 ✅). Shares = floor($2,500 / entry). Risk at the trail is ≤ $248 (≤ 0.25% of equity, P3 ✅). P1 is ≤ 2.5% of equity. Chase limit = entry × 1.015. **Wed's premarket must re-anchor these to the 11/3 close** and re-check RSI ≤ 70.
+
+| Rank | Ticker | Entry | Live stop (10% trail) | Target (×1.20) | Chase limit | Shares | $ | Risk $ | decision |
+|---|---|---|---|---|---|---|---|---|---|
+| 1 | CTAS | 224.79 | 202.31 | 269.75 | 228.16 | 11 | 2,473 | 247 | queued half (Wed/Thu) |
+| 2 | NOC | 555.51 | 499.96 | 666.61 | 563.84 | 4 | 2,222 | 222 | queued half (Wed/Thu; skip if below 50d after the election) |
+| 3 | TMO | 682.76 | 614.48 | 819.31 | 693.00 | 3 | 2,048 | 205 | queued half (alternate; DHR overlap) |
+
+**Notes for the open routine:**
+1. **Today (Tue 11/3): no entries.** Nothing is queued for today. The three plans above are for Wed/Thu, and only one C1 slot is left.
+2. The volume gate is STRATEGY's **1.0×** time-of-day relative volume. The routine-ownership conflict (open.md says don't re-check, premarket can't measure it) is still unresolved and needs the user's decision, per learnings 2026-10-30.
+3. The KO-style ×1.20 target-realism flag (S1 vs STRATEGY stop) still stands for every name. It needs the user's decision.
+
+**Decision:** CTAS, NOC and TMO are `queued half` for Wed/Thu. UNP was demoted to watch-only (RSI 72.2). UNH and TXN stay watch-only. MRK and KO came off the watchlist (they're positions). COR and MCK were not added (pre-earnings blackout). No orders were placed.
+
