@@ -22,8 +22,11 @@ Perplexity returned a stale guidance number for $TSLA — used the actual SEC fi
 
 -->
 
-## 2026-10-30 [risk]
-Compute R/R (RULES.md P4) against the stop that is **actually live on Alpaca**, not the planned one. On 10/30, DHR/ELV/MMM targets were set at 2R off the STRATEGY 8% initial stop (entry × 1.16). S1 then swapped that stop for a 10% trailing stop, which makes the real R/R 1.6:1 on all three, below the 2:1 minimum. Until the user resolves the S1-vs-STRATEGY conflict (see weekly_review 2026-W44), set target ≥ entry × 1.20 whenever the live stop is a 10% trail. Risk $ already uses the 10% distance; the target has to match it.
+## 2026-11-03 [ops]
+Volume gate ownership: premarket cannot measure entry-day volume (session hasn't opened at 06:00 ET). Gate transferred to open routine — always checked at 09:35 ET. Premarket must not write ad-hoc blocking conditions into queued entries; context notes are fine, but the only blocking gates are STRATEGY.md legs. Both changes locked into routines/open.md, routines/premarket.md, and STRATEGY.md leg 3.
+
+## 2026-10-30 [risk] — resolved 2026-11-03
+Compute R/R (RULES.md P4) against the stop that is **actually live on Alpaca**, not the planned one. On 10/30, DHR/ELV/MMM targets were set at 2R off the STRATEGY 8% initial stop (entry × 1.16). S1 swapped that stop for a 10% trailing stop, making real R/R 1.6:1, below the 2:1 minimum. **Fixed:** RULES.md P4 now states stop distance = 10% of entry (the trailing stop S1 requires); target ≥ entry × 1.20. STRATEGY.md updated to match. Initial 8% stop is used for sizing math only; the 10% trail governs P4.
 
 ## 2026-10-30 [entry]
 A one-day sector rotation is not a defensive signal. On Thu 10/29, health care and industrials closed green while SPY fell, and the Fri premarket ranked DHR/ELV/MMM up for being on the "rotation side." On Friday, SPY fell 1.79% and all three fell 1.4–2.1% from their fills. Don't rank or size up on the prior day's rotation. This week's +0.42% excess came almost entirely from holding 93–100% cash on a down week, not from stock selection. Don't mistake that for edge.

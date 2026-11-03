@@ -43,7 +43,7 @@ A new position requires **at least 2 of 3** to align before the open routine act
 - Price above its 50-day SMA (uptrend baseline)
 - Recent pullback to support **or** breakout from chart pattern (bull flag, ascending triangle, cup-and-handle, falling wedge — see `KNOWLEDGE/chart_patterns.md`)
 - RSI between 40 and 70 (not over-extended on either side; see `KNOWLEDGE/indicators.md`)
-- Volume on entry day ≥ 1.0× 20-day median (time-of-day relative volume, same window). **Do not use 1.5× — that threshold is for breakout/momentum entries and is not this strategy.**
+- Volume on entry day ≥ 1.0× 20-day median (time-of-day relative volume, same window). **Owned by the open routine at 09:35 ET** — premarket cannot measure this since the session hasn't started. Do not use 1.5×; that threshold is for breakout/momentum entries only.
 
 If only the fundamental + technical legs align without a near-term catalyst, the position is sized at **half** the normal size (per P3).
 
@@ -53,7 +53,7 @@ If only the fundamental + technical legs align without a near-term catalyst, the
 
 ```
 risk_per_trade = 1.0% of equity         # default; tunable up to 1.5% per RULES.md P3
-stop_distance  = entry_price - stop_price   # absolute $
+stop_distance  = entry_price - stop_price   # absolute $; use initial stop for sizing
 shares         = floor(risk_dollars / stop_distance)
 position_value = shares * entry_price
 ```
@@ -66,8 +66,9 @@ For ETFs (lower volatility), use `risk_per_trade = 0.5%`; for high-volatility gr
 
 ## Stop placement
 
-- **Initial stop**: lowest of (a) recent swing low past 20 bars, (b) entry × 0.92 (8% hard floor).
-- **Trailing**: 10% trailing stop on the SELL leg of the bracket order, set immediately at fill.
+- **Initial stop**: lowest of (a) recent swing low past 20 bars, (b) entry × 0.92 (8% hard floor). Used for sizing math only.
+- **Trailing**: 10% trailing stop on the SELL leg of the bracket order, set immediately at fill. This is the live stop on Alpaca; it governs P4 R/R.
+- **Target**: `entry × 1.20` minimum (2R off the 10% trailing stop per RULES.md S1 and P4). Set higher if the thesis supports it.
 - **Tighten** to 7% trailing once unrealized P&L ≥ +15% (handled by midday routine).
 - **Hard cut** at −7% unrealized (handled by midday routine; takes precedence over the trailing stop).
 

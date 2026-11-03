@@ -80,7 +80,7 @@ In `memory/research_log.md`:
 
 For each watchlist name with a catalyst within the next 5 trading days:
 - Pull current price, 50-day SMA, RSI(14), volume from a free source (yfinance via Bash + Python one-liner is fine, or use Alpaca's bars endpoint).
-- Document a **draft entry plan** in `research_log.md`: target entry price, proposed stop, proposed target, R/R, sizing rationale.
+- Document a **draft entry plan** in `research_log.md`: target entry price, proposed stop, proposed target (≥ entry × 1.20), R/R, sizing rationale.
 - Mark these as `decision: queued` — the open routine decides if they execute.
 
 ### Step 7 — Commit and push
@@ -105,3 +105,5 @@ Do **not** open a GitHub Issue. Premarket is silent unless something urgent fire
 - Never echo API keys in any output.
 - If WebSearch returns thin results, try WebFetch on company IR pages directly.
 - If anything is unclear or you have low confidence, write your reasoning into `research_log.md` and let the open routine see it.
+- **Never write ad-hoc blocking conditions into queued entries.** The only conditions that can block an entry are STRATEGY.md legs and RULES.md rules — the open routine enforces those. If market context concerns you (e.g. "name is red premarket"), write it as a **context note** in the entry, not as a condition the open routine must honor. Invented gates cause the open routine to either silently skip them (wasted research) or honor conditions that were never in the rulebook.
+- **Do not attempt to validate entry-day volume.** The session hasn't started at 06:00 ET. Leave volume validation to the open routine.

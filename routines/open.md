@@ -18,7 +18,7 @@ Read:
 4. `memory/research_log.md` (especially `decision: queued` entries from premarket)
 5. `memory/learnings.md`
 
-After reading STRATEGY.md, note the current volume gate threshold (e.g. `≥ 1.0× 20-day median`). Use this value in Step 3 if a fallback volume check is needed.
+After reading STRATEGY.md, note the current volume gate threshold (e.g. `≥ 1.0× 20-day median`).
 
 ### Step 2 — Refresh portfolio + halt check
 
@@ -41,19 +41,20 @@ For every entry with `decision: queued` in `research_log.md`:
    - Fundamental thesis still intact? (no overnight news that breaks it)
    - Catalyst window still in range?
    - Technical: price > 50-day SMA, RSI 40–70, 4EMA stack intact?
-   - **Volume gate — normal case:** Do NOT re-check intraday volume here. Volume was validated during premarket using the threshold from `STRATEGY.md`. Re-checking 5–10 minutes into the session is noise, not signal.
-   - **Volume gate — fallback (premarket skipped or entry has no volume note):** If premarket did not run or the queued entry lacks a volume validation note, compute time-of-day relative volume now: compare volume since 09:30 vs the median of the same window over the prior 20 sessions (IEX bars). Use the threshold from `STRATEGY.md` Step 1 read — **not** any threshold written in the watchlist header. Reject if below threshold; continue otherwise.
+   - **Volume gate (always):** Premarket cannot measure entry-day volume — the session hadn't opened. Check it here: compare volume since 09:30 vs the median of the same window over the prior 20 sessions (IEX bars). Use the threshold from `STRATEGY.md` Step 1 read — **not** any threshold written in the watchlist header. Reject if below threshold.
 3. Re-run the rule gates (`RULES.md`):
    - P1: position size ≤ 5% equity?
    - P2: total ticker exposure (incl. existing) ≤ 15%?
    - P3: risk per trade ≤ 1.5% equity?
-   - P4: R/R ≥ 2:1?
+   - P4: R/R ≥ 2:1? (target ≥ entry × 1.20)
    - C1: new positions this week < 3?
    - C2: open positions < 8?
    - C3: not adding to a losing position?
    - A1–A6: instrument scope clean?
 
 If any check fails → mark as `decision: rejected` with the reason in `research_log.md`. **Do not place.**
+
+**Context notes from premarket** (e.g. "green on the day preferred") are informational only. They are not blocking gates. Only STRATEGY.md legs and RULES.md rules can reject an entry.
 
 ### Step 4 — Place orders
 
@@ -134,3 +135,4 @@ If at least one order was placed, append a brief note to `research_log.md` (not 
 - Never place if any halt flag is set.
 - **Volume gate threshold always comes from `STRATEGY.md` (read in Step 1), never from the watchlist header note.** The watchlist header note may be stale from a prior premarket run.
 - The only price check at open is the chase limit (current price > planned entry × 1.015). A quiet open on a macro/Fed day is not a rejection reason.
+- **Context notes written by premarket are not blocking conditions.** Only STRATEGY.md legs and RULES.md rules can reject an entry.

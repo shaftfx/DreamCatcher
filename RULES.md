@@ -13,7 +13,7 @@ These rules are **non-negotiable** at runtime. They are tunable between sessions
 | P1 | **Max 5% of portfolio equity** in any single new position at entry. | `intended_dollars / current_equity <= 0.05` |
 | P2 | **Max 15% of portfolio equity** in any single ticker (incl. existing position). | After-fill exposure check before placing. |
 | P3 | **Risk per trade ≤ 1.5% of equity.** Risk = `(entry − stop) / entry × position_size`. | Compute before placing. Reject if over. |
-| P4 | **R/R ≥ 2:1** required. Take-profit target distance ≥ 2× stop-loss distance. | Compute from entry, stop, target. |
+| P4 | **R/R ≥ 2:1** required. Take-profit target distance ≥ 2× stop-loss distance. Stop distance for this check = 10% of entry (the trailing stop S1 requires), so **target ≥ entry × 1.20** minimum. | `(target − entry) / (entry × 0.10) ≥ 2.0` |
 
 ## Concurrency
 
