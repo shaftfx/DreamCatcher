@@ -5,10 +5,10 @@
 ## Account
 
 - **Mode:** paper
-- **Last refresh (UTC):** 2026-11-03 17:42 (midday routine, 12:42 ET, Alpaca marks)
+- **Last refresh (UTC):** 2026-11-03 21:17 (EOD routine, 16:17 ET, Alpaca close marks)
 - **Cash:** $88,174.38
-- **Equity:** $99,814.03 (Alpaca midday mark; last_equity $99,884.46 at Mon 11/2 close)
-- **Peak equity:** $100,000.00 (set 2026-10-26; current equity −0.19% from peak, D5 clear)
+- **Equity:** $99,802.45 (Tue 11/3 close; last_equity $99,884.46 at Mon 11/2 close)
+- **Peak equity:** $100,000.00 (set 2026-10-26; current equity −0.20% from peak, D5 clear)
 - **Buying power:** $88,174.38 (= cash), multiplier 1× ✅ (RULES.md A4)
 
 ## Flags
@@ -28,6 +28,18 @@
 | KO | 26 | 94.76 | 2026-11-02 | 2,463.83 | 86.63 (hwm 96.26) | 113.72 | 246 | Q3 beat, comparable EPS growth guide raised ≥11% (half size, F+T) |
 
 Open positions: 5/8 (C2). All 5 GTC 10% trailing stops are verified live on Alpaca as of 21:16 UTC 11/2 EOD (S1/S4 ✅).
+
+### EOD snapshot (2026-11-03 close)
+
+| Ticker | Close | Value | Unrealized P&L | % from entry | Days held | Alpaca trail stop (hwm) |
+|---|---|---|---|---|---|---|
+| DHR | 230.11 | $2,301.10 | −$59.00 | −2.50% | 2 | 213.05 (236.72) |
+| ELV | 413.75 | $2,068.75 | −$60.50 | −2.84% | 2 | 384.09 (426.77) |
+| MMM | 177.05 | $2,478.70 | −$12.60 | −0.51% | 2 | 162.10 (180.11) |
+| MRK | 144.67 | $2,314.72 | −$66.40 | −2.79% | 1 | 134.46 (149.40) |
+| KO | 94.80 | $2,464.80 | +$0.97 | +0.04% | 1 | 86.63 (96.26) |
+
+Total unrealized −$197.53. Market value $11,628.07 (11.7% of equity). Open risk to stops ≈ $904 (0.91%). Open positions 5/8 (C2). All 5 GTC 10% trailing stops are live (S1/S4 ✅). Health care (DHR/ELV/MRK) is 57% of deployed capital.
 
 ### Midday snapshot (2026-11-03 17:42 UTC, 12:42 ET, Alpaca marks)
 
@@ -109,7 +121,23 @@ Total unrealized −$109.13. All 3 GTC trailing stops are live (S1/S4 ✅). None
 
 Total unrealized −$119.62. Deployed $6,861.03 (6.9% of equity). Open risk to stops ≈ $678 (0.68%). Open positions 3/8 (C2).
 
-## Today's P&L (2026-11-02 close)
+## Today's P&L (2026-11-03 close)
+
+- Today open equity: $99,884.46 → close equity: $99,802.45
+- Daily return: −0.08% (−$82.01)
+- SPY daily return: +0.31% (752.04 → 754.38, IEX)
+- Excess vs SPY: −0.39%
+- Drawdown from peak: −0.20% (D5 threshold −10%)
+- D1 daily loss cap: −0.08% > −2% → not breached
+
+## Week to date (since Fri 10/30 close)
+
+- Week return: −0.08% (prior Friday close equity $99,882.75)
+- SPY week return: −0.18% (755.72 → 754.38)
+- Excess vs SPY: +0.10%
+- D4 weekly loss check: −0.08% > −5% → `weekly_defensive: NO`
+
+## Prior day P&L (2026-11-02 close)
 
 - Today open equity: $99,882.75 → close equity: $99,883.51
 - Daily return: +0.00% (+$0.76)
@@ -117,13 +145,6 @@ Total unrealized −$119.62. Deployed $6,861.03 (6.9% of equity). Open risk to s
 - Excess vs SPY: +0.49%
 - Drawdown from peak: −0.12% (D5 threshold −10%)
 - D1 daily loss cap: +0.00% > −2% → not breached
-
-## Week to date (since Fri 10/30 close)
-
-- Week return: +0.00% (prior Friday close equity $99,882.75)
-- SPY week return: −0.49% (755.72 → 752.04)
-- Excess vs SPY: +0.49%
-- D4 weekly loss check: +0.00% > −5% → `weekly_defensive: NO`
 
 ## Prior day P&L (2026-10-30 close)
 

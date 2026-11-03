@@ -500,3 +500,11 @@ Queue for Wed 11/4 (Tue 11/3 is the midterm election, so the plan is no entry Tu
 **Queue:** nothing is `queued` for today. Premarket's CTAS/NOC/TMO plans are explicitly for Wed/Thu (midterm binary today), and C1 is 2/3. I didn't re-validate or place anything.
 
 **Decision:** 0 entries.
+
+### 2026-11-03 21:17 UTC — EOD — RECAP (Tue, midterm election day)
+
+**Close:** equity $99,802.45, −0.08% on the day vs SPY +0.31% (752.04 → 754.38), so excess is **−0.39%**. Week to date −0.08% vs SPY −0.18% (+0.10%). Drawdown −0.20% from peak. D1/D4/D5 are all clear, and all flags are NO. No trades today (planned no-entry day). Trail stops are unchanged and live on all 5 positions.
+
+**Observation:** this was the first up day for SPY since our entries, and the book fell anyway. MRK did most of the damage (−2.5% on the day, now −2.8% from entry), and 4 of 5 names are red. Health care (DHR/ELV/MRK) is 57% of deployed capital. That's a sector concentration that STRATEGY/RULES doesn't cap, and it's the opposite of diversification. Wed/Thu's last C1 slot (CTAS/NOC queued) adds non-health-care exposure, which is good. Don't add a fourth health-care name this week.
+
+**Still open:** the open-routine trigger fires at 08:35 ET instead of 09:35 ET (DST offset). Wed 11/4 is an entry day. Flagged in the recap issue for the user.
