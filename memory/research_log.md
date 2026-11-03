@@ -490,3 +490,13 @@ Queue for Wed 11/4 (Tue 11/3 is the midterm election, so the plan is no entry Tu
 
 **Decision:** CTAS, NOC and TMO are `queued half` for Wed/Thu. UNP was demoted to watch-only (RSI 72.2). UNH and TXN stay watch-only. MRK and KO came off the watchlist (they're positions). COR and MCK were not added (pre-earnings blackout). No orders were placed.
 
+
+### 2026-11-03 13:36 UTC — OPEN — NO ENTRIES (Tue, midterm election day)
+
+**Timing ⚠️:** this run fired at **08:36 ET, about an hour before the open**. Alpaca's clock showed the market closed (next_open 09:30 ET). It's the same UTC/DST trigger offset flagged in the 11/2 open entry, and it's still unfixed. No orders depend on it today. **But Wed 11/4 is an entry day** (CTAS/NOC/TMO are queued), and an open run at 08:35 ET would hit a closed market. **User action needed:** set the open trigger to `CRON_TZ=America/New_York 35 9 * * 1-5` (or 14:35 UTC). Check the premarket and midday triggers too.
+
+**Boot:** Alpaca `paper-api` (O5 ✅). ACTIVE, equity $99,817.28 pre-open, cash = BP $88,174.38, multiplier 1 (A4 ✅). Drawdown is −0.18% from the $100k peak (D5 clear). Flags all NO, and today isn't a D3 blackout. 5 positions with 5 live GTC 10% trailing stops (S1/S4 ✅). DHR is the weakest at −4.0%, still clear of S2.
+
+**Queue:** nothing is `queued` for today. Premarket's CTAS/NOC/TMO plans are explicitly for Wed/Thu (midterm binary today), and C1 is 2/3. I didn't re-validate or place anything.
+
+**Decision:** 0 entries.
