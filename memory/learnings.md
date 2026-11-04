@@ -22,6 +22,9 @@ Perplexity returned a stale guidance number for $TSLA — used the actual SEC fi
 
 -->
 
+## 2026-11-04 [ops]
+Editing a file under `routines/` doesn't change what a routine actually runs. Each trigger stores its own inline copy of the prompt, so the trigger has to be updated too. On 11/3 the volume-gate ownership change went into `routines/open.md`, but the `bull-open` trigger still runs the older text, which says "Do NOT check intraday volume". That explains why the open routine kept skipping the gate. When a routine file changes, check the trigger prompt with `list_triggers` and flag any drift for the user. Better still, make the triggers `cat routines/<name>.md` so the repo is the single source.
+
 ## 2026-11-03 [ops]
 Volume gate ownership: premarket cannot measure entry-day volume (session hasn't opened at 06:00 ET). Gate transferred to open routine — always checked at 09:35 ET. Premarket must not write ad-hoc blocking conditions into queued entries; context notes are fine, but the only blocking gates are STRATEGY.md legs. Both changes locked into routines/open.md, routines/premarket.md, and STRATEGY.md leg 3.
 

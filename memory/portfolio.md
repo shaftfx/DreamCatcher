@@ -5,10 +5,10 @@
 ## Account
 
 - **Mode:** paper
-- **Last refresh (UTC):** 2026-11-03 21:17 (EOD routine, 16:17 ET, Alpaca close marks)
+- **Last refresh (UTC):** 2026-11-04 11:10 (premarket routine, 06:10 ET, Alpaca pre-open marks)
 - **Cash:** $88,174.38
-- **Equity:** $99,802.45 (Tue 11/3 close; last_equity $99,884.46 at Mon 11/2 close)
-- **Peak equity:** $100,000.00 (set 2026-10-26; current equity −0.20% from peak, D5 clear)
+- **Equity:** $99,919.36 pre-open Wed 11/4 (last_equity $99,802.45 at Tue 11/3 close)
+- **Peak equity:** $100,000.00 (set 2026-10-26; current equity −0.08% from peak, D5 clear)
 - **Buying power:** $88,174.38 (= cash), multiplier 1× ✅ (RULES.md A4)
 
 ## Flags
@@ -28,6 +28,18 @@
 | KO | 26 | 94.76 | 2026-11-02 | 2,463.83 | 86.63 (hwm 96.26) | 113.72 | 246 | Q3 beat, comparable EPS growth guide raised ≥11% (half size, F+T) |
 
 Open positions: 5/8 (C2). All 5 GTC 10% trailing stops are verified live on Alpaca as of 21:16 UTC 11/2 EOD (S1/S4 ✅).
+
+### Premarket snapshot (2026-11-04 11:10 UTC, Alpaca pre-open marks)
+
+| Ticker | Current | Unrealized P&L | % from entry | Alpaca trail stop (hwm) |
+|---|---|---|---|---|
+| DHR | 230.00 | −$60.10 | −2.55% | 213.05 (236.72) |
+| ELV | 417.28 | −$42.85 | −2.01% | 384.09 (426.77) |
+| MMM | 182.50 | +$63.70 | +2.56% | 162.10 (180.11) |
+| MRK | 145.54 | −$52.48 | −2.20% | 134.46 (149.40) |
+| KO | 95.19 | +$11.11 | +0.45% | 86.63 (96.26) |
+
+Total unrealized −$80.62. Equity $99,919.36, drawdown −0.08% from peak (D5 clear). All 5 GTC 10% trailing stops are live (S1/S4 ✅). None are near S2 (−7%) or S3 (+15%). MMM's pre-open mark is above its hwm, so its trail will ratchet up if it holds after the open.
 
 ### EOD snapshot (2026-11-03 close)
 
