@@ -5,11 +5,11 @@
 ## Account
 
 - **Mode:** paper
-- **Last refresh (UTC):** 2026-11-04 11:10 (premarket routine, 06:10 ET, Alpaca pre-open marks)
-- **Cash:** $88,174.38
-- **Equity:** $99,919.36 pre-open Wed 11/4 (last_equity $99,802.45 at Tue 11/3 close)
-- **Peak equity:** $100,000.00 (set 2026-10-26; current equity −0.08% from peak, D5 clear)
-- **Buying power:** $88,174.38 (= cash), multiplier 1× ✅ (RULES.md A4)
+- **Last refresh (UTC):** 2026-11-04 14:37 (open routine, 09:37 ET, after NOC fill)
+- **Cash:** $86,014.14
+- **Equity:** $100,098.66 (last_equity $99,802.45 at Tue 11/3 close)
+- **Peak equity:** $100,098.66 (new high set 2026-11-04 intraday; previous peak $100,000.00 from 2026-10-26)
+- **Buying power:** $86,014.14 (= cash), multiplier 1× ✅ (RULES.md A4)
 
 ## Flags
 
@@ -23,11 +23,25 @@
 |---|---|---|---|---|---|---|---|---|
 | DHR | 10 | 236.01 | 2026-10-30 | 2,360.10 | 213.05 (hwm 236.72) | 283.21 | 230 | Q3 beat+raise, life-sciences recovery (half size, F+T) |
 | ELV | 5 | 425.85 | 2026-10-30 | 2,129.25 | 384.09 (hwm 426.77) | 511.02 | 209 | Q3 beat, FY26 guide raised ≥ $29 (half size, F+T) |
-| MMM | 14 | 177.95 | 2026-10-30 | 2,491.30 | 162.10 (hwm 180.11) | 213.54 | 239 | Q3 beat, FY guide raised $9.10–9.15 (half size, F+T) |
+| MMM | 14 | 177.95 | 2026-10-30 | 2,491.30 | 174.80 (hwm 194.22) | 213.54 | 239 | Q3 beat, FY guide raised $9.10–9.15 (half size, F+T) |
 | MRK | 16 | 148.82 | 2026-11-02 | 2,381.12 | 134.46 (hwm 149.40) | 178.58 | 238 | Q3 beat, FY26 adj EPS guide raised $2.77–2.82 (half size, F+T) |
-| KO | 26 | 94.76 | 2026-11-02 | 2,463.83 | 86.63 (hwm 96.26) | 113.72 | 246 | Q3 beat, comparable EPS growth guide raised ≥11% (half size, F+T) |
+| KO | 26 | 94.76 | 2026-11-02 | 2,463.83 | 86.68 (hwm 96.31) | 113.72 | 246 | Q3 beat, comparable EPS growth guide raised ≥11% (half size, F+T) |
+| NOC | 4 | 540.06 | 2026-11-04 | 2,160.24 | 484.78 (hwm 538.64) | 648.07 | 221 | Q3 beat, uptrend above 50d; non-health-care diversifier (half size, F+T) |
 
-Open positions: 5/8 (C2). All 5 GTC 10% trailing stops are verified live on Alpaca as of 21:16 UTC 11/2 EOD (S1/S4 ✅).
+Open positions: 6/8 (C2). All 6 GTC 10% trailing stops verified live on Alpaca at 14:37 UTC 11/4 (S1/S4 ✅).
+
+### Open-routine snapshot (2026-11-04 14:37 UTC, 09:37 ET, Alpaca marks)
+
+| Ticker | Current | Unrealized P&L | % from entry | Alpaca trail stop (hwm) |
+|---|---|---|---|---|
+| DHR | 234.69 | −$13.20 | −0.56% | 213.05 (236.72) |
+| ELV | 418.74 | −$35.55 | −1.67% | 384.09 (426.77) |
+| MMM | 189.30 | +$158.90 | +6.38% | 174.80 (194.22) |
+| MRK | 147.67 | −$18.40 | −0.77% | 134.46 (149.40) |
+| KO | 95.21 | +$11.63 | +0.47% | 86.68 (96.31) |
+| NOC | 538.65 | −$5.66 | −0.26% | 484.78 (538.64) |
+
+Total unrealized +$97.72. Equity $100,098.66, a new peak (D5 clear). MMM's trail ratcheted up to 174.80. NOC was entered today (4 @ 540.06).
 
 ### Premarket snapshot (2026-11-04 11:10 UTC, Alpaca pre-open marks)
 
@@ -176,5 +190,5 @@ Total unrealized −$119.62. Deployed $6,861.03 (6.9% of equity). Open risk to s
 
 ## New entries this week
 
-- **Week of 11/2:** 2 / 3 (RULES.md C1): MRK and KO on Mon 11/2. One slot is left for Wed/Thu. Fri 11/6 is the NFP D3 blackout.
+- **Week of 11/2:** 3 / 3 (RULES.md C1) — **full.** MRK and KO on Mon 11/2, NOC on Wed 11/4. No more entries until Mon 11/9.
 - Prior week (10/26): 3/3, DHR, ELV, MMM (all 2026-10-30).

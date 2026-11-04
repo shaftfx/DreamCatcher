@@ -553,3 +553,28 @@ Queue for Wed 11/4 (Tue 11/3 is the midterm election, so the plan is no entry Tu
 **Ops ⚠️ (user action needed):** I checked the triggers this run. `bull-open` is still `35 13 * * 1-5` UTC, which is **08:35 ET**, 55 min before the open, on an entry day. Its stored prompt is also out of sync with `routines/open.md`: it predates the 11/3 volume-gate change. The fix is `CRON_TZ=America/New_York 35 9 * * 1-5` and syncing the prompt to the repo file, or making the prompt `cat routines/open.md` and follow it. Premarket (11:00 UTC = 06:00 ET), midday (17:30 UTC = 12:30 ET) and EOD (21:15 UTC = 16:15 ET) are correct for EST. I did not change any trigger.
 
 **Decision:** CTAS, NOC and UNP are `queued half`, and only one may fill. TMO was demoted to watch-only. UNH and TXN stay watch-only. No orders were placed.
+
+### 2026-11-04 14:37 UTC — OPEN — EXECUTION SUMMARY (1 entry: NOC)
+
+**Timing ⚠️:** this run fired at **13:36 UTC = 08:36 ET**, 54 min before the open. Alpaca's clock showed the market closed. It's the same DST offset flagged on 11/2, 11/3 and in this morning's premarket, and it's still unfixed. I ran a background wait until 14:35 UTC (09:35 ET) and didn't validate or place anything before then. **User action is still needed:** set `bull-open` to `CRON_TZ=America/New_York 35 9 * * 1-5`.
+
+**Boot:** Alpaca `paper-api` (O5 ✅). ACTIVE, equity $100,056.86 pre-open, cash = BP $88,174.38, multiplier 1 (A4 ✅). Flags all NO. Wed 11/4 isn't a D3 blackout. C1 2/3, C2 5/8. 5 positions, each with a live GTC 10% trail.
+
+**Overnight news:** WebSearch found nothing dated 11/4 for CTAS. For NOC, the only relevant item is the 10/20 247wallst piece on defense weakness from a Democratic-sweep bet ([247wallst](https://247wallst.com/investing/2026/10/20/defense-stocks-are-tumbling-as-wall-street-bets-on-a-democratic-sweep/)). Premarket queued NOC with the election result already known. A new Congress isn't seated until January, so this is headline risk, not a thesis break. The absence of news is **not** confirmation.
+
+**Volume gate:** the stored trigger prompt says "Do NOT check intraday volume", but STRATEGY.md and `routines/open.md` give the open routine ownership of the 1.0× gate. I measured it anyway (09:30–09:35 IEX volume vs the median of the same window over the prior 19–20 sessions). All three names cleared easily, so the conflict didn't change today's decision. It still needs the trigger prompt synced to the repo.
+
+| Rank | Ticker | Live 09:35 | Chase | SMA50 | RSI | EMA 8>12>21>55 | Vol (5m) | decision |
+|---|---|---|---|---|---|---|---|---|
+| 1 | CTAS | 227.42 | 227.11 ❌ | 205.65 ✅ | 67.8 ✅ | intact ✅ | 3.17× ✅ | **rejected**: above the chase limit (+0.14%) |
+| 2 | NOC | 538.57 | 558.43 ✅ | 520.25 ✅ | 53.4 ✅ | intact (px below 8 EMA 548.08) ✅ | 3.60× ✅ | **placed** |
+| 3 | UNP | 305.62 | 307.97 ✅ | 287.14 ✅ | 67.7 ✅ | intact ✅ | 11.80× ✅ | passed, not taken: C1 would be full after NOC |
+
+**Rule gates for NOC (all ✅):** P1 2.16% of equity. P2: no prior exposure. P3: risk at the 10% trail is $221 (0.22%). P4: target 648.07 (×1.20) = 2.0R vs the trail. C1 → 3/3. C2 → 6/8. C3: not held. A1–A6 clean (us_equity, tradable, > $5, liquid).
+
+**Execution:** OTO market buy (day) `bull-20261104-NOC-open` with a static stop at 484.71. Filled 4 @ 540.06 at 14:36:35Z, at the IEX ask; the last trade was 538.57, and the IEX spread was wide. The static leg was cancelled (204) and replaced with the GTC 10% trailing stop `bull-20261104-NOC-trail`: stop 484.78, hwm 538.64. I re-queried open orders and all 6 trailing stops are live. No naked positions. MMM's trail ratcheted to 174.80 (hwm 194.22) on today's +3.7% move.
+
+**Notes for next routines:**
+1. C1 is **3/3**, so the week is full. No entries Thu 11/5; Fri 11/6 is NFP (D3). CTAS and UNP passed every gate except CTAS's chase, so re-queue both for Mon 11/9 from fresh bars.
+2. Sector mix now: health care 3 (DHR/ELV/MRK), industrials 1 (MMM), staples 1 (KO), defense 1 (NOC).
+3. Midday: S2/S3 across all 6. MMM is +6.4%, still short of S3 (+15%). Watch NOC for defense-budget headlines (exit trigger #4).
