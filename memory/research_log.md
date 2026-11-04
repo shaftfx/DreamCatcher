@@ -578,3 +578,17 @@ Queue for Wed 11/4 (Tue 11/3 is the midterm election, so the plan is no entry Tu
 1. C1 is **3/3**, so the week is full. No entries Thu 11/5; Fri 11/6 is NFP (D3). CTAS and UNP passed every gate except CTAS's chase, so re-queue both for Mon 11/9 from fresh bars.
 2. Sector mix now: health care 3 (DHR/ELV/MRK), industrials 1 (MMM), staples 1 (KO), defense 1 (NOC).
 3. Midday: S2/S3 across all 6. MMM is +6.4%, still short of S3 (+15%). Watch NOC for defense-budget headlines (exit trigger #4).
+
+### 2026-11-04 21:16 UTC — EOD — DAILY WRAP (Wed)
+
+**Result:** equity $100,239.18 (new peak), +0.44% vs SPY +1.64% → **−1.20% excess**. WTD +0.36% vs SPY +1.46% (−1.10%). Flags all NO; D1/D4/D5 clear.
+
+**Attribution:** the five names held into today rose +$495.57 (+4.26% on $11,628 of 11/3 market value), beating SPY by ~2.6 pts. NOC (bought at the open) gave back −$58.84 (−2.72% from fill) as defense lagged the post-election relief rally. The shortfall vs SPY is cash drag: 86% cash earned nothing on a +1.6% index day.
+
+**Trails:** all 6 GTC 10% trails live. Ratchets today: ELV 388.58→394.17, MMM 174.80→175.29, MRK 134.46→135.36, KO 86.75→86.90.
+
+**Recap:** issue #11.
+
+**Next:** C1 3/3 for week of 11/2 — no entries Thu 11/5; Fri 11/6 NFP D3 blackout. Re-validate CTAS and UNP from fresh bars for Mon 11/9. Midday Thu: S2/S3 sweep, watch NOC for defense headlines.
+
+**Ops ⚠️ still unfixed (checked list_triggers this run):** `bull-open` is still `35 13 * * 1-5` UTC = 08:35 ET (55 min pre-open) and its inline prompt still says "Do NOT check intraday volume", out of sync with `routines/open.md`. Needs the user: `CRON_TZ=America/New_York 35 9 * * 1-5` + prompt sync.

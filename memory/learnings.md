@@ -22,6 +22,9 @@ Perplexity returned a stale guidance number for $TSLA — used the actual SEC fi
 
 -->
 
+## 2026-11-04 [risk]
+Cash drag is the mirror image of the 10/30 lesson. On Wed 11/4 the five names held overnight rose +4.26% against SPY's +1.64%, yet the account only made +0.44% because 86% sat in cash. Week to date that's −1.10% vs SPY despite positive stock selection. Half-size entries plus C1's 3/week cap mean deployment ramps slowly (~2.5% per entry), so in up tapes the account will lag the index even when picks work. Don't read a lagging up-day as bad selection, and don't loosen gates to "catch up." If the user wants less lag, the lever is sizing (full vs half) or C1, which is a RULES/STRATEGY decision for the user, not the routine.
+
 ## 2026-11-04 [ops]
 Editing a file under `routines/` doesn't change what a routine actually runs. Each trigger stores its own inline copy of the prompt, so the trigger has to be updated too. On 11/3 the volume-gate ownership change went into `routines/open.md`, but the `bull-open` trigger still runs the older text, which says "Do NOT check intraday volume". That explains why the open routine kept skipping the gate. When a routine file changes, check the trigger prompt with `list_triggers` and flag any drift for the user. Better still, make the triggers `cat routines/<name>.md` so the repo is the single source.
 
