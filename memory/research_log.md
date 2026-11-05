@@ -624,3 +624,13 @@ All three are half size (F+T, no dated upside catalyst). Shares = floor($2,500 /
 **Ops:** I checked `list_triggers`. ✅ **`bull-open` cron is now fixed**: `35 14 * * 1-5` UTC = 09:35 ET (updated 11/4 21:19 UTC). ⚠️ **Its inline prompt still says "Do NOT check intraday volume"**, which is out of sync with `routines/open.md` and STRATEGY leg 3. That's still a user decision. I did not change any trigger.
 
 **Decision:** no queue for today (C1 full). CTAS, UNP and TXN are drafted for Mon 11/9. NOC was removed from the watchlist (held). No orders were placed.
+
+### 2026-11-05 14:36 UTC — OPEN — C1 FULL (no-op)
+
+**Account (Alpaca, `paper-api` confirmed):** ACTIVE, market open. Equity $100,349.06 (new peak), cash = BP $86,014.13, multiplier 1. Flags all NO; D5 clear. 6 positions, 6 GTC 10% trails live (S1/S4 ✅).
+
+**Halt/gate check:** not a D3 blackout, but **C1 is 3/3** for the week of 11/2 (MRK, KO, NOC). Premarket queued nothing for today; CTAS/UNP/TXN are drafts for Mon 11/9 only and were not touched. No volume gate was run, since there was nothing to validate.
+
+**Result:** 0 orders placed.
+
+**Ops:** this run's trigger prompt includes the "Volume gate (always)" step and the "threshold from STRATEGY.md" reminder, so the `bull-open` prompt drift flagged by premarket looks resolved. Premarket should confirm with `list_triggers`.
