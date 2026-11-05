@@ -5,9 +5,9 @@
 ## Account
 
 - **Mode:** paper
-- **Last refresh (UTC):** 2026-11-05 11:15 (premarket routine, 06:15 ET, pre-open marks)
+- **Last refresh (UTC):** 2026-11-05 17:42 (midday routine, 12:42 ET, Alpaca marks)
 - **Cash:** $86,014.13
-- **Equity:** $100,294.01 pre-open (last_equity $100,247.59 at Wed 11/4 close per Alpaca)
+- **Equity:** $100,078.03 midday (last_equity $100,247.59 at Wed 11/4 close per Alpaca)
 - **Peak equity:** $100,294.01 (new high on 11/5 pre-open marks; prior peak $100,239.18 at 11/4 close)
 - **Buying power:** $86,014.13 (= cash), multiplier 1× ✅ (RULES.md A4)
 
@@ -21,14 +21,27 @@
 
 | Ticker | Qty | Entry | Entry date | Cost | Stop (trail 10%) | Target (2R) | Risk $ at stop | Thesis |
 |---|---|---|---|---|---|---|---|---|
-| DHR | 10 | 236.01 | 2026-10-30 | 2,360.10 | 213.05 (hwm 236.72) | 283.21 | 230 | Q3 beat+raise, life-sciences recovery (half size, F+T) |
-| ELV | 5 | 425.85 | 2026-10-30 | 2,129.25 | 394.17 (hwm 437.97) | 511.02 | 158 | Q3 beat, FY26 guide raised ≥ $29 (half size, F+T) |
-| MMM | 14 | 177.95 | 2026-10-30 | 2,491.30 | 175.29 (hwm 194.77) | 213.54 | 37 | Q3 beat, FY guide raised $9.10–9.15 (half size, F+T) |
-| MRK | 16 | 148.82 | 2026-11-02 | 2,381.12 | 135.36 (hwm 150.40) | 178.58 | 215 | Q3 beat, FY26 adj EPS guide raised $2.77–2.82 (half size, F+T) |
-| KO | 26 | 94.76 | 2026-11-02 | 2,463.83 | 86.90 (hwm 96.56) | 113.72 | 204 | Q3 beat, comparable EPS growth guide raised ≥11% (half size, F+T) |
-| NOC | 4 | 540.06 | 2026-11-04 | 2,160.24 | 484.78 (hwm 538.65) | 648.07 | 221 | Q3 beat, uptrend above 50d; non-health-care diversifier (half size, F+T) |
+| DHR | 10 | 236.01 | 2026-10-30 | 2,360.10 | 214.61 (hwm 238.45) | 283.21 | 214 | Q3 beat+raise, life-sciences recovery (half size, F+T) |
+| ELV | 5 | 425.85 | 2026-10-30 | 2,129.25 | 403.69 (hwm 448.54) | 511.02 | 111 | Q3 beat, FY26 guide raised ≥ $29 (half size, F+T) |
+| MMM | 14 | 177.95 | 2026-10-30 | 2,491.30 | 177.21 (hwm 196.90) | 213.54 | 10 | Q3 beat, FY guide raised $9.10–9.15 (half size, F+T) |
+| MRK | 16 | 148.82 | 2026-11-02 | 2,381.12 | 138.03 (hwm 153.37) | 178.58 | 173 | Q3 beat, FY26 adj EPS guide raised $2.77–2.82 (half size, F+T) |
+| KO | 26 | 94.76 | 2026-11-02 | 2,463.83 | 87.65 (hwm 97.39) | 113.72 | 185 | Q3 beat, comparable EPS growth guide raised ≥11% (half size, F+T) |
+| NOC | 4 | 540.06 | 2026-11-04 | 2,160.24 | 485.75 (hwm 539.72) | 648.07 | 217 | Q3 beat, uptrend above 50d; non-health-care diversifier (half size, F+T) |
 
-Open positions: 6/8 (C2). All 6 GTC 10% trailing stops verified live on Alpaca at 21:16 UTC 11/4 (S1/S4 ✅). "Risk $ at stop" = (entry − current trail) × qty; MMM's trail is now within $2.66/sh of entry.
+Open positions: 6/8 (C2). All 6 GTC 10% trailing stops verified live on Alpaca at 17:42 UTC 11/5 (S1/S4 ✅). "Risk $ at stop" = (entry − current trail) × qty; MMM's trail (177.21) is now $0.74/sh below entry, so it is close to breakeven-protected.
+
+### Midday snapshot (2026-11-05 17:42 UTC, 12:42 ET, Alpaca marks)
+
+| Ticker | Current | Unrealized P&L | % from entry | Alpaca trail stop (hwm) |
+|---|---|---|---|---|
+| DHR | 228.41 | −$76.00 | −3.22% | 214.61 (238.45) |
+| ELV | 429.82 | +$19.85 | +0.93% | 403.69 (448.54) |
+| MMM | 189.93 | +$167.72 | +6.73% | 177.21 (196.90) |
+| MRK | 149.44 | +$9.92 | +0.42% | 138.03 (153.37) |
+| KO | 95.91 | +$29.83 | +1.21% | 87.65 (97.39) |
+| NOC | 521.75 | −$73.26 | −3.39% | 485.75 (539.72) |
+
+Total unrealized +$78.06. Intraday P&L vs Wed close equity ($100,247.59): −$169.56 (−0.17%), so D1 is clear. Drawdown −0.22% from peak ($100,294.01), so D5 is clear. No position is at S2 (−7%) or S3 (+15%). DHR (−3.22%) and NOC (−3.39%) are the weakest, both more than 3.5 pts from S2. All 6 GTC 10% trailing stops are live (S4 ✅). No actions taken.
 
 ### Premarket snapshot (2026-11-05 11:15 UTC, Alpaca pre-open marks)
 
