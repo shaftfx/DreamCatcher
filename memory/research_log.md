@@ -4,18 +4,17 @@ Dated entries. Premarket appends new research; other routines append rejected id
 
 ## Active Watchlist
 
-_Last refresh: 2026-11-04 premarket (Wed, post-election). Technicals recomputed this run from Alpaca IEX daily bars through the **11/3 close**. **Wed 11/4 and Thu 11/5 are entry days** (not D3 blackouts). C1 is 2/3, so **one slot is left**. Fri 11/6 is the NFP D3 blackout. Live stop on every new entry is the S1 10% trail, so every target is entry × 1.20 (2R vs the live stop). SPY closed 754.38, −1.6% below its 50d (766.39), RSI 40.4; EMA stack is not intact. The index is still in a downtrend. Health care is 57% of deployed capital (DHR/ELV/MRK), so **no new health-care entries this week** (per EOD 11/3)._
+_Last refresh: 2026-11-05 premarket (Thu). Technicals recomputed this run from Alpaca IEX daily bars through the **11/4 close**. **C1 is 3/3 for the week of 11/2, so there are no entries Thu 11/5.** Fri 11/6 is the NFP D3 blackout. The next entry window is **Mon 11/9** (Mon premarket must confirm it isn't a CPI day). Every new entry's live stop is the S1 10% trail, so every target is entry × 1.20. SPY closed 766.73, flat to its 50d (767.05), RSI 50.6, EMA stack not intact. Health care is 3 of 6 holdings (DHR/ELV/MRK), so **no new health-care entries** until that changes._
 
-| Ticker | Added | Thesis (1 line) | Catalyst | Catalyst Date | Status (11/3 close · SMA50 · RSI14 · 20-bar swing low) |
+| Ticker | Added | Thesis (1 line) | Catalyst | Catalyst Date | Status (11/4 close · SMA50 · RSI14 · 20-bar swing low) |
 |---|---|---|---|---|---|
-| CTAS | 2026-10-29 | Q1 FY27 beat, FY27 guide raised (8-K) | FTC decision on UniFirst (no filed suit as of 11/4; no close before 12/11) | ~mid-Dec | **queued half #1**, F+T ✅ — 223.75 · 205.20 (+9.0%) · 64.7 · 196.56. EMA stack intact |
-| NOC | 2026-10-26 | Q3 beat+raised (FY adj EPS $29.35–29.75) | midterm binary passed (Democratic sweep) | passed 11/3 | **queued half #2**, F+T ✅ — 550.18 · 520.28 (+5.7%) · 59.7 · 471.57. EMA stack intact; px just under the 8 EMA (550.80) |
-| UNP | 2026-10-26 | Q3 beat, rail pricing power | none within 8w | — | **queued half #3 (alternate)**, F+T ✅ — RSI cooled to 65.8 (was 72.2). 303.42 · 287.19 (+5.7%) · 274.52. EMA stack intact |
-| TMO | 2026-11-02 | Q3 beat ($6.68 vs $6.40), FY26 guide **raised** to $25.13–25.43 | none within 8w | — | **watch-only** (demoted): technical passes (698.37 · 657.08 +6.3% · 58.1), but it would be a 4th health-care name and duplicates DHR |
-| UNH | 2026-10-26 | Q3 beat ($4.69); FY guide *maintained* ~$20.50 | none within 8w | — | **watch-only**: health-care concentration + ELV overlap; Democratic Congress is managed-care headline risk. 403.91 · 389.86 (+3.6%) · 53.5 |
-| TXN | 2026-10-26 | Q3 beat ($2.62 vs $2.42); Q4 guide $5.8–6.3B / EPS $2.45–2.79 | none within 8w | — | **watch-only**: 312.61, +13.2% over its 50d after +3.5% on 11/3, RSI 67.4 (extended). AMD +6% pre-market on a beat, but NVDA/MU lower on data-center ballot measures; QCOM reports after the close today. Revisit Thu |
+| CTAS | 2026-10-29 | Q1 FY27 beat, FY27 guide raised (8-K) | FTC decision on UniFirst (no vote or suit filed as of 11/5; no close before 12/11) | ~mid-Dec | **queued for Mon 11/9 #1**, F+T ✅ but stretched: 229.09 · 205.69 (+11.4%) · **69.0** · 197.21. EMA stack intact. RSI is 1 pt from the 70 cap |
+| UNP | 2026-10-26 | Q3 beat, rail pricing power | none within 8w | — | **queued for Mon 11/9 #2**, F+T ✅ but borderline: 308.53 · 287.28 (+7.4%) · **69.9** · 274.51. EMA stack intact. Likely fails RSI ≤ 70 on any further up day |
+| TXN | 2026-10-26 | Q3 beat ($2.62 vs $2.42); Q4 guide $5.8–6.3B / EPS $2.45–2.79 | none within 8w | — | **watch-only → candidate #3 for Mon**: RSI cooled to 65.2. 311.56 · 278.51 (+11.9%, extended) · 272.13. EMA stack intact. Semis still carry data-center ballot-measure headline risk |
+| TMO | 2026-11-02 | Q3 beat ($6.68 vs $6.40), FY26 guide **raised** to $25.13–25.43 | none within 8w | — | **watch-only** (health-care concentration): 706.18 · 658.77 (+7.2%) · 60.4 · 635.73 |
+| UNH | 2026-10-26 | Q3 beat ($4.69); FY guide *maintained* ~$20.50 | none within 8w | — | **watch-only** (health-care concentration + ELV overlap; Democratic Congress is managed-care headline risk): 409.28 · 390.74 (+4.7%) · 56.9 |
 
-_Removed: none. Demoted: TMO (sector concentration). Not added: PH (reports Thu 11/5, pre-earnings blackout), COR (reported today before the open; Mizuho PT raised to $334, but health care and no post-print chart yet). The new-candidate search was thin again._
+_Removed: **NOC** (position taken 11/4; now in portfolio.md). Not added: **PH** (reports today before the open, so it's in pre-earnings blackout, and it's −4.5% below its 50d, so T fails), **COR** (RSI 71.1 and health care), **QCOM** (reported after the 11/4 close; −2.5% below its 50d, so T fails), **CI/BDX/ZTS/CAH** reporting today (health care, and inside the ER window). Revisit PH Mon from post-print bars if it reclaims the 50d._
 
 ---
 
@@ -27,7 +26,7 @@ _Removed: none. Demoted: TMO (sector concentration). Not added: PH (reports Thu 
 - **Tue 11/3:** US midterm elections. Not a D3 blackout, but a binary event for defense (NOC) and managed care (UNH/ELV). Treat as cautious; prefer no new NOC/UNH/ELV entries that day.
 - **Tue 11/3:** also JOLTS 10:00 ET, and AMD reports after close.
 - **Wed 11/4:** post-election reaction. Entry day if the tape settles. ADP 08:15, ISM Services 10:00; UBER/MCD before open, QCOM after close.
-- **Thu 11/5:** jobless claims and Q3 productivity/ULC 08:30.
+- **Thu 11/5:** jobless claims and Q3 productivity/ULC 08:30. **No entries (C1 3/3).** Reporting BMO: COP, PH, SO, DUK, CI, CMI, ROK, BDX, KMB, ZTS. AMC: ABNB, MNST, EOG, MCHP, MTD ([Digrin](https://www.digrin.com/stocks/earnings_calendar/2026-11-05)).
 - **Fri 11/6:** NFP first-Friday → **D3 blackout**, no new entries. Consensus is +55K (Sept was +29K), unemployment 4.2%. A strong print raises December hike odds (~80% priced per Reuters).
 - **DST ends Sun 11/1:** UTC crons shift one hour earlier in ET from Monday.
 
@@ -592,3 +591,36 @@ Queue for Wed 11/4 (Tue 11/3 is the midterm election, so the plan is no entry Tu
 **Next:** C1 3/3 for week of 11/2 — no entries Thu 11/5; Fri 11/6 NFP D3 blackout. Re-validate CTAS and UNP from fresh bars for Mon 11/9. Midday Thu: S2/S3 sweep, watch NOC for defense headlines.
 
 **Ops ⚠️ still unfixed (checked list_triggers this run):** `bull-open` is still `35 13 * * 1-5` UTC = 08:35 ET (55 min pre-open) and its inline prompt still says "Do NOT check intraday volume", out of sync with `routines/open.md`. Needs the user: `CRON_TZ=America/New_York 35 9 * * 1-5` + prompt sync.
+
+### 2026-11-05 11:15 UTC — PREMARKET — WATCHLIST REFRESH (Thu, C1 full, no queue for today)
+
+**Account (Alpaca, `paper-api` confirmed):** ACTIVE. Equity $100,294.01 pre-open, a new peak (last_equity $100,247.59). Cash = BP $86,014.13, multiplier 1 (A4 ✅). Flags all NO. Drawdown 0.00%, so D5 is clear. 6 positions, each with a live GTC 10% trail: MMM +9.1%, ELV +2.6%, MRK +2.0%, KO +2.0%, DHR −0.5%, NOC −3.5%. Nothing at S2/S3.
+
+**Day status:** Thu 11/5 isn't a D3 blackout, but **C1 is 3/3** (MRK, KO, NOC), so there are no entries today. Fri 11/6 is NFP (D3). Nothing is queued for the open routine today.
+
+**Macro / news (sourced this run):** search was thin again. I found no dated 11/5 futures or movers coverage, and no dated 11/4 close recap (results were 2025 pages). Alpaca bars show SPY +1.6% on 11/4, back to its 50d. The earnings calendar for today is from [Digrin](https://www.digrin.com/stocks/earnings_calendar/2026-11-05) (see Week flags). **The absence of news is not confirmation.**
+
+**Holdings read-through:**
+- **NOC** fell −4.5% on 11/4 (550.18 → 525.26), against a +1.6% tape, and is −3.5% from fill pre-open. A search found no 11/4-dated cause. The most plausible driver is defense lagging the post-election relief rally (see the [247wallst 10/20 piece](https://247wallst.com/investing/2026/10/20/defense-stocks-are-tumbling-as-wall-street-bets-on-a-democratic-sweep/) on the Democratic-sweep bet). The thesis (Q3 beat+raise) isn't broken. Price is still +1.0% over its 50d, with RSI 47.6 and the EMA stack intact. **Midday: watch S2 (−7% = 502.26)**, which sits above the live trail (484.78), so S2 is the binding exit.
+- **CI reports today BMO.** That's a managed-care read-through for ELV. Midday should check the reaction.
+- No other news for DHR/ELV/MMM/MRK/KO.
+
+**Existing names re-checked:**
+- **CTAS:** [TIKR](https://www.tikr.com/blog/cintas-sinks-5-as-ftc-moves-to-block-its-5-5-billion-unifirst-deal) and [ASI](https://members.asicentral.com/news/industry-news/october-2026/ftc-sources-say-regulator-will-sue-to-block-cintas-unifirst-deal) still show no FTC vote and no filed suit. The agreed wait runs to 12/11. Thesis intact. It's up +2.4% on 11/4, and RSI 69.0 is right at the cap.
+- **UNP:** +1.7% on 11/4, RSI 69.9. It will likely fail RSI on Monday if it rises again.
+- **TXN:** RSI cooled to 65.2, so it passes T. Promoted to Monday candidate #3.
+- **TMO, UNH:** watch-only, unchanged (health-care concentration).
+
+**Step 6 (catalyst within 5 trading days):** none of the watchlist names has a catalyst inside 5 trading days, and C1 blocks entries through Fri anyway. The plans below are **drafts for Mon 11/9** only. Mon premarket must recompute them from fresh bars; don't execute from these numbers.
+
+| Rank | Ticker | Entry (11/4 close) | Live stop (10% trail) | Target (×1.20) | Chase limit | Shares | $ | Risk $ | decision |
+|---|---|---|---|---|---|---|---|---|---|
+| 1 | CTAS | 229.09 | 206.18 | 274.91 | 232.53 | 10 | 2,291 | 229 | queued half, **Mon 11/9** (re-validate) |
+| 2 | UNP | 308.53 | 277.68 | 370.24 | 313.16 | 8 | 2,468 | 247 | queued half, **Mon 11/9** (re-validate; skip if RSI > 70) |
+| 3 | TXN | 311.56 | 280.40 | 373.87 | 316.23 | 8 | 2,492 | 249 | candidate, **Mon 11/9** (re-validate) |
+
+All three are half size (F+T, no dated upside catalyst). Shares = floor($2,500 / entry). P1 ≤ 2.5% of equity, P3 risk ≤ 0.25%, P4 2.0R vs the trail. P2 and C3 are fine (none held). C2 would be 7/8 after one fill.
+
+**Ops:** I checked `list_triggers`. ✅ **`bull-open` cron is now fixed**: `35 14 * * 1-5` UTC = 09:35 ET (updated 11/4 21:19 UTC). ⚠️ **Its inline prompt still says "Do NOT check intraday volume"**, which is out of sync with `routines/open.md` and STRATEGY leg 3. That's still a user decision. I did not change any trigger.
+
+**Decision:** no queue for today (C1 full). CTAS, UNP and TXN are drafted for Mon 11/9. NOC was removed from the watchlist (held). No orders were placed.

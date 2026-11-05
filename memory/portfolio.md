@@ -5,11 +5,11 @@
 ## Account
 
 - **Mode:** paper
-- **Last refresh (UTC):** 2026-11-04 21:16 (EOD routine, 16:16 ET, post-close)
-- **Cash:** $86,014.14
-- **Equity:** $100,239.18 (last_equity $99,802.45 at Tue 11/3 close)
-- **Peak equity:** $100,239.18 (new closing high 2026-11-04; prior peak $100,184.89 at 11/4 midday)
-- **Buying power:** $86,014.14 (= cash), multiplier 1× ✅ (RULES.md A4)
+- **Last refresh (UTC):** 2026-11-05 11:15 (premarket routine, 06:15 ET, pre-open marks)
+- **Cash:** $86,014.13
+- **Equity:** $100,294.01 pre-open (last_equity $100,247.59 at Wed 11/4 close per Alpaca)
+- **Peak equity:** $100,294.01 (new high on 11/5 pre-open marks; prior peak $100,239.18 at 11/4 close)
+- **Buying power:** $86,014.13 (= cash), multiplier 1× ✅ (RULES.md A4)
 
 ## Flags
 
@@ -29,6 +29,19 @@
 | NOC | 4 | 540.06 | 2026-11-04 | 2,160.24 | 484.78 (hwm 538.65) | 648.07 | 221 | Q3 beat, uptrend above 50d; non-health-care diversifier (half size, F+T) |
 
 Open positions: 6/8 (C2). All 6 GTC 10% trailing stops verified live on Alpaca at 21:16 UTC 11/4 (S1/S4 ✅). "Risk $ at stop" = (entry − current trail) × qty; MMM's trail is now within $2.66/sh of entry.
+
+### Premarket snapshot (2026-11-05 11:15 UTC, Alpaca pre-open marks)
+
+| Ticker | Current | Unrealized P&L | % from entry | Alpaca trail stop (hwm) |
+|---|---|---|---|---|
+| DHR | 234.93 | −$10.80 | −0.46% | 213.05 (236.72) |
+| ELV | 437.00 | +$55.75 | +2.62% | 394.17 (437.97) |
+| MMM | 194.18 | +$227.22 | +9.12% | 175.29 (194.77) |
+| MRK | 151.85 | +$48.48 | +2.04% | 135.36 (150.40) |
+| KO | 96.67 | +$49.59 | +2.01% | 86.90 (96.56) |
+| NOC | 521.01 | −$76.20 | −3.53% | 484.78 (538.65) |
+
+Total unrealized +$294.04. All 6 GTC 10% trailing stops are live (S1/S4 ✅). None at S2 (−7%) or S3 (+15%). NOC is the weakest (−3.53%, 3.47 pts from S2). Drawdown 0.00% (new peak), so D5 is clear.
 
 ### EOD snapshot (2026-11-04 close)
 
