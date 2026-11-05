@@ -22,6 +22,9 @@ Perplexity returned a stale guidance number for $TSLA — used the actual SEC fi
 
 -->
 
+## 2026-11-05 [risk]
+A down tape confirmed the cash lesson from the other side. On Thu 11/5, SPY fell 4.34% and the account fell only 0.24% (+4.10% excess), because 86% was cash. The positions fell 1.68%, so the selection was defensive too, but the cash did most of the work. The week went from −1.10% excess on Wed to +3.07% on Thu without a single trade. Judge excess over rolling windows, not single days, and don't credit stock-picking for what is really exposure level. Also: no index-level regime gate exists, and per-name 50d checks can still pass right after a −4% index day. Surface that to the user before redeploying. Don't invent a gate mid-session.
+
 ## 2026-11-04 [risk]
 Cash drag is the mirror image of the 10/30 lesson. On Wed 11/4 the five names held overnight rose +4.26% against SPY's +1.64%, yet the account only made +0.44% because 86% sat in cash. Week to date that's −1.10% vs SPY despite positive stock selection. Half-size entries plus C1's 3/week cap mean deployment ramps slowly (~2.5% per entry), so in up tapes the account will lag the index even when picks work. Don't read a lagging up-day as bad selection, and don't loosen gates to "catch up." If the user wants less lag, the lever is sizing (full vs half) or C1, which is a RULES/STRATEGY decision for the user, not the routine.
 

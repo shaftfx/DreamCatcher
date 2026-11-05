@@ -624,3 +624,15 @@ All three are half size (F+T, no dated upside catalyst). Shares = floor($2,500 /
 **Ops:** I checked `list_triggers`. ✅ **`bull-open` cron is now fixed**: `35 14 * * 1-5` UTC = 09:35 ET (updated 11/4 21:19 UTC). ⚠️ **Its inline prompt still says "Do NOT check intraday volume"**, which is out of sync with `routines/open.md` and STRATEGY leg 3. That's still a user decision. I did not change any trigger.
 
 **Decision:** no queue for today (C1 full). CTAS, UNP and TXN are drafted for Mon 11/9. NOC was removed from the watchlist (held). No orders were placed.
+
+### 2026-11-05 21:16 UTC — EOD — DAILY WRAP (Thu)
+
+**Result:** equity $100,007.85, −0.24% vs SPY −4.34% → **+4.10% excess**. WTD +0.13% vs SPY −2.95% (+3.07%). Flags all NO. D1, D4 and D5 are clear (drawdown −0.29% from the $100,294.01 peak).
+
+**Tape:** a broad risk-off day driven by AI and chip stocks. The S&P fell about 4.3%, and the Nasdaq fell about 5.5% into correction. The post-election rally reversed on fears of an early peak in Big Tech capex ([Yahoo live](https://finance.yahoo.com/markets/live/stock-market-today-thursday-november-5-dow-sp-500-nasdaq-oil-rises-chip-stocks-141439950.html), [Seeking Alpha](https://seekingalpha.com/news/4666692-sp500-nasdaq-composite-dow-jones-wall-street)). On IEX bars: QQQ −6.31%, IWM −4.55%, XLI −4.10%, XLV −2.47%. ITA's snapshot showed −68%, which is a bad print or split artefact, so I ignored it.
+
+**Attribution:** the book lost −$239.74 (−1.68% of its $14.2k market value). The biggest losers were MMM (−$86.52), DHR (−$85.90) and MRK (−$54.72). NOC (−$0.40), KO (−$1.30) and ELV (−$10.90) were roughly flat. Most of the excess vs SPY comes from the 86% cash cushion. Stock selection added some on top. Nothing reached S2 or S3. DHR is the closest at −4.10% (S2 = 219.49). No trail ratcheted after midday.
+
+**Recap:** issue #13.
+
+**Next:** Fri 11/6 is the NFP D3 blackout, and C1 is 3/3, so there are no entries and I'll only manage positions. On Mon 11/9, re-validate CTAS, UNP and TXN from fresh bars. TXN is a semi and was likely hit today. SPY closed about 4.4% below its 50d (~767). STRATEGY has no index-regime filter, so I flagged it for the user in issue #13 and did not add one.

@@ -5,15 +5,15 @@
 ## Account
 
 - **Mode:** paper
-- **Last refresh (UTC):** 2026-11-05 17:42 (midday routine, 12:42 ET, Alpaca marks)
+- **Last refresh (UTC):** 2026-11-05 21:16 (EOD routine, 16:16 ET, Alpaca close marks)
 - **Cash:** $86,014.13
-- **Equity:** $100,078.03 midday (last_equity $100,247.59 at Wed 11/4 close per Alpaca)
-- **Peak equity:** $100,294.01 (new high on 11/5 pre-open marks; prior peak $100,239.18 at 11/4 close)
+- **Equity:** $100,007.85 at Thu 11/5 close (last_equity $100,247.59 at Wed 11/4 close per Alpaca)
+- **Peak equity:** $100,294.01 (11/5 pre-open marks; best close is $100,247.59 on 11/4)
 - **Buying power:** $86,014.13 (= cash), multiplier 1× ✅ (RULES.md A4)
 
 ## Flags
 
-- `halt_today: NO` (reset by EOD 2026-11-04)
+- `halt_today: NO` (reset by EOD 2026-11-05)
 - `halt_until_human: NO`
 - `weekly_defensive: NO`
 
@@ -28,7 +28,20 @@
 | KO | 26 | 94.76 | 2026-11-02 | 2,463.83 | 87.65 (hwm 97.39) | 113.72 | 185 | Q3 beat, comparable EPS growth guide raised ≥11% (half size, F+T) |
 | NOC | 4 | 540.06 | 2026-11-04 | 2,160.24 | 485.75 (hwm 539.72) | 648.07 | 217 | Q3 beat, uptrend above 50d; non-health-care diversifier (half size, F+T) |
 
-Open positions: 6/8 (C2). All 6 GTC 10% trailing stops verified live on Alpaca at 17:42 UTC 11/5 (S1/S4 ✅). "Risk $ at stop" = (entry − current trail) × qty; MMM's trail (177.21) is now $0.74/sh below entry, so it is close to breakeven-protected.
+Open positions: 6/8 (C2). All 6 GTC 10% trailing stops verified live on Alpaca at 21:16 UTC 11/5 (EOD); no trail moved after midday (S1/S4 ✅). "Risk $ at stop" = (entry − current trail) × qty; MMM's trail (177.21) is now $0.74/sh below entry, so it is close to breakeven-protected.
+
+### EOD snapshot (2026-11-05 close)
+
+| Ticker | Close | Value | Unrealized P&L | % from entry | Day chg $ | Days held | Alpaca trail stop (hwm) |
+|---|---|---|---|---|---|---|---|
+| DHR | 226.34 | $2,263.40 | −$96.70 | −4.10% | −$85.90 | 4 | 214.61 (238.45) |
+| ELV | 432.00 | $2,160.00 | +$30.75 | +1.44% | −$10.90 | 4 | 403.69 (448.54) |
+| MMM | 187.77 | $2,628.78 | +$137.48 | +5.52% | −$86.52 | 4 | 177.21 (196.90) |
+| MRK | 146.94 | $2,351.04 | −$30.08 | −1.26% | −$54.72 | 3 | 138.03 (153.37) |
+| KO | 95.75 | $2,489.50 | +$25.67 | +1.04% | −$1.30 | 3 | 87.65 (97.39) |
+| NOC | 525.25 | $2,101.00 | −$59.24 | −2.74% | −$0.40 | 1 | 485.75 (539.72) |
+
+Total unrealized +$7.88. Market value $13,993.72 (14.0% of equity); cash 86.0%. Open risk from close to trails ≈ $918 (0.92%). The book fell −1.68% on its own market value while SPY fell −4.34% (AI/chip selloff, Nasdaq ~−5.5%). No position is at S2 (−7%) or S3 (+15%). DHR is the weakest at −4.10% (S2 = 219.49, 2.9 pts away).
 
 ### Midday snapshot (2026-11-05 17:42 UTC, 12:42 ET, Alpaca marks)
 
@@ -161,7 +174,23 @@ Total unrealized −$109.13. All 3 GTC trailing stops are live (S1/S4 ✅). None
 
 Total unrealized −$119.62. Deployed $6,861.03 (6.9% of equity). Open risk to stops ≈ $678 (0.68%). Open positions 3/8 (C2).
 
-## Today's P&L (2026-11-04 close)
+## Today's P&L (2026-11-05 close)
+
+- Today open equity: $100,247.59 (Alpaca last_equity) → close equity: $100,007.85
+- Daily return: −0.24% (−$239.74)
+- SPY daily return: −4.34% (766.73 → 733.43, IEX)
+- **Excess vs SPY: +4.10%**
+- Drawdown from peak: −0.29% (vs $100,294.01; D5 threshold −10%)
+- D1 daily loss cap: −0.24% > −2% → not breached
+
+## Week to date (since Fri 10/30 close)
+
+- Week return: +0.13% (prior Friday close equity $99,882.75 → $100,007.85)
+- SPY week return: −2.95% (755.72 → 733.43)
+- Excess vs SPY: +3.07%
+- D4 weekly loss check: +0.13% > −5% → `weekly_defensive: NO`
+
+## Prior day P&L (2026-11-04 close)
 
 - Today open equity: $99,802.45 → close equity: $100,239.18
 - Daily return: +0.44% (+$436.73)
@@ -169,13 +198,6 @@ Total unrealized −$119.62. Deployed $6,861.03 (6.9% of equity). Open risk to s
 - Excess vs SPY: −1.20%
 - Drawdown from peak: 0.00% (new peak; D5 threshold −10%)
 - D1 daily loss cap: +0.44% > −2% → not breached
-
-## Week to date (since Fri 10/30 close)
-
-- Week return: +0.36% (prior Friday close equity $99,882.75 → $100,239.18)
-- SPY week return: +1.46% (755.72 → 766.73)
-- Excess vs SPY: −1.10%
-- D4 weekly loss check: +0.36% > −5% → `weekly_defensive: NO`
 
 ## Prior day P&L (2026-11-03 close)
 
