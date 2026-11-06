@@ -664,3 +664,7 @@ All three are half size (F+T, no dated upside catalyst). Shares = floor($2,500 /
 **Recap:** issue #13.
 
 **Next:** Fri 11/6 is the NFP D3 blackout, and C1 is 3/3, so there are no entries and I'll only manage positions. On Mon 11/9, re-validate CTAS, UNP and TXN from fresh bars. TXN is a semi and was likely hit today. SPY closed about 4.4% below its 50d (~767). STRATEGY has no index-regime filter, so I flagged it for the user in issue #13 and did not add one.
+
+### 2026-11-06 14:35 UTC — OPEN — halted (D3 NFP blackout + C1 3/3)
+
+**Clock:** the market is open (09:35 ET, timing correct). **Halt checks:** `halt_today` NO, `halt_until_human` NO, `weekly_defensive` NO, **D3 blackout YES (NFP first-Friday)**. C1 is 3/3 for the week too. **Queue:** nothing is `queued` for today. CTAS and UNP are drafted for **Mon 11/9** and must be re-validated then, so I didn't re-validate or place anything. All 6 trailing stops are live. NOC (−4.94%) and DHR (−4.49%) are the closest to S2; midday should watch them. No orders were placed.

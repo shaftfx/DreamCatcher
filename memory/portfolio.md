@@ -5,10 +5,10 @@
 ## Account
 
 - **Mode:** paper
-- **Last refresh (UTC):** 2026-11-06 11:20 (premarket routine, 06:20 ET, Alpaca pre-open marks)
+- **Last refresh (UTC):** 2026-11-06 14:35 (open routine, 09:35 ET, Alpaca live marks)
 - **Cash:** $86,014.13
-- **Equity:** $99,889.15 pre-open Fri 11/6 (last_equity $100,007.33 at Thu 11/5 close per Alpaca)
-- **Peak equity:** $100,294.01 (11/5 pre-open marks; best close is $100,247.59 on 11/4). Drawdown now −0.40%
+- **Equity:** $99,802.31 at 09:35 ET Fri 11/6 (last_equity $100,007.33 at Thu 11/5 close per Alpaca)
+- **Peak equity:** $100,294.01 (11/5 pre-open marks; best close is $100,247.59 on 11/4). Drawdown now −0.49%
 - **Buying power:** $86,014.13 (= cash), multiplier 1× ✅ (RULES.md A4)
 
 ## Flags
@@ -29,6 +29,19 @@
 | NOC | 4 | 540.06 | 2026-11-04 | 2,160.24 | 485.75 (hwm 539.72) | 648.07 | 217 | Q3 beat, uptrend above 50d; non-health-care diversifier (half size, F+T) |
 
 Open positions: 6/8 (C2). All 6 GTC 10% trailing stops verified live on Alpaca at 21:16 UTC 11/5 (EOD); no trail moved after midday (S1/S4 ✅). "Risk $ at stop" = (entry − current trail) × qty; MMM's trail (177.21) is now $0.74/sh below entry, so it is close to breakeven-protected.
+
+### Open-routine snapshot (2026-11-06 14:35 UTC = 09:35 ET, Alpaca live marks)
+
+| Ticker | Current | Unrealized P&L | % from entry | S2 (−7%) | Alpaca trail stop (hwm) |
+|---|---|---|---|---|---|
+| DHR | 225.42 | −$105.90 | −4.49% | 219.49 | 214.61 (238.45) |
+| ELV | 425.84 | −$0.05 | −0.00% | 396.04 | 403.69 (448.54) |
+| MMM | 184.17 | +$87.01 | +3.49% | 165.49 | 177.21 (196.90) |
+| MRK | 145.51 | −$53.04 | −2.23% | 138.40 | 138.03 (153.37) |
+| KO | 94.03 | −$19.05 | −0.77% | 88.13 | 87.65 (97.39) |
+| NOC | 513.40 | −$106.63 | −4.94% | 502.26 | 485.75 (539.72) |
+
+Total unrealized −$197.66. Intraday vs Thu close equity: −$205.02 (−0.21%), so D1 is clear. Drawdown −0.49% from peak, so D5 is clear. All 6 GTC 10% trailing stops are live (status `new`, S1/S4 ✅). NOC is now the closest to S2 (−4.94%, 2.06 pts away), then DHR (−4.49%). **No entries:** NFP D3 blackout and C1 3/3. Nothing queued for today.
 
 ### Premarket snapshot (2026-11-06 11:20 UTC, Alpaca pre-open marks)
 
