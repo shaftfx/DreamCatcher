@@ -22,6 +22,12 @@ Perplexity returned a stale guidance number for $TSLA — used the actual SEC fi
 
 -->
 
+## 2026-11-06 [risk] — weekly W45
+Split account excess into exposure and selection every week, and grade on selection. W45 excess was +2.76%, but ≈ +2.3 pts came from holding ~86% cash on a −2.69% SPY week. The positions themselves made ≈ +0.5% on deployed capital, which is ≈ +0.4 pts at the account level. W44 was the same shape (+0.42% excess, nearly all cash). Two "positive excess" weeks in a falling tape say little about the entry framework. In the weekly review, always report book return vs SPY next to account return vs SPY. Don't let the rubric's account-level number stand in for skill.
+
+## 2026-11-06 [ops] — weekly W45
+UTC crons don't follow DST. After DST ended on 11/1, `bull-open` (still at 13:35 UTC) fired at 08:35 ET on 11/2–11/4, before the open. The run had to wait in-session, and its stale prompt skipped the volume gate on MRK/KO. The user fixed it 11/5 (now 14:35 UTC). All five triggers are now plain UTC tuned for EST, so they will fire an hour late in ET from **Sun 2027-03-14**. Before then, every trigger should use `CRON_TZ=America/New_York`. Any routine that fires and finds the Alpaca clock disagreeing with its intended ET time should flag it in its first log line.
+
 ## 2026-11-06 [exit]
 A 10% trail lets a +9% winner round-trip to breakeven before S3 (+15%) ever tightens it. MMM peaked at 196.90 (+10.6% from entry) on 11/4 and closed 11/6 at 183.67 (+3.2%); its trail is 177.21, $0.74 under entry. Between +10% and +15% there's no rule that protects open gains. Don't improvise a tighter stop mid-session. If the user wants gains protected earlier, the lever is an intermediate S3 step (e.g. 7% trail at +10%), which is a RULES decision.
 

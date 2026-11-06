@@ -8,7 +8,7 @@
 - **Last refresh (UTC):** 2026-11-06 21:16 (EOD routine, 16:16 ET, Alpaca close marks)
 - **Cash:** $86,014.13
 - **Equity:** $99,952.41 at Fri 11/6 close (last_equity $100,007.33 at Thu 11/5 close per Alpaca)
-- **Peak equity:** $100,294.01 (11/5 pre-open marks; best close is $100,247.59 on 11/4). Drawdown −0.34%
+- **Peak equity:** $100,428.38 (intraday 11/5 10:15 ET per Alpaca 15-min portfolio history, found by the W45 weekly review; best close is $100,247.59 on 11/4). Drawdown −0.47% at the 11/6 close (D5 trigger ≤ $90,385.54)
 - **Buying power:** $86,014.13 (= cash), multiplier 1× ✅ (RULES.md A4)
 
 ## Flags

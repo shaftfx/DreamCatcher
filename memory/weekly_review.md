@@ -2,66 +2,118 @@
 
 Overwritten by the Friday weekly routine each week. Prior reviews live in git history.
 
-## Week of 2026-10-26 → 2026-10-30 (2026-W44)
+## Week of 2026-11-02 → 2026-11-06 (2026-W45)
 
-_Written 2026-10-30 22:10 UTC by the weekly routine. Figures were checked against Alpaca: account, positions, open orders, portfolio history, and SPY IEX daily bars._
+_Written 2026-11-06 ~22:15 UTC by the weekly routine. Figures were checked against Alpaca: account, open orders, closed orders, daily and 15-min portfolio history, and SPY IEX daily bars._
 
 ### Performance
-- Starting equity: $100,000.00 (10/23 close, Alpaca `base_value`)
-- Ending equity: $99,880.38 (10/30 close per EOD; $99,888.08 after hours)
-- Week return: **−0.12%**
-- SPY week return: **−0.54%** (759.83 → 755.72, IEX)
-- **Excess vs SPY: +0.42%**
-- Drawdown low this week: −0.135% ($99,864.66 intraday on Fri). Peak is still $100,000; D5 is nowhere near triggering.
+- Starting equity: $99,882.75 (Fri 10/30 close, Alpaca `last_equity` / portfolio history)
+- Ending equity: $99,952.41 (Fri 11/6 close, per EOD; $99,971.45 after hours)
+- Week return: **+0.07%** (+$69.66)
+- SPY week return: **−2.69%** (755.72 → 735.40, IEX)
+- **Excess vs SPY: +2.76%**
+- Drawdown low this week: $99,768.73 at 15:45 ET Tue 11/3 (Alpaca 15-min history). That's −0.11% vs the week start and −0.23% vs the peak at the time ($100,000).
+- Intraday high: $100,428.38 at 10:15 ET Thu 11/5. This is above the $100,294.01 peak recorded in portfolio.md, which is now updated to it. From that high to Friday's close is −0.47%, nowhere near D5 (−10%).
+
+**Attribution (exposure vs selection).** The account was 86–88% cash all week.
+- **Exposure:** if the ~13% invested had simply matched SPY, the account would have lost ≈ 0.35%. That puts **≈ +2.3 pts** of the +2.76% excess down to cash.
+- **Selection:** the positions themselves made ≈ +$72 on roughly $12–14k deployed (≈ +0.5%) while SPY fell 2.69%. That's **≈ +0.4 pts** of real selection edge at the account level.
+- **Day by day, the book was not consistently low-beta:**
+  - Wed 11/4: book +4.26% vs SPY +1.64%.
+  - Thu 11/5: book −1.68% vs SPY −4.34%, in the AI/chip selloff.
+  - Fri 11/6: book −0.39% vs SPY +0.27%.
 
 ### Trades
-- Entries: 3 (DHR, ELV, MMM), all half size, all on Fri 10/30
+- Entries: 3. MRK 16 @ 148.82 and KO 26 @ 94.76 on Mon 11/2; NOC 4 @ 540.06 on Wed 11/4. All half size (F+T, no near-term catalyst).
 - Exits: 0
 - Wins / Losses: n/a (no closed trades)
 - Avg R per closed trade: n/a
-- Best open: ELV −$28.90 (−1.36%, −0.14R vs $213 risk to the trailing stop)
-- Worst open: MMM −$52.92 (−2.12%, −0.21R vs $249 risk)
+- Best open (whole book): MMM +$80.08 (+3.21%, +0.32R vs $249 original risk). Its week move from the 10/30 close was +$133.
+- Worst open (whole book): NOC −$60.20 (−2.79%, −0.27R vs $221 original risk)
+- This week's entries: KO +$24.11 (+0.10R), MRK −$32.80 (−0.14R), NOC −$60.20 (−0.27R)
 
-### Open positions (snapshot, 10/30 close)
+### Open positions (snapshot, 11/6 close)
 | Ticker | Qty | Cost | Current | Unrl % | Days | Trail stop (hwm) |
 |---|---|---|---|---|---|---|
-| DHR | 10 | 236.01 | 232.23 | −1.60% | 0 | 213.05 (236.72) |
-| ELV | 5 | 425.85 | 420.07 | −1.36% | 0 | 384.09 (426.77) |
-| MMM | 14 | 177.95 | 174.17 | −2.12% | 0 | 160.91 (178.79) |
+| DHR | 10 | 236.01 | 230.25 | −2.44% | 5 | 214.61 (238.45) |
+| ELV | 5 | 425.85 | 425.62 | −0.05% | 5 | 403.69 (448.54) |
+| MMM | 14 | 177.95 | 183.67 | +3.21% | 5 | 177.21 (196.90) |
+| MRK | 16 | 148.82 | 146.77 | −1.38% | 4 | 138.03 (153.37) |
+| KO | 26 | 94.76 | 95.69 | +0.98% | 4 | 87.65 (97.39) |
+| NOC | 4 | 540.06 | 525.01 | −2.79% | 2 | 485.75 (539.72) |
 
-- Count 3/8. Deployed $6,861 (6.9% of equity), with 93% in cash. Total unrealized −$119.62. Open risk to stops is about $678 (0.68%).
-- Largest by % of equity: MMM at 2.4%.
+- 6/8 open (C2). Market value $13,938 (13.9% of equity), with 86.1% in cash. Total unrealized −$47.56.
+- All 6 GTC 10% trailing stops were re-verified live on Alpaca at this run (status `new`).
+- Nothing is at S2 (−7%) or S3 (+15%).
+- **Sector mix:** health care 3 (DHR/ELV/MRK), plus industrials (MMM), staples (KO) and defense (NOC).
+
+**Thesis check:**
+- All six are still on thesis. No guidance cuts, downgrades or thesis-breaking news were logged this week.
+- **NOC:** the Democratic sweep on 11/3 is headline risk for defense, but it isn't a thesis break, because the new Congress isn't seated until January.
+- **MMM:** its stop is near entry, but it got there through progress, not drift. It ran +10.6% to 196.90 on 11/4–11/5 and gave most of it back, so the trail now sits $0.74 under entry. It's the clearest case for an intermediate S3 step (proposal 2).
+- **No stop has crept up to entry without progress.**
+- DHR (−2.44%) and NOC (−2.79%) are the weakest. Both are more than 4 pts from S2.
 
 ### What worked
-- **The stop machinery.** Each of the three fills had its OTO static stop swapped for a GTC 10% trailing stop within the same run. Open orders were re-queried, and all three trailing stops are live on Alpaca (S1/S4).
-- **Gate discipline on the calendar.** The FOMC blackout (Wed) and the GDP/PCE no-entry day (Thu) were respected. C1 stopped entries at 3/3 even though UNP still qualified.
-- **The chase limit.** It rejected CTAS (+1.9%) and NOC (above its limit) on a gap. No chasing.
-- **The data-quality fix from 10/27.** Every technical was recomputed from Alpaca bars and every guidance claim was cited. No bad numbers reached an order.
+- **Rules held all week.** Every gate passed on every entry:
+  - Sizing: P1, P2, P3.
+  - P4: target is entry × 1.20 vs the live 10% trail.
+  - Concurrency: C1 reached 3/3 and then stopped entries on Thu and Fri; C2.
+  - Stops: S1/S4 (every static OTO leg was swapped for a GTC 10% trail in the same run).
+  - Scope (A1–A6) and the loss caps (D1–D5).
+  - The NFP D3 blackout on Fri was respected.
+- **Last week's three proposals were all implemented by the user** (775c367, ddd49e1):
+  - P4/S1 resolved: targets are now entry × 1.20.
+  - The volume gate is now owned by the open routine.
+  - Premarket no longer adds its own blocking conditions.
+- **The `bull-open` trigger was fixed on 11/5.** It now fires at 14:35 UTC (09:35 ET), and its prompt is synced with the volume gate. I confirmed both with `list_triggers` this run. The premarket, midday, EOD and weekly crons also map correctly to ET now.
+- **The open run waited for the market to open.** On 11/2 and 11/4 the mis-timed trigger fired before the open. Both times the run waited in-session until 09:35 ET before validating anything, so no pre-open fills.
+- **Diversification away from health care.** NOC was picked over the third health-care name. Premarket has blocked new health-care entries while HC is 3 of 6.
+- **Defensive selection on the −4.3% day.** On Thu 11/5 the book fell 1.68% vs SPY's −4.34%.
 
 ### What didn't
-- **The excess return came from cash, not stock selection.** We were 100% cash Mon–Thu while SPY rose 1.27%, which cost us 1.27% of excess. Then Friday's −1.79% SPY drop came while we were 93% cash, which earned back 1.67%. On the one day we held stocks, the three names fell 1.4–2.1% from their fills. Thursday's "rotation into health care and industrials" didn't protect them. That's +0.42% of excess from luck and exposure, not from picking stocks.
-- **Two lost entry days (10/26, 10/27) to a self-imposed 1.5× volume gate.** STRATEGY.md always said 1.0×. The user fixed this mid-week (b1fb12d, 0af95e2).
-- **The entry-day volume leg was never actually measured on the three fills.** routines/open.md says premarket validated volume, but premarket runs before the session and can't measure entry-day volume. The open run skipped the check, and it also skipped the premarket's "green on the day" note. All three names were red vs their prior closes at decision time on a −1.2% SPY open. The technical leg in STRATEGY.md includes "Volume on entry day ≥ 1.0×," so that leg was taken partly on trust.
-- **R/R mismatch (P4).** Targets were set at 2R off the planned 8% initial stop (entry × 1.16). S1 then replaced that stop with a 10% trailing stop. Against the stop actually live on Alpaca, R/R is **1.6:1** on all three: DHR 37.76/23.60, ELV 68.14/42.59, MMM 28.48/17.80. P4 requires ≥ 2:1. See the grade below.
+- **Most of the excess is exposure, not edge.** Of the +2.76%, about 2.3 pts came from holding ~86% cash during a −2.69% SPY week. This is the same pattern as W44. Two weeks of positive excess say very little about the entry framework yet.
+- **MRK and KO went in with STRATEGY leg 3 partly unmeasured.** On 11/2 the stale `bull-open` prompt said "Do NOT check intraday volume", and the run followed it. NOC on 11/4 was measured (3.60×). It isn't a RULES breach, but two of three entries took the volume leg on trust.
+- **MMM gave back most of a +10.6% run.** It peaked at 196.90 and closed at 183.67. With a 10% trail and S3 only kicking in at +15%, nothing protects gains between +10% and +15%.
+- **The account lagged the up days.** Wed 11/4 was −1.20% excess and Fri 11/6 was −0.32%. That is cash drag at half-size deployment, as expected (learnings 2026-11-04).
+- **The NFP print is still unsourced.** EOD couldn't find it, so Mon premarket has to get it before reading anything into Friday's tape.
+- **The watchlist is down to 5 names**, below STRATEGY's 8–15, and only 2 are live candidates (CTAS, UNP).
 
-### Self-grade: **C**
-Excess vs SPY is positive (+0.42%), but it came from sitting in cash on a down week, not from decisions. Two of five sessions were lost to a threshold I misapplied, and the three positions all fell on day 1. No rule was breached on purpose: sizing (P1–P3), concurrency (C1–C3), the stops (S1/S4), scope (A1–A6) and the loss caps (D1–D5) were all clean. But P4 is a real problem. If R/R is measured against the 10% trailing stop RULES.md S1 requires, every entry this week was 1.6:1, below the 2:1 minimum. I'm grading it C, not F, because the rulebook itself conflicts: STRATEGY.md says to size and target off an 8% stop, while S1 forces a 10% trail. The open run followed the documented recipe. But the effect is the same as a breach, so if the user reads P4 strictly against the live stop, this week is an **F**. That's the user's call. It isn't something I should settle in my own favor.
+### Self-grade: **B**
+Taken literally, the rubric gives an A: excess was +2.76% (≥ +1%), no RULES.md gate was breached, and learnings were logged. I'm marking it down to B for two reasons:
+1. **Most of the excess isn't skill.** Roughly 2.3 of the 2.76 pts came from being 86% cash in a falling market. Holdings selection added only about +0.4 pts.
+2. **The process wasn't clean.** On 11/2, MRK and KO were bought without measuring the entry-day volume leg, because the trigger prompt was out of date. And MMM's +10% unrealized gain was mostly given back.
+
+The decisions themselves were sound: discipline on C1, D3 and S1, the move toward non-HC names, and waiting out the mis-timed open trigger. So B, not A. Last week's C is now a B mainly because the rulebook conflicts were fixed, not because the picks got better.
 
 ### Strategy adjustments proposed (PROPOSALS — not applied)
-1. **Fix the P4/S1 conflict.** Choose one:
-   - (a) compute the target from the stop actually live on Alpaca: 2R off a 10% trail means target = entry × 1.20;
-   - (b) keep the 8% static stop as the initial stop and switch to the 10% trail only after price clears entry + 1R;
-   - (c) amend P4 so it's measured against the STRATEGY initial stop.
-   I lean (a), because it's the simplest and the target isn't an order anyway.
-2. **Give the entry-day volume check an owner.** The open routine should compute time-of-day relative volume (≥ 1.0× median, from STRATEGY.md) at decision time, or STRATEGY.md should drop the entry-day volume clause. Right now nobody checks it.
-3. **Decide whether premarket "notes for open" are binding.** Premarket added an ad-hoc "green on the day" condition, and the open routine ignored it as out of scope. Either premarket stops inventing conditions that aren't in STRATEGY.md, or open honors them. I'd rather premarket stop inventing them.
+1. **Index-regime gate (still open from issue #13).** SPY closed 11/6 at 735.40, about 4% under its 50d, RSI ~34; QQQ is ~10% under its 50d. A name can pass its own 50d check right after a −4% index day. Choose one:
+   - (a) allow no new entries while SPY closes below its 50d SMA;
+   - (b) allow at most 1 entry per week while SPY is below its 50d;
+   - (c) keep the status quo, since half sizing and C1 already throttle deployment.
+
+   I lean (b): it keeps the account learning without adding exposure into a falling index.
+2. **Intermediate S3 step.** At ≥ +10% unrealized, tighten the trail from 10% to 7%. Keep S3 at +15% as-is, or move it to 5%. Evidence: MMM peaked at +10.6% and its 10% trail sat near breakeven. A 7% trail from 196.90 would have been 183.12, locking in about +2.9%. This is a RULES change, so it's the user's call.
+3. **Report exposure vs selection every week.** Add "book return vs SPY" next to "account excess vs SPY" in STRATEGY's performance benchmarks. Grading on account excess alone rewards holding cash in down weeks and penalizes it in up weeks.
+4. **Make trigger crons DST-proof.** All five triggers are now plain UTC, set for EST. On **Sun 2027-03-14** (DST starts) every one of them will fire an hour late in ET: open at 10:35 ET, EOD at 17:15 ET. Rewrite them as `CRON_TZ=America/New_York …` before then.
 
 ### Lessons added to learnings.md
-- [risk] R/R has to be computed against the stop that's actually live on the broker, not the one in the plan.
-- [entry] One day of sector rotation isn't a defensive signal. The names it favored fell almost in line with SPY the next day.
-- [ops] Every gate needs exactly one routine that can measure it. The entry-day volume gate had none.
+- [risk] Every week, split account excess into an exposure part and a selection part. Grade on the selection part.
+- [ops] UTC crons don't follow DST. The triggers are correct for EST now and will drift again on 2027-03-14 unless they move to CRON_TZ.
 
-### Notes for next week (2026-W45)
-- **Calendar:** Mon 11/2 is an entry day (C1 resets to 0/3), with AAPL reporting after the close. Tue 11/3 is the US midterms: be cautious, especially on NOC/UNH and on adding managed care, since ELV is already held. Wed 11/4 is the post-election reaction. **Fri 11/6 is NFP, a D3 blackout.** DST ends Sun 11/1, so the UTC crons land one hour earlier in ET.
-- **Open positions:** ELV is managed care going into the election binary, so management only. All three are day 0, so watch S2 (−7%) at midday.
-- **Watchlist priorities:** UNP was blocked only by C1 (RSI 69.9, at the limit). CTAS and NOC were chase-limit rejects, so they need fresh entries. UNH would double up managed care with ELV, so it's deprioritized. TXN is watch-only until it pulls back. Re-validate everything from fresh bars.
+### Notes for next week (2026-W46)
+- **Calendar:**
+  - Mon 11/9 is an entry day. C1 resets to 0/3; C2 is 6/8, so at most 2 entries.
+  - **The October CPI release date must be confirmed by Mon premarket.** It is likely mid-week and is a D3 blackout.
+  - Get the actual Fri 11/6 NFP print and the market's read on December rate-hike odds (~80% priced per Reuters before the print).
+- **Open positions:**
+  - MMM is 3.6% above its 177.21 trail, with a breakeven-ish stop.
+  - NOC (−2.79%) and DHR (−2.44%) are the weakest; watch S2 at midday.
+  - Watch NOC for defense-budget headlines.
+- **Watchlist priorities:**
+  - CTAS is #1: F+T ✅, RSI 64.7, with an FTC/UniFirst decision ~mid-Dec. It was rejected 11/4 only on the chase limit.
+  - UNP is #2: F+T ✅, RSI cooled to 55.
+  - TMO and UNH are watch-only because of health-care concentration.
+  - TXN was demoted after a −10.7% day; drop it if it closes under 272.
+  - **Premarket must add 3+ non-health-care names** to get back to 8–15. Recompute every technical from fresh Alpaca bars.
+- **Regime:** SPY and QQQ are below their 50d. Until the user rules on proposal 1, treat Mon entries with extra scrutiny and prefer the stronger of the two candidates over taking both.

@@ -680,3 +680,12 @@ All three are half size (F+T, no dated upside catalyst). Shares = floor($2,500 /
 ### 2026-11-06 14:35 UTC — OPEN — halted (D3 NFP blackout + C1 3/3)
 
 **Clock:** the market is open (09:35 ET, timing correct). **Halt checks:** `halt_today` NO, `halt_until_human` NO, `weekly_defensive` NO, **D3 blackout YES (NFP first-Friday)**. C1 is 3/3 for the week too. **Queue:** nothing is `queued` for today. CTAS and UNP are drafted for **Mon 11/9** and must be re-validated then, so I didn't re-validate or place anything. All 6 trailing stops are live. NOC (−4.94%) and DHR (−4.49%) are the closest to S2; midday should watch them. No orders were placed.
+
+### 2026-11-06 22:15 UTC — WEEKLY — REVIEW 2026-W45 (grade B)
+
+Week +0.07% vs SPY −2.69%, so **+2.76% excess**. About 2.3 pts of that came from holding ~86% cash; selection added about +0.4 pts.
+- 3 entries (MRK, KO, NOC), 0 exits. No RULES breaches. All 6 trails were re-verified live this run.
+- The intraday peak was $100,428.38 (11/5 10:15 ET). portfolio.md is updated to it.
+- `bull-open` is confirmed fixed (14:35 UTC, volume gate synced).
+
+Proposals for the user: (1) an index-regime gate, leaning toward at most 1 entry/week while SPY is under its 50d; (2) an intermediate S3 step (7% trail at +10%); (3) report book vs SPY weekly; (4) move the trigger crons to CRON_TZ before the 2027-03-14 DST change. Full review is in `memory/weekly_review.md`. Recap: issue #15.
