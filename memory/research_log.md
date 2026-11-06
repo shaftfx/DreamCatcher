@@ -4,17 +4,17 @@ Dated entries. Premarket appends new research; other routines append rejected id
 
 ## Active Watchlist
 
-_Last refresh: 2026-11-05 premarket (Thu). Technicals recomputed this run from Alpaca IEX daily bars through the **11/4 close**. **C1 is 3/3 for the week of 11/2, so there are no entries Thu 11/5.** Fri 11/6 is the NFP D3 blackout. The next entry window is **Mon 11/9** (Mon premarket must confirm it isn't a CPI day). Every new entry's live stop is the S1 10% trail, so every target is entry × 1.20. SPY closed 766.73, flat to its 50d (767.05), RSI 50.6, EMA stack not intact. Health care is 3 of 6 holdings (DHR/ELV/MRK), so **no new health-care entries** until that changes._
+_Last refresh: 2026-11-06 premarket (Fri, NFP D3 blackout). Technicals recomputed this run from Alpaca IEX daily bars through the **11/5 close**. **No entries today (D3 + C1 3/3).** The next entry window is **Mon 11/9**. Mon premarket must confirm Mon isn't a CPI day, and must add new candidates: the list is at 5, below STRATEGY's 8–15. Every new entry's live stop is the S1 10% trail, so every target is entry × 1.20. **Regime caution:** SPY closed 733.43, −4.3% under its 50d (766.40), RSI 33.7; QQQ −10.3% under its 50d, RSI 27.0. STRATEGY has no index-regime gate (flagged to the user in issue #13). Health care is 3 of 6 holdings (DHR/ELV/MRK), so **no new health-care entries** until that changes._
 
-| Ticker | Added | Thesis (1 line) | Catalyst | Catalyst Date | Status (11/4 close · SMA50 · RSI14 · 20-bar swing low) |
+| Ticker | Added | Thesis (1 line) | Catalyst | Catalyst Date | Status (11/5 close · SMA50 · RSI14 · 20-bar swing low) |
 |---|---|---|---|---|---|
-| CTAS | 2026-10-29 | Q1 FY27 beat, FY27 guide raised (8-K) | FTC decision on UniFirst (no vote or suit filed as of 11/5; no close before 12/11) | ~mid-Dec | **queued for Mon 11/9 #1**, F+T ✅ but stretched: 229.09 · 205.69 (+11.4%) · **69.0** · 197.21. EMA stack intact. RSI is 1 pt from the 70 cap |
-| UNP | 2026-10-26 | Q3 beat, rail pricing power | none within 8w | — | **queued for Mon 11/9 #2**, F+T ✅ but borderline: 308.53 · 287.28 (+7.4%) · **69.9** · 274.51. EMA stack intact. Likely fails RSI ≤ 70 on any further up day |
-| TXN | 2026-10-26 | Q3 beat ($2.62 vs $2.42); Q4 guide $5.8–6.3B / EPS $2.45–2.79 | none within 8w | — | **watch-only → candidate #3 for Mon**: RSI cooled to 65.2. 311.56 · 278.51 (+11.9%, extended) · 272.13. EMA stack intact. Semis still carry data-center ballot-measure headline risk |
-| TMO | 2026-11-02 | Q3 beat ($6.68 vs $6.40), FY26 guide **raised** to $25.13–25.43 | none within 8w | — | **watch-only** (health-care concentration): 706.18 · 658.77 (+7.2%) · 60.4 · 635.73 |
-| UNH | 2026-10-26 | Q3 beat ($4.69); FY guide *maintained* ~$20.50 | none within 8w | — | **watch-only** (health-care concentration + ELV overlap; Democratic Congress is managed-care headline risk): 409.28 · 390.74 (+4.7%) · 56.9 |
+| CTAS | 2026-10-29 | Q1 FY27 beat, FY27 guide raised (8-K) | FTC decision on UniFirst (no vote or suit filed as of 11/5; no close before 12/11) | ~mid-Dec | **Mon 11/9 candidate #1**, F+T ✅: 226.40 (−1.2% Thu) · 206.10 (+9.8%) · **64.7** (cooled from 69) · 201.06 |
+| UNP | 2026-10-26 | Q3 beat, rail pricing power | none within 8w | — | **Mon 11/9 candidate #2**, F+T ✅: 297.94 (−3.4% Thu) · 287.03 (+3.8%) · **55.0** (cooled from 69.9) · 277.15. Pullback toward support; no longer RSI-borderline |
+| TMO | 2026-11-02 | Q3 beat ($6.68 vs $6.40), FY26 guide **raised** to $25.13–25.43 | none within 8w | — | **watch-only** (health-care concentration): 676.84 · 659.63 (+2.6%) · 49.2 · 648.99 |
+| UNH | 2026-10-26 | Q3 beat ($4.69); FY guide *maintained* ~$20.50 | none within 8w | — | **watch-only** (health-care concentration + ELV overlap; Democratic Congress is managed-care headline risk): 395.75 · 390.64 (+1.3%) · 47.3 |
+| TXN | 2026-10-26 | Q3 beat ($2.62 vs $2.42); Q4 guide $5.8–6.3B / EPS $2.45–2.79 | none within 8w | — | **demoted to watch-only, T fails**: −10.7% Thu in the chip selloff, 278.20 vs 278.83 SMA50 (−0.2%), RSI 42.9, swing low 272.13. F only, no catalyst → doesn't meet 2-of-3. Re-check Mon; drop if it closes under 272 |
 
-_Removed: **NOC** (position taken 11/4; now in portfolio.md). Not added: **PH** (reports today before the open, so it's in pre-earnings blackout, and it's −4.5% below its 50d, so T fails), **COR** (RSI 71.1 and health care), **QCOM** (reported after the 11/4 close; −2.5% below its 50d, so T fails), **CI/BDX/ZTS/CAH** reporting today (health care, and inside the ER window). Revisit PH Mon from post-print bars if it reclaims the 50d._
+_Removed / not added: **PH** still −5.9% under its 50d (892.66 vs 948.19), so T fails; stays off. No new names added today: D3 blackout, so Step 4 catalyst research was skipped per the premarket routine._
 
 ---
 
@@ -591,6 +591,34 @@ Queue for Wed 11/4 (Tue 11/3 is the midterm election, so the plan is no entry Tu
 **Next:** C1 3/3 for week of 11/2 — no entries Thu 11/5; Fri 11/6 NFP D3 blackout. Re-validate CTAS and UNP from fresh bars for Mon 11/9. Midday Thu: S2/S3 sweep, watch NOC for defense headlines.
 
 **Ops ⚠️ still unfixed (checked list_triggers this run):** `bull-open` is still `35 13 * * 1-5` UTC = 08:35 ET (55 min pre-open) and its inline prompt still says "Do NOT check intraday volume", out of sync with `routines/open.md`. Needs the user: `CRON_TZ=America/New_York 35 9 * * 1-5` + prompt sync.
+
+### 2026-11-06 11:20 UTC — PREMARKET — NFP BLACKOUT (no queue; watchlist technicals refreshed)
+
+**Account (Alpaca, `paper-api` confirmed):** ACTIVE. Equity $99,889.15 pre-open (last_equity $100,007.33). Cash = BP $86,014.13, multiplier 1 (A4 ✅). Flags all NO. Drawdown −0.40% from the $100,294.01 peak, so D5 is clear. All 6 GTC 10% trails live. Pre-open: MMM +4.0%, ELV +1.4%, KO −0.5%, MRK −2.7%, NOC −3.1%, DHR −4.1%. Nothing at S2/S3.
+
+**Day status:** Fri 11/6 is NFP first-Friday → **D3 blackout**, and **C1 is 3/3** for the week. No entries; position management only. Per the routine, Step 4 (catalyst research) is skipped on a blackout day. Two quick searches (TXN Thursday move; futures/NFP) returned only older-year pages, so I have **no sourced read on futures or the NFP print**. Midday should check the NFP reaction (consensus was +55K, UE 4.2%; a strong print raises December hike odds).
+
+**Watchlist re-check (Alpaca bars through 11/5 close):**
+- **CTAS:** −1.2% Thu, RSI cooled to 64.7, still +9.8% over its 50d. Thesis intact. Mon candidate #1.
+- **UNP:** −3.4% Thu to 297.94, RSI 55.0, +3.8% over its 50d. The selloff fixed the RSI problem. Mon candidate #2.
+- **TXN:** −10.7% Thu (chip/AI-capex selloff; no TXN-specific cause found). Now just under its 50d, so T fails and it can't meet 2-of-3. **Demoted to watch-only.**
+- **TMO / UNH:** −4.2% / −3.3%, still above 50d. Watch-only (health-care concentration).
+- **PH:** still under its 50d. Off.
+
+**Holdings:** DHR is the weakest at −4.10% (S2 219.49, its 50d is 219.95, so the 50d and S2 coincide). MRK slid to −2.7% pre-open and sits right on its 50d (146.42 at close). NOC flat Thu at 525.35. No news found for any holding.
+
+**Step 6 (catalyst within 5 trading days):** none on the list. Drafts for **Mon 11/9 only**. Mon premarket must recompute from fresh bars and re-check the regime caution above; don't execute from these numbers.
+
+| Rank | Ticker | Entry (11/5 close) | Live stop (10% trail) | Target (×1.20) | Chase limit (+1.5%) | Shares | $ | Risk $ | decision |
+|---|---|---|---|---|---|---|---|---|---|
+| 1 | CTAS | 226.40 | 203.76 | 271.68 | 229.80 | 11 | 2,490 | 249 | queued half, **Mon 11/9** (re-validate) |
+| 2 | UNP | 297.94 | 268.15 | 357.53 | 302.41 | 8 | 2,384 | 238 | queued half, **Mon 11/9** (re-validate) |
+
+Both half size (F+T, no dated upside catalyst). Shares = floor($2,500 / entry). P1 ≤ 2.5% of equity, P3 risk ≤ 0.25%, P4 2.0R vs the trail. P2/C3 fine (neither held). C2 would be 8/8 after both fill — that's the cap, so a third Mon entry is impossible.
+
+**Low-confidence note for the user / Mon routines:** both candidates pass the per-name legs, but the index just broke its 50d hard (SPY −4.3%, QQQ −10.3% under). That's exactly the case the 11/5 learning flagged. No gate exists, and I'm not inventing one. The open routine should still apply its own volume gate, and the user may want to decide on an index-regime filter before Monday.
+
+**Decision:** no queue for today. CTAS and UNP drafted for Mon 11/9. TXN demoted. No orders placed.
 
 ### 2026-11-05 11:15 UTC — PREMARKET — WATCHLIST REFRESH (Thu, C1 full, no queue for today)
 

@@ -5,10 +5,10 @@
 ## Account
 
 - **Mode:** paper
-- **Last refresh (UTC):** 2026-11-05 21:16 (EOD routine, 16:16 ET, Alpaca close marks)
+- **Last refresh (UTC):** 2026-11-06 11:20 (premarket routine, 06:20 ET, Alpaca pre-open marks)
 - **Cash:** $86,014.13
-- **Equity:** $100,007.85 at Thu 11/5 close (last_equity $100,247.59 at Wed 11/4 close per Alpaca)
-- **Peak equity:** $100,294.01 (11/5 pre-open marks; best close is $100,247.59 on 11/4)
+- **Equity:** $99,889.15 pre-open Fri 11/6 (last_equity $100,007.33 at Thu 11/5 close per Alpaca)
+- **Peak equity:** $100,294.01 (11/5 pre-open marks; best close is $100,247.59 on 11/4). Drawdown now −0.40%
 - **Buying power:** $86,014.13 (= cash), multiplier 1× ✅ (RULES.md A4)
 
 ## Flags
@@ -29,6 +29,19 @@
 | NOC | 4 | 540.06 | 2026-11-04 | 2,160.24 | 485.75 (hwm 539.72) | 648.07 | 217 | Q3 beat, uptrend above 50d; non-health-care diversifier (half size, F+T) |
 
 Open positions: 6/8 (C2). All 6 GTC 10% trailing stops verified live on Alpaca at 21:16 UTC 11/5 (EOD); no trail moved after midday (S1/S4 ✅). "Risk $ at stop" = (entry − current trail) × qty; MMM's trail (177.21) is now $0.74/sh below entry, so it is close to breakeven-protected.
+
+### Premarket snapshot (2026-11-06 11:20 UTC, Alpaca pre-open marks)
+
+| Ticker | Current | Unrealized P&L | % from entry | S2 (−7%) | Alpaca trail stop (hwm) |
+|---|---|---|---|---|---|
+| DHR | 226.34 | −$96.70 | −4.10% | 219.49 | 214.61 (238.45) |
+| ELV | 432.00 | +$30.75 | +1.44% | 396.04 | 403.69 (448.54) |
+| MMM | 185.00 | +$98.70 | +3.96% | 165.49 | 177.21 (196.90) |
+| MRK | 144.80 | −$64.32 | −2.70% | 138.40 | 138.03 (153.37) |
+| KO | 94.25 | −$13.33 | −0.54% | 88.13 | 87.65 (97.39) |
+| NOC | 523.58 | −$65.92 | −3.05% | 502.26 | 485.75 (539.72) |
+
+Total unrealized −$110.82. All 6 GTC 10% trailing stops are live (status `new`, S1/S4 ✅); no hwm moved overnight. Nothing at S2 (−7%) or S3 (+15%). DHR is the closest to S2 (2.9 pts away), then NOC (3.95 pts) and MRK (4.3 pts). Open risk from marks to trails ≈ $799 (0.80%). Pre-open marks for KO/MMM/MRK are ~1.5% under Thu's close on thin IEX prints; don't over-read them. Drawdown −0.40% from peak, so D5 is clear. Today is the NFP D3 blackout and C1 is 3/3, so no entries.
 
 ### EOD snapshot (2026-11-05 close)
 
