@@ -22,6 +22,9 @@ Perplexity returned a stale guidance number for $TSLA — used the actual SEC fi
 
 -->
 
+## 2026-11-06 [exit]
+A 10% trail lets a +9% winner round-trip to breakeven before S3 (+15%) ever tightens it. MMM peaked at 196.90 (+10.6% from entry) on 11/4 and closed 11/6 at 183.67 (+3.2%); its trail is 177.21, $0.74 under entry. Between +10% and +15% there's no rule that protects open gains. Don't improvise a tighter stop mid-session. If the user wants gains protected earlier, the lever is an intermediate S3 step (e.g. 7% trail at +10%), which is a RULES decision.
+
 ## 2026-11-05 [risk]
 A down tape confirmed the cash lesson from the other side. On Thu 11/5, SPY fell 4.34% and the account fell only 0.24% (+4.10% excess), because 86% was cash. The positions fell 1.68%, so the selection was defensive too, but the cash did most of the work. The week went from −1.10% excess on Wed to +3.07% on Thu without a single trade. Judge excess over rolling windows, not single days, and don't credit stock-picking for what is really exposure level. Also: no index-level regime gate exists, and per-name 50d checks can still pass right after a −4% index day. Surface that to the user before redeploying. Don't invent a gate mid-session.
 

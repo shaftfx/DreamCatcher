@@ -592,6 +592,18 @@ Queue for Wed 11/4 (Tue 11/3 is the midterm election, so the plan is no entry Tu
 
 **Ops ⚠️ still unfixed (checked list_triggers this run):** `bull-open` is still `35 13 * * 1-5` UTC = 08:35 ET (55 min pre-open) and its inline prompt still says "Do NOT check intraday volume", out of sync with `routines/open.md`. Needs the user: `CRON_TZ=America/New_York 35 9 * * 1-5` + prompt sync.
 
+### 2026-11-06 21:16 UTC — EOD — DAILY WRAP (Fri, week closed)
+
+**Result:** equity $99,952.41, −0.05% vs SPY +0.27% → **−0.32% excess**. Week +0.07% vs SPY −2.69% → **+2.76% excess**. Flags all NO. D1/D4/D5 clear (drawdown −0.34% from the $100,294.01 peak). No trades today (D3 NFP blackout + C1 3/3).
+
+**Tape:** SPY +0.27% (733.43 → 735.40), QQQ +1.27% (648.05 → 656.31) on IEX bars. A small bounce after Thursday's −4.3%; both still well under their 50d. **I have no sourced read on the NFP print**: one search returned only prior-year pages. Mon premarket should get the number before relying on it.
+
+**Attribution:** book −$54.92 (−0.39% of market value). MMM −$57.40 (183.67, now 6.7% off its 196.90 hwm and only 3.6% above its 177.21 trail), ELV −$31.90, DHR +$39.10. Mirror of Thursday: defensives lagged a rebound. Nothing at S2/S3. All 6 trails live.
+
+**Recap:** issue #14.
+
+**Next:** Mon 11/9 is an entry day (C1 resets to 0/3; C2 6/8 so max 2 entries). CTAS and UNP drafts need full re-validation from fresh bars, plus a CPI-date check. The index-regime question (issue #13) is still open for the user.
+
 ### 2026-11-06 11:20 UTC — PREMARKET — NFP BLACKOUT (no queue; watchlist technicals refreshed)
 
 **Account (Alpaca, `paper-api` confirmed):** ACTIVE. Equity $99,889.15 pre-open (last_equity $100,007.33). Cash = BP $86,014.13, multiplier 1 (A4 ✅). Flags all NO. Drawdown −0.40% from the $100,294.01 peak, so D5 is clear. All 6 GTC 10% trails live. Pre-open: MMM +4.0%, ELV +1.4%, KO −0.5%, MRK −2.7%, NOC −3.1%, DHR −4.1%. Nothing at S2/S3.

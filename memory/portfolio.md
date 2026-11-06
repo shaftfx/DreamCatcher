@@ -5,15 +5,15 @@
 ## Account
 
 - **Mode:** paper
-- **Last refresh (UTC):** 2026-11-06 17:42 (midday routine, 12:42 ET, Alpaca live marks)
+- **Last refresh (UTC):** 2026-11-06 21:16 (EOD routine, 16:16 ET, Alpaca close marks)
 - **Cash:** $86,014.13
-- **Equity:** $100,020.20 at 12:42 ET Fri 11/6 (last_equity $100,007.33 at Thu 11/5 close per Alpaca)
-- **Peak equity:** $100,294.01 (11/5 pre-open marks; best close is $100,247.59 on 11/4). Drawdown now −0.27%
+- **Equity:** $99,952.41 at Fri 11/6 close (last_equity $100,007.33 at Thu 11/5 close per Alpaca)
+- **Peak equity:** $100,294.01 (11/5 pre-open marks; best close is $100,247.59 on 11/4). Drawdown −0.34%
 - **Buying power:** $86,014.13 (= cash), multiplier 1× ✅ (RULES.md A4)
 
 ## Flags
 
-- `halt_today: NO` (reset by EOD 2026-11-05)
+- `halt_today: NO` (reset by EOD 2026-11-06)
 - `halt_until_human: NO`
 - `weekly_defensive: NO`
 
@@ -29,6 +29,19 @@
 | NOC | 4 | 540.06 | 2026-11-04 | 2,160.24 | 485.75 (hwm 539.72) | 648.07 | 217 | Q3 beat, uptrend above 50d; non-health-care diversifier (half size, F+T) |
 
 Open positions: 6/8 (C2). All 6 GTC 10% trailing stops verified live on Alpaca at 21:16 UTC 11/5 (EOD); no trail moved after midday (S1/S4 ✅). "Risk $ at stop" = (entry − current trail) × qty; MMM's trail (177.21) is now $0.74/sh below entry, so it is close to breakeven-protected.
+
+### EOD snapshot (2026-11-06 close)
+
+| Ticker | Close | Value | Unrealized P&L | % from entry | Day chg $ | Days held | S2 (−7%) | Alpaca trail stop (hwm) |
+|---|---|---|---|---|---|---|---|---|
+| DHR | 230.25 | $2,302.50 | −$57.60 | −2.44% | +$39.10 | 5 | 219.49 | 214.61 (238.45) |
+| ELV | 425.62 | $2,128.10 | −$1.15 | −0.05% | −$31.90 | 5 | 396.04 | 403.69 (448.54) |
+| MMM | 183.67 | $2,571.38 | +$80.08 | +3.21% | −$57.40 | 5 | 165.49 | 177.21 (196.90) |
+| MRK | 146.77 | $2,348.32 | −$32.80 | −1.38% | −$2.72 | 4 | 138.40 | 138.03 (153.37) |
+| KO | 95.69 | $2,487.94 | +$24.11 | +0.98% | −$1.04 | 4 | 88.13 | 87.65 (97.39) |
+| NOC | 525.01 | $2,100.04 | −$60.20 | −2.79% | −$0.96 | 2 | 502.26 | 485.75 (539.72) |
+
+Total unrealized −$47.56. Market value $13,938.28 (13.9% of equity); cash 86.1%. Open risk from close to trails ≈ $862 (0.86%). The book fell −$54.92 (−0.39% of its market value) while SPY rose +0.27%. MMM (−$57.40, now 6.7% off its 196.90 hwm) and ELV (−$31.90) did the damage; DHR bounced +$39.10. Nothing at S2 (−7%) or S3 (+15%). NOC (−2.79%) and DHR (−2.44%) are the weakest. All 6 GTC 10% trailing stops are live (status `new`, S1/S4 ✅); no hwm moved today.
 
 ### Midday snapshot (2026-11-06 17:42 UTC, 12:42 ET, Alpaca marks)
 
@@ -213,7 +226,24 @@ Total unrealized −$109.13. All 3 GTC trailing stops are live (S1/S4 ✅). None
 
 Total unrealized −$119.62. Deployed $6,861.03 (6.9% of equity). Open risk to stops ≈ $678 (0.68%). Open positions 3/8 (C2).
 
-## Today's P&L (2026-11-05 close)
+## Today's P&L (2026-11-06 close)
+
+- Today open equity: $100,007.33 (Alpaca last_equity) → close equity: $99,952.41
+- Daily return: −0.05% (−$54.92)
+- SPY daily return: +0.27% (733.43 → 735.40, IEX)
+- **Excess vs SPY: −0.32%**
+- Drawdown from peak: −0.34% (vs $100,294.01; D5 threshold −10%)
+- D1 daily loss cap: −0.05% > −2% → not breached
+
+## Week (since Fri 10/30 close) — week closed
+
+- Week return: +0.07% (prior Friday close equity $99,882.75 → $99,952.41)
+- SPY week return: −2.69% (755.72 → 735.40)
+- Excess vs SPY: +2.76%
+- D4 weekly loss check: +0.07% > −5% → `weekly_defensive: NO`
+- Prior Friday close for the 11/9 week: **$99,952.41**
+
+## Prior day P&L (2026-11-05 close)
 
 - Today open equity: $100,247.59 (Alpaca last_equity) → close equity: $100,007.85
 - Daily return: −0.24% (−$239.74)
@@ -222,7 +252,7 @@ Total unrealized −$119.62. Deployed $6,861.03 (6.9% of equity). Open risk to s
 - Drawdown from peak: −0.29% (vs $100,294.01; D5 threshold −10%)
 - D1 daily loss cap: −0.24% > −2% → not breached
 
-## Week to date (since Fri 10/30 close)
+## Week to date as of Thu 11/5 (superseded)
 
 - Week return: +0.13% (prior Friday close equity $99,882.75 → $100,007.85)
 - SPY week return: −2.95% (755.72 → 733.43)
@@ -272,5 +302,6 @@ Total unrealized −$119.62. Deployed $6,861.03 (6.9% of equity). Open risk to s
 
 ## New entries this week
 
-- **Week of 11/2:** 3 / 3 (RULES.md C1) — **full.** MRK and KO on Mon 11/2, NOC on Wed 11/4. No more entries until Mon 11/9.
+- **Week of 11/9:** 0 / 3 (resets Mon).
+- Week of 11/2: 3 / 3 — MRK and KO on Mon 11/2, NOC on Wed 11/4.
 - Prior week (10/26): 3/3, DHR, ELV, MMM (all 2026-10-30).
