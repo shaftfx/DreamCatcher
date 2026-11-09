@@ -604,6 +604,30 @@ Queue for Wed 11/4 (Tue 11/3 is the midterm election, so the plan is no entry Tu
 
 **Ops ⚠️ still unfixed (checked list_triggers this run):** `bull-open` is still `35 13 * * 1-5` UTC = 08:35 ET (55 min pre-open) and its inline prompt still says "Do NOT check intraday volume", out of sync with `routines/open.md`. Needs the user: `CRON_TZ=America/New_York 35 9 * * 1-5` + prompt sync.
 
+### 2026-11-09 14:37 UTC — OPEN — EXECUTION SUMMARY (2 entries: CTAS, LIN)
+
+**Clock:** fired 14:35 UTC = 09:35 ET, market open, timing correct. **Boot:** Alpaca `paper-api` (O5 ✅), ACTIVE, equity $100,003.74 at 09:35, cash = BP $86,014.13, multiplier 1 (A4 ✅). Flags all NO; Mon 11/9 is not a D3 day; drawdown −0.4% (D5 clear). C1 0/3, C2 6/8 → max 2. 6 trails live before entries.
+
+**Overnight news:** searches found no November FTC action on Cintas/UniFirst (latest items still late October; the no-close-before-12/11 timing agreement stands per the [10-Q](https://www.sec.gov/Archives/edgar/data/0000723254/000072325426000047/ctas-20260831.htm)) and no dated LIN news. The absence of news is not confirmation.
+
+**Validation** (live IEX last at 09:35; SMA50/RSI/EMAs from IEX daily bars + live price; volume = 09:30–09:35 IEX bar vs median of same bar over prior 20 sessions; threshold 1.0× per STRATEGY):
+
+| Rank | Ticker | Live | Chase | SMA50 | RSI | EMA 8>12>21>55 | Vol (5m) | decision |
+|---|---|---|---|---|---|---|---|---|
+| 1 | CTAS | 222.15 | 225.77 ✅ | 206.83 ✅ | 58.4 ✅ | 222.8>221.4>217.8>208.9 ✅ | 3.18× ✅ | **placed** |
+| 2 | SPGI | 467.50 | 474.85 ✅ | 425.87 ✅ | 64.5 ✅ | intact ✅ | **0.21×** ❌ | **rejected**: volume gate (327 vs 1,585 median) |
+| 3 | LIN | 514.35 | 522.92 ✅ | 486.96 ✅ | 59.4 ✅ | 514.9>512.5>506.5>496.0 ✅ | 1.74× ✅ | **placed** |
+| 4 | UNP | 291.74 | 294.61 ✅ | 286.37 ✅ | 48.7 ✅ | intact (px under 8 EMA) ✅ | 3.51× ✅ | passed, **not taken**: C2 8/8 after two fills |
+
+**Rule gates (CTAS / LIN, all ✅):** P1 2.45% / 2.06% of equity. P2 no prior exposure. P3 risk at the 10% trail $248 / $207 (0.25% / 0.21%). P4 targets 266.98 / 617.15 (×1.20 off fill) = 2.0R vs trail. C1 → 2/3. C2 → 8/8. C3 not held. A1–A6: us_equity, > $5, liquid.
+
+**Execution:** OTO market buys (day) `bull-20261109-CTAS-open` (static stop 200.00) filled 11 @ 222.48 at 14:36:51Z; `bull-20261109-LIN-open` (static stop 463.00) filled 4 @ 514.29 at 14:37:00Z. Each static leg was cancelled (204) and replaced with a GTC 10% trailing stop: `bull-20261109-CTAS-trail` stop 199.98 (hwm 222.21), `bull-20261109-LIN-trail` stop 462.52 (hwm 513.91). Re-queried open orders: **all 8 trails live**, no naked positions.
+
+**Notes for next routines:**
+1. **C2 is 8/8**: no new entries until a position exits, even though C1 has 1 slot left. Tue 11/10 is CPI (D3) anyway.
+2. SPGI and UNP stay on the watchlist; SPGI's thin IEX open volume (also near the A5 floor) is worth re-checking before re-queueing.
+3. Regime caution unchanged: SPY still under its 50d; book is now ~23% deployed. The W45 proposal (≤1 entry/week while SPY < 50d) is not a rule and was not enforced.
+
 ### 2026-11-09 11:13 UTC — PREMARKET — WATCHLIST REFRESH + QUEUE (Mon, entry day; Tue CPI blackout)
 
 **Account (Alpaca, `paper-api` confirmed, O5 ✅):** ACTIVE. Equity $100,053.67 pre-open (last_equity $99,971.97). Cash = BP $86,014.13, multiplier 1 (A4 ✅). Flags all NO. Drawdown −0.37% from the $100,428.38 peak, so D5 is clear. All 6 GTC 10% trails are live; pre-open MMM +4.7%, KO +1.6%, MRK +0.1%, ELV −0.1%, NOC −2.1%, DHR −2.4%. Nothing at S2/S3. Clock: 06:13 ET, timing correct.
@@ -626,10 +650,10 @@ Queue for Wed 11/4 (Tue 11/3 is the midterm election, so the plan is no entry Tu
 
 | Rank | Ticker | Entry (11/6 close) | Live stop (10% trail) | Target (×1.20) | Chase limit | Shares | $ | Risk $ | decision |
 |---|---|---|---|---|---|---|---|---|---|
-| 1 | CTAS | 222.43 | 200.19 | 266.92 | 225.77 | 11 | 2,447 | 245 | queued half |
-| 2 | SPGI | 467.83 | 421.05 | 561.40 | 474.85 | 5 | 2,339 | 234 | queued half (verify A5 ≥ 1M avg vol) |
-| 3 | LIN | 515.19 | 463.67 | 618.23 | 522.92 | 4 | 2,061 | 206 | queued half |
-| 4 | UNP | 290.26 | 261.23 | 348.31 | 294.61 | 8 | 2,322 | 232 | queued half (alternate; skip if under its 50d 286.68 at the open) |
+| 1 | CTAS | 222.43 | 200.19 | 266.92 | 225.77 | 11 | 2,447 | 245 | **placed** at open 11/9 (11 @ 222.48) — was: queued half |
+| 2 | SPGI | 467.83 | 421.05 | 561.40 | 474.85 | 5 | 2,339 | 234 | **rejected** at open 11/9 (volume gate 0.21×) — was: queued half (verify A5 ≥ 1M avg vol) |
+| 3 | LIN | 515.19 | 463.67 | 618.23 | 522.92 | 4 | 2,061 | 206 | **placed** at open 11/9 (4 @ 514.29) — was: queued half |
+| 4 | UNP | 290.26 | 261.23 | 348.31 | 294.61 | 8 | 2,322 | 232 | **not taken** 11/9 (passed all gates; C2 full after 2 fills) — was: queued half (alternate) |
 
 **Ranking rationale:** CTAS has the strongest trend, and its beat+raise is already cited. SPGI and LIN add new sectors (financial data, materials) with fresh, cited raises, and neither overlaps the current book. UNP is last because it's fading toward its 50d.
 

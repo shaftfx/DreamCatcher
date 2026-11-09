@@ -5,11 +5,11 @@
 ## Account
 
 - **Mode:** paper
-- **Last refresh (UTC):** 2026-11-09 11:13 (premarket routine, 06:13 ET, Alpaca pre-open marks)
-- **Cash:** $86,014.13
-- **Equity:** $100,053.67 pre-open Mon 11/9 (Alpaca last_equity $99,971.97; EOD logged $99,952.41 at Fri 11/6 close)
-- **Peak equity:** $100,428.38 (intraday 11/5 10:15 ET per Alpaca 15-min portfolio history, found by the W45 weekly review; best close is $100,247.59 on 11/4). Drawdown −0.37% pre-open 11/9 (D5 trigger ≤ $90,385.54)
-- **Buying power:** $86,014.13 (= cash), multiplier 1× ✅ (RULES.md A4)
+- **Last refresh (UTC):** 2026-11-09 14:37 (open routine, 09:37 ET, Alpaca live marks, after the CTAS/LIN fills)
+- **Cash:** $81,509.69
+- **Equity:** $99,977.74 (Alpaca last_equity $99,971.97; EOD logged $99,952.41 at Fri 11/6 close)
+- **Peak equity:** $100,428.38 (intraday 11/5 10:15 ET per Alpaca 15-min portfolio history, found by the W45 weekly review; best close is $100,247.59 on 11/4). Drawdown −0.45% at 09:37 ET 11/9 (D5 trigger ≤ $90,385.54)
+- **Buying power:** $81,509.69 (= cash), multiplier 1× ✅ (RULES.md A4)
 
 ## Flags
 
@@ -27,8 +27,25 @@
 | MRK | 16 | 148.82 | 2026-11-02 | 2,381.12 | 138.03 (hwm 153.37) | 178.58 | 173 | Q3 beat, FY26 adj EPS guide raised $2.77–2.82 (half size, F+T) |
 | KO | 26 | 94.76 | 2026-11-02 | 2,463.83 | 87.65 (hwm 97.39) | 113.72 | 185 | Q3 beat, comparable EPS growth guide raised ≥11% (half size, F+T) |
 | NOC | 4 | 540.06 | 2026-11-04 | 2,160.24 | 485.75 (hwm 539.72) | 648.07 | 217 | Q3 beat, uptrend above 50d; non-health-care diversifier (half size, F+T) |
+| CTAS | 11 | 222.48 | 2026-11-09 | 2,447.28 | 199.98 (hwm 222.21) | 266.98 | 248 | Q1 FY27 beat, FY27 guide raised; FTC/UniFirst decision is a binary risk (half size, F+T) |
+| LIN | 4 | 514.29 | 2026-11-09 | 2,057.16 | 462.52 (hwm 513.91) | 617.15 | 207 | Q3 adj EPS +9%, FY26 guide raised to $17.82–17.92; materials diversifier (half size, F+T) |
 
-Open positions: 6/8 (C2). All 6 GTC 10% trailing stops verified live on Alpaca at 21:16 UTC 11/5 (EOD); no trail moved after midday (S1/S4 ✅). "Risk $ at stop" = (entry − current trail) × qty; MMM's trail (177.21) is now $0.74/sh below entry, so it is close to breakeven-protected.
+Open positions: **8/8 (C2 full)**. All 8 GTC 10% trailing stops verified live on Alpaca at 14:37 UTC 11/9 (open routine) (S1/S4 ✅). "Risk $ at stop" = (entry − current trail) × qty; MMM's trail (177.21) is now $0.74/sh below entry, so it is close to breakeven-protected.
+
+### Open-routine snapshot (2026-11-09 14:37 UTC = 09:37 ET, Alpaca live marks)
+
+| Ticker | Current | Unrealized P&L | % from entry | S2 (−7%) | Alpaca trail stop (hwm) |
+|---|---|---|---|---|---|
+| DHR | 230.07 | −$59.40 | −2.52% | 219.49 | 214.61 (238.45) |
+| ELV | 425.69 | −$0.80 | −0.04% | 396.04 | 403.69 (448.54) |
+| MMM | 185.98 | +$112.42 | +4.51% | 165.49 | 177.21 (196.90) |
+| MRK | 146.84 | −$31.76 | −1.33% | 138.40 | 138.03 (153.37) |
+| KO | 95.36 | +$15.53 | +0.63% | 88.13 | 87.65 (97.39) |
+| NOC | 526.18 | −$55.52 | −2.57% | 502.26 | 485.75 (539.72) |
+| CTAS | 222.21 | −$3.02 | −0.12% | 206.91 | 199.98 (222.21) |
+| LIN | 514.01 | −$1.10 | −0.05% | 478.29 | 462.52 (513.91) |
+
+Total unrealized −$23.65. Intraday vs Fri close equity ($99,971.97): +$5.77, so D1 is clear. Drawdown −0.45% from peak, so D5 is clear. **2 entries today (CTAS, LIN)**; SPGI rejected on the volume gate; UNP not taken (C2 would exceed 8). C1 2/3, C2 8/8. All 8 GTC 10% trailing stops live (S1/S4 ✅). Sector mix: health care 3 (DHR/ELV/MRK), industrials 2 (MMM/CTAS), staples 1 (KO), defense 1 (NOC), materials 1 (LIN).
 
 ### Premarket snapshot (2026-11-09 11:13 UTC, Alpaca pre-open marks)
 
@@ -315,6 +332,6 @@ Total unrealized −$119.62. Deployed $6,861.03 (6.9% of equity). Open risk to s
 
 ## New entries this week
 
-- **Week of 11/9:** 0 / 3 (resets Mon).
+- **Week of 11/9:** 2 / 3 — CTAS and LIN on Mon 11/9. C2 is 8/8, so no further entries until a position closes.
 - Week of 11/2: 3 / 3 — MRK and KO on Mon 11/2, NOC on Wed 11/4.
 - Prior week (10/26): 3/3, DHR, ELV, MMM (all 2026-10-30).
