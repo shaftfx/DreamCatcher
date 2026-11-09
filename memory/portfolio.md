@@ -5,10 +5,10 @@
 ## Account
 
 - **Mode:** paper
-- **Last refresh (UTC):** 2026-11-06 21:16 (EOD routine, 16:16 ET, Alpaca close marks)
+- **Last refresh (UTC):** 2026-11-09 11:13 (premarket routine, 06:13 ET, Alpaca pre-open marks)
 - **Cash:** $86,014.13
-- **Equity:** $99,952.41 at Fri 11/6 close (last_equity $100,007.33 at Thu 11/5 close per Alpaca)
-- **Peak equity:** $100,428.38 (intraday 11/5 10:15 ET per Alpaca 15-min portfolio history, found by the W45 weekly review; best close is $100,247.59 on 11/4). Drawdown −0.47% at the 11/6 close (D5 trigger ≤ $90,385.54)
+- **Equity:** $100,053.67 pre-open Mon 11/9 (Alpaca last_equity $99,971.97; EOD logged $99,952.41 at Fri 11/6 close)
+- **Peak equity:** $100,428.38 (intraday 11/5 10:15 ET per Alpaca 15-min portfolio history, found by the W45 weekly review; best close is $100,247.59 on 11/4). Drawdown −0.37% pre-open 11/9 (D5 trigger ≤ $90,385.54)
 - **Buying power:** $86,014.13 (= cash), multiplier 1× ✅ (RULES.md A4)
 
 ## Flags
@@ -29,6 +29,19 @@
 | NOC | 4 | 540.06 | 2026-11-04 | 2,160.24 | 485.75 (hwm 539.72) | 648.07 | 217 | Q3 beat, uptrend above 50d; non-health-care diversifier (half size, F+T) |
 
 Open positions: 6/8 (C2). All 6 GTC 10% trailing stops verified live on Alpaca at 21:16 UTC 11/5 (EOD); no trail moved after midday (S1/S4 ✅). "Risk $ at stop" = (entry − current trail) × qty; MMM's trail (177.21) is now $0.74/sh below entry, so it is close to breakeven-protected.
+
+### Premarket snapshot (2026-11-09 11:13 UTC, Alpaca pre-open marks)
+
+| Ticker | Current | Unrealized P&L | % from entry | S2 (−7%) | Alpaca trail stop (hwm) |
+|---|---|---|---|---|---|
+| DHR | 230.25 | −$57.60 | −2.44% | 219.49 | 214.61 (238.45) |
+| ELV | 425.62 | −$1.15 | −0.05% | 396.04 | 403.69 (448.54) |
+| MMM | 186.29 | +$116.76 | +4.69% | 165.49 | 177.21 (196.90) |
+| MRK | 148.99 | +$2.72 | +0.11% | 138.40 | 138.03 (153.37) |
+| KO | 96.26 | +$38.93 | +1.58% | 88.13 | 87.65 (97.39) |
+| NOC | 528.57 | −$45.96 | −2.13% | 502.26 | 485.75 (539.72) |
+
+Total unrealized +$54.10. DHR/ELV show Friday's close (no pre-open prints). All 6 GTC 10% trailing stops are live (status `new`, S1/S4 ✅); no hwm moved. Nothing at S2 (−7%) or S3 (+15%). Drawdown −0.37% from the $100,428.38 peak, so D5 is clear. Mon 11/9 is an entry day (C1 0/3, C2 6/8 → max 2). **Tue 11/10 is CPI → D3 blackout.**
 
 ### EOD snapshot (2026-11-06 close)
 

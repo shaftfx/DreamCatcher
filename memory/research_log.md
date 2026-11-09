@@ -4,19 +4,31 @@ Dated entries. Premarket appends new research; other routines append rejected id
 
 ## Active Watchlist
 
-_Last refresh: 2026-11-06 premarket (Fri, NFP D3 blackout). Technicals recomputed this run from Alpaca IEX daily bars through the **11/5 close**. **No entries today (D3 + C1 3/3).** The next entry window is **Mon 11/9**. Mon premarket must confirm Mon isn't a CPI day, and must add new candidates: the list is at 5, below STRATEGY's 8–15. Every new entry's live stop is the S1 10% trail, so every target is entry × 1.20. **Regime caution:** SPY closed 733.43, −4.3% under its 50d (766.40), RSI 33.7; QQQ −10.3% under its 50d, RSI 27.0. STRATEGY has no index-regime gate (flagged to the user in issue #13). Health care is 3 of 6 holdings (DHR/ELV/MRK), so **no new health-care entries** until that changes._
+_Last refresh: 2026-11-09 premarket (Mon, entry day). Technicals recomputed this run from Alpaca IEX daily bars through the **Fri 11/6 close**. **Tue 11/10 is CPI (D3 blackout)**, so today is the only entry day before Wed. C1 0/3, C2 6/8, so **at most 2 entries today**. Every new entry's live stop is the S1 10% trail, so every target is entry × 1.20. **Regime caution (unchanged):** SPY 735.40, −4.0% under its 50d (765.68), RSI 35.0; QQQ −9.0% under, RSI 31.2. There is still no index-regime gate (issue #13 / W45 weekly proposal #1 is with the user). Health care is 3 of 6 holdings (DHR/ELV/MRK), so **no new health-care entries**._
 
-| Ticker | Added | Thesis (1 line) | Catalyst | Catalyst Date | Status (11/5 close · SMA50 · RSI14 · 20-bar swing low) |
+| Ticker | Added | Thesis (1 line) | Catalyst | Catalyst Date | Status (11/6 close · SMA50 · RSI14 · 20-bar swing low) |
 |---|---|---|---|---|---|
-| CTAS | 2026-10-29 | Q1 FY27 beat, FY27 guide raised (8-K) | FTC decision on UniFirst (no vote or suit filed as of 11/5; no close before 12/11) | ~mid-Dec | **Mon 11/9 candidate #1**, F+T ✅: 226.40 (−1.2% Thu) · 206.10 (+9.8%) · **64.7** (cooled from 69) · 201.06 |
-| UNP | 2026-10-26 | Q3 beat, rail pricing power | none within 8w | — | **Mon 11/9 candidate #2**, F+T ✅: 297.94 (−3.4% Thu) · 287.03 (+3.8%) · **55.0** (cooled from 69.9) · 277.15. Pullback toward support; no longer RSI-borderline |
-| TMO | 2026-11-02 | Q3 beat ($6.68 vs $6.40), FY26 guide **raised** to $25.13–25.43 | none within 8w | — | **watch-only** (health-care concentration): 676.84 · 659.63 (+2.6%) · 49.2 · 648.99 |
-| UNH | 2026-10-26 | Q3 beat ($4.69); FY guide *maintained* ~$20.50 | none within 8w | — | **watch-only** (health-care concentration + ELV overlap; Democratic Congress is managed-care headline risk): 395.75 · 390.64 (+1.3%) · 47.3 |
-| TXN | 2026-10-26 | Q3 beat ($2.62 vs $2.42); Q4 guide $5.8–6.3B / EPS $2.45–2.79 | none within 8w | — | **demoted to watch-only, T fails**: −10.7% Thu in the chip selloff, 278.20 vs 278.83 SMA50 (−0.2%), RSI 42.9, swing low 272.13. F only, no catalyst → doesn't meet 2-of-3. Re-check Mon; drop if it closes under 272 |
+| CTAS | 2026-10-29 | Q1 FY27 beat, FY27 guide raised (8-K) | FTC decision on UniFirst (no vote or suit found as of 11/9; no close before 12/11) | ~mid-Dec | **Mon 11/9 #1**, F+T ✅: 222.43 (−1.75% Fri) · 206.47 (+7.7%) · 58.8 · 203.59 |
+| SPGI | 2026-11-09 | Q3 adj EPS $4.58 vs ~$4.42 est; FY26 adj EPS guide **raised** above the prior $17.50–17.75 ([8-K](https://www.sec.gov/Archives/edgar/data/0000064040/000006404026000053/spgi3q2026-earningsrelease.htm)) | Capital IQ/Kensho strategic review (no date); next ER ~2/8/27 | — | **Mon 11/9 #2 (new)**, F+T ✅: 467.83 (−1.0% Fri) · 425.37 (+10.0%) · 64.7 · 405.94. A5: avg volume is near the 1M floor, so open must verify |
+| LIN | 2026-11-09 | Q3 adj EPS $4.59 (+9%); FY26 adj EPS guide **raised** to $17.82–17.92 from $17.60–17.90 ([8-K](https://www.sec.gov/Archives/edgar/data/0001707925/000165495426009199/lin_ex991.htm)) | none within 8w (next ER est. ~2/11/27) | — | **Mon 11/9 #3 (new)**, F+T ✅: 515.19 (−1.1% Fri) · 486.55 (+5.9%) · 60.1 · 482.68 |
+| UNP | 2026-10-26 | Q3 beat, rail pricing power | none within 8w | — | **Mon 11/9 #4 (alternate)**, F+T ✅ but weakening: 290.26 (−2.58% Fri, −6.3% off its 309.82 20-bar high) · 286.68 (+1.2%) · 47.2 · 278.23. Skip if it opens under its 50d |
+| TMO | 2026-11-02 | Q3 beat ($6.68 vs $6.40), FY26 guide **raised** to $25.13–25.43 | none within 8w | — | **watch-only** (health-care concentration): 695.02 (+2.7% Fri) · 660.91 (+5.2%) · 54.8 |
+| UNH | 2026-10-26 | Q3 beat ($4.69); FY guide *maintained* ~$20.50 | none within 8w | — | **watch-only** (health-care concentration + ELV overlap): 394.22 · 390.62 (+0.9%) · 46.3 |
+| TXN | 2026-10-26 | Q3 beat ($2.62 vs $2.42); Q4 guide $5.8–6.3B / EPS $2.45–2.79 | none within 8w | — | **watch-only, T fails**: 276.76 vs 279.04 SMA50 (−0.8%), RSI 42.2. Held above 272 (swing low 271.29). Drop if it closes under 271 |
+| MA | 2026-11-09 | Q3 adj EPS $5.31 vs $5.17, rev $9.81B vs $9.66B ([8-K](https://www.sec.gov/Archives/edgar/data/0001141391/000114139126000122/ma09302026-exx991xearnings.htm)); CFO said part of the beat was pulled forward from Q4; outlook reaffirmed, not raised | none within 8w | — | **watch-only (F ⚠️ no raise)**: 652.87 · 593.11 (+10.1%) · 64.0. Promote only if a raise is confirmed |
+| ICE | 2026-11-09 | Record Q3: rev $2.8B +15%, adj EPS $2.02 +18% ([8-K](https://www.sec.gov/Archives/edgar/data/0001571949/000110465926119880/tm2628301d1_ex99-1.htm)); no clear FY raise found | MarketAxess close, now expected Q1 2027 (HSR cleared 10/21) | Q1 2027 | **watch-only (F ⚠️ raise unconfirmed)**: 172.30 · 158.67 (+8.6%) · 64.6 |
 
-_Removed / not added: **PH** still −5.9% under its 50d (892.66 vs 948.19), so T fails; stays off. No new names added today: D3 blackout, so Step 4 catalyst research was skipped per the premarket routine._
+_Not added: **V** (FQ4 beat, but FY27 guided slower; tax-rate-aided), **WM** (Q3 EPS miss, guide reaffirmed), **CB** (core op EPS +0.8%, revenue miss). **PH** still −3.1% under its 50d, so it stays off. Many defensives (PG, WMT, COST, HD, NEE, AON, AJG) pass T but weren't researched this run. **HD (~11/17), LOW and WMT (~11/18–19)** are close to the pre-earnings blackout, so don't add them before they report._
 
 ---
+
+## Week flags (2026-11-09 week)
+
+- **Mon 11/9:** entry day (C1 0/3; C2 6/8 → max 2). No major data.
+- **Tue 11/10:** **October CPI 08:30 ET → D3 blackout**, no new entries ([BLS schedule](https://www.bls.gov/schedule/news_release/cpi.htm); one outlier site said 11/12, but BLS and multiple calendars say 11/10).
+- **Wed 11/11:** Veterans Day. NYSE is open; the bond market is closed.
+- **Thu 11/12:** CSCO and AMAT report after the close ([Market Chameleon](https://marketchameleon.com/Widget/Show?wtype=ecfull)).
+- **Last Fri (11/6) NFP:** +165K vs ~65K expected (Sept +29K) ([First Trust](https://www.ftportfolios.com/Commentary/EconomicResearch/2026/11/6/nonfarm-payrolls-increased-165,000-in-october), [Fox Business](https://www.foxbusiness.com/economy/us-jobs-report-october-2026.amp)). The unemployment rate is unconfirmed (one source says 4.1%). A strong print reinforces December hike odds, which makes CPI on Tue the next big macro risk.
 
 ## Week flags (2026-11-02 week)
 
@@ -591,6 +603,43 @@ Queue for Wed 11/4 (Tue 11/3 is the midterm election, so the plan is no entry Tu
 **Next:** C1 3/3 for week of 11/2 — no entries Thu 11/5; Fri 11/6 NFP D3 blackout. Re-validate CTAS and UNP from fresh bars for Mon 11/9. Midday Thu: S2/S3 sweep, watch NOC for defense headlines.
 
 **Ops ⚠️ still unfixed (checked list_triggers this run):** `bull-open` is still `35 13 * * 1-5` UTC = 08:35 ET (55 min pre-open) and its inline prompt still says "Do NOT check intraday volume", out of sync with `routines/open.md`. Needs the user: `CRON_TZ=America/New_York 35 9 * * 1-5` + prompt sync.
+
+### 2026-11-09 11:13 UTC — PREMARKET — WATCHLIST REFRESH + QUEUE (Mon, entry day; Tue CPI blackout)
+
+**Account (Alpaca, `paper-api` confirmed, O5 ✅):** ACTIVE. Equity $100,053.67 pre-open (last_equity $99,971.97). Cash = BP $86,014.13, multiplier 1 (A4 ✅). Flags all NO. Drawdown −0.37% from the $100,428.38 peak, so D5 is clear. All 6 GTC 10% trails are live; pre-open MMM +4.7%, KO +1.6%, MRK +0.1%, ELV −0.1%, NOC −2.1%, DHR −2.4%. Nothing at S2/S3. Clock: 06:13 ET, timing correct.
+
+**Day status:** Mon 11/9 is **not** a D3 day. **Tue 11/10 is CPI → D3 blackout** (BLS schedule). C1 resets to 0/3, C2 is 6/8, so at most 2 entries today.
+
+**Macro (sourced):** October NFP was +165K vs ~65K est (see Week flags). Friday tape: SPY +0.27%, QQQ +1.27% (IEX bars), a small bounce after Thursday's −4.3%. Both are still well under their 50d. **I found no dated 11/9 futures or movers coverage** (search returned 2017–2020 Benzinga pages), and no same-day upgrade roundup. **The absence of news is not confirmation.** Perplexity isn't used (no key in env).
+
+**Sector read (IEX bars, 11/6 close vs 50d):** above the 50d: XLV +6.6%, XLP +5.9%, XLU +3.3%, XLF +2.2%. Below: XLI −4.0%, XLE −5.3%, QQQ −9.0%. Leadership is defensive, and financials and exchanges are holding up. That's where today's new names come from. Per the 10/30 learning, I'm not ranking anything up just for being on the "rotation side". Both new names stand on their own beat-and-raise.
+
+**Existing names re-checked:**
+- **CTAS:** no FTC vote or filed suit found ([TIKR](https://www.tikr.com/blog/cintas-sinks-5-as-ftc-moves-to-block-its-5-5-billion-unifirst-deal), [ASI](https://members.asicentral.com/news/industry-news/october-2026/ftc-sources-say-regulator-will-sue-to-block-cintas-unifirst-deal)). The newest items are from late October, so I can't rule out a development since then. Thesis intact. It's the only name on the list with a dated event, and that event is a **binary downside risk** (an FTC suit), not an upside catalyst. Treat it as half size like the rest.
+- **UNP:** −2.58% Fri, now only +1.2% over its 50d, RSI 47. It still passes, but momentum is fading. Demoted to the #4 alternate.
+- **TXN:** still under its 50d but held the 271 swing low. Watch-only.
+- **TMO / UNH:** watch-only (health-care concentration).
+
+**New names (fundamental leg cited to 8-K exhibits):** SPGI and LIN pass F+T and are queued. MA and ICE are watch-only because I couldn't confirm a guidance raise. Rejected: V, WM, CB (reasons are under the watchlist). Next earnings for SPGI (~2/8/27) and LIN (~2/11/27, est.) are far outside the 5-day pre-earnings blackout.
+
+**Step 6:** none of the names has a catalyst within 5 trading days, so all drafts are **half size (F+T)**, as in prior runs. Entry is the 11/6 close. The stop is the live S1 10% trail (entry × 0.90). Target = entry × 1.20 (2.0R, P4 ✅). Shares = floor($2,500 / entry). Chase limit = entry × 1.015. P1 ≤ 2.5% of equity, P3 risk ≤ 0.25% of equity, P2/C3 fine (none held). The 20-bar swing lows for CTAS (203.59), LIN (482.68) and UNP (278.23) sit above their trails, and SPGI's (405.94) sits below its trail. Either way, the 10% trail is the live stop, and the risk shown is measured to the trail.
+
+| Rank | Ticker | Entry (11/6 close) | Live stop (10% trail) | Target (×1.20) | Chase limit | Shares | $ | Risk $ | decision |
+|---|---|---|---|---|---|---|---|---|---|
+| 1 | CTAS | 222.43 | 200.19 | 266.92 | 225.77 | 11 | 2,447 | 245 | queued half |
+| 2 | SPGI | 467.83 | 421.05 | 561.40 | 474.85 | 5 | 2,339 | 234 | queued half (verify A5 ≥ 1M avg vol) |
+| 3 | LIN | 515.19 | 463.67 | 618.23 | 522.92 | 4 | 2,061 | 206 | queued half |
+| 4 | UNP | 290.26 | 261.23 | 348.31 | 294.61 | 8 | 2,322 | 232 | queued half (alternate; skip if under its 50d 286.68 at the open) |
+
+**Ranking rationale:** CTAS has the strongest trend, and its beat+raise is already cited. SPGI and LIN add new sectors (financial data, materials) with fresh, cited raises, and neither overlaps the current book. UNP is last because it's fading toward its 50d.
+
+**Notes for the open routine:**
+1. **Max 2 fills** (C2 6/8 → 8/8). Go in rank order. Today is the only entry day until Wed (Tue CPI).
+2. Apply the 1.0× time-of-day relative-volume gate (STRATEGY leg 3). Skip any name that opens under its 50d or above RSI 70.
+3. Recompute the trail and the ×1.20 target from the actual fill.
+4. **Low-confidence / regime note:** the index is still well under its 50d. The W45 weekly proposed "at most 1 entry/week while SPY < 50d". That's a proposal, **not a rule**, so the open routine shouldn't enforce it. But if the user adopts it before 09:35, take only #1.
+
+**Decision:** CTAS, SPGI, LIN and UNP are `queued half`, and at most 2 may fill. SPGI and LIN are added. MA and ICE are added as watch-only. No orders were placed.
 
 ### 2026-11-06 21:16 UTC — EOD — DAILY WRAP (Fri, week closed)
 
