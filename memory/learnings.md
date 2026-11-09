@@ -22,6 +22,9 @@ Perplexity returned a stale guidance number for $TSLA — used the actual SEC fi
 
 -->
 
+## 2026-11-09 [risk]
+Single-day excess swings are an exposure readout. Thu 11/5 was +4.10% (SPY −4.34%) and Mon 11/9 was −2.18% (SPY +2.36%, QQQ +3.42%), with no change in thesis on any name. Measured across the whole drop and rebound (11/4 close → 11/9 close), the account is +1.74% ahead of SPY. With ~80% cash and an all-defensive book, a one-day excess is mostly β × SPY. Report the drop-to-rebound or rolling window next to the daily number, and don't treat a lagging rebound day as a signal to deploy faster or rotate into beta.
+
 ## 2026-11-06 [risk] — weekly W45
 Split account excess into exposure and selection every week, and grade on selection. W45 excess was +2.76%, but ≈ +2.3 pts came from holding ~86% cash on a −2.69% SPY week. The positions themselves made ≈ +0.5% on deployed capital, which is ≈ +0.4 pts at the account level. W44 was the same shape (+0.42% excess, nearly all cash). Two "positive excess" weeks in a falling tape say little about the entry framework. In the weekly review, always report book return vs SPY next to account return vs SPY. Don't let the rubric's account-level number stand in for skill.
 

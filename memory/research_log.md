@@ -604,6 +604,20 @@ Queue for Wed 11/4 (Tue 11/3 is the midterm election, so the plan is no entry Tu
 
 **Ops ⚠️ still unfixed (checked list_triggers this run):** `bull-open` is still `35 13 * * 1-5` UTC = 08:35 ET (55 min pre-open) and its inline prompt still says "Do NOT check intraday volume", out of sync with `routines/open.md`. Needs the user: `CRON_TZ=America/New_York 35 9 * * 1-5` + prompt sync.
 
+### 2026-11-09 21:16 UTC — EOD — DAILY WRAP (Mon)
+
+**Clock:** fired 16:16 ET, market closed, timing correct. Alpaca `paper-api` (O5 ✅), ACTIVE, cash = BP $81,509.69, multiplier 1 (A4 ✅).
+
+**Result:** equity $100,145.16, +0.17% (+$173.19) vs SPY +2.36% (735.40 → 752.72 IEX) → **−2.18% excess**. QQQ +3.42% (656.31 → 678.77). Week to date +0.19% vs SPY +2.36%. Flags all NO; D1/D4/D5 clear (drawdown −0.28% from the $100,428.38 peak).
+
+**Attribution:** the six names held overnight made +$157.35 (≈ +1.13% of their value): NOC +$56.24, MMM +$48.72, DHR +$48.70, MRK +$32.48, KO +$8.06, ELV −$36.85. CTAS +$7.48 and LIN +$8.36 from their fills. A broad risk-on rebound that defensives only half joined, while 81% cash did nothing. Since the 11/4 close (before Thursday's selloff) the account is −0.09% vs SPY −1.83%.
+
+**Positions:** 8/8. Nothing at S2/S3; ELV (−1.78%) is the weakest, MMM (+6.00%) the strongest. All 8 GTC 10% trails live; CTAS hwm 224.46 (stop 202.01), LIN hwm 523.42 (stop 471.08).
+
+**Recap:** issue #16.
+
+**Next:** Tue 11/10 is CPI (D3 blackout), and C2 is 8/8, so no entries. Midday Tue: run the S2/S3 sweep. UNP and SPGI stay alternates if a slot opens Wed or later; re-validate from fresh bars.
+
 ### 2026-11-09 14:37 UTC — OPEN — EXECUTION SUMMARY (2 entries: CTAS, LIN)
 
 **Clock:** fired 14:35 UTC = 09:35 ET, market open, timing correct. **Boot:** Alpaca `paper-api` (O5 ✅), ACTIVE, equity $100,003.74 at 09:35, cash = BP $86,014.13, multiplier 1 (A4 ✅). Flags all NO; Mon 11/9 is not a D3 day; drawdown −0.4% (D5 clear). C1 0/3, C2 6/8 → max 2. 6 trails live before entries.
