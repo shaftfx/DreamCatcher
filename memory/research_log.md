@@ -616,6 +616,20 @@ Queue for Wed 11/4 (Tue 11/3 is the midterm election, so the plan is no entry Tu
 
 **Earnings-blackout reminder:** HD (~11/17), LOW and WMT (~11/18–19) are near the pre-earnings window, so don't add them before they report. CSCO and AMAT report Thu 11/12 after the close.
 
+### 2026-11-10 21:16 UTC — EOD — DAILY WRAP (Tue, CPI)
+
+**Clock:** fired 16:15 ET, market closed, timing correct. Alpaca `paper-api` (O5 ✅), ACTIVE, cash = BP $81,509.68, multiplier 1 (A4 ✅).
+
+**Result:** equity $100,317.01, +0.15% (+$154.76) vs SPY −0.37% (752.72 → 749.93 IEX) → **+0.52% excess**. QQQ −0.58% (678.77 → 674.82). Week to date +0.36% vs SPY +1.98% (−1.61%). Flags all NO; D1/D4/D5 clear (drawdown −0.11% from the $100,428.38 peak). Best close to date.
+
+**Attribution:** book +$154.76 on ~$18.65k (≈ +0.83%), 7 of 8 green: ELV +$57.00, NOC +$38.16, CTAS +$23.32, KO +$21.58, MMM +$10.36, DHR +$9.90, LIN +$5.80, MRK −$11.36. Selection, not cash, beat SPY today.
+
+**Positions:** 8/8. Nothing at S2/S3; MRK (−0.52%) the weakest, MMM (+6.42%) the strongest. All 8 GTC 10% trails live; NOC hwm 553.47 (stop 498.12), CTAS hwm 225.53 (stop 202.98), LIN hwm 523.51 (stop 471.16).
+
+**Recap:** issue #18.
+
+**Next:** Wed 11/11 is an entry day on the calendar (Veterans Day, NYSE open), but C2 is 8/8, so nothing enters unless a stop fires. UNP, SPGI, TXN stay alternates; re-validate from fresh bars.
+
 ### 2026-11-09 21:16 UTC — EOD — DAILY WRAP (Mon)
 
 **Clock:** fired 16:16 ET, market closed, timing correct. Alpaca `paper-api` (O5 ✅), ACTIVE, cash = BP $81,509.69, multiplier 1 (A4 ✅).
