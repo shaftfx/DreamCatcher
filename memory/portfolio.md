@@ -5,11 +5,11 @@
 ## Account
 
 - **Mode:** paper
-- **Last refresh (UTC):** 2026-11-10 11:09 (premarket routine, 06:09 ET, Alpaca pre-open marks)
+- **Last refresh (UTC):** 2026-11-10 14:36 (open routine, 09:36 ET, Alpaca live marks)
 - **Cash:** $81,509.68
-- **Equity:** $100,175.99 pre-open (Alpaca last_equity $100,162.25 = Mon 11/9 close per Alpaca; EOD had logged $100,145.16 from close marks)
-- **Long market value:** $18,666.31 (18.6% deployed; cash 81.4%)
-- **Peak equity:** $100,428.38 (intraday 11/5 10:15 ET per Alpaca 15-min portfolio history, found by the W45 weekly review; best close is $100,247.59 on 11/4). Drawdown −0.25% pre-open 11/10 (D5 trigger ≤ $90,385.54)
+- **Equity:** $100,157.85 at 09:36 ET (Alpaca last_equity $100,162.25 = Mon 11/9 close per Alpaca; EOD had logged $100,145.16 from close marks)
+- **Long market value:** $18,648.17 (18.6% deployed; cash 81.4%)
+- **Peak equity:** $100,428.38 (intraday 11/5 10:15 ET per Alpaca 15-min portfolio history, found by the W45 weekly review; best close is $100,247.59 on 11/4). Drawdown −0.27% at the 11/10 open (D5 trigger ≤ $90,385.54)
 - **Buying power:** $81,509.68 (= cash), multiplier 1× ✅ (RULES.md A4)
 
 ## Flags
@@ -27,11 +27,26 @@
 | MMM | 14 | 177.95 | 2026-10-30 | 2,491.30 | 177.21 (hwm 196.90) | 213.54 | 10 | Q3 beat, FY guide raised $9.10–9.15 (half size, F+T) |
 | MRK | 16 | 148.82 | 2026-11-02 | 2,381.12 | 138.03 (hwm 153.37) | 178.58 | 173 | Q3 beat, FY26 adj EPS guide raised $2.77–2.82 (half size, F+T) |
 | KO | 26 | 94.76 | 2026-11-02 | 2,463.83 | 87.65 (hwm 97.39) | 113.72 | 185 | Q3 beat, comparable EPS growth guide raised ≥11% (half size, F+T) |
-| NOC | 4 | 540.06 | 2026-11-04 | 2,160.24 | 489.53 (hwm 543.92) | 648.07 | 202 | Q3 beat, uptrend above 50d; non-health-care diversifier (half size, F+T) |
-| CTAS | 11 | 222.48 | 2026-11-09 | 2,447.28 | 202.01 (hwm 224.46) | 266.98 | 225 | Q1 FY27 beat, FY27 guide raised; FTC/UniFirst decision is a binary risk (half size, F+T) |
+| NOC | 4 | 540.06 | 2026-11-04 | 2,160.24 | 491.78 (hwm 546.42) | 648.07 | 193 | Q3 beat, uptrend above 50d; non-health-care diversifier (half size, F+T) |
+| CTAS | 11 | 222.48 | 2026-11-09 | 2,447.28 | 202.64 (hwm 225.16) | 266.98 | 218 | Q1 FY27 beat, FY27 guide raised; FTC/UniFirst decision is a binary risk (half size, F+T) |
 | LIN | 4 | 514.29 | 2026-11-09 | 2,057.16 | 471.08 (hwm 523.42) | 617.15 | 173 | Q3 adj EPS +9%, FY26 guide raised to $17.82–17.92; materials diversifier (half size, F+T) |
 
-Open positions: **8/8 (C2 full)**. All 8 GTC 10% trailing stops verified live on Alpaca at 21:16 UTC 11/9 (EOD routine) (S1/S4 ✅). "Risk $ at stop" = (entry − current trail) × qty; MMM's trail (177.21) is now $0.74/sh below entry, so it is close to breakeven-protected.
+Open positions: **8/8 (C2 full)**. All 8 GTC 10% trailing stops verified live on Alpaca at 14:36 UTC 11/10 (open routine) (S1/S4 ✅). "Risk $ at stop" = (entry − current trail) × qty; MMM's trail (177.21) is now $0.74/sh below entry, so it is close to breakeven-protected.
+
+### Open-routine snapshot (2026-11-10 14:36 UTC = 09:36 ET, Alpaca live marks)
+
+| Ticker | Current | Unrealized P&L | % from entry | S2 (−7%) | Alpaca trail stop (hwm) |
+|---|---|---|---|---|---|
+| DHR | 232.66 | −$33.50 | −1.42% | 219.49 | 214.61 (238.45) |
+| ELV | 421.04 | −$24.05 | −1.13% | 396.04 | 403.69 (448.54) |
+| MMM | 188.38 | +$146.02 | +5.86% | 165.49 | 177.21 (196.90) |
+| MRK | 147.90 | −$14.72 | −0.62% | 138.40 | 138.03 (153.37) |
+| KO | 96.39 | +$42.31 | +1.72% | 88.13 | 87.65 (97.39) |
+| NOC | 544.99 | +$19.72 | +0.91% | 502.26 | 491.78 (546.42) |
+| CTAS | 222.60 | +$1.27 | +0.05% | 206.91 | 202.64 (225.16) |
+| LIN | 519.50 | +$20.84 | +1.01% | 478.29 | 471.08 (523.42) |
+
+Total unrealized +$157.89. Intraday vs Mon close equity ($100,162.25): −$4.40 (−0.00%), so D1 is clear. Drawdown −0.27% from the $100,428.38 peak, so D5 is clear. All 8 GTC 10% trailing stops live (status `new`, S1/S4 ✅); NOC and CTAS hwms ratcheted pre-open/at the open. Nothing at S2 (−7%) or S3 (+15%). **No entries:** CPI D3 blackout, C2 8/8, nothing queued.
 
 ### Premarket snapshot (2026-11-10 11:09 UTC, Alpaca pre-open marks)
 
