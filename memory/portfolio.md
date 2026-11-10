@@ -5,12 +5,12 @@
 ## Account
 
 - **Mode:** paper
-- **Last refresh (UTC):** 2026-11-09 21:16 (EOD routine, 16:16 ET, Alpaca close marks)
-- **Cash:** $81,509.69
-- **Equity:** $100,145.16 at the 11/9 close (Alpaca last_equity $99,971.97 = Fri 11/6 close per Alpaca; EOD had logged $99,952.41)
-- **Long market value:** $18,635.47 (18.6% deployed; cash 81.4%)
-- **Peak equity:** $100,428.38 (intraday 11/5 10:15 ET per Alpaca 15-min portfolio history, found by the W45 weekly review; best close is $100,247.59 on 11/4). Drawdown −0.28% at the 11/9 close (D5 trigger ≤ $90,385.54)
-- **Buying power:** $81,509.69 (= cash), multiplier 1× ✅ (RULES.md A4)
+- **Last refresh (UTC):** 2026-11-10 11:09 (premarket routine, 06:09 ET, Alpaca pre-open marks)
+- **Cash:** $81,509.68
+- **Equity:** $100,175.99 pre-open (Alpaca last_equity $100,162.25 = Mon 11/9 close per Alpaca; EOD had logged $100,145.16 from close marks)
+- **Long market value:** $18,666.31 (18.6% deployed; cash 81.4%)
+- **Peak equity:** $100,428.38 (intraday 11/5 10:15 ET per Alpaca 15-min portfolio history, found by the W45 weekly review; best close is $100,247.59 on 11/4). Drawdown −0.25% pre-open 11/10 (D5 trigger ≤ $90,385.54)
+- **Buying power:** $81,509.68 (= cash), multiplier 1× ✅ (RULES.md A4)
 
 ## Flags
 
@@ -32,6 +32,21 @@
 | LIN | 4 | 514.29 | 2026-11-09 | 2,057.16 | 471.08 (hwm 523.42) | 617.15 | 173 | Q3 adj EPS +9%, FY26 guide raised to $17.82–17.92; materials diversifier (half size, F+T) |
 
 Open positions: **8/8 (C2 full)**. All 8 GTC 10% trailing stops verified live on Alpaca at 21:16 UTC 11/9 (EOD routine) (S1/S4 ✅). "Risk $ at stop" = (entry − current trail) × qty; MMM's trail (177.21) is now $0.74/sh below entry, so it is close to breakeven-protected.
+
+### Premarket snapshot (2026-11-10 11:09 UTC, Alpaca pre-open marks)
+
+| Ticker | Current | Unrealized P&L | % from entry | S2 (−7%) | Alpaca trail stop (hwm) |
+|---|---|---|---|---|---|
+| DHR | 234.60 | −$14.10 | −0.60% | 219.49 | 214.61 (238.45) |
+| ELV | 418.25 | −$38.00 | −1.79% | 396.04 | 403.69 (448.54) |
+| MMM | 188.63 | +$149.52 | +6.00% | 165.49 | 177.21 (196.90) |
+| MRK | 149.50 | +$10.88 | +0.46% | 138.40 | 138.03 (153.37) |
+| KO | 96.00 | +$32.17 | +1.31% | 88.13 | 87.65 (97.39) |
+| NOC | 540.66 | +$2.40 | +0.11% | 502.26 | 489.53 (543.92) |
+| CTAS | 223.16 | +$7.48 | +0.31% | 206.91 | 202.01 (224.46) |
+| LIN | 520.71 | +$25.68 | +1.25% | 478.29 | 471.08 (523.42) |
+
+Total unrealized +$176.03. ELV/MMM/CTAS show Monday's close (no pre-open prints). All 8 GTC 10% trailing stops live (status `new`, S1/S4 ✅); no hwm moved overnight. Nothing at S2 (−7%) or S3 (+15%). Drawdown −0.25% from the $100,428.38 peak, so D5 is clear. **Tue 11/10 is CPI → D3 blackout**, and C2 is 8/8, so no entries today.
 
 ### EOD snapshot (2026-11-09 close)
 
