@@ -5,11 +5,11 @@
 ## Account
 
 - **Mode:** paper
-- **Last refresh (UTC):** 2026-11-10 11:09 (premarket routine, 06:09 ET, Alpaca pre-open marks)
+- **Last refresh (UTC):** 2026-11-10 17:45 (midday routine, 12:45 ET, Alpaca marks)
 - **Cash:** $81,509.68
-- **Equity:** $100,175.99 pre-open (Alpaca last_equity $100,162.25 = Mon 11/9 close per Alpaca; EOD had logged $100,145.16 from close marks)
-- **Long market value:** $18,666.31 (18.6% deployed; cash 81.4%)
-- **Peak equity:** $100,428.38 (intraday 11/5 10:15 ET per Alpaca 15-min portfolio history, found by the W45 weekly review; best close is $100,247.59 on 11/4). Drawdown −0.25% pre-open 11/10 (D5 trigger ≤ $90,385.54)
+- **Equity:** $100,283.69 midday (today open equity = Alpaca last_equity $100,162.25; intraday +$121.44 / +0.12%)
+- **Long market value:** $18,774.01 (18.7% deployed; cash 81.3%)
+- **Peak equity:** $100,428.38 (intraday 11/5 10:15 ET per Alpaca 15-min portfolio history, found by the W45 weekly review; best close is $100,247.59 on 11/4). Drawdown −0.14% midday 11/10 (D5 trigger ≤ $90,385.54)
 - **Buying power:** $81,509.68 (= cash), multiplier 1× ✅ (RULES.md A4)
 
 ## Flags
@@ -32,6 +32,21 @@
 | LIN | 4 | 514.29 | 2026-11-09 | 2,057.16 | 471.08 (hwm 523.42) | 617.15 | 173 | Q3 adj EPS +9%, FY26 guide raised to $17.82–17.92; materials diversifier (half size, F+T) |
 
 Open positions: **8/8 (C2 full)**. All 8 GTC 10% trailing stops verified live on Alpaca at 21:16 UTC 11/9 (EOD routine) (S1/S4 ✅). "Risk $ at stop" = (entry − current trail) × qty; MMM's trail (177.21) is now $0.74/sh below entry, so it is close to breakeven-protected.
+
+### Midday snapshot (2026-11-10 17:45 UTC, 12:45 ET, Alpaca marks)
+
+| Ticker | Current | Unrealized P&L | % from entry | S2 (−7%) | Alpaca trail stop (hwm) |
+|---|---|---|---|---|---|
+| DHR | 235.39 | −$6.20 | −0.26% | 219.49 | 214.61 (238.45) |
+| ELV | 424.33 | −$7.60 | −0.36% | 396.04 | 403.69 (448.54) |
+| MMM | 189.15 | +$156.80 | +6.29% | 165.49 | 177.21 (196.90) |
+| MRK | 146.91 | −$30.56 | −1.28% | 138.40 | 138.03 (153.37) |
+| KO | 96.86 | +$54.53 | +2.21% | 88.13 | 87.65 (97.39) |
+| NOC | 552.96 | +$51.58 | +2.39% | 502.26 | 497.66 (552.96) |
+| CTAS | 225.22 | +$30.14 | +1.23% | 206.91 | 202.77 (225.30) |
+| LIN | 523.05 | +$35.04 | +1.70% | 478.29 | 471.16 (523.51) |
+
+Total unrealized +$283.73. Intraday P&L vs Mon close equity ($100,162.25): +$121.44 (+0.12%), so D1 is clear. Drawdown −0.14% from the $100,428.38 peak, so D5 is clear. No position is at S2 (−7%) or S3 (+15%); MRK (−1.28%) is the weakest, MMM (+6.29%) the strongest. All 8 GTC 10% trailing stops are live (status `new`, S4 ✅); NOC, CTAS and LIN hwms ratcheted since the premarket. No actions taken (CPI D3 blackout; no entries in midday regardless).
 
 ### Premarket snapshot (2026-11-10 11:09 UTC, Alpaca pre-open marks)
 
