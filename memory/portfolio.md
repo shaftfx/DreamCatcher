@@ -5,7 +5,8 @@
 ## Account
 
 - **Mode:** paper
-- **Last refresh (UTC):** 2026-11-11 11:16 (premarket routine, 06:16 ET, Alpaca pre-open marks)
+- **Last refresh (UTC):** 2026-11-11 14:36 (open routine, 09:36 ET). Equity $100,214.93 (day −$103.38 / −0.10% vs last_equity $100,318.31); long MV $18,705.25; cash $81,509.68; buying power = cash, multiplier 1 ✅. Drawdown −0.21% from peak (D5 clear). 8/8 positions, all 8 GTC 10% trails live (CTAS hwm moved to 225.83 → stop 203.25)
+- **Prior refresh (UTC):** 2026-11-11 11:16 (premarket routine, 06:16 ET, Alpaca pre-open marks)
 - **Pre-open equity 11/11:** $100,261.98 (last_equity $100,318.31; long MV $18,752.30). Drawdown −0.17% from peak (D5 clear)
 - **Cash:** $81,509.68
 - **Equity:** $100,317.01 close (today open equity = Alpaca last_equity $100,162.25; day +$154.76 / +0.15%)
@@ -29,7 +30,7 @@
 | MRK | 16 | 148.82 | 2026-11-02 | 2,381.12 | 138.03 (hwm 153.37) | 178.58 | 173 | Q3 beat, FY26 adj EPS guide raised $2.77–2.82 (half size, F+T) |
 | KO | 26 | 94.76 | 2026-11-02 | 2,463.83 | 87.65 (hwm 97.39) | 113.72 | 185 | Q3 beat, comparable EPS growth guide raised ≥11% (half size, F+T) |
 | NOC | 4 | 540.06 | 2026-11-04 | 2,160.24 | 498.12 (hwm 553.47) | 648.07 | 168 | Q3 beat, uptrend above 50d; non-health-care diversifier (half size, F+T) |
-| CTAS | 11 | 222.48 | 2026-11-09 | 2,447.28 | 202.98 (hwm 225.53) | 266.98 | 215 | Q1 FY27 beat, FY27 guide raised; FTC/UniFirst decision is a binary risk (half size, F+T) |
+| CTAS | 11 | 222.48 | 2026-11-09 | 2,447.28 | 203.25 (hwm 225.83) | 266.98 | 215 | Q1 FY27 beat, FY27 guide raised; FTC/UniFirst decision is a binary risk (half size, F+T) |
 | LIN | 4 | 514.29 | 2026-11-09 | 2,057.16 | 471.16 (hwm 523.51) | 617.15 | 173 | Q3 adj EPS +9%, FY26 guide raised to $17.82–17.92; materials diversifier (half size, F+T) |
 
 Open positions: **8/8 (C2 full)**. All 8 GTC 10% trailing stops verified live on Alpaca at 21:16 UTC 11/10 (EOD routine) (S1/S4 ✅). "Risk $ at stop" = (entry − current trail) × qty; MMM's trail (177.21) is now $0.74/sh below entry, so it is close to breakeven-protected.

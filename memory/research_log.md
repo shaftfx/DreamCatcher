@@ -824,3 +824,7 @@ Week +0.07% vs SPY −2.69%, so **+2.76% excess**. About 2.3 pts of that came fr
 - `bull-open` is confirmed fixed (14:35 UTC, volume gate synced).
 
 Proposals for the user: (1) an index-regime gate, leaning toward at most 1 entry/week while SPY is under its 50d; (2) an intermediate S3 step (7% trail at +10%); (3) report book vs SPY weekly; (4) move the trigger crons to CRON_TZ before the 2027-03-14 DST change. Full review is in `memory/weekly_review.md`. Recap: issue #15.
+
+### 2026-11-11 14:36 UTC — OPEN — NO ENTRIES (C2 full, nothing queued)
+
+**Clock:** the market is open (09:36 ET). **Halt checks:** `halt_today` NO, `halt_until_human` NO, `weekly_defensive` NO, D3 NO (Veterans Day; NYSE open, bonds closed). Paper mode confirmed (O5). **Queue:** premarket queued nothing because C2 is 8/8, and no stop filled overnight or at the open. All 8 positions are still held. **Stops:** all 8 GTC 10% trailing stops are live on Alpaca. CTAS's hwm rose to 225.83, which moves its stop to 203.25. **Marks at 09:36 ET:** equity $100,214.93 (−0.10% day). MRK at −1.59% and DHR at −0.31% are the only names below entry; neither is close to S2 (−7%). No orders were placed.
