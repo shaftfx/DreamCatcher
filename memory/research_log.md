@@ -610,6 +610,20 @@ Queue for Wed 11/4 (Tue 11/3 is the midterm election, so the plan is no entry Tu
 
 **Ops ⚠️ still unfixed (checked list_triggers this run):** `bull-open` is still `35 13 * * 1-5` UTC = 08:35 ET (55 min pre-open) and its inline prompt still says "Do NOT check intraday volume", out of sync with `routines/open.md`. Needs the user: `CRON_TZ=America/New_York 35 9 * * 1-5` + prompt sync.
 
+### 2026-11-11 21:17 UTC — EOD — DAILY WRAP (Wed, Veterans Day)
+
+**Clock:** fired 16:16 ET, market closed, timing correct. Alpaca `paper-api` (O5 ✅), ACTIVE, cash = BP $81,509.68, multiplier 1 (A4 ✅).
+
+**Result:** equity $100,356.36, +0.04% (+$38.05) vs SPY +1.32% (749.93 → 759.80 IEX) → **−1.28% excess**. QQQ +2.31% (674.82 → 690.40). Week to date +0.40% vs SPY +3.32% (−2.92%). Flags all NO; D1/D4/D5 clear (drawdown −0.07% from the $100,428.38 peak). Best close to date.
+
+**Attribution:** book +$38.05 on ~$18.81k (≈ +0.20%), 4 of 8 green: CTAS +$21.78, LIN +$20.64, KO +$15.86, NOC +$9.40, ELV −$0.85, MMM −$6.86, DHR −$8.00, MRK −$13.92. Both cash drag (81%) and the low-beta sleeve itself lagged a growth-led rally.
+
+**Positions:** 8/8. No fills, no orders. Nothing at S2/S3; MRK (−1.10%) the weakest, MMM (+6.14%) the strongest. All 8 GTC 10% trails live; CTAS hwm 227.45 (stop 204.71), LIN hwm 526.74 (stop 474.07), KO hwm 97.83 (stop 88.04).
+
+**Recap:** issue #19.
+
+**Next:** Thu 11/12 is an entry day on the calendar (claims 08:30; CSCO/AMAT AMC), but C2 is 8/8, so nothing enters unless a stop fires. UNP, SPGI, TXN stay alternates; re-validate from fresh bars. Fri 11/13 PPI (not D3).
+
 ### 2026-11-11 11:16 UTC — PREMARKET — WATCHLIST REFRESH (Wed, C2 full, nothing queued)
 
 **Clock:** fired 06:15 ET (Alpaca clock), market closed, timing correct. **Account (Alpaca, `paper-api` confirmed, O5 ✅):** ACTIVE. Equity $100,261.98 pre-open (last_equity $100,318.31). Cash = BP $81,509.68, multiplier 1 (A4 ✅). Flags all NO. Drawdown −0.17% from the $100,428.38 peak, so D5 is clear. All 8 GTC 10% trails are live; no hwm moved overnight. Nothing at S2/S3: MRK (−1.61% pre-open) is the weakest, MMM (+6.42%) the strongest. Perplexity isn't used (no key in env); research via WebSearch.
