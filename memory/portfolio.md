@@ -5,7 +5,8 @@
 ## Account
 
 - **Mode:** paper
-- **Last refresh (UTC):** 2026-11-10 21:16 (EOD routine, 16:16 ET, Alpaca close marks)
+- **Last refresh (UTC):** 2026-11-11 11:16 (premarket routine, 06:16 ET, Alpaca pre-open marks)
+- **Pre-open equity 11/11:** $100,261.98 (last_equity $100,318.31; long MV $18,752.30). Drawdown −0.17% from peak (D5 clear)
 - **Cash:** $81,509.68
 - **Equity:** $100,317.01 close (today open equity = Alpaca last_equity $100,162.25; day +$154.76 / +0.15%)
 - **Long market value:** $18,807.33 (18.7% deployed; cash 81.3%)
@@ -32,6 +33,21 @@
 | LIN | 4 | 514.29 | 2026-11-09 | 2,057.16 | 471.16 (hwm 523.51) | 617.15 | 173 | Q3 adj EPS +9%, FY26 guide raised to $17.82–17.92; materials diversifier (half size, F+T) |
 
 Open positions: **8/8 (C2 full)**. All 8 GTC 10% trailing stops verified live on Alpaca at 21:16 UTC 11/10 (EOD routine) (S1/S4 ✅). "Risk $ at stop" = (entry − current trail) × qty; MMM's trail (177.21) is now $0.74/sh below entry, so it is close to breakeven-protected.
+
+### Premarket snapshot (2026-11-11 11:16 UTC, Alpaca pre-open marks)
+
+| Ticker | Current | Unrealized P&L | % from entry | S2 (−7%) | Alpaca trail stop (hwm) |
+|---|---|---|---|---|---|
+| DHR | 236.77 | +$7.61 | +0.32% | 219.49 | 214.61 (238.45) |
+| ELV | 429.65 | +$19.00 | +0.89% | 396.04 | 403.69 (448.54) |
+| MMM | 189.37 | +$159.88 | +6.42% | 165.49 | 177.21 (196.90) |
+| MRK | 146.43 | −$38.24 | −1.61% | 138.40 | 138.03 (153.37) |
+| KO | 95.84 | +$28.01 | +1.14% | 88.13 | 87.65 (97.39) |
+| NOC | 548.61 | +$34.20 | +1.58% | 502.26 | 498.12 (553.47) |
+| CTAS | 225.28 | +$30.80 | +1.26% | 206.91 | 202.98 (225.53) |
+| LIN | 519.48 | +$20.76 | +1.01% | 478.29 | 471.16 (523.51) |
+
+Total unrealized +$262.02. ELV/MMM/NOC/CTAS show Tuesday's close (no pre-open prints); MRK (−1.1% vs close), KO (−1.1%) and LIN (−0.4%) are softer pre-open on thin prints. All 8 GTC 10% trailing stops live (status `new`, S1/S4 ✅); no hwm moved overnight. Nothing at S2 (−7%) or S3 (+15%). Drawdown −0.17% from the $100,428.38 peak (D5 trigger ≤ $90,385.54). Wed 11/11 is not a D3 day, but **C2 is 8/8**, so no entries unless a stop fills.
 
 ### EOD snapshot (2026-11-10 close)
 
