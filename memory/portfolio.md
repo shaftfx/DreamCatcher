@@ -5,11 +5,11 @@
 ## Account
 
 - **Mode:** paper
-- **Last refresh (UTC):** 2026-11-12 11:10 (premarket routine, 06:10 ET). Equity $100,383.56 pre-open (last_equity $100,356.10); long MV $18,873.88; cash $81,509.68; buying power = cash, multiplier 1 ✅. Drawdown −0.04% from peak (D5 clear). 8/8 positions, all 8 GTC 10% trails live, no fills overnight
-- **Prior refresh (UTC):** 2026-11-11 21:17 (EOD routine, 16:17 ET)
+- **Last refresh (UTC):** 2026-11-12 14:36 (open routine, 09:36 ET). Equity $100,404.53 (last_equity $100,356.10, +0.05% day); long MV $18,894.85; cash $81,509.68; buying power = cash, multiplier 1 ✅. Drawdown −0.02% from peak (D5 clear). 8/8 positions, all 8 GTC 10% trails live; hwm up on KO 98.34 / NOC 558.00 / CTAS 230.45 / LIN 530.20 (stops 88.51 / 502.20 / 207.41 / 477.18). No entries (C2 full, nothing queued)
+- **Prior refresh (UTC):** 2026-11-12 11:10 (premarket routine, 06:10 ET)
 - **Cash:** $81,509.68
-- **Equity:** $100,383.56 pre-open 11/12 (11/11 close $100,356.36)
-- **Long market value:** $18,873.88 (18.8% deployed; cash 81.2%)
+- **Equity:** $100,404.53 at 09:36 ET 11/12 (11/11 close $100,356.36)
+- **Long market value:** $18,894.85 (18.8% deployed; cash 81.2%)
 - **Peak equity:** $100,428.38 (intraday 11/5 10:15 ET per Alpaca 15-min portfolio history; best close $100,356.36 on 11/11). Drawdown −0.04% pre-open 11/12 (D5 trigger ≤ $90,385.54)
 - **Buying power:** $81,509.68 (= cash), multiplier 1× ✅ (RULES.md A4)
 
@@ -27,10 +27,10 @@
 | ELV | 5 | 425.85 | 2026-10-30 | 2,129.25 | 403.69 (hwm 448.54) | 511.02 | 111 | Q3 beat, FY26 guide raised ≥ $29 (half size, F+T) |
 | MMM | 14 | 177.95 | 2026-10-30 | 2,491.30 | 177.21 (hwm 196.90) | 213.54 | 10 | Q3 beat, FY guide raised $9.10–9.15 (half size, F+T) |
 | MRK | 16 | 148.82 | 2026-11-02 | 2,381.12 | 138.03 (hwm 153.37) | 178.58 | 173 | Q3 beat, FY26 adj EPS guide raised $2.77–2.82 (half size, F+T) |
-| KO | 26 | 94.76 | 2026-11-02 | 2,463.83 | 88.04 (hwm 97.83) | 113.72 | 175 | Q3 beat, comparable EPS growth guide raised ≥11% (half size, F+T) |
-| NOC | 4 | 540.06 | 2026-11-04 | 2,160.24 | 498.12 (hwm 553.47) | 648.07 | 168 | Q3 beat, uptrend above 50d; non-health-care diversifier (half size, F+T) |
-| CTAS | 11 | 222.48 | 2026-11-09 | 2,447.28 | 204.71 (hwm 227.45) | 266.98 | 195 | Q1 FY27 beat, FY27 guide raised; FTC/UniFirst decision is a binary risk (half size, F+T) |
-| LIN | 4 | 514.29 | 2026-11-09 | 2,057.16 | 474.07 (hwm 526.74) | 617.15 | 161 | Q3 adj EPS +9%, FY26 guide raised to $17.82–17.92; materials diversifier (half size, F+T) |
+| KO | 26 | 94.76 | 2026-11-02 | 2,463.83 | 88.51 (hwm 98.34) | 113.72 | 175 | Q3 beat, comparable EPS growth guide raised ≥11% (half size, F+T) |
+| NOC | 4 | 540.06 | 2026-11-04 | 2,160.24 | 502.20 (hwm 558.00) | 648.07 | 168 | Q3 beat, uptrend above 50d; non-health-care diversifier (half size, F+T) |
+| CTAS | 11 | 222.48 | 2026-11-09 | 2,447.28 | 207.41 (hwm 230.45) | 266.98 | 195 | Q1 FY27 beat, FY27 guide raised; FTC/UniFirst decision is a binary risk (half size, F+T) |
+| LIN | 4 | 514.29 | 2026-11-09 | 2,057.16 | 477.18 (hwm 530.20) | 617.15 | 161 | Q3 adj EPS +9%, FY26 guide raised to $17.82–17.92; materials diversifier (half size, F+T) |
 
 Open positions: **8/8 (C2 full)**. All 8 GTC 10% trailing stops verified live on Alpaca at 21:17 UTC 11/11 (EOD routine) (S1/S4 ✅). "Risk $ at stop" = (entry − current trail) × qty; MMM's trail (177.21) is now $0.74/sh below entry, so it is close to breakeven-protected.
 
