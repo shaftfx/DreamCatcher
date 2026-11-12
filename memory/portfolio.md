@@ -5,11 +5,11 @@
 ## Account
 
 - **Mode:** paper
-- **Last refresh (UTC):** 2026-11-12 14:36 (open routine, 09:36 ET). Equity $100,404.53 (last_equity $100,356.10, +0.05% day); long MV $18,894.85; cash $81,509.68; buying power = cash, multiplier 1 ✅. Drawdown −0.02% from peak (D5 clear). 8/8 positions, all 8 GTC 10% trails live; hwm up on KO 98.34 / NOC 558.00 / CTAS 230.45 / LIN 530.20 (stops 88.51 / 502.20 / 207.41 / 477.18). No entries (C2 full, nothing queued)
-- **Prior refresh (UTC):** 2026-11-12 11:10 (premarket routine, 06:10 ET)
+- **Last refresh (UTC):** 2026-11-12 17:44 (midday routine, 12:44 ET). Equity $100,418.37 (last_equity $100,356.10, +$62.27 / +0.06% day; D1 clear). Long MV $18,908.69; cash $81,509.68; buying power = cash, multiplier 1 ✅. Drawdown −0.01% from the $100,428.38 peak (D5 clear). 8/8 positions; nothing at S2 or S3; all 8 GTC 10% trails live; KO hwm up to 98.38 (stop 88.54). No orders placed or cancelled
+- **Prior refresh (UTC):** 2026-11-12 14:36 (open routine, 09:36 ET)
 - **Cash:** $81,509.68
-- **Equity:** $100,404.53 at 09:36 ET 11/12 (11/11 close $100,356.36)
-- **Long market value:** $18,894.85 (18.8% deployed; cash 81.2%)
+- **Equity:** $100,418.37 at 12:44 ET 11/12 (11/11 close $100,356.36)
+- **Long market value:** $18,908.69 (18.8% deployed; cash 81.2%)
 - **Peak equity:** $100,428.38 (intraday 11/5 10:15 ET per Alpaca 15-min portfolio history; best close $100,356.36 on 11/11). Drawdown −0.04% pre-open 11/12 (D5 trigger ≤ $90,385.54)
 - **Buying power:** $81,509.68 (= cash), multiplier 1× ✅ (RULES.md A4)
 
@@ -27,12 +27,27 @@
 | ELV | 5 | 425.85 | 2026-10-30 | 2,129.25 | 403.69 (hwm 448.54) | 511.02 | 111 | Q3 beat, FY26 guide raised ≥ $29 (half size, F+T) |
 | MMM | 14 | 177.95 | 2026-10-30 | 2,491.30 | 177.21 (hwm 196.90) | 213.54 | 10 | Q3 beat, FY guide raised $9.10–9.15 (half size, F+T) |
 | MRK | 16 | 148.82 | 2026-11-02 | 2,381.12 | 138.03 (hwm 153.37) | 178.58 | 173 | Q3 beat, FY26 adj EPS guide raised $2.77–2.82 (half size, F+T) |
-| KO | 26 | 94.76 | 2026-11-02 | 2,463.83 | 88.51 (hwm 98.34) | 113.72 | 175 | Q3 beat, comparable EPS growth guide raised ≥11% (half size, F+T) |
+| KO | 26 | 94.76 | 2026-11-02 | 2,463.83 | 88.54 (hwm 98.38) | 113.72 | 175 | Q3 beat, comparable EPS growth guide raised ≥11% (half size, F+T) |
 | NOC | 4 | 540.06 | 2026-11-04 | 2,160.24 | 502.20 (hwm 558.00) | 648.07 | 168 | Q3 beat, uptrend above 50d; non-health-care diversifier (half size, F+T) |
-| CTAS | 11 | 222.48 | 2026-11-09 | 2,447.28 | 207.41 (hwm 230.45) | 266.98 | 195 | Q1 FY27 beat, FY27 guide raised; FTC/UniFirst decision is a binary risk (half size, F+T) |
+| CTAS | 11 | 222.48 | 2026-11-09 | 2,447.28 | 207.42 (hwm 230.47) | 266.98 | 195 | Q1 FY27 beat, FY27 guide raised; FTC/UniFirst decision is a binary risk (half size, F+T) |
 | LIN | 4 | 514.29 | 2026-11-09 | 2,057.16 | 477.18 (hwm 530.20) | 617.15 | 161 | Q3 adj EPS +9%, FY26 guide raised to $17.82–17.92; materials diversifier (half size, F+T) |
 
 Open positions: **8/8 (C2 full)**. All 8 GTC 10% trailing stops verified live on Alpaca at 21:17 UTC 11/11 (EOD routine) (S1/S4 ✅). "Risk $ at stop" = (entry − current trail) × qty; MMM's trail (177.21) is now $0.74/sh below entry, so it is close to breakeven-protected.
+
+### Midday snapshot (2026-11-12 17:44 UTC, 12:44 ET, Alpaca marks)
+
+| Ticker | Current | Unrealized P&L | % from entry | S2 (−7%) | Alpaca trail stop (hwm) |
+|---|---|---|---|---|---|
+| DHR | 234.03 | −$19.80 | −0.84% | 219.49 | 214.61 (238.45) |
+| ELV | 433.39 | +$37.70 | +1.77% | 396.04 | 403.69 (448.54) |
+| MMM | 188.71 | +$150.64 | +6.05% | 165.49 | 177.21 (196.90) |
+| MRK | 148.92 | +$1.52 | +0.06% | 138.40 | 138.03 (153.37) |
+| KO | 98.17 | +$88.46 | +3.59% | 88.13 | 88.54 (98.38) |
+| NOC | 550.43 | +$41.48 | +1.92% | 502.26 | 502.20 (558.00) |
+| CTAS | 228.67 | +$68.09 | +2.78% | 206.91 | 207.42 (230.47) |
+| LIN | 526.87 | +$50.32 | +2.45% | 478.29 | 477.18 (530.20) |
+
+Total unrealized +$418.41. Day +$62.27 (+0.06%) vs Wed close equity $100,356.10, so D1 is clear (cap −$2,007.12). Drawdown −0.01% from the $100,428.38 peak (D5 trigger ≤ $90,385.54). Nothing at S2 (−7%): DHR (−0.84%) is the weakest, $14.54 above its S2 line. Nothing at S3 (+15%): MMM (+6.05%) is the strongest. All 8 GTC 10% trailing stops verified live (status `new`, S1/S4 ✅); KO hwm ratcheted to 98.38 since the open. No orders filled today; none placed or cancelled.
 
 ### Premarket snapshot (2026-11-12 11:10 UTC, Alpaca pre-open marks)
 
