@@ -610,6 +610,22 @@ Queue for Wed 11/4 (Tue 11/3 is the midterm election, so the plan is no entry Tu
 
 **Ops ⚠️ still unfixed (checked list_triggers this run):** `bull-open` is still `35 13 * * 1-5` UTC = 08:35 ET (55 min pre-open) and its inline prompt still says "Do NOT check intraday volume", out of sync with `routines/open.md`. Needs the user: `CRON_TZ=America/New_York 35 9 * * 1-5` + prompt sync.
 
+### 2026-11-12 21:17 UTC — EOD — DAILY WRAP (Thu)
+
+**Clock:** fired 16:16 ET, market closed, timing correct. Alpaca `paper-api` (O5 ✅), ACTIVE, cash = BP $81,509.68, multiplier 1 (A4 ✅).
+
+**Result:** equity $100,266.06, −0.09% (−$90.04) vs SPY −0.35% (759.80 → 757.16 IEX) → **+0.26% excess**. QQQ −0.32% (690.40 → 688.20). Week to date +0.31% vs SPY +2.96% (−2.65%). Flags all NO; D1/D4/D5 clear (drawdown −0.16% from the $100,428.38 peak).
+
+**Attribution:** book −$90.04 on ~$18.85k (≈ −0.48%), worse than SPY; only 2 of 8 green: CTAS +$2.86, ELV +$2.10, KO −$3.38, MRK −$3.68, NOC −$7.32, LIN −$12.16, DHR −$31.50, MMM −$36.96. The excess came from the 81% cash, not from selection.
+
+**Positions:** 8/8. No fills, no orders. Nothing at S2/S3; DHR (−1.63%) the weakest, MMM (+4.66%) the strongest. All 8 GTC 10% trails live; no hwm moved after midday. MMM is 5.4% off its 196.90 hwm and its trail (177.21) is $0.74 under entry.
+
+**Watchlist marks:** UNP 304.22 (+0.72%), TXN 312.45 (+0.88%). AMAT reported AMC (IEX after-hours print 385.45 vs 381.10 close; thin, don't over-read). CSCO also reported AMC. Premarket should check the TXN read-through.
+
+**Recap:** issue #20.
+
+**Next:** Fri 11/13 PPI (not D3). C2 is 8/8, so nothing enters unless a stop fires. Friday weekly review: raise the MMM give-back as evidence for the intermediate-S3 proposal (issue #15).
+
 ### 2026-11-12 11:10 UTC — PREMARKET — WATCHLIST REFRESH (Thu, C2 full, nothing queued)
 
 **Clock:** fired 06:09 ET (Alpaca clock), market closed, timing correct. **Account (Alpaca, `paper-api` confirmed, O5 ✅):** ACTIVE. Equity $100,383.56 pre-open (last_equity $100,356.10). Cash = BP $81,509.68, multiplier 1 (A4 ✅). Flags all NO. Drawdown −0.04% from the $100,428.38 peak, so D5 is clear. All 8 GTC 10% trails are live; no hwm moved and no orders filled overnight. Nothing at S2/S3: MRK (−0.29% pre-open) is the weakest, MMM (+5.54%) the strongest. Perplexity isn't used (no key in env); research via WebSearch.
