@@ -11,9 +11,6 @@ Format:
 
 <!-- Example entries (replace with real ones over time):
 
-## 2026-11-12 [risk]
-"Defensive" names are not a hedge on mild down days. On Thu 11/12, SPY fell 0.35% and the 8-name book fell about 0.48% on its own value; only 2 of 8 closed green. The +0.26% excess came entirely from 81% cash. Low beta helped on the −4% day (11/5) but didn't help on a −0.35% drift. Attribute excess to cash vs selection every day before calling the book defensive. Separately, MMM went from a +10.6% open gain at its 196.90 hwm to +4.7% with no rule acting: the 10% trail only protects breakeven, and S3 doesn't start until +15%. Evidence for the intermediate-S3 proposal; still the user's call.
-
 ## 2026-05-15 [entry]
 Catalyst-only entries (no fundamental confirmation) underperformed +0.4% vs SPY's +1.2% over last 3 attempts. Going forward: require fundamental + (catalyst OR technical), not catalyst alone.
 
@@ -24,6 +21,9 @@ The −7% hard cut saved 2 of 3 losing positions from becoming larger drawdowns.
 Perplexity returned a stale guidance number for $TSLA — used the actual SEC filing date as the floor for any data citation. Always cross-check against filings if guidance is in the thesis.
 
 -->
+
+## 2026-11-12 [risk]
+"Defensive" names are not a hedge on mild down days. On Thu 11/12, SPY fell 0.35% and the 8-name book fell about 0.48% on its own value; only 2 of 8 closed green. The +0.26% excess came entirely from 81% cash. Low beta helped on the −4% day (11/5) but didn't help on a −0.35% drift. Attribute excess to cash vs selection every day before calling the book defensive. Separately, MMM went from a +10.6% open gain at its 196.90 hwm to +4.7% with no rule acting: the 10% trail only protects breakeven, and S3 doesn't start until +15%. Evidence for the intermediate-S3 proposal; still the user's call.
 
 ## 2026-11-09 [risk]
 Single-day excess swings are an exposure readout. Thu 11/5 was +4.10% (SPY −4.34%) and Mon 11/9 was −2.18% (SPY +2.36%, QQQ +3.42%), with no change in thesis on any name. Measured across the whole drop and rebound (11/4 close → 11/9 close), the account is +1.74% ahead of SPY. With ~80% cash and an all-defensive book, a one-day excess is mostly β × SPY. Report the drop-to-rebound or rolling window next to the daily number, and don't treat a lagging rebound day as a signal to deploy faster or rotate into beta.
