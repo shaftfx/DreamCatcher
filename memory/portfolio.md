@@ -5,12 +5,12 @@
 ## Account
 
 - **Mode:** paper
-- **Last refresh (UTC):** 2026-11-11 21:17 (EOD routine, 16:17 ET). Equity $100,356.36 close (day +$38.05 / +0.04% vs last_equity $100,318.31, D1 clear); long MV $18,846.68; cash $81,509.68; buying power = cash, multiplier 1 ✅. Drawdown −0.07% from peak (D5 clear). 8/8 positions, all 8 GTC 10% trails live
-- **Prior refresh (UTC):** 2026-11-11 17:45 (midday routine, 12:45 ET)
+- **Last refresh (UTC):** 2026-11-12 11:10 (premarket routine, 06:10 ET). Equity $100,383.56 pre-open (last_equity $100,356.10); long MV $18,873.88; cash $81,509.68; buying power = cash, multiplier 1 ✅. Drawdown −0.04% from peak (D5 clear). 8/8 positions, all 8 GTC 10% trails live, no fills overnight
+- **Prior refresh (UTC):** 2026-11-11 21:17 (EOD routine, 16:17 ET)
 - **Cash:** $81,509.68
-- **Equity:** $100,356.36 close (today open equity = Alpaca last_equity $100,318.31; day +$38.05 / +0.04%)
-- **Long market value:** $18,846.68 (18.8% deployed; cash 81.2%)
-- **Peak equity:** $100,428.38 (intraday 11/5 10:15 ET per Alpaca 15-min portfolio history; best close is now $100,356.36 on 11/11). Drawdown −0.07% at the 11/11 close (D5 trigger ≤ $90,385.54)
+- **Equity:** $100,383.56 pre-open 11/12 (11/11 close $100,356.36)
+- **Long market value:** $18,873.88 (18.8% deployed; cash 81.2%)
+- **Peak equity:** $100,428.38 (intraday 11/5 10:15 ET per Alpaca 15-min portfolio history; best close $100,356.36 on 11/11). Drawdown −0.04% pre-open 11/12 (D5 trigger ≤ $90,385.54)
 - **Buying power:** $81,509.68 (= cash), multiplier 1× ✅ (RULES.md A4)
 
 ## Flags
@@ -33,6 +33,21 @@
 | LIN | 4 | 514.29 | 2026-11-09 | 2,057.16 | 474.07 (hwm 526.74) | 617.15 | 161 | Q3 adj EPS +9%, FY26 guide raised to $17.82–17.92; materials diversifier (half size, F+T) |
 
 Open positions: **8/8 (C2 full)**. All 8 GTC 10% trailing stops verified live on Alpaca at 21:17 UTC 11/11 (EOD routine) (S1/S4 ✅). "Risk $ at stop" = (entry − current trail) × qty; MMM's trail (177.21) is now $0.74/sh below entry, so it is close to breakeven-protected.
+
+### Premarket snapshot (2026-11-12 11:10 UTC, Alpaca pre-open marks)
+
+| Ticker | Current | Unrealized P&L | % from entry | S2 (−7%) | Alpaca trail stop (hwm) |
+|---|---|---|---|---|---|
+| DHR | 236.58 | +$5.70 | +0.24% | 219.49 | 214.61 (238.45) |
+| ELV | 429.48 | +$18.15 | +0.85% | 396.04 | 403.69 (448.54) |
+| MMM | 187.80 | +$137.90 | +5.54% | 165.49 | 177.21 (196.90) |
+| MRK | 148.39 | −$6.88 | −0.29% | 138.40 | 138.03 (153.37) |
+| KO | 97.88 | +$81.05 | +3.29% | 88.13 | 88.04 (97.83) |
+| NOC | 550.96 | +$43.60 | +2.02% | 502.26 | 498.12 (553.47) |
+| CTAS | 227.44 | +$54.56 | +2.23% | 206.91 | 204.71 (227.45) |
+| LIN | 526.67 | +$49.52 | +2.41% | 478.29 | 474.07 (526.74) |
+
+Total unrealized +$383.60. ELV and NOC show Wednesday's close (no pre-open prints); MRK (+0.8% vs close) and KO (+0.3%) firmer, MMM (−0.6%) softer on thin prints. All 8 GTC 10% trailing stops live (status `new`, S1/S4 ✅); no hwm moved overnight, no orders filled since EOD. Nothing at S2 (−7%) or S3 (+15%). Thu 11/12 is not a D3 day, but **C2 is 8/8**, so no entries unless a stop fills.
 
 ### EOD snapshot (2026-11-11 close)
 
