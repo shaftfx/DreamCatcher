@@ -10,7 +10,7 @@
 - **Cash:** $81,509.68
 - **Equity:** $100,299.56 at the 11/13 close (11/12 close $100,266.06; prior Fri 11/6 close $99,952.41)
 - **Long market value:** $18,789.88 (18.7% deployed; cash 81.3%)
-- **Peak equity:** $100,428.38 (intraday 11/5 10:15 ET per Alpaca 15-min portfolio history; best close $100,356.36 on 11/11; unchanged today). Drawdown −0.13% at the 11/13 close (D5 trigger ≤ $90,385.54)
+- **Peak equity:** $100,448.15 (intraday Thu 11/12 12:30 ET per Alpaca 15-min portfolio history, found by the W46 weekly review; prior recorded peak $100,428.38 intraday 11/5; best close $100,356.36 on 11/11). Drawdown −0.15% at the 11/13 close (D5 trigger ≤ $90,403.34)
 - **Buying power:** $81,509.68 (= cash), multiplier 1× ✅ (RULES.md A4)
 
 ## Flags
@@ -624,6 +624,14 @@ Total unrealized −$119.62. Deployed $6,861.03 (6.9% of equity). Open risk to s
 - SPY week return: −0.54% (759.83 → 755.72)
 - Excess vs SPY: +0.42%
 - D4 weekly loss check: −0.12% > −5% → `weekly_defensive: NO`
+
+## Week closed 2026-W46 (Fri 11/6 close → Fri 11/13 close) — weekly review
+
+- Week return: +0.35% ($99,952.41 → $100,299.56)
+- SPY week return: +2.57% (735.40 → 754.27, IEX)
+- Excess vs SPY: −2.22% (grade D; see `memory/weekly_review.md`)
+- D4 weekly loss check: +0.35% > −5% → `weekly_defensive: NO`
+- Week starting Mon 11/16: C1 resets to 0/3; C2 still 8/8 → entries only if a stop fills
 
 ## New entries this week
 

@@ -612,6 +612,10 @@ Queue for Wed 11/4 (Tue 11/3 is the midterm election, so the plan is no entry Tu
 
 **Ops ⚠️ still unfixed (checked list_triggers this run):** `bull-open` is still `35 13 * * 1-5` UTC = 08:35 ET (55 min pre-open) and its inline prompt still says "Do NOT check intraday volume", out of sync with `routines/open.md`. Needs the user: `CRON_TZ=America/New_York 35 9 * * 1-5` + prompt sync.
 
+### 2026-11-13 22:15 UTC — WEEKLY — REVIEW 2026-W46 (grade D)
+
+Week +0.35% ($99,952.41 → $100,299.56) vs SPY +2.57% → **−2.22% excess**. Book ≈ +1.75% on ≈ $18.4k (7 of 8 green); ≈ −2.1 pts of the excess is cash drag with C2 full at half size from Mon 11/9. 2 entries (CTAS, LIN), 0 exits, 0 closed trades to date. No rule violations. New intraday peak $100,448.15 (11/12 12:30 ET) found in 15-min history; portfolio.md updated (D5 trigger ≤ $90,403.34). Proposals: fix the ~20% deployment ceiling (full size default / higher C2), regime gate (#13), intermediate S3, DST crons, peak tracking. Full review in `memory/weekly_review.md`.
+
 ### 2026-11-13 21:17 UTC — EOD — DAILY WRAP (Fri)
 
 **Clock:** fired 16:16 ET, market closed, timing correct. Alpaca `paper-api` (O5 ✅), ACTIVE, cash = BP $81,509.68, multiplier 1 (A4 ✅).

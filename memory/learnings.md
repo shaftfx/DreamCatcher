@@ -22,6 +22,12 @@ Perplexity returned a stale guidance number for $TSLA — used the actual SEC fi
 
 -->
 
+## 2026-11-13 [risk] — weekly W46
+Half-size entries × C2 (8 slots) cap deployment at about 20% of equity, and C2 filled on Mon 11/9. For the rest of the week the account was locked at 81% cash while SPY rose 2.57% and QQQ 3.61%. Result: account +0.35% vs SPY +2.57% (−2.22% excess) even though the book itself was +1.75% with 7 of 8 names green, and UNP passed every gate but couldn't be bought. Until sizing or C2 changes, the weekly excess is mostly a beta readout: roughly −0.8 × SPY's week return. Grade it honestly by the rubric, report book vs SPY next to it, and don't loosen gates mid-week to chase. The levers (full size by default, higher C2, or benchmarking against 0.2 × SPY) are the user's call — proposed in the W46 review.
+
+## 2026-11-13 [ops] — weekly W46
+Peak equity must come from Alpaca's 15-min portfolio history, not from routine snapshots. The account hit $100,448.15 at 12:30 ET Thu 11/12 between the midday and EOD reads; portfolio.md kept $100,428.38 until the weekly scan found it. D5 is measured from the peak, so an understated peak understates drawdown. EOD should take max(today's 15-min equity) into `peak_equity`.
+
 ## 2026-11-12 [risk]
 "Defensive" names are not a hedge on mild down days. On Thu 11/12, SPY fell 0.35% and the 8-name book fell about 0.48% on its own value; only 2 of 8 closed green. The +0.26% excess came entirely from 81% cash. Low beta helped on the −4% day (11/5) but didn't help on a −0.35% drift. Attribute excess to cash vs selection every day before calling the book defensive. Separately, MMM went from a +10.6% open gain at its 196.90 hwm to +4.7% with no rule acting: the 10% trail only protects breakeven, and S3 doesn't start until +15%. Evidence for the intermediate-S3 proposal; still the user's call.
 
