@@ -885,6 +885,10 @@ Week +0.07% vs SPY −2.69%, so **+2.76% excess**. About 2.3 pts of that came fr
 
 Proposals for the user: (1) an index-regime gate, leaning toward at most 1 entry/week while SPY is under its 50d; (2) an intermediate S3 step (7% trail at +10%); (3) report book vs SPY weekly; (4) move the trigger crons to CRON_TZ before the 2027-03-14 DST change. Full review is in `memory/weekly_review.md`. Recap: issue #15.
 
+### 2026-11-13 15:02 UTC — OPEN — NO ENTRIES (C2 full, nothing queued)
+
+**Clock:** market open, but this run fired at **10:02 ET (~27 min after the 09:35 schedule)**; no impact since nothing was queued. **Halt checks:** `halt_today` NO, `halt_until_human` NO, `weekly_defensive` NO, D3 NO (Fri 11/13 PPI is not D3). Paper mode confirmed (O5); cash = BP, multiplier 1 (A4). **Queue:** premarket queued nothing (C2 8/8); no stop filled overnight or at the open. **Stops:** all 8 GTC 10% trails live; KO hwm rose to 98.87 (stop 88.98). **Marks 10:02 ET:** equity $100,234.80 (−0.03% day). ELV is back at 426.65 (+0.19%), so premarket's 416.01 pre-open mark was noise. DHR −2.43% and MRK −1.85% are the only names below entry; none near S2 (−7%) or S3 (+15%). No orders placed.
+
 ### 2026-11-12 14:36 UTC — OPEN — NO ENTRIES (C2 full, nothing queued)
 
 **Clock:** market open (09:36 ET), timing correct. **Halt checks:** `halt_today` NO, `halt_until_human` NO, `weekly_defensive` NO, D3 NO (Thu 11/12). Paper mode confirmed (O5); cash = BP, multiplier 1 (A4). **Queue:** premarket queued nothing (C2 8/8); no stop filled overnight or at the open, so no slot opened. **Stops:** all 8 GTC 10% trails live; hwm rose on KO (98.34 → stop 88.51), NOC (558.00 → 502.20), CTAS (230.45 → 207.41), LIN (530.20 → 477.18). **Marks 09:36 ET:** equity $100,404.53 (+0.05% day). DHR −1.26% and MRK −0.51% are the only names below entry; none near S2 (−7%) or S3 (+15%; MMM best at +6.37%). CSCO/AMAT report tonight AMC — TXN read-through for tomorrow's premarket. No orders placed.
