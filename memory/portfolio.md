@@ -5,8 +5,8 @@
 ## Account
 
 - **Mode:** paper
-- **Last refresh (UTC):** 2026-11-13 11:09 (premarket routine, 06:09 ET). Pre-open equity $100,225.16 (last_equity $100,261.98); cash $81,509.68 = BP, multiplier 1 ✅; LMV $18,715.48. Drawdown −0.20% from the $100,428.38 peak (D5 clear). 8/8; all 8 GTC 10% trails live; no fills overnight. ELV pre-open mark 416.01 (−3.2%), cause unconfirmed
-- **Prior refresh (UTC):** 2026-11-12 21:17 (EOD routine, 16:17 ET). Close equity $100,266.06 (last_equity $100,356.10, −$90.04 / −0.09% day; D1 clear) vs SPY −0.35% → +0.26% excess. Long MV $18,756.38; cash $81,509.68; buying power = cash, multiplier 1 ✅. Drawdown −0.16% from the $100,428.38 peak (D5 clear). 8/8 positions; nothing at S2 or S3; all 8 GTC 10% trails live. No orders placed, filled or cancelled today
+- **Last refresh (UTC):** 2026-11-13 17:42 (midday routine, 12:42 ET). Equity $100,228.36 (last_equity $100,261.98 → day −$33.62 / −0.03%; D1 clear, cap −$2,005.24). Cash $81,509.68 = BP, multiplier 1 ✅; LMV $18,718.68. Drawdown −0.20% from the $100,428.38 peak (D5 clear). 8/8; all 8 GTC 10% trails live; KO hwm ratcheted to 99.29; no orders filled/placed/cancelled
+- **Prior refresh (UTC):** 2026-11-13 11:09 (premarket routine, 06:09 ET). Pre-open equity $100,225.16 (last_equity $100,261.98); cash $81,509.68 = BP, multiplier 1 ✅; LMV $18,715.48. Drawdown −0.20% from the $100,428.38 peak (D5 clear). 8/8; all 8 GTC 10% trails live; no fills overnight. ELV pre-open mark 416.01 (−3.2%), cause unconfirmed
 - **Cash:** $81,509.68
 - **Equity:** $100,266.06 at the 11/12 close (11/11 close $100,356.36)
 - **Long market value:** $18,756.38 (18.7% deployed; cash 81.3%)
@@ -27,12 +27,27 @@
 | ELV | 5 | 425.85 | 2026-10-30 | 2,129.25 | 403.69 (hwm 448.54) | 511.02 | 111 | Q3 beat, FY26 guide raised ≥ $29 (half size, F+T) |
 | MMM | 14 | 177.95 | 2026-10-30 | 2,491.30 | 177.21 (hwm 196.90) | 213.54 | 10 | Q3 beat, FY guide raised $9.10–9.15 (half size, F+T) |
 | MRK | 16 | 148.82 | 2026-11-02 | 2,381.12 | 138.03 (hwm 153.37) | 178.58 | 173 | Q3 beat, FY26 adj EPS guide raised $2.77–2.82 (half size, F+T) |
-| KO | 26 | 94.76 | 2026-11-02 | 2,463.83 | 88.54 (hwm 98.38) | 113.72 | 175 | Q3 beat, comparable EPS growth guide raised ≥11% (half size, F+T) |
+| KO | 26 | 94.76 | 2026-11-02 | 2,463.83 | 89.36 (hwm 99.29) | 113.72 | 154 | Q3 beat, comparable EPS growth guide raised ≥11% (half size, F+T) |
 | NOC | 4 | 540.06 | 2026-11-04 | 2,160.24 | 502.20 (hwm 558.00) | 648.07 | 168 | Q3 beat, uptrend above 50d; non-health-care diversifier (half size, F+T) |
 | CTAS | 11 | 222.48 | 2026-11-09 | 2,447.28 | 207.42 (hwm 230.47) | 266.98 | 195 | Q1 FY27 beat, FY27 guide raised; FTC/UniFirst decision is a binary risk (half size, F+T) |
 | LIN | 4 | 514.29 | 2026-11-09 | 2,057.16 | 477.18 (hwm 530.20) | 617.15 | 161 | Q3 adj EPS +9%, FY26 guide raised to $17.82–17.92; materials diversifier (half size, F+T) |
 
-Open positions: **8/8 (C2 full)**. All 8 GTC 10% trailing stops verified live on Alpaca at 21:17 UTC 11/12 (EOD routine) (S1/S4 ✅). "Risk $ at stop" = (entry − current trail) × qty; MMM's trail (177.21) is now $0.74/sh below entry, so it is close to breakeven-protected.
+Open positions: **8/8 (C2 full)**. All 8 GTC 10% trailing stops verified live on Alpaca at 17:42 UTC 11/13 (midday routine) (S1/S4 ✅). "Risk $ at stop" = (entry − current trail) × qty; MMM's trail (177.21) is now $0.74/sh below entry, so it is close to breakeven-protected.
+
+### Midday snapshot (2026-11-13 17:42 UTC, 12:42 ET, Alpaca marks)
+
+| Ticker | Current | Unrealized P&L | % from entry | S2 (−7%) | Alpaca trail stop (hwm) |
+|---|---|---|---|---|---|
+| DHR | 230.39 | −$56.20 | −2.38% | 219.49 | 214.61 (238.45) |
+| ELV | 421.74 | −$20.58 | −0.97% | 396.04 | 403.69 (448.54) |
+| MMM | 185.33 | +$103.32 | +4.15% | 165.49 | 177.21 (196.90) |
+| MRK | 146.61 | −$35.36 | −1.49% | 138.40 | 138.03 (153.37) |
+| KO | 99.12 | +$113.16 | +4.59% | 88.13 | 89.36 (99.29) |
+| NOC | 547.12 | +$28.22 | +1.31% | 502.26 | 502.20 (558.00) |
+| CTAS | 227.05 | +$50.27 | +2.05% | 206.91 | 207.42 (230.47) |
+| LIN | 525.68 | +$45.56 | +2.21% | 478.29 | 477.18 (530.20) |
+
+Total unrealized +$228.42. Day −$33.62 (−0.03%) vs Thu close equity $100,261.98; D1 clear (cap −$2,005.24). Drawdown −0.20% from the $100,428.38 peak (D5 trigger ≤ $90,385.54). Nothing at S2 (−7%): DHR (−2.38%) is weakest, $10.90 above its S2 line. Nothing at S3 (+15%): KO (+4.59%) strongest. ELV's pre-open −3.2% mark did not hold — it trades 421.74 (−1.9% on the day, −0.97% from entry), $18 above its trail. All 8 GTC 10% trailing stops verified live (status `new`, S1/S4 ✅); KO hwm ratcheted 98.38 → 99.29 (stop 89.36). No orders placed, cancelled or filled today.
 
 ### Premarket snapshot (2026-11-13 11:09 UTC, Alpaca pre-open marks)
 
