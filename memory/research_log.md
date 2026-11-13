@@ -612,6 +612,22 @@ Queue for Wed 11/4 (Tue 11/3 is the midterm election, so the plan is no entry Tu
 
 **Ops ⚠️ still unfixed (checked list_triggers this run):** `bull-open` is still `35 13 * * 1-5` UTC = 08:35 ET (55 min pre-open) and its inline prompt still says "Do NOT check intraday volume", out of sync with `routines/open.md`. Needs the user: `CRON_TZ=America/New_York 35 9 * * 1-5` + prompt sync.
 
+### 2026-11-13 21:17 UTC — EOD — DAILY WRAP (Fri)
+
+**Clock:** fired 16:16 ET, market closed, timing correct. Alpaca `paper-api` (O5 ✅), ACTIVE, cash = BP $81,509.68, multiplier 1 (A4 ✅).
+
+**Result:** equity $100,299.56, +0.04% (+$37.58) vs SPY −0.38% (757.16 → 754.27 IEX) → **+0.42% excess**. QQQ −1.19% (688.20 → 680.01). Week (Fri→Fri) +0.35% vs SPY +2.57% (−2.22%). Flags all NO; D1/D4/D5 clear (drawdown −0.13% from the $100,428.38 peak).
+
+**Attribution:** book +$37.58 on ~$18.76k (≈ +0.20%), ~0.6 pts better than SPY; 6 of 8 green: KO +$45.76, MRK +$12.96, ELV +$10.50, DHR +$8.60, NOC +$5.20, LIN +$4.76, CTAS −$14.08, MMM −$36.12. Defensives (staples, health care) held up in a risk-off tape led by tech.
+
+**Positions:** 8/8. No fills, no orders. Nothing at S2/S3; DHR (−1.27%) the weakest, KO (+4.68%) the strongest. All 8 GTC 10% trails live; KO hwm 99.29 → 99.30 (stop 89.37). **MMM:** 183.66, 6.7% off its 196.90 hwm, $6.45 (3.5%) above its 177.21 trail. It is the likeliest next exit (near breakeven).
+
+**Watchlist marks:** UNP 302.54 (−0.55%), TXN 303.59 (−2.84%, semis weak with QQQ), SPGI 473.60 (+1.08%).
+
+**Recap:** issue #22.
+
+**Next:** Mon 11/16. C2 is 8/8, so nothing enters unless a stop fires. Premarket re-checks UNP/TXN from fresh bars. HD reports ~11/17 (blackout name, not on the watchlist). Next D3: FOMC Wed 12/9.
+
 ### 2026-11-13 11:09 UTC — PREMARKET — WATCHLIST REFRESH (Fri, PPI, C2 full, nothing queued)
 
 **Clock:** fired 06:09 ET (Alpaca clock), market closed, timing correct. **Account (`paper-api`, O5 ✅):** ACTIVE. Equity $100,225.16 pre-open (last_equity $100,261.98). Cash = BP $81,509.68, multiplier 1 (A4 ✅). Flags all NO. Drawdown −0.20% from the $100,428.38 peak (D5 clear). All 8 GTC 10% trails live; no hwm moved and no orders filled overnight. Perplexity isn't used (no key in env); research via WebSearch.

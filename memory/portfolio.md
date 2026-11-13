@@ -5,17 +5,17 @@
 ## Account
 
 - **Mode:** paper
-- **Last refresh (UTC):** 2026-11-13 17:42 (midday routine, 12:42 ET). Equity $100,228.36 (last_equity $100,261.98 → day −$33.62 / −0.03%; D1 clear, cap −$2,005.24). Cash $81,509.68 = BP, multiplier 1 ✅; LMV $18,718.68. Drawdown −0.20% from the $100,428.38 peak (D5 clear). 8/8; all 8 GTC 10% trails live; KO hwm ratcheted to 99.29; no orders filled/placed/cancelled
-- **Prior refresh (UTC):** 2026-11-13 11:09 (premarket routine, 06:09 ET). Pre-open equity $100,225.16 (last_equity $100,261.98); cash $81,509.68 = BP, multiplier 1 ✅; LMV $18,715.48. Drawdown −0.20% from the $100,428.38 peak (D5 clear). 8/8; all 8 GTC 10% trails live; no fills overnight. ELV pre-open mark 416.01 (−3.2%), cause unconfirmed
+- **Last refresh (UTC):** 2026-11-13 21:17 (EOD routine, 16:17 ET). Close equity $100,299.56 (last_equity $100,261.98 → day +$37.58 / +0.04% vs SPY −0.38% → +0.42% excess). Cash $81,509.68 = BP, multiplier 1 ✅; LMV $18,789.88. Drawdown −0.13% from the $100,428.38 peak (D5 clear). 8/8; all 8 GTC 10% trails live; no orders placed/filled today
+- **Prior refresh (UTC):** 2026-11-13 17:42 (midday routine, 12:42 ET). Equity $100,228.36 (day −$33.62 / −0.03%). All 8 trails live; KO hwm ratcheted to 99.29
 - **Cash:** $81,509.68
-- **Equity:** $100,266.06 at the 11/12 close (11/11 close $100,356.36)
-- **Long market value:** $18,756.38 (18.7% deployed; cash 81.3%)
-- **Peak equity:** $100,428.38 (intraday 11/5 10:15 ET per Alpaca 15-min portfolio history; best close $100,356.36 on 11/11; unchanged today). Drawdown −0.16% at the 11/12 close (D5 trigger ≤ $90,385.54)
+- **Equity:** $100,299.56 at the 11/13 close (11/12 close $100,266.06; prior Fri 11/6 close $99,952.41)
+- **Long market value:** $18,789.88 (18.7% deployed; cash 81.3%)
+- **Peak equity:** $100,428.38 (intraday 11/5 10:15 ET per Alpaca 15-min portfolio history; best close $100,356.36 on 11/11; unchanged today). Drawdown −0.13% at the 11/13 close (D5 trigger ≤ $90,385.54)
 - **Buying power:** $81,509.68 (= cash), multiplier 1× ✅ (RULES.md A4)
 
 ## Flags
 
-- `halt_today: NO` (reset by EOD 2026-11-12)
+- `halt_today: NO` (reset by EOD 2026-11-13)
 - `halt_until_human: NO`
 - `weekly_defensive: NO`
 
@@ -27,12 +27,27 @@
 | ELV | 5 | 425.85 | 2026-10-30 | 2,129.25 | 403.69 (hwm 448.54) | 511.02 | 111 | Q3 beat, FY26 guide raised ≥ $29 (half size, F+T) |
 | MMM | 14 | 177.95 | 2026-10-30 | 2,491.30 | 177.21 (hwm 196.90) | 213.54 | 10 | Q3 beat, FY guide raised $9.10–9.15 (half size, F+T) |
 | MRK | 16 | 148.82 | 2026-11-02 | 2,381.12 | 138.03 (hwm 153.37) | 178.58 | 173 | Q3 beat, FY26 adj EPS guide raised $2.77–2.82 (half size, F+T) |
-| KO | 26 | 94.76 | 2026-11-02 | 2,463.83 | 89.36 (hwm 99.29) | 113.72 | 154 | Q3 beat, comparable EPS growth guide raised ≥11% (half size, F+T) |
+| KO | 26 | 94.76 | 2026-11-02 | 2,463.83 | 89.37 (hwm 99.30) | 113.72 | 140 | Q3 beat, comparable EPS growth guide raised ≥11% (half size, F+T) |
 | NOC | 4 | 540.06 | 2026-11-04 | 2,160.24 | 502.20 (hwm 558.00) | 648.07 | 168 | Q3 beat, uptrend above 50d; non-health-care diversifier (half size, F+T) |
 | CTAS | 11 | 222.48 | 2026-11-09 | 2,447.28 | 207.42 (hwm 230.47) | 266.98 | 195 | Q1 FY27 beat, FY27 guide raised; FTC/UniFirst decision is a binary risk (half size, F+T) |
 | LIN | 4 | 514.29 | 2026-11-09 | 2,057.16 | 477.18 (hwm 530.20) | 617.15 | 161 | Q3 adj EPS +9%, FY26 guide raised to $17.82–17.92; materials diversifier (half size, F+T) |
 
-Open positions: **8/8 (C2 full)**. All 8 GTC 10% trailing stops verified live on Alpaca at 17:42 UTC 11/13 (midday routine) (S1/S4 ✅). "Risk $ at stop" = (entry − current trail) × qty; MMM's trail (177.21) is now $0.74/sh below entry, so it is close to breakeven-protected.
+Open positions: **8/8 (C2 full)**. All 8 GTC 10% trailing stops verified live on Alpaca at 21:17 UTC 11/13 (EOD routine) (S1/S4 ✅). "Risk $ at stop" = (entry − current trail) × qty; MMM's trail (177.21) is now $0.74/sh below entry, so it is close to breakeven-protected.
+
+### EOD snapshot (2026-11-13 close)
+
+| Ticker | Close | Value | Unrealized P&L | % from entry | Day chg $ | Days held | S2 (−7%) | Alpaca trail stop (hwm) |
+|---|---|---|---|---|---|---|---|---|
+| DHR | 233.02 | $2,330.20 | −$29.90 | −1.27% | +$8.60 | 10 | 219.49 | 214.61 (238.45) |
+| ELV | 432.00 | $2,160.00 | +$30.75 | +1.44% | +$10.50 | 10 | 396.04 | 403.69 (448.54) |
+| MMM | 183.66 | $2,571.24 | +$79.94 | +3.21% | −$36.12 | 10 | 165.49 | 177.21 (196.90) |
+| MRK | 147.76 | $2,364.16 | −$16.96 | −0.71% | +$12.96 | 9 | 138.40 | 138.03 (153.37) |
+| KO | 99.20 | $2,579.20 | +$115.37 | +4.68% | +$45.76 | 9 | 88.13 | 89.37 (99.30) |
+| NOC | 550.43 | $2,201.72 | +$41.48 | +1.92% | +$5.20 | 7 | 502.26 | 502.20 (558.00) |
+| CTAS | 226.24 | $2,488.64 | +$41.36 | +1.69% | −$14.08 | 4 | 206.91 | 207.42 (230.47) |
+| LIN | 523.68 | $2,094.72 | +$37.56 | +1.83% | +$4.76 | 4 | 478.29 | 477.18 (530.20) |
+
+Total unrealized +$309.60. Market value $18,789.88 (18.7% of equity); cash 81.3%. Open risk from close to trails ≈ $1,413 (1.41%). Day: account +$37.58 (+0.04%) vs SPY −0.38% / QQQ −1.19%. The book rose ≈ +0.20% on ~$18.76k, beating SPY by ~0.6 pts; 6 of 8 green, led by KO (+$45.76, new hwm 99.30). MMM (−$36.12) and CTAS (−$14.08) were the drags. MMM is now 6.7% off its 196.90 hwm and only $6.45 (3.5%) above its trail (177.21, $0.74 under entry): the likeliest next exit, near breakeven. Nothing at S2 (−7%) or S3 (+15%); DHR (−1.27%) the weakest, KO (+4.68%) the strongest. All 8 GTC 10% trailing stops live (status `new`, S1/S4 ✅). Days held = trading days after the entry day. No orders placed or filled today.
 
 ### Midday snapshot (2026-11-13 17:42 UTC, 12:42 ET, Alpaca marks)
 
@@ -453,7 +468,24 @@ Total unrealized −$109.13. All 3 GTC trailing stops are live (S1/S4 ✅). None
 
 Total unrealized −$119.62. Deployed $6,861.03 (6.9% of equity). Open risk to stops ≈ $678 (0.68%). Open positions 3/8 (C2).
 
-## Today's P&L (2026-11-12 close)
+## Today's P&L (2026-11-13 close)
+
+- Today open equity: $100,261.98 (Alpaca last_equity) → close equity: $100,299.56
+- Daily return: +0.04% (+$37.58)
+- SPY daily return: −0.38% (757.16 → 754.27, IEX)
+- **Excess vs SPY: +0.42%**
+- Drawdown from peak: −0.13% (vs $100,428.38; D5 threshold −10%)
+- D1 daily loss cap: +0.04% > −2% → not breached
+
+## Week (Fri 11/6 close → Fri 11/13 close)
+
+- Week return: +0.35% (prior Friday close equity $99,952.41 → $100,299.56)
+- SPY week return: +2.57% (735.40 → 754.27)
+- Excess vs SPY: −2.22%
+- D4 weekly loss check: +0.35% > −5% → `weekly_defensive: NO`
+- New entries this week: 2/3 (CTAS, LIN on 11/9)
+
+## Prior day P&L (2026-11-12 close)
 
 - Today open equity: $100,356.10 (Alpaca last_equity) → close equity: $100,266.06
 - Daily return: −0.09% (−$90.04)
@@ -462,7 +494,7 @@ Total unrealized −$119.62. Deployed $6,861.03 (6.9% of equity). Open risk to s
 - Drawdown from peak: −0.16% (vs $100,428.38; D5 threshold −10%)
 - D1 daily loss cap: −0.09% > −2% → not breached
 
-## Week to date (since Fri 11/6 close) as of Thu 11/12
+## Week to date as of Thu 11/12 (superseded)
 
 - Week return: +0.31% (prior Friday close equity $99,952.41 → $100,266.06)
 - SPY week return: +2.96% (735.40 → 757.16)
