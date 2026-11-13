@@ -5,8 +5,8 @@
 ## Account
 
 - **Mode:** paper
-- **Last refresh (UTC):** 2026-11-12 21:17 (EOD routine, 16:17 ET). Close equity $100,266.06 (last_equity $100,356.10, −$90.04 / −0.09% day; D1 clear) vs SPY −0.35% → +0.26% excess. Long MV $18,756.38; cash $81,509.68; buying power = cash, multiplier 1 ✅. Drawdown −0.16% from the $100,428.38 peak (D5 clear). 8/8 positions; nothing at S2 or S3; all 8 GTC 10% trails live. No orders placed, filled or cancelled today
-- **Prior refresh (UTC):** 2026-11-12 17:44 (midday routine, 12:44 ET)
+- **Last refresh (UTC):** 2026-11-13 11:09 (premarket routine, 06:09 ET). Pre-open equity $100,225.16 (last_equity $100,261.98); cash $81,509.68 = BP, multiplier 1 ✅; LMV $18,715.48. Drawdown −0.20% from the $100,428.38 peak (D5 clear). 8/8; all 8 GTC 10% trails live; no fills overnight. ELV pre-open mark 416.01 (−3.2%), cause unconfirmed
+- **Prior refresh (UTC):** 2026-11-12 21:17 (EOD routine, 16:17 ET). Close equity $100,266.06 (last_equity $100,356.10, −$90.04 / −0.09% day; D1 clear) vs SPY −0.35% → +0.26% excess. Long MV $18,756.38; cash $81,509.68; buying power = cash, multiplier 1 ✅. Drawdown −0.16% from the $100,428.38 peak (D5 clear). 8/8 positions; nothing at S2 or S3; all 8 GTC 10% trails live. No orders placed, filled or cancelled today
 - **Cash:** $81,509.68
 - **Equity:** $100,266.06 at the 11/12 close (11/11 close $100,356.36)
 - **Long market value:** $18,756.38 (18.7% deployed; cash 81.3%)
@@ -33,6 +33,21 @@
 | LIN | 4 | 514.29 | 2026-11-09 | 2,057.16 | 477.18 (hwm 530.20) | 617.15 | 161 | Q3 adj EPS +9%, FY26 guide raised to $17.82–17.92; materials diversifier (half size, F+T) |
 
 Open positions: **8/8 (C2 full)**. All 8 GTC 10% trailing stops verified live on Alpaca at 21:17 UTC 11/12 (EOD routine) (S1/S4 ✅). "Risk $ at stop" = (entry − current trail) × qty; MMM's trail (177.21) is now $0.74/sh below entry, so it is close to breakeven-protected.
+
+### Premarket snapshot (2026-11-13 11:09 UTC, Alpaca pre-open marks)
+
+| Ticker | Current | Unrealized P&L | % from entry | S2 (−7%) | Alpaca trail stop (hwm) |
+|---|---|---|---|---|---|
+| DHR | 232.16 | −$38.50 | −1.63% | 219.49 | 214.61 (238.45) |
+| ELV | 416.01 | −$49.20 | −2.31% | 396.04 | 403.69 (448.54) |
+| MMM | 186.24 | +$116.06 | +4.66% | 165.49 | 177.21 (196.90) |
+| MRK | 147.78 | −$16.64 | −0.70% | 138.40 | 138.03 (153.37) |
+| KO | 97.77 | +$78.19 | +3.17% | 88.13 | 88.54 (98.38) |
+| NOC | 549.13 | +$36.28 | +1.68% | 502.26 | 502.20 (558.00) |
+| CTAS | 227.75 | +$57.97 | +2.37% | 206.91 | 207.42 (230.47) |
+| LIN | 524.55 | +$41.04 | +2.00% | 478.29 | 477.18 (530.20) |
+
+Total unrealized +$225.48. DHR/MMM/NOC show Thursday's close (no pre-open prints). **ELV is marked 416.01, −3.2% vs its 429.90 close**; IEX shows no pre-open trade, so the mark's source is unverified. It is still $12.32 above its trail and $19.97 above S2. No confirmed cause: the only fresh ELV items are its own suits (vs The Perfect Child, filed 11/4; vs CMS over 2027 MA star ratings, ~$516M, filed 11/6). Midday should check it. All 8 GTC 10% trails live (status `new`, S1/S4 ✅); no hwm moved overnight; no orders filled. Nothing at S2 or S3. Fri 11/13 PPI is not D3, but **C2 is 8/8**.
 
 ### EOD snapshot (2026-11-12 close)
 
