@@ -5,8 +5,8 @@
 ## Account
 
 - **Mode:** paper
-- **Last refresh (UTC):** 2026-11-13 21:17 (EOD routine, 16:17 ET). Close equity $100,299.56 (last_equity $100,261.98 → day +$37.58 / +0.04% vs SPY −0.38% → +0.42% excess). Cash $81,509.68 = BP, multiplier 1 ✅; LMV $18,789.88. Drawdown −0.13% from the $100,428.38 peak (D5 clear). 8/8; all 8 GTC 10% trails live; no orders placed/filled today
-- **Prior refresh (UTC):** 2026-11-13 17:42 (midday routine, 12:42 ET). Equity $100,228.36 (day −$33.62 / −0.03%). All 8 trails live; KO hwm ratcheted to 99.29
+- **Last refresh (UTC):** 2026-11-16 11:09 (premarket routine, 06:09 ET Mon). Pre-open equity $100,365.19 (last_equity $100,298.83). Cash $81,509.68 = BP, multiplier 1 ✅; LMV $18,855.51. Drawdown −0.08% from the $100,448.15 peak (D5 clear). 8/8; all 8 GTC 10% trails live; no orders filled since Fri EOD
+- **Prior refresh (UTC):** 2026-11-13 21:17 (EOD routine, 16:17 ET). Close equity $100,299.56 (day +$37.58 / +0.04% vs SPY −0.38%)
 - **Cash:** $81,509.68
 - **Equity:** $100,299.56 at the 11/13 close (11/12 close $100,266.06; prior Fri 11/6 close $99,952.41)
 - **Long market value:** $18,789.88 (18.7% deployed; cash 81.3%)
@@ -33,6 +33,21 @@
 | LIN | 4 | 514.29 | 2026-11-09 | 2,057.16 | 477.18 (hwm 530.20) | 617.15 | 161 | Q3 adj EPS +9%, FY26 guide raised to $17.82–17.92; materials diversifier (half size, F+T) |
 
 Open positions: **8/8 (C2 full)**. All 8 GTC 10% trailing stops verified live on Alpaca at 21:17 UTC 11/13 (EOD routine) (S1/S4 ✅). "Risk $ at stop" = (entry − current trail) × qty; MMM's trail (177.21) is now $0.74/sh below entry, so it is close to breakeven-protected.
+
+### Premarket snapshot (2026-11-16 11:09 UTC, Alpaca pre-open marks)
+
+| Ticker | Current | Unrealized P&L | % from entry | S2 (−7%) | Alpaca trail stop (hwm) |
+|---|---|---|---|---|---|
+| DHR | 233.54 | −$24.70 | −1.05% | 219.49 | 214.61 (238.45) |
+| ELV | 435.01 | +$45.80 | +2.15% | 396.04 | 403.69 (448.54) |
+| MMM | 183.66 | +$79.94 | +3.21% | 165.49 | 177.21 (196.90) |
+| MRK | 148.61 | −$3.36 | −0.14% | 138.40 | 138.03 (153.37) |
+| KO | 99.80 | +$130.97 | +5.32% | 88.13 | 89.37 (99.30) |
+| NOC | 550.43 | +$41.48 | +1.92% | 502.26 | 502.20 (558.00) |
+| CTAS | 226.50 | +$44.22 | +1.81% | 206.91 | 207.42 (230.47) |
+| LIN | 527.01 | +$50.88 | +2.47% | 478.29 | 477.18 (530.20) |
+
+Total unrealized +$365.23. MMM and NOC show Friday's close (no pre-open prints). All 8 GTC 10% trails live (status `new`, S1/S4 ✅); no hwm moved over the weekend, no orders filled. Nothing at S2 (−7%) or S3 (+15%); DHR (−1.05%) the weakest, KO (+5.32%, RSI 73 on IEX bars) the strongest. Mon 11/16 is not a D3 day; C1 resets to 0/3 but **C2 is 8/8**, so no entries unless a stop fills.
 
 ### EOD snapshot (2026-11-13 close)
 
@@ -635,6 +650,7 @@ Total unrealized −$119.62. Deployed $6,861.03 (6.9% of equity). Open risk to s
 
 ## New entries this week
 
+- **Week of 11/16:** 0 / 3 so far. C2 is 8/8, so no entries until a position closes.
 - **Week of 11/9:** 2 / 3 — CTAS and LIN on Mon 11/9. C2 is 8/8, so no further entries until a position closes.
 - Week of 11/2: 3 / 3 — MRK and KO on Mon 11/2, NOC on Wed 11/4.
 - Prior week (10/26): 3/3, DHR, ELV, MMM (all 2026-10-30).
