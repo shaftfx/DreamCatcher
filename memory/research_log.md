@@ -623,6 +623,22 @@ Queue for Wed 11/4 (Tue 11/3 is the midterm election, so the plan is no entry Tu
 
 **Ops ⚠️ still unfixed (checked list_triggers this run):** `bull-open` is still `35 13 * * 1-5` UTC = 08:35 ET (55 min pre-open) and its inline prompt still says "Do NOT check intraday volume", out of sync with `routines/open.md`. Needs the user: `CRON_TZ=America/New_York 35 9 * * 1-5` + prompt sync.
 
+### 2026-11-16 21:16 UTC — EOD — DAILY WRAP (Mon)
+
+**Clock:** fired 16:16 ET, market closed, timing correct. Alpaca `paper-api` (O5 ✅), ACTIVE, cash = BP $81,509.68, multiplier 1 (A4 ✅).
+
+**Result:** equity $100,229.15, −0.07% (−$69.68) vs SPY −1.89% (754.27 → 740.04 IEX) → **+1.82% excess**. QQQ −2.68% (680.01 → 661.80). Week to date is the same (Mon). Flags all NO; D1/D4/D5 clear. **Peak raised to $100,475.28** (open-routine Alpaca read 09:35 ET; 15-min history max $100,430.58); drawdown −0.24%, D5 trigger ≤ $90,427.75.
+
+**Attribution:** book −$69.68 on ~$18.79k (≈ −0.37%): ELV +$82.95, KO +$13.26, LIN −$10.40, NOC −$19.12, CTAS −$24.75, MMM −$27.72, DHR −$31.10, MRK −$52.80. Cause of the index drop unverified (search returned no dated 11/16 wrap; Warsh spoke at 12:00 ET).
+
+**Positions:** 8/8. No fills, no orders. Nothing at S2/S3. MRK (−2.93%, $6.06 above S2 138.40) and DHR (−2.58%, $10.42 above S2 219.49) are the weakest. MMM is $4.47 above its 177.21 trail. KO (+5.27%) strongest. All 8 GTC 10% trails live.
+
+**Watchlist marks:** UNP 303.74 (+0.40%, held up on a −1.9% day), TXN 294.18 (−3.10%, still above its ~282.80 50d), SPGI 471.57 (−0.43%). If a slot opens before NVDA (Tue AMC) clears, prefer UNP over TXN.
+
+**Recap:** issue #24.
+
+**Next:** Tue 11/17: retail sales 08:30, HD BMO, NVDA AMC. Not D3. C2 8/8, so nothing enters unless a stop fires. Next D3: FOMC Wed 12/9.
+
 ### 2026-11-16 11:09 UTC — PREMARKET — WATCHLIST REFRESH (Mon, not D3, C2 full, nothing queued)
 
 **Clock:** fired 06:08 ET (Alpaca clock), market closed, timing correct. **Account (`paper-api`, O5 ✅):** ACTIVE. Equity $100,365.19 pre-open (last_equity $100,298.83). Cash = BP $81,509.68, multiplier 1 (A4 ✅). Flags all NO. Drawdown −0.08% from the $100,448.15 peak (D5 clear, trigger ≤ $90,403.34). All 8 GTC 10% trails live; no hwm moved and no orders filled since Fri EOD. Perplexity not used (no key in env); research via WebSearch, which again returned no dated 11/13 close wrap, 11/16 futures, or 11/13 analyst roundup (index lags).

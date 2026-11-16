@@ -22,6 +22,9 @@ Perplexity returned a stale guidance number for $TSLA — used the actual SEC fi
 
 -->
 
+## 2026-11-16 [ops]
+Peak equity has two Alpaca sources that disagree. The open routine's `/account` read showed $100,475.28 at 09:35 ET, but the 15-min `portfolio/history` for the day tops out at $100,430.58 (the bars smooth intrabar spikes). For D5, take the higher of the two, because a higher peak makes the kill switch trip earlier. Any routine that sees equity above the recorded peak should write the reading and timestamp into portfolio.md, so EOD doesn't have to reconstruct it.
+
 ## 2026-11-13 [risk] — weekly W46
 Half-size entries × C2 (8 slots) cap deployment at about 20% of equity, and C2 filled on Mon 11/9. For the rest of the week the account was locked at 81% cash while SPY rose 2.57% and QQQ 3.61%. Result: account +0.35% vs SPY +2.57% (−2.22% excess) even though the book itself was +1.75% with 7 of 8 names green, and UNP passed every gate but couldn't be bought. Until sizing or C2 changes, the weekly excess is mostly a beta readout: roughly −0.8 × SPY's week return. Grade it honestly by the rubric, report book vs SPY next to it, and don't loosen gates mid-week to chase. The levers (full size by default, higher C2, or benchmarking against 0.2 × SPY) are the user's call — proposed in the W46 review.
 
