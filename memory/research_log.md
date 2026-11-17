@@ -623,6 +623,22 @@ Queue for Wed 11/4 (Tue 11/3 is the midterm election, so the plan is no entry Tu
 
 **Ops ⚠️ still unfixed (checked list_triggers this run):** `bull-open` is still `35 13 * * 1-5` UTC = 08:35 ET (55 min pre-open) and its inline prompt still says "Do NOT check intraday volume", out of sync with `routines/open.md`. Needs the user: `CRON_TZ=America/New_York 35 9 * * 1-5` + prompt sync.
 
+### 2026-11-17 21:16 UTC — EOD — DAILY WRAP (Tue)
+
+**Clock:** fired 16:15 ET, market closed, timing correct. Alpaca `paper-api` (O5 ✅), ACTIVE, cash = BP $81,509.68, multiplier 1 (A4 ✅).
+
+**Result:** equity $100,064.43, −0.16% (−$159.31) vs SPY −1.03% (740.04 → 732.41 IEX) → **+0.87% excess**. QQQ −0.72% (661.80 → 657.06). Week to date −0.24% vs SPY −2.90% (+2.66%). Flags all NO; D1/D4/D5 clear. No new peak (day range $100,041.39–$100,190.82); drawdown −0.41% from $100,475.28.
+
+**Attribution:** book −$159.31 on ~$18.72k (≈ −0.85%, close to SPY's −1.03%): NOC +$30.44, MMM −$13.72, LIN −$13.92, KO −$14.20, CTAS −$21.56, MRK −$23.20, DHR −$41.40, ELV −$61.75. Unlike Mon, the defensive names did not cushion; the excess is cash (81.5%).
+
+**Positions:** 8/8. No fills, no orders, no hwm moved. Nothing at S2/S3. DHR (−4.34%, $6.28 / 2.8% above S2 219.49) and MRK (−3.90%, 3.2% above S2 138.40; trail 138.03 just under) are the weakest — midday Wed should check both first. MMM is $3.49 (1.9%) above its 177.21 trail. KO (+4.40%) strongest.
+
+**Watchlist marks:** UNP 297.02 (−2.21%), TXN 295.84 (+0.56%), SPGI 452.40 (−4.07%, sharp drop, cause unverified; premarket should recheck it against its 50d before keeping it at #3).
+
+**Recap:** issue #26.
+
+**Next:** Wed 11/18: NVDA results (Tue AMC) hit the open; FOMC minutes 14:00 ET. Not D3. C2 8/8, so nothing enters unless a stop fires. Next D3: FOMC Wed 12/9.
+
 ### 2026-11-17 11:10 UTC — PREMARKET — WATCHLIST REFRESH (Tue, not D3, C2 full, nothing queued)
 
 **Clock:** fired 06:10 ET (Alpaca clock), market closed, timing correct. **Account (`paper-api`, O5 ✅):** ACTIVE. Equity $100,209.01 pre-open; Alpaca's last_equity is $100,223.74 (the EOD logged $100,229.15, so Alpaca re-marked yesterday's close by −$5.41). Cash = BP $81,509.68, multiplier 1 (A4 ✅). Flags all NO. Drawdown −0.26% from the $100,475.28 peak (D5 clear, trigger ≤ $90,427.75). All 8 GTC 10% trails live (status `new`); no hwm moved and no orders filled since EOD. Perplexity not used (no key in env); research via WebSearch, whose index still has no dated 11/16 close wrap, 11/17 futures, or 11/16 analyst roundup.
