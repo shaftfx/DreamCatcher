@@ -623,6 +623,10 @@ Queue for Wed 11/4 (Tue 11/3 is the midterm election, so the plan is no entry Tu
 
 **Ops ⚠️ still unfixed (checked list_triggers this run):** `bull-open` is still `35 13 * * 1-5` UTC = 08:35 ET (55 min pre-open) and its inline prompt still says "Do NOT check intraday volume", out of sync with `routines/open.md`. Needs the user: `CRON_TZ=America/New_York 35 9 * * 1-5` + prompt sync.
 
+### 2026-11-17 14:36 UTC — OPEN — 0 entries (C2 full, nothing queued)
+
+Fired 09:36 ET (Alpaca clock open, timing correct). `paper-api` (O5 ✅), ACTIVE, cash = BP $81,509.68, multiplier 1 (A4 ✅). Flags all NO; not D3. Equity $100,162.06 (−0.06% day), drawdown −0.31% from peak (D5 clear). No `decision: queued` entries, and C2 is 8/8, so nothing to validate or place. All 8 GTC 10% trails live (status `new`); no fills since EOD. MRK 143.71 (−3.43%) is the weakest, $5.31 above S2; midday should watch it.
+
 ### 2026-11-17 11:10 UTC — PREMARKET — WATCHLIST REFRESH (Tue, not D3, C2 full, nothing queued)
 
 **Clock:** fired 06:10 ET (Alpaca clock), market closed, timing correct. **Account (`paper-api`, O5 ✅):** ACTIVE. Equity $100,209.01 pre-open; Alpaca's last_equity is $100,223.74 (the EOD logged $100,229.15, so Alpaca re-marked yesterday's close by −$5.41). Cash = BP $81,509.68, multiplier 1 (A4 ✅). Flags all NO. Drawdown −0.26% from the $100,475.28 peak (D5 clear, trigger ≤ $90,427.75). All 8 GTC 10% trails live (status `new`); no hwm moved and no orders filled since EOD. Perplexity not used (no key in env); research via WebSearch, whose index still has no dated 11/16 close wrap, 11/17 futures, or 11/16 analyst roundup.
