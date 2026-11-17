@@ -4,19 +4,19 @@ Dated entries. Premarket appends new research; other routines append rejected id
 
 ## Active Watchlist
 
-_Last refresh: 2026-11-16 premarket (Mon, not D3). Technicals recomputed this run from Alpaca IEX daily bars through the **Fri 11/13 close**. **C1 0/3, C2 8/8**, so nothing can enter until a position exits; the open routine has nothing queued. **Regime caution:** SPY 754.27 is −1.3% under its 50d (764.10), RSI 47.1; QQQ −5.3% under (717.72), RSI 42.7. There is still no index-regime gate (issue #13). Health care is 3 of 8 holdings (DHR/ELV/MRK), so **no new health-care entries**._
+_Last refresh: 2026-11-17 premarket (Tue, not D3). Technicals recomputed this run from Alpaca IEX daily bars through the **Mon 11/16 close**. **C1 0/3, C2 8/8**, so nothing can enter until a position exits; the open routine has nothing queued. **Regime caution (worse):** SPY 740.04 is −3.1% under its 50d (763.54), RSI 40.5; QQQ −7.6% under (716.59), RSI 37.6. There is still no index-regime gate (issue #13). Health care is 3 of 8 holdings (DHR/ELV/MRK), so **no new health-care entries**._
 
-| Ticker | Added | Thesis (1 line) | Catalyst | Catalyst Date | Status (11/13 close · SMA50 · RSI14 · 20-bar swing low) |
+| Ticker | Added | Thesis (1 line) | Catalyst | Catalyst Date | Status (11/16 close · SMA50 · RSI14 · 20-bar swing low) |
 |---|---|---|---|---|---|
-| UNP | 2026-10-26 | Q3 beat, rail pricing power | none within 8w | — | **#1 alternate**, F+T ✅: 302.54 (−0.55% Fri) · 287.26 (+5.3%) · 57.4 · 282.50. Passed every gate 11/9; not taken only because C2 filled |
-| TXN | 2026-10-26 | Q3 beat ($2.62 vs $2.42); Q4 guide $5.8–6.3B / EPS $2.45–2.79 | NVDA read-through (sector, not TXN-specific) | 2026-11-17 AMC | **#2 alternate**, F+T ✅: 303.59 (−2.84% Fri, semis weak) · 282.80 (+7.4%) · 55.2 · 270.81. NVDA print is a semis sentiment swing; not a TXN catalyst |
-| SPGI | 2026-11-09 | Q3 adj EPS $4.58 vs ~$4.42 est; FY26 adj EPS guide **raised** above the prior $17.50–17.75 ([8-K](https://www.sec.gov/Archives/edgar/data/0000064040/000006404026000053/spgi3q2026-earningsrelease.htm)) | Capital IQ/Kensho strategic review (no date); next ER ~2/8/27 | — | **#3 alternate**, F+T ✅: 473.60 (+1.08%) · 428.58 (+10.5%) · 64.5 · 423.03. Rejected 11/9 on volume (0.21×); A5 near the 1M floor |
-| TMO | 2026-11-02 | Q3 beat ($6.68 vs $6.40), FY26 guide **raised** to $25.13–25.43 | none within 8w | — | **watch-only** (health-care concentration): 700.18 · 670.66 (+4.4%) · 53.6 |
-| UNH | 2026-10-26 | Q3 beat ($4.69); FY guide *maintained* ~$20.50 | none within 8w | — | **watch-only** (health-care concentration + ELV overlap): 407.52 · 391.16 (+4.2%) · 55.4 |
-| MA | 2026-11-09 | Q3 adj EPS $5.31 vs $5.17, rev $9.81B vs $9.66B ([8-K](https://www.sec.gov/Archives/edgar/data/0001141391/000114139126000122/ma09302026-exx991xearnings.htm)); CFO said part of the beat was pulled forward from Q4; outlook reaffirmed, not raised | none within 8w | — | **watch-only (F ⚠️ no raise)**: 661.16 · 599.67 (+10.3%) · 64.7. Promote only if a raise is confirmed |
-| ICE | 2026-11-09 | Record Q3: rev $2.8B +15%, adj EPS $2.02 +18% ([8-K](https://www.sec.gov/Archives/edgar/data/0001571949/000110465926119880/tm2628301d1_ex99-1.htm)); no clear FY raise found | MarketAxess close, now expected Q1 2027 (HSR cleared 10/21) | Q1 2027 | **watch-only (F ⚠️ raise unconfirmed)**: 178.48 · 160.24 (+11.4%) · RSI 67.6 (near the 70 ceiling) |
+| UNP | 2026-10-26 | Q3 beat, rail pricing power | none within 8w | — | **#1 alternate**, F+T ✅: 303.74 (+0.40% Mon) · 287.54 (+5.6%) · 58.5 · 282.50. Held up on SPY's −1.9% day |
+| TXN | 2026-10-26 | Q3 beat ($2.62 vs $2.42); Q4 guide $5.8–6.3B / EPS $2.45–2.79 | NVDA read-through (sector, not TXN-specific) | 2026-11-17 AMC | **#2 alternate**, F+T ✅ (thinning): 294.18 (−3.10%) · 283.54 (+3.8%) · 50.1 · 270.81. Two straight −3% days; don't enter before NVDA clears |
+| SPGI | 2026-11-09 | Q3 adj EPS $4.58 vs ~$4.42 est; FY26 adj EPS guide **raised** above the prior $17.50–17.75 ([8-K](https://www.sec.gov/Archives/edgar/data/0000064040/000006404026000053/spgi3q2026-earningsrelease.htm)) | Capital IQ/Kensho strategic review (no date); next ER ~2/8/27 | — | **#3 alternate**, F+T ✅: 471.56 (−0.43%) · 429.14 (+9.9%) · 62.8 · 430.52. Rejected 11/9 on volume (0.21×); A5 near the 1M floor |
+| TMO | 2026-11-02 | Q3 beat ($6.68 vs $6.40), FY26 guide **raised** to $25.13–25.43 | none within 8w | — | **watch-only** (health-care concentration): 691.33 · 672.22 (+2.8%) · 50.5 |
+| UNH | 2026-10-26 | Q3 beat ($4.69); FY guide *maintained* ~$20.50 | none within 8w | — | **watch-only** (health-care concentration + ELV overlap): 412.07 · 391.51 (+5.3%) · 58.4 |
+| MA | 2026-11-09 | Q3 adj EPS $5.31 vs $5.17, rev $9.81B vs $9.66B ([8-K](https://www.sec.gov/Archives/edgar/data/0001141391/000114139126000122/ma09302026-exx991xearnings.htm)); CFO said part of the beat was pulled forward from Q4; outlook reaffirmed, not raised | none within 8w | — | **watch-only (F ⚠️ no raise)**: 662.01 · 601.34 (+10.1%) · 64.9. Promote only if a raise is confirmed |
+| ICE | 2026-11-09 | Record Q3: rev $2.8B +15%, adj EPS $2.02 +18% ([8-K](https://www.sec.gov/Archives/edgar/data/0001571949/000110465926119880/tm2628301d1_ex99-1.htm)); no clear FY raise found | MarketAxess close, now expected Q1 2027 (HSR cleared 10/21) | Q1 2027 | **watch-only (F ⚠️ raise unconfirmed)**: 178.20 · 160.59 (+11.0%) · RSI 67.0 (near the 70 ceiling) |
 
-_Not added: **HD (11/17 BMO), TGT, LOW, TJX, WMT, PANW, INTU** report this week → pre-earnings blackout. **NVDA** (11/17 AMC per two calendars) is in blackout and QQQ is −5.3% under its 50d. **AMAT / CSCO** still under their 50d (T ❌). **V, WM, CB, BDX** stay out for the reasons logged 11/12._
+_Not added: **HD (today BMO, call 09:00 ET), TGT, LOW, TJX, WMT, PANW, INTU** report this week → pre-earnings blackout. **NVDA** reports today AMC (call 17:00 ET; date confirmed by several previews, [S&P Global preview](https://www.spglobal.com/market-intelligence/en/news-insights/research/2026/11/nvidia-earnings-preview-q3-2027)); in blackout and QQQ is −7.6% under its 50d. **AMAT / CSCO** still under their 50d (T ❌). **V, WM, CB, BDX** stay out for the reasons logged 11/12._
 
 ---
 
@@ -622,6 +622,30 @@ Queue for Wed 11/4 (Tue 11/3 is the midterm election, so the plan is no entry Tu
 **Next:** C1 3/3 for week of 11/2 — no entries Thu 11/5; Fri 11/6 NFP D3 blackout. Re-validate CTAS and UNP from fresh bars for Mon 11/9. Midday Thu: S2/S3 sweep, watch NOC for defense headlines.
 
 **Ops ⚠️ still unfixed (checked list_triggers this run):** `bull-open` is still `35 13 * * 1-5` UTC = 08:35 ET (55 min pre-open) and its inline prompt still says "Do NOT check intraday volume", out of sync with `routines/open.md`. Needs the user: `CRON_TZ=America/New_York 35 9 * * 1-5` + prompt sync.
+
+### 2026-11-17 11:10 UTC — PREMARKET — WATCHLIST REFRESH (Tue, not D3, C2 full, nothing queued)
+
+**Clock:** fired 06:10 ET (Alpaca clock), market closed, timing correct. **Account (`paper-api`, O5 ✅):** ACTIVE. Equity $100,209.01 pre-open; Alpaca's last_equity is $100,223.74 (the EOD logged $100,229.15, so Alpaca re-marked yesterday's close by −$5.41). Cash = BP $81,509.68, multiplier 1 (A4 ✅). Flags all NO. Drawdown −0.26% from the $100,475.28 peak (D5 clear, trigger ≤ $90,427.75). All 8 GTC 10% trails live (status `new`); no hwm moved and no orders filled since EOD. Perplexity not used (no key in env); research via WebSearch, whose index still has no dated 11/16 close wrap, 11/17 futures, or 11/16 analyst roundup.
+
+**Day status:** Tue 11/17 is **not** D3 (retail sales + industrial production 08:30, HD BMO, NVDA AMC). C1 0/3, **C2 8/8**: nothing enters unless a stop fills.
+
+**Regime:** SPY fell 1.89% Mon and is now −3.1% under its 50d (RSI 40.5); QQQ −7.6% under (RSI 37.6). That's the weakest the index has been against its 50d since this account started. Cause of Monday's drop still unverified. Still no index-regime gate (issue #13); per-name 50d checks keep passing on defensives. Flagging again for the user rather than inventing a gate.
+
+**Holdings (from fresh IEX bars):**
+- **MRK closed 144.54, now −1.0% under its 50d (145.94)**, RSI 46.9. Technical leg broken; fundamental leg (Q3 beat, FY26 adj EPS guide raised) unchanged and no new MRK-specific news found. Not a STRATEGY exit trigger on its own. Pre-open −2.95% from entry; S2 line 138.40 is 4.2% away, trail 138.03 just under it. Midday should watch it closely.
+- KO RSI 74.1 (+9.5% over its 50d), extended; strongest name (+4.89%).
+- ELV pre-open mark 442.80 (−0.78% vs 446.28 close), no news found.
+- CTAS: no FTC vote/suit reported since the late-Oct Semafor story; HSR timing agreement runs to Dec 11.
+- DHR (−2.58%) back above its 50d (+3.2%), RSI 51.0. MMM $4.47 above its 177.21 trail.
+- Nothing at S2 (−7%) or S3 (+15%).
+
+**Watchlist (Step 5):** all 7 re-checked; none removed (no catalyst passed or thesis broken). TXN is weakening (−3.1% Mon, +3.8% over its 50d, RSI 50.1) and its only "catalyst" is NVDA's print tonight. Order unchanged: UNP #1, TXN #2, SPGI #3. No adds: this week's reporters are in blackout.
+
+**Step 6:** no watchlist name has its own catalyst within 5 trading days, and there is no slot (C2 8/8). **Nothing queued.** If a stop fires, re-draft from fresh bars (half size F+T, target ×1.20). Reference from the 11/16 close:
+- UNP 7 sh @ ~303.74 → ~$2,126 (2.1%), trail ~273.37, target ≥ 364.49; initial stop 279.44 (8% floor) → risk ~$170 (0.17%).
+- TXN 7 sh @ ~294.18 → ~$2,059, trail ~264.76, target ≥ 353.02; initial stop 270.65 (8% floor; swing low 270.81) → risk ~$165. Only after NVDA clears.
+- SPGI 4 sh @ ~471.56 → ~$1,886, trail ~424.40, target ≥ 565.87; initial stop 433.84 → risk ~$151. Volume gate is the usual blocker.
+All ≤ 5% (P1), well under 1.5% risk (P3), R/R 2:1 off the 10% trail (P4).
 
 ### 2026-11-16 21:16 UTC — EOD — DAILY WRAP (Mon)
 

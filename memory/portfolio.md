@@ -6,6 +6,7 @@
 
 - **Mode:** paper
 - **Last refresh (UTC):** 2026-11-16 21:16 (EOD routine, 16:16 ET Mon). Close equity $100,229.15 (day −$69.68 / −0.07% vs last_equity $100,298.83) vs SPY −1.89% → +1.82% excess. Cash $81,509.68 = BP, multiplier 1 ✅; LMV $18,719.47. Drawdown −0.24% from the new $100,475.28 peak (D5 clear). 8/8; all 8 GTC 10% trails live; no orders filled
+- **Premarket refresh (UTC):** 2026-11-17 11:10 (premarket routine, 06:10 ET Tue). Pre-open equity $100,209.01 (Alpaca last_equity $100,223.74). Cash $81,509.68 = BP, multiplier 1 ✅; LMV $18,699.33. Drawdown −0.26% from the $100,475.28 peak (D5 clear). 8/8; all 8 GTC 10% trails live; no orders filled since EOD
 - **Midday refresh (UTC):** 2026-11-16 17:43 (midday routine, 12:43 ET Mon). Equity $100,346.75 (day +$47.92 / +0.05% vs last_equity $100,298.83; D1 clear). Cash $81,509.68 = BP, multiplier 1 ✅; LMV $18,837.07. Drawdown −0.10% from the $100,448.15 peak (D5 clear). 8/8; all 8 GTC 10% trails live (KO hwm 100.56 → stop 90.50); no orders filled; nothing at S2/S3, no actions
 - **Open-routine refresh (UTC):** 2026-11-16 14:35 (open routine, 09:35 ET Mon). Equity $100,475.28 (+0.18% day; intraday above the $100,448.15 peak, the peak line is left for EOD to confirm). Cash $81,509.68 = BP, multiplier 1 ✅; LMV $18,965.60. 8/8; all 8 GTC 10% trails live (KO hwm 100.46 → stop 90.41; LIN hwm 530.35 → stop 477.32); no orders filled; no entries (nothing queued, C2 full)
 - **Earlier refresh (UTC):** 2026-11-16 11:09 (premarket routine, 06:09 ET Mon). Pre-open equity $100,365.19 (last_equity $100,298.83). Cash $81,509.68 = BP, multiplier 1 ✅; LMV $18,855.51. Drawdown −0.08% from the $100,448.15 peak (D5 clear). 8/8; all 8 GTC 10% trails live; no orders filled since Fri EOD
@@ -36,6 +37,21 @@
 | LIN | 4 | 514.29 | 2026-11-09 | 2,057.16 | 477.32 (hwm 530.35) | 617.15 | 161 | Q3 adj EPS +9%, FY26 guide raised to $17.82–17.92; materials diversifier (half size, F+T) |
 
 Open positions: **8/8 (C2 full)**. All 8 GTC 10% trailing stops verified live on Alpaca at 21:16 UTC 11/16 (EOD routine) (S1/S4 ✅). "Risk $ at stop" = (entry − current trail) × qty; MMM's trail (177.21) is now $0.74/sh below entry, so it is close to breakeven-protected.
+
+### Premarket snapshot (2026-11-17 11:10 UTC, Alpaca pre-open marks)
+
+| Ticker | Current | Unrealized P&L | % from entry | S2 (−7%) | Alpaca trail stop (hwm) |
+|---|---|---|---|---|---|
+| DHR | 229.91 | −$61.00 | −2.58% | 219.49 | 214.61 (238.45) |
+| ELV | 442.80 | +$84.75 | +3.98% | 396.04 | 403.69 (448.54) |
+| MMM | 181.68 | +$52.22 | +2.10% | 165.49 | 177.21 (196.90) |
+| MRK | 144.43 | −$70.24 | −2.95% | 138.40 | 138.03 (153.37) |
+| KO | 99.40 | +$120.57 | +4.89% | 88.13 | 90.50 (100.56) |
+| NOC | 545.65 | +$22.36 | +1.03% | 502.26 | 502.20 (558.00) |
+| CTAS | 224.65 | +$23.87 | +0.97% | 206.91 | 207.42 (230.47) |
+| LIN | 523.42 | +$36.52 | +1.77% | 478.29 | 477.32 (530.35) |
+
+Total unrealized +$209.03. DHR/MMM/NOC show Monday's close (no pre-open prints). All 8 GTC 10% trails live (status `new`, S1/S4 ✅); no hwm moved overnight; no orders filled. Nothing at S2 or S3. **MRK closed Mon under its 50d** (144.54 vs 145.94, IEX), so its technical leg is broken; fundamentals unchanged, not an exit trigger alone. Tue 11/17 is not D3; **C2 is 8/8**.
 
 ### EOD snapshot (2026-11-16 close)
 
