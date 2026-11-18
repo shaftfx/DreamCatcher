@@ -8,7 +8,8 @@
 - **Last refresh (UTC):** 2026-11-17 21:16 (EOD routine, 16:16 ET Tue). Close equity $100,064.43 (day −$159.31 / −0.16% vs last_equity $100,223.74) vs SPY −1.03% → +0.87% excess. Cash $81,509.68 = BP, multiplier 1 ✅; LMV $18,554.75. Drawdown −0.41% from the $100,475.28 peak (D5 clear). 8/8; all 8 GTC 10% trails live; no hwm moved; no orders filled
 - **Prior EOD (UTC):** 2026-11-16 21:16. Close equity $100,229.15 (−0.07% vs SPY −1.89%)
 - **Premarket refresh (UTC):** 2026-11-18 11:08 (premarket routine, 06:08 ET Wed). Pre-open equity $99,996.01 (Alpaca last_equity $100,049.49, re-marked from the $100,064.43 EOD read). Cash $81,509.68 = BP, multiplier 1 ✅; LMV $18,486.33. Drawdown −0.48% from the $100,475.28 peak (D5 clear, trigger ≤ $90,427.75). 8/8; all 8 GTC 10% trails live; no hwm moved; no orders filled since EOD
-- **Midday refresh (UTC):** 2026-11-17 17:42 (midday routine, 12:42 ET Tue). Equity $100,168.62 (day −$55.12 / −0.05% vs last_equity $100,223.74; D1 clear, cap −$2,004.47). Cash $81,509.68 = BP, multiplier 1 ✅; LMV $18,658.94. Drawdown −0.31% from the $100,475.28 peak (D5 clear, trigger ≤ $90,427.75). 8/8; all 8 GTC 10% trails live; no hwm moved; no orders filled; nothing at S2/S3, no actions. SPY 732.06 (−1.08% IEX)
+- **Midday refresh (UTC):** 2026-11-18 17:42 (midday routine, 12:42 ET Wed). Equity $99,827.02 (day −$222.47 / −0.22% vs last_equity $100,049.49; D1 clear, cap −$2,000.99). Cash $81,509.68 = BP, multiplier 1 ✅; LMV $18,317.34. Drawdown −0.64% from the $100,475.28 peak (D5 clear, trigger ≤ $90,427.75). 8/8; all 8 GTC 10% trails live (status `new`, no hwm moved); no orders filled. Nothing at S2/S3, no actions; **MRK −6.51% is $0.74 (0.5%) above its 138.40 S2 line**. SPY 731.37 (−0.14% IEX)
+- **Prior midday refresh (UTC):** 2026-11-17 17:42 (midday routine, 12:42 ET Tue). Equity $100,168.62 (day −$55.12 / −0.05% vs last_equity $100,223.74; D1 clear, cap −$2,004.47). Cash $81,509.68 = BP, multiplier 1 ✅; LMV $18,658.94. Drawdown −0.31% from the $100,475.28 peak (D5 clear, trigger ≤ $90,427.75). 8/8; all 8 GTC 10% trails live; no hwm moved; no orders filled; nothing at S2/S3, no actions. SPY 732.06 (−1.08% IEX)
 - **Open-routine refresh (UTC):** 2026-11-18 14:35 (open routine, 09:35 ET Wed; Alpaca clock confirms open). Equity $99,953.26 (day −$96.23 / −0.10% vs last_equity $100,049.49; D1 clear). Cash $81,509.68 = BP, multiplier 1 ✅; LMV $18,443.58. Drawdown −0.52% from the $100,475.28 peak (D5 clear). 8/8; all 8 GTC 10% trails live (status `new`, no hwm moved); no orders filled. No entries: nothing queued, C2 full. Marks: DHR 228.63 (−3.13%), MRK 141.79 (−4.72%, S2 138.40 is 2.4% away), ELV 430.85 (+1.17%), KO 98.71, NOC 542.91, CTAS 221.79, LIN 511.27, MMM 179.40
 - **Earlier refresh (UTC):** 2026-11-16 11:09 (premarket routine, 06:09 ET Mon). Pre-open equity $100,365.19 (last_equity $100,298.83). Cash $81,509.68 = BP, multiplier 1 ✅; LMV $18,855.51. Drawdown −0.08% from the $100,448.15 peak (D5 clear). 8/8; all 8 GTC 10% trails live; no orders filled since Fri EOD
 - **Cash:** $81,509.68
@@ -37,6 +38,21 @@
 | LIN | 4 | 514.29 | 2026-11-09 | 2,057.16 | 477.32 (hwm 530.35) | 617.15 | 161 | Q3 adj EPS +9%, FY26 guide raised to $17.82–17.92; materials diversifier (half size, F+T) |
 
 Open positions: **8/8 (C2 full)**. All 8 GTC 10% trailing stops verified live on Alpaca at 21:16 UTC 11/17 (EOD routine) (S1/S4 ✅). "Risk $ at stop" = (entry − current trail) × qty; MMM's trail (177.21) is now $0.74/sh below entry, so it is close to breakeven-protected.
+
+### Midday snapshot (2026-11-18 17:42 UTC, 12:42 ET, Alpaca marks)
+
+| Ticker | Current | Unrealized P&L | % from entry | Intraday $ | S2 (−7%) | Alpaca trail stop (hwm) |
+|---|---|---|---|---|---|---|
+| DHR | 227.47 | −$85.40 | −3.62% | +$17.00 | 219.49 | 214.61 (238.45) |
+| ELV | 408.47 | −$86.90 | −4.08% | −$127.30 | 396.04 | 403.69 (448.54) |
+| MMM | 181.77 | +$53.48 | +2.15% | +$12.46 | 165.49 | 177.21 (196.90) |
+| MRK | 139.13 | −$155.04 | −6.51% | −$67.84 | 138.40 | 138.03 (153.37) |
+| KO | 98.06 | +$85.73 | +3.48% | −$18.98 | 88.13 | 90.50 (100.56) |
+| NOC | 541.85 | +$7.16 | +0.33% | −$45.64 | 502.26 | 502.20 (558.00) |
+| CTAS | 223.97 | +$16.39 | +0.67% | +$19.47 | 206.91 | 207.42 (230.47) |
+| LIN | 512.20 | −$8.36 | −0.41% | −$11.64 | 478.29 | 477.32 (530.35) |
+
+Total unrealized −$172.94. Day −$222.47 (−0.22%) vs SPY −0.14% (IEX 731.37 vs 732.41) → ≈ −0.08% excess; the book itself is ≈ −1.2% on the day, so it underperformed SPY (ELV −5.9% on the day, MRK −3.0%). **MRK −6.51%** (day low 139.055) is $0.73 above its 138.40 S2 line and $1.10 above its 138.03 trail. If it breaks 138.03 the trail fires first; otherwise S2 is re-checked at the next midday. News: Merck discontinued the BELLWAVE nemtabrutinib program (11/17 after close), plus a board change. **ELV** at 408.47 is 1.2% above its 403.69 trail (day low 405.97), still on the CMS CRUSH headwind despite an Argus upgrade to Buy this morning. Nothing at S3; KO (+3.48%) is the strongest. All 8 GTC 10% trailing stops live (status `new`, S1/S4 ✅). No orders placed, cancelled or filled.
 
 ### Premarket snapshot (2026-11-18 11:08 UTC, Alpaca pre-open marks)
 

@@ -623,6 +623,18 @@ Queue for Wed 11/4 (Tue 11/3 is the midterm election, so the plan is no entry Tu
 
 **Ops ⚠️ still unfixed (checked list_triggers this run):** `bull-open` is still `35 13 * * 1-5` UTC = 08:35 ET (55 min pre-open) and its inline prompt still says "Do NOT check intraday volume", out of sync with `routines/open.md`. Needs the user: `CRON_TZ=America/New_York 35 9 * * 1-5` + prompt sync.
 
+### 2026-11-18 17:42 UTC — MIDDAY — POSITION MANAGEMENT (Wed, no actions)
+
+**Account:** equity $99,827.02, day −$222.47 (−0.22%) vs SPY −0.14%. D1 clear (cap −$2,000.99); D5 clear (−0.64% from $100,475.28 peak). `halt_today` stays NO.
+
+**S2 (−7%):** nobody at the line. **MRK is closest at −6.51%** (139.13; day low 139.055; S2 line 138.40, trail 138.03). Fresh MRK news: it discontinued the BELLWAVE nemtabrutinib program (11/17 AMC), a pipeline negative, plus a board change. If MRK loses another ~$0.74 it is at S2. The live 10% trail at 138.03 sits only $0.37 below the S2 line, so in practice the trail is the effective cut between middays. **ELV** −5.9% on the day (−4.08% from entry, 408.47) on the continuing CMS CRUSH headwind despite an Argus upgrade; it is 1.2% above its 403.69 trail and may stop out on its own.
+
+**S3 (+15%):** none; best is KO +3.48%.
+
+**S4:** all 8 SELL trailing stops (10%, GTC, status `new`) verified on Alpaca. No hwm moved. No orders placed, cancelled or filled.
+
+**For EOD/premarket:** if MRK or ELV stops out, a slot opens (C2 7/8). UNP and TXN are the top alternates. Re-check both from fresh bars at premarket; midday does not enter.
+
 ### 2026-11-18 11:10 UTC — PREMARKET — WATCHLIST REFRESH (Wed, not D3, C2 full, nothing queued)
 
 **Clock:** fired 06:08 ET (Alpaca clock), market closed, timing correct. **Account (`paper-api`, O5 ✅):** ACTIVE. Equity $99,996.01 pre-open; Alpaca's last_equity is $100,049.49 (EOD logged $100,064.43, so Alpaca re-marked Tuesday's close by −$14.94). Cash = BP $81,509.68, multiplier 1 (A4 ✅). LMV $18,486.33. Flags all NO. Drawdown −0.48% from the $100,475.28 peak (D5 clear, trigger ≤ $90,427.75). All 8 GTC 10% trails live (status `new`); no hwm moved and no orders filled since EOD. Perplexity not used (no key in env). WebSearch still lags by a day, so this run also used **Alpaca's news endpoint** (`data.alpaca.markets/v1beta1/news`), which had same-day headlines for every holding — worth using first in future premarkets.
