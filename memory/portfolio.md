@@ -7,7 +7,7 @@
 - **Mode:** paper
 - **Last refresh (UTC):** 2026-11-17 21:16 (EOD routine, 16:16 ET Tue). Close equity $100,064.43 (day −$159.31 / −0.16% vs last_equity $100,223.74) vs SPY −1.03% → +0.87% excess. Cash $81,509.68 = BP, multiplier 1 ✅; LMV $18,554.75. Drawdown −0.41% from the $100,475.28 peak (D5 clear). 8/8; all 8 GTC 10% trails live; no hwm moved; no orders filled
 - **Prior EOD (UTC):** 2026-11-16 21:16. Close equity $100,229.15 (−0.07% vs SPY −1.89%)
-- **Premarket refresh (UTC):** 2026-11-17 11:10 (premarket routine, 06:10 ET Tue). Pre-open equity $100,209.01 (Alpaca last_equity $100,223.74). Cash $81,509.68 = BP, multiplier 1 ✅; LMV $18,699.33. Drawdown −0.26% from the $100,475.28 peak (D5 clear). 8/8; all 8 GTC 10% trails live; no orders filled since EOD
+- **Premarket refresh (UTC):** 2026-11-18 11:08 (premarket routine, 06:08 ET Wed). Pre-open equity $99,996.01 (Alpaca last_equity $100,049.49, re-marked from the $100,064.43 EOD read). Cash $81,509.68 = BP, multiplier 1 ✅; LMV $18,486.33. Drawdown −0.48% from the $100,475.28 peak (D5 clear, trigger ≤ $90,427.75). 8/8; all 8 GTC 10% trails live; no hwm moved; no orders filled since EOD
 - **Midday refresh (UTC):** 2026-11-17 17:42 (midday routine, 12:42 ET Tue). Equity $100,168.62 (day −$55.12 / −0.05% vs last_equity $100,223.74; D1 clear, cap −$2,004.47). Cash $81,509.68 = BP, multiplier 1 ✅; LMV $18,658.94. Drawdown −0.31% from the $100,475.28 peak (D5 clear, trigger ≤ $90,427.75). 8/8; all 8 GTC 10% trails live; no hwm moved; no orders filled; nothing at S2/S3, no actions. SPY 732.06 (−1.08% IEX)
 - **Open-routine refresh (UTC):** 2026-11-16 14:35 (open routine, 09:35 ET Mon). Equity $100,475.28 (+0.18% day; intraday above the $100,448.15 peak, the peak line is left for EOD to confirm). Cash $81,509.68 = BP, multiplier 1 ✅; LMV $18,965.60. 8/8; all 8 GTC 10% trails live (KO hwm 100.46 → stop 90.41; LIN hwm 530.35 → stop 477.32); no orders filled; no entries (nothing queued, C2 full)
 - **Earlier refresh (UTC):** 2026-11-16 11:09 (premarket routine, 06:09 ET Mon). Pre-open equity $100,365.19 (last_equity $100,298.83). Cash $81,509.68 = BP, multiplier 1 ✅; LMV $18,855.51. Drawdown −0.08% from the $100,448.15 peak (D5 clear). 8/8; all 8 GTC 10% trails live; no orders filled since Fri EOD
@@ -37,6 +37,21 @@
 | LIN | 4 | 514.29 | 2026-11-09 | 2,057.16 | 477.32 (hwm 530.35) | 617.15 | 161 | Q3 adj EPS +9%, FY26 guide raised to $17.82–17.92; materials diversifier (half size, F+T) |
 
 Open positions: **8/8 (C2 full)**. All 8 GTC 10% trailing stops verified live on Alpaca at 21:16 UTC 11/17 (EOD routine) (S1/S4 ✅). "Risk $ at stop" = (entry − current trail) × qty; MMM's trail (177.21) is now $0.74/sh below entry, so it is close to breakeven-protected.
+
+### Premarket snapshot (2026-11-18 11:08 UTC, Alpaca pre-open marks)
+
+| Ticker | Current | Unrealized P&L | % from entry | S2 (−7%) | Alpaca trail stop (hwm) |
+|---|---|---|---|---|---|
+| DHR | 225.00 | −$110.10 | −4.67% | 219.49 | 214.61 (238.45) |
+| ELV | 433.93 | +$40.40 | +1.90% | 396.04 | 403.69 (448.54) |
+| MMM | 181.20 | +$45.50 | +1.83% | 165.49 | 177.21 (196.90) |
+| MRK | 143.39 | −$86.88 | −3.65% | 138.40 | 138.03 (153.37) |
+| KO | 97.87 | +$80.79 | +3.28% | 88.13 | 90.50 (100.56) |
+| NOC | 553.00 | +$51.76 | +2.40% | 502.26 | 502.20 (558.00) |
+| CTAS | 220.22 | −$24.86 | −1.02% | 206.91 | 207.42 (230.47) |
+| LIN | 514.15 | −$0.56 | −0.03% | 478.29 | 477.32 (530.35) |
+
+Total unrealized −$3.95. Marks are Alpaca pre-open (mostly the re-marked Tue close; KO 97.87 and CTAS 220.22 below their 98.80/222.18 IEX closes). All 8 GTC 10% trails live (status `new`, S1/S4 ✅); no hwm moved overnight; no orders filled. Nothing at S2 or S3; DHR is 2.4% above its S2 line. **ELV:** CMS CRUSH Medicare Advantage audit proposal (11/16) is a new sector headwind — not an exit trigger on its own; see research_log. MRK still under its 50d. Wed 11/18 is not D3; **C2 is 8/8**.
 
 ### EOD snapshot (2026-11-17 close)
 

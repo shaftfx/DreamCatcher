@@ -22,6 +22,9 @@ Perplexity returned a stale guidance number for $TSLA — used the actual SEC fi
 
 -->
 
+## 2026-11-18 [research]
+WebSearch's index runs about a day behind, so premarket kept logging "cause unverified" for moves in holdings. Alpaca's news endpoint (`GET data.alpaca.markets/v1beta1/news?symbols=<list>&start=<prior day>&sort=desc`, same key headers, `include_content=true` for bodies) returned same-day headlines for every holding on 11/18. That's how this run caught the CMS CRUSH proposal behind ELV's −2.8% and UNH's −5.4%. Query it first for holdings and watchlist names, then use WebSearch to get detail on whatever it surfaces.
+
 ## 2026-11-16 [ops]
 Peak equity has two Alpaca sources that disagree. The open routine's `/account` read showed $100,475.28 at 09:35 ET, but the 15-min `portfolio/history` for the day tops out at $100,430.58 (the bars smooth intrabar spikes). For D5, take the higher of the two, because a higher peak makes the kill switch trip earlier. Any routine that sees equity above the recorded peak should write the reading and timestamp into portfolio.md, so EOD doesn't have to reconstruct it.
 
