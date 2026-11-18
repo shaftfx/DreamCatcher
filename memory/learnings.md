@@ -22,6 +22,9 @@ Perplexity returned a stale guidance number for $TSLA — used the actual SEC fi
 
 -->
 
+## 2026-11-18 [exit]
+The 10% trail, not S2, is the real loss cut once a name has run a few percent above entry. MRK's trail (138.03, from a 153.37 hwm) sat just under its S2 line (138.40), and ELV's trail (403.69, from 448.54) fired at only −5.2% from entry, well before S2. Both filled 3–9 cents under the stop, within a minute of each other at the 14:00 ET FOMC-minutes release. Both had been flagged in premarket as weakening (MRK under its 50d plus a pipeline cut; ELV hit by the CMS CRUSH sector proposal). The rules exited them without discretion, for −$284 total (−0.28% of equity, inside planned risk). Don't add a discretionary "sell on headwind" step. When premarket flags a holding's thesis as weakening, record the trail distance so EOD can tell whether the exit came from the rule or from a missed decision. A sector regulatory shock took ELV from +1.9% to stopped out in one session, which is the gap risk the trail is for.
+
 ## 2026-11-18 [research]
 WebSearch's index runs about a day behind, so premarket kept logging "cause unverified" for moves in holdings. Alpaca's news endpoint (`GET data.alpaca.markets/v1beta1/news?symbols=<list>&start=<prior day>&sort=desc`, same key headers, `include_content=true` for bodies) returned same-day headlines for every holding on 11/18. That's how this run caught the CMS CRUSH proposal behind ELV's −2.8% and UNH's −5.4%. Query it first for holdings and watchlist names, then use WebSearch to get detail on whatever it surfaces.
 

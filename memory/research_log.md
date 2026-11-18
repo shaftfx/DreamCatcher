@@ -623,6 +623,22 @@ Queue for Wed 11/4 (Tue 11/3 is the midterm election, so the plan is no entry Tu
 
 **Ops ⚠️ still unfixed (checked list_triggers this run):** `bull-open` is still `35 13 * * 1-5` UTC = 08:35 ET (55 min pre-open) and its inline prompt still says "Do NOT check intraday volume", out of sync with `routines/open.md`. Needs the user: `CRON_TZ=America/New_York 35 9 * * 1-5` + prompt sync.
 
+### 2026-11-18 21:17 UTC — EOD — DAILY WRAP (Wed)
+
+**Clock:** fired 16:15 ET, market closed, timing correct. Alpaca `paper-api` (O5 ✅), ACTIVE, cash = BP $85,735.68, multiplier 1 (A4 ✅).
+
+**Result:** equity $99,766.32, −0.28% (−$283.17) vs SPY −0.28% (732.41 → 730.33 IEX) → **≈ 0.00% excess**. QQQ +0.38% (657.06 → 659.57). Week to date −0.53% vs SPY −3.17% (+2.64%). Flags all NO; D1/D4/D5 clear. No new peak (day range $99,748.99–$99,943.09); drawdown −0.71% from $100,475.28.
+
+**Stop-outs (first closed trades):** ELV 5 @ 403.60 at 19:00:39 UTC (trail 403.69, hwm 448.54) → −$111.25 (−5.22%); MRK 16 @ 138.00 at 19:01:32 UTC (trail 138.03, hwm 153.37) → −$173.12 (−7.27%). Realized −$284.37 total. Both fired at the 14:00 ET FOMC-minutes release. ELV closed 401.07 (−7.6% on the day, CRUSH headwind); MRK 137.79 (−3.9%, BELLWAVE discontinuation; under its 50d since 11/16). Both theses were flagged as weakening in premarket, and the trail did the exit; no discretionary action was needed. Trade log rows added (midday ran before the fills).
+
+**Attribution:** book ≈ −$277 on ~$18.6k (≈ −1.5% vs SPY −0.28%): ELV −$151.65, MRK −$80.16, NOC −$41.08, KO −$18.20, LIN −$14.60, CTAS −$2.20, MMM +$2.38, DHR +$28.10. Selection was clearly negative today; 81% cash is what kept the account level with SPY.
+
+**Positions:** 6/8. All 6 remaining trails live (status `new`), no hwm moved. Nothing at S2/S3. DHR (−3.15%) weakest, 4.0% above S2 219.49; KO (+3.51%) strongest; MMM $3.84 above its trail. Health care is now 1 of 6 (DHR).
+
+**For Thu 11/19 premarket:** C1 0/3, **C2 6/8 → 2 slots open**, Thu is not D3 (jobless claims / Philly Fed 08:30; WMT BMO). Watchlist marks at the 11/18 close: **UNP 300.90 (+1.31%)**, TXN 292.37 (−1.17%), SPGI 446.31 (−1.34%). Re-check all from fresh bars before queueing. Regime is still weak (SPY ≈ −4% under its 50d; issue #13 has no index gate), so premarket should state the regime risk explicitly in any queued entry.
+
+**Recap:** issue #27.
+
 ### 2026-11-18 17:42 UTC — MIDDAY — POSITION MANAGEMENT (Wed, no actions)
 
 **Account:** equity $99,827.02, day −$222.47 (−0.22%) vs SPY −0.14%. D1 clear (cap −$2,000.99); D5 clear (−0.64% from $100,475.28 peak). `halt_today` stays NO.

@@ -12,6 +12,8 @@ Append-only ledger. Every fill — entry or exit — gets one row. Never edit hi
 | 2026-11-04T14:36:35Z | open | BUY | NOC | 4 | 540.06 | trail 10% (stop 484.78, hwm 538.64) | 648.07 (×1.20, 2R vs trail) | 221.12 | — | Half size F+T: Q3 beat, uptrend; above 50d (520.25), RSI 53.4, EMA stack intact; adds non-health-care exposure |
 | 2026-11-09T14:36:51Z | open | BUY | CTAS | 11 | 222.48 | trail 10% (stop 199.98, hwm 222.21) | 266.98 (×1.20, 2R vs trail) | 247.50 | — | Half size F+T: Q1 FY27 beat, FY27 guide raised; above 50d (206.83), RSI 58.4, EMA stack intact, vol 3.18× |
 | 2026-11-09T14:37:00Z | open | BUY | LIN | 4 | 514.29 | trail 10% (stop 462.52, hwm 513.91) | 617.15 (×1.20, 2R vs trail) | 207.08 | — | Half size F+T: Q3 adj EPS +9%, FY26 guide raised to $17.82–17.92; above 50d (486.96), RSI 59.4, EMA stack intact, vol 1.74× |
+| 2026-11-18T19:00:39Z | trail (EOD logged) | SELL | ELV | 5 | 403.60 | — | — | — | −111.25 | 10% trailing stop hit (stop 403.69, hwm 448.54); CMS CRUSH Medicare Advantage audit proposal drove a −7.6% day. Held 13 days |
+| 2026-11-18T19:01:32Z | trail (EOD logged) | SELL | MRK | 16 | 138.00 | — | — | — | −173.12 | 10% trailing stop hit (stop 138.03, hwm 153.37); under 50d since 11/16, BELLWAVE program discontinued 11/17. Held 12 days |
 
 <!-- Example row format (do not check in real data here):
 | 2026-04-26T13:36:12Z | open | BUY | AAPL | 14 | 178.20 | trail 10% | — | 99.96 | — | iPhone 17 catalyst + tech confirmation |
