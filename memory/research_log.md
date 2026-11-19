@@ -8,9 +8,9 @@ _Last refresh: 2026-11-19 premarket (Thu, not D3). Technicals recomputed this ru
 
 | Ticker | Added | Thesis (1 line) | Catalyst | Catalyst Date | Status (11/18 close · SMA50 · RSI14 · 20-bar swing low) |
 |---|---|---|---|---|---|
-| UNP | 2026-10-26 | Q3 beat, rail pricing power | NSC merger under STB review (stakeholder filings 11/18; no decision date in window) | — | **#1 queued half**, F+T ✅: 300.90 (+1.31%) · 288.04 (+4.5%) · 54.5 · 282.50 |
-| TXN | 2026-10-26 | Q3 beat ($2.62 vs $2.42); Q4 guide $5.8–6.3B / EPS $2.45–2.79 | NVDA read-through cleared 11/17 | passed | **#2 queued half**, F+T ✅: 292.37 (−1.17%) · 284.95 (+2.6%) · 49.1 · 271.29. Below its 20d EMA (296.05), a pullback toward the 50d |
-| TJX | 2026-11-19 | Q3 FY27 adj EPS $1.34 (+5%, above plan), comps +4%; FY27 adj EPS guide **raised** to $5.17–5.20 (from $5.15–5.20), FY comps to +4% (from 3–4%); second straight raise after Q2 ([8-K](https://www.sec.gov/Archives/edgar/data/109198/000010919826000058/tjxq3fy27earningspressrele.htm)) | earnings passed 11/18 (+8.07%); next ER ~late Feb | — | **#3 alternate**, F+T ✅: 140.34 (+8.07%) · 135.97 (+3.2%) · 54.0 · 129.47. The raise is modest and partly tariff-refund-flattered; one-day +8% gap |
+| UNP | 2026-10-26 | Q3 beat, rail pricing power | NSC merger under STB review (stakeholder filings 11/18; no decision date in window) | — | **#1 queued half → rejected at open 11/19 (vol 0.40×)**, F+T ✅: 300.90 (+1.31%) · 288.04 (+4.5%) · 54.5 · 282.50 |
+| TXN | 2026-10-26 | Q3 beat ($2.62 vs $2.42); Q4 guide $5.8–6.3B / EPS $2.45–2.79 | NVDA read-through cleared 11/17 | passed | **#2 queued half → rejected at open 11/19 (vol 0.53×, above chase)**, F+T ✅: 292.37 (−1.17%) · 284.95 (+2.6%) · 49.1 · 271.29. Below its 20d EMA (296.05), a pullback toward the 50d |
+| TJX | 2026-11-19 | Q3 FY27 adj EPS $1.34 (+5%, above plan), comps +4%; FY27 adj EPS guide **raised** to $5.17–5.20 (from $5.15–5.20), FY comps to +4% (from 3–4%); second straight raise after Q2 ([8-K](https://www.sec.gov/Archives/edgar/data/109198/000010919826000058/tjxq3fy27earningspressrele.htm)) | earnings passed 11/18 (+8.07%); next ER ~late Feb | — | **#3 alternate → rejected at open 11/19 (4EMA stack inverted: 8<12<21<55)**, F+T ✅: 140.34 (+8.07%) · 135.97 (+3.2%) · 54.0 · 129.47. The raise is modest and partly tariff-refund-flattered; one-day +8% gap |
 | SPGI | 2026-11-09 | Q3 adj EPS $4.58 vs ~$4.42 est; FY26 adj EPS guide **raised** above the prior $17.50–17.75 ([8-K](https://www.sec.gov/Archives/edgar/data/0000064040/000006404026000053/spgi3q2026-earningsrelease.htm)) | Capital IQ/Kensho strategic review (no date); next ER ~2/8/27 | — | **watch-only (weakening)**: 446.31 (−1.35%) · 430.16 (+3.8%) · 45.7 · 441.28 (5.0 above the swing low). A5 near the 1M floor. Remove if it closes under 441 |
 | TMO | 2026-11-02 | Q3 beat ($6.68 vs $6.40), FY26 guide **raised** to $25.13–25.43 | none within 8w | — | watch-only: 693.05 · 675.66 (+2.6%) · 51.2. Health-care exposure is down to DHR only, so it could move up if a slot stays open |
 | MA | 2026-11-09 | Q3 adj EPS $5.31 vs $5.17, rev $9.81B vs $9.66B ([8-K](https://www.sec.gov/Archives/edgar/data/0001141391/000114139126000122/ma09302026-exx991xearnings.htm)); part of the beat pulled forward from Q4; outlook reaffirmed, not raised | swipe-fee settlement final approval sought (no date) | — | **watch-only (F ⚠️ no raise)**: 643.23 · 604.37 (+6.4%) · 54.2 |
@@ -625,6 +625,22 @@ Queue for Wed 11/4 (Tue 11/3 is the midterm election, so the plan is no entry Tu
 **Next:** C1 3/3 for week of 11/2 — no entries Thu 11/5; Fri 11/6 NFP D3 blackout. Re-validate CTAS and UNP from fresh bars for Mon 11/9. Midday Thu: S2/S3 sweep, watch NOC for defense headlines.
 
 **Ops ⚠️ still unfixed (checked list_triggers this run):** `bull-open` is still `35 13 * * 1-5` UTC = 08:35 ET (55 min pre-open) and its inline prompt still says "Do NOT check intraday volume", out of sync with `routines/open.md`. Needs the user: `CRON_TZ=America/New_York 35 9 * * 1-5` + prompt sync.
+
+### 2026-11-19 14:37 UTC — OPEN — NO ENTRIES (all 3 queued names rejected)
+
+**Clock:** Alpaca clock 09:36 ET, market open, timing correct. **Boot:** `paper-api` (O5 ✅), ACTIVE. Equity $99,691.19 (day −$77.83 / −0.08% vs last_equity $99,769.02; D1 clear). Cash = BP $85,735.58, multiplier 1 (A4 ✅). LMV $13,955.61. Drawdown −0.78% from the $100,475.28 peak (D5 clear). Flags: `halt_today` NO, `halt_until_human` NO, `weekly_defensive` NO; Thu 11/19 not D3. C1 0/3, C2 6/8. All 6 GTC 10% trails live (status `new`); no orders filled since EOD.
+
+**Validation** (IEX last at ~09:36; SMA50/RSI/EMAs from IEX daily bars through 11/18 + live price; volume = 09:30–09:36 IEX minute bars summed vs the median of the same window over the prior 20 sessions; threshold **1.0×** per STRATEGY):
+
+| Rank | Ticker | Live | Chase | SMA50 | RSI | EMA 8>12>21>55 | Vol (6m) | decision |
+|---|---|---|---|---|---|---|---|---|
+| 1 | UNP | 296.91 | 305.41 ✅ | 288.26 ✅ | 50.3 ✅ | 299.85>299.68>297.95>292.64 ✅ (px under 8 EMA) | **0.40×** ❌ (947 vs 2,396) | **rejected**: volume gate |
+| 2 | TXN | 299.60 | **296.76 ❌** | 286.75 ✅ | 52.7 ✅ | 298.24>298.19>296.45>288.95 ✅ | **0.53×** ❌ (3,931 vs 7,415) | **rejected**: volume gate + above chase limit (+2.5% vs 292.37 ref) |
+| 3 (alt) | TJX | 138.48 | 142.45 ✅ | 136.64 ✅ | 50.8 ✅ | **136.33<136.79<137.66<139.20 ❌** | 3.13× ✅ | **rejected**: 4EMA stack inverted, so the technical leg fails (KNOWLEDGE/indicators.md). Catalyst has passed (ER 11/18), so only the F leg remains, which is short of 2 of 3. Giving back −1.3% of yesterday's +8% gap |
+
+**Gates not reached** (rejected on framework checks first); P1–P4/C1–C3/A1–A6 were clean in premarket and would have passed.
+
+**Decision:** 0 orders placed. Didn't re-run the volume read later to get a pass; one read at the scheduled time. UNP has now been blocked at the open three times (C2 on 11/9, volume today). TXN gapped above its chase on the NVDA/semis bounce. All three stay on the watchlist for Fri 11/20 premarket (C1 0/3, C2 6/8, Fri not D3). TJX needs its 8/12/21 EMAs to cross back over the 55 EMA before it qualifies.
 
 ### 2026-11-19 11:08 UTC — PREMARKET — WATCHLIST REFRESH + QUEUE (Thu, not D3, 2 slots open)
 
