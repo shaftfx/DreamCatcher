@@ -626,6 +626,18 @@ Queue for Wed 11/4 (Tue 11/3 is the midterm election, so the plan is no entry Tu
 
 **Ops ⚠️ still unfixed (checked list_triggers this run):** `bull-open` is still `35 13 * * 1-5` UTC = 08:35 ET (55 min pre-open) and its inline prompt still says "Do NOT check intraday volume", out of sync with `routines/open.md`. Needs the user: `CRON_TZ=America/New_York 35 9 * * 1-5` + prompt sync.
 
+### 2026-11-19 17:43 UTC — MIDDAY — POSITION MANAGEMENT (Thu, MMM trail fill, no midday actions)
+
+**Account (`paper-api`, O5 ✅):** equity $99,631.20, day −$137.82 (−0.14%) vs SPY −0.92% (IEX 723.62). D1 clear (cap −$1,995.38); D5 clear (−0.84% from $100,475.28 peak). Cash = BP $88,214.69, multiplier 1 (A4 ✅). `halt_today` stays NO.
+
+**Fill since premarket:** MMM's 10% trail (stop 177.21, hwm 196.90) filled at 17:06:04 UTC, 14 @ 177.08 → −$12.19 (−0.49%). Day low 177.18 vs 181.06 prior close; no Alpaca news on MMM today. Trade log row added. Positions now **5/8**.
+
+**S2 (−7%):** none. DHR −3.06% is the closest (228.79, S2 219.49). **S3 (+15%):** none; best KO +1.16%. **S4:** all 5 SELL trailing stops (10%, GTC, status `new`) verified; no hwm moved. No orders placed or cancelled.
+
+**Ops ⚠️:** the `bull-open` trigger fired at 14:35 UTC (09:35 ET, timing now correct) and finished in ~2 min, but it placed **no orders** for the queued UNP/TXN/TJX and pushed **no commit**, so there's no record of why (likely volume/regime rejections, but unverified). Open's Step 6 says commit regardless. EOD should note it; the user may want the open prompt to always push its rejections.
+
+**For Fri 11/20 premarket:** C1 0/3, C2 5/8 → up to 3 entries possible (not D3). Re-check UNP/TXN/TJX from fresh bars; regime is still weak (SPY −0.9% today, further under its 50d).
+
 ### 2026-11-19 11:08 UTC — PREMARKET — WATCHLIST REFRESH + QUEUE (Thu, not D3, 2 slots open)
 
 **Clock:** fired 06:08 ET (Alpaca clock), market closed, opens 09:30 ET. Timing correct. **Account (`paper-api`, O5 ✅):** ACTIVE. Equity $99,781.58 pre-open; last_equity $99,769.02 (EOD logged $99,766.32). Cash = BP $85,735.58, multiplier 1 (A4 ✅). LMV $14,046.00. Flags all NO. Drawdown −0.69% from the $100,475.28 peak (D5 clear, trigger ≤ $90,427.75). All 6 GTC 10% trails live (status `new`); no hwm moved and no orders filled since EOD. Perplexity not used (no key in env). WebSearch still has nothing indexed for 11/18–11/19 (it returned 2025 articles), so news came from Alpaca's news endpoint and guidance figures from the SEC 8-Ks directly.
