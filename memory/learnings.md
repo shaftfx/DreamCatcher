@@ -22,6 +22,9 @@ Perplexity returned a stale guidance number for $TSLA — used the actual SEC fi
 
 -->
 
+## 2026-11-19 [risk]
+A −5% index week was absorbed almost entirely by exposure level, again. Mon–Thu 11/16–11/19 SPY fell 5.10% (754.27 → 715.84) and the account fell 0.69%, because 81–89% sat in cash. The 10% trails clipped three half-size names (ELV, MRK, MMM) for −$296.56 total (−0.30% of equity); that's the trail working as sized, each loss ≤ 0.17% of equity. But the per-name F+T gates kept queueing new longs (UNP, TXN) into a tape where SPY was −4% under its 50d, and on the day they would have opened, they fell 3.4% and 2.3%. Per-name gates don't see the regime. Don't invent a gate mid-session, but every queue in a sub-50d tape should state the regime risk, and the user should decide on issue #13 before the account redeploys 3 open slots.
+
 ## 2026-11-19 [research]
 For guidance claims on a same-day earnings print, go to the SEC filing, not search. WebSearch returned only 2025 articles for 11/18, aggregators mislabeled Lowe's 2025 numbers as 2026, and TJX's IR site returned 403. EDGAR full-text search (`efts.sec.gov/LATEST/search-index?q=...&forms=8-K&ciks=<CIK>&startdt=<date>`, with a descriptive User-Agent) found the TJX 8-K exhibit within hours of filing. Check one-offs before calling it a beat: LOW's and TJX's Q3 EPS both included IEEPA tariff refunds, which turned LOW's "beat" into a y/y decline (≈ $2.76 vs $3.06).
 

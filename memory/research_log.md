@@ -626,6 +626,26 @@ Queue for Wed 11/4 (Tue 11/3 is the midterm election, so the plan is no entry Tu
 
 **Ops ⚠️ still unfixed (checked list_triggers this run):** `bull-open` is still `35 13 * * 1-5` UTC = 08:35 ET (55 min pre-open) and its inline prompt still says "Do NOT check intraday volume", out of sync with `routines/open.md`. Needs the user: `CRON_TZ=America/New_York 35 9 * * 1-5` + prompt sync.
 
+### 2026-11-19 21:16 UTC — EOD — DAILY WRAP (Thu)
+
+**Clock:** fired 16:16 ET, market closed, timing correct. Alpaca `paper-api` (O5 ✅), ACTIVE, cash = BP $88,214.69, multiplier 1 (A4 ✅).
+
+**Result:** equity $99,612.15, −0.16% (−$156.87) vs SPY −1.98% (730.33 → 715.84 IEX) → **+1.83% excess**. QQQ −2.19%. Week to date −0.69% vs SPY −5.10% (+4.41%). Flags all NO; D1/D4/D5 clear (5-day −0.69% vs −5% cap; drawdown −0.86%). No new peak (day range $99,587.39–$99,693.67).
+
+**Fills:** MMM trail 14 @ 177.08 (−$12.19), already logged by midday. No other orders placed, cancelled or filled.
+
+**Attribution:** book ≈ −$157 on ~$14.0k (≈ −1.12%): MMM −$55.58, KO −$50.44, CTAS −$33.88, DHR −$10.20, LIN −$4.04, NOC −$2.72. All red, but the book beat SPY by ~0.9 pts; the cash did the rest.
+
+**Positions:** 5/8, all 5 trails live (status `new`), no hwm moved. Nothing at S2/S3. DHR −3.58% (3.7% above S2), CTAS −1.76% (5.5% above its trail), KO +1.46% strongest.
+
+**Queue post-mortem:** the open routine placed nothing and left no record. UNP closed 290.62 (−3.42%, ~0.9% above its 50d), TXN 285.73 (−2.27%, right on its 50d), TJX 139.49 (−0.61%). Not buying avoided ≈ −$140, but that's luck, not a logged decision.
+
+**For Fri 11/20 premarket:** C1 0/3, C2 5/8 → up to 3 entries possible; Fri is not D3. Re-check UNP/TXN from fresh bars (both may now fail T: 50d). TJX held up best. SPY is now ≈ −6% under its 50d, so state the regime risk on every queued name (issue #13). Friday is also the weekly-review day.
+
+**Ops ⚠️:** the open routine's silent no-op (no commit) is unresolved; flagged in the recap.
+
+**Recap:** issue #29.
+
 ### 2026-11-19 17:43 UTC — MIDDAY — POSITION MANAGEMENT (Thu, MMM trail fill, no midday actions)
 
 **Account (`paper-api`, O5 ✅):** equity $99,631.20, day −$137.82 (−0.14%) vs SPY −0.92% (IEX 723.62). D1 clear (cap −$1,995.38); D5 clear (−0.84% from $100,475.28 peak). Cash = BP $88,214.69, multiplier 1 (A4 ✅). `halt_today` stays NO.
