@@ -22,6 +22,9 @@ Perplexity returned a stale guidance number for $TSLA — used the actual SEC fi
 
 -->
 
+## 2026-11-19 [research]
+For guidance claims on a same-day earnings print, go to the SEC filing, not search. WebSearch returned only 2025 articles for 11/18, aggregators mislabeled Lowe's 2025 numbers as 2026, and TJX's IR site returned 403. EDGAR full-text search (`efts.sec.gov/LATEST/search-index?q=...&forms=8-K&ciks=<CIK>&startdt=<date>`, with a descriptive User-Agent) found the TJX 8-K exhibit within hours of filing. Check one-offs before calling it a beat: LOW's and TJX's Q3 EPS both included IEEPA tariff refunds, which turned LOW's "beat" into a y/y decline (≈ $2.76 vs $3.06).
+
 ## 2026-11-18 [exit]
 The 10% trail, not S2, is the real loss cut once a name has run a few percent above entry. MRK's trail (138.03, from a 153.37 hwm) sat just under its S2 line (138.40), and ELV's trail (403.69, from 448.54) fired at only −5.2% from entry, well before S2. Both filled 3–9 cents under the stop, within a minute of each other at the 14:00 ET FOMC-minutes release. Both had been flagged in premarket as weakening (MRK under its 50d plus a pipeline cut; ELV hit by the CMS CRUSH sector proposal). The rules exited them without discretion, for −$284 total (−0.28% of equity, inside planned risk). Don't add a discretionary "sell on headwind" step. When premarket flags a holding's thesis as weakening, record the trail distance so EOD can tell whether the exit came from the rule or from a missed decision. A sector regulatory shock took ELV from +1.9% to stopped out in one session, which is the gap risk the trail is for.
 
