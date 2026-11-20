@@ -4,7 +4,7 @@ Dated entries. Premarket appends new research; other routines append rejected id
 
 ## Active Watchlist
 
-_Last refresh: 2026-11-20 premarket (Fri, not D3). Technicals recomputed this run from Alpaca IEX daily bars through the **Thu 11/19 close**. **C1 0/3, C2 5/8 → 3 slots open.** TJX and WMT are `queued half`; UNP is the alternate (see the 11/20 premarket entry for the draft plans). **Regime ⚠️:** SPY 715.84 is **−6.0% under its 50d** (761.49), RSI 31.5, closing on its 20-bar low; QQQ 645.10 is −9.5% under (713.00), RSI 33.7. Still no index-regime gate (issue #13). I am deliberately queueing only 2 of the 3 open slots (see entry)._
+_Last refresh: 2026-11-20 premarket (Fri, not D3). Technicals recomputed this run from Alpaca IEX daily bars through the **Thu 11/19 close**. **C1 0/3, C2 5/8 → 3 slots open.** TJX and WMT were `queued half` with UNP as the alternate; **all three were rejected at the 11/20 open** (TJX/WMT gapped above their chase limits, UNP's 4EMA stack is broken; see the 11/20 open entry). **Regime ⚠️:** SPY 715.84 is **−6.0% under its 50d** (761.49), RSI 31.5, closing on its 20-bar low; QQQ 645.10 is −9.5% under (713.00), RSI 33.7. Still no index-regime gate (issue #13). I am deliberately queueing only 2 of the 3 open slots (see entry)._
 
 | Ticker | Added | Thesis (1 line) | Catalyst | Catalyst Date | Status (11/19 close · SMA50 · RSI14 · 20-bar swing low) |
 |---|---|---|---|---|---|
@@ -635,6 +635,27 @@ Queue for Wed 11/4 (Tue 11/3 is the midterm election, so the plan is no entry Tu
 **Next:** C1 3/3 for week of 11/2 — no entries Thu 11/5; Fri 11/6 NFP D3 blackout. Re-validate CTAS and UNP from fresh bars for Mon 11/9. Midday Thu: S2/S3 sweep, watch NOC for defense headlines.
 
 **Ops ⚠️ still unfixed (checked list_triggers this run):** `bull-open` is still `35 13 * * 1-5` UTC = 08:35 ET (55 min pre-open) and its inline prompt still says "Do NOT check intraday volume", out of sync with `routines/open.md`. Needs the user: `CRON_TZ=America/New_York 35 9 * * 1-5` + prompt sync.
+
+### 2026-11-20 14:36 UTC — OPEN — NO ENTRIES (Fri; TJX/WMT over chase limit, UNP EMA stack broken)
+
+**Clock:** fired 09:36 ET (Alpaca clock `is_open: true`). Timing correct. **Account (`paper-api`, O5 ✅):** ACTIVE, equity $99,716.46 (day +$109.70 / +0.11% vs last_equity $99,606.76; D1 clear). Cash = BP $88,214.62, multiplier 1 (A4 ✅). LMV $11,501.84. Drawdown −0.76% from the $100,475.28 peak (D5 clear). Flags all NO, Fri 11/20 not D3, D4 clear → entries allowed. C1 0/3, C2 5/8. All 5 GTC 10% trails live (status `new`); no fills since EOD.
+
+**Re-validation (Alpaca IEX, 09:30–09:35 ET window; technicals from IEX daily bars + live last):**
+
+| Ticker | Last | Chase limit | 50d | RSI | 4EMA (8>12>21>55, px>8) | Vol vs 20-session median | decision |
+|---|---|---|---|---|---|---|---|
+| TJX | 142.20 (+1.9%) | 141.58 | 136.99 ✅ | 55.8 ✅ | ❌ | 2.87× ✅ | **rejected: chase** (last 142.01–142.20 > 141.58) |
+| WMT | 129.27 (+2.6%) | 127.93 | 116.67 ✅ | 66.2 ✅ | ✅ | 1.97× ✅ | **rejected: chase** (last 129.09–129.27 > 127.93) |
+| UNP | 293.72 (+1.1%) | 294.98 ✅ | 288.32 ✅ | 47.8 ✅ | ❌ (8 EMA 297.40 < 12 EMA 297.95; price under 8 EMA) | 1.89× ✅ | **rejected: technical leg** (stack broken → only F; no dated catalyst → fails 2-of-3) |
+
+**News (Alpaca, since 00:00 UTC):** WMT and TJX: analyst price-target raises, which explains the gap-ups. Thesis not broken; the price simply ran past the planned entry. UNP: CEO apology for "rate retaliation" remarks; municipalities filed STB merger conditions. Neither one breaks the thesis on its own.
+
+**Notes:**
+- Neither TJX nor WMT was chased. Both stay on the watchlist; next premarket can re-base the entry ref off today's close if they hold.
+- UNP was already flagged by premarket as marginal (under its 20d EMA). Today's check confirms the short EMAs have rolled over. Premarket's "drop if it closes under the 50d" still applies.
+- The 3rd slot was left open on purpose (regime note in premarket). All three slots stay open into the weekend and Thanksgiving week.
+
+**Orders placed: 0.** Positions unchanged (5/8). No trail modified.
 
 ### 2026-11-20 11:10 UTC — PREMARKET — WATCHLIST REFRESH + QUEUE (Fri, not D3, 3 slots open, 2 queued)
 
