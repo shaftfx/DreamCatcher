@@ -636,6 +636,19 @@ Queue for Wed 11/4 (Tue 11/3 is the midterm election, so the plan is no entry Tu
 
 **Ops ⚠️ still unfixed (checked list_triggers this run):** `bull-open` is still `35 13 * * 1-5` UTC = 08:35 ET (55 min pre-open) and its inline prompt still says "Do NOT check intraday volume", out of sync with `routines/open.md`. Needs the user: `CRON_TZ=America/New_York 35 9 * * 1-5` + prompt sync.
 
+### 2026-11-20 22:20 UTC — WEEKLY — REVIEW 2026-W47 (grade B, +7.63% vs SPY, mostly cash)
+
+Recap: issue #32.
+
+Week −0.80% vs SPY −8.43% (QQQ −10.33%). Book −4.26% (beat SPY by 4.2 pts); ≈ 6.85 pts of the excess is cash. 0 entries, 3 trail exits (ELV, MRK, MMM: 0/3, −0.43R, −$296.56). Full review in `memory/weekly_review.md`.
+
+**Recovered open-routine records (not on `main` until now).** The open routine did log its 11/19 and 11/20 decisions, but on session branches, so midday/EOD saw nothing:
+- **11/19** (`claude/brave-shannon-fpht1q`, commit 8fa33b2, draft PR #28): UNP `rejected` volume 0.40×; TXN `rejected` volume 0.53× + above chase (299.60 vs 296.76); TJX `rejected` 4EMA stack inverted. 0 orders.
+- **11/20** (`claude/brave-shannon-0bpiog`, commit 5ab18d9, draft PR #30): TJX `rejected` above chase (142.20 vs 141.58); WMT `rejected` above chase (129.27 vs 127.93); UNP `rejected` 4EMA stack broken. 0 orders.
+- Other open-routine commits that also never reached main: 11/5 (#12), 11/10 (#17), 11/13 (#21), 11/17 (#25), all 0-entry days. Cause and proposed fix: learnings 2026-11-20 [ops].
+
+**Watchlist notes for Mon premarket:** TXN closed 263.95 (well under its 50d) → drop. UNP 287.21 (under its ≈ 288 50d) → premarket's drop rule applies. WMT 128.04 and TJX 139.69: re-base the entry refs. Regime: SPY −9.2% under its 50d (760.21), QQQ −14.2%.
+
 ### 2026-11-20 21:16 UTC — EOD — RECAP (Fri; DHR 0.4% above S2 into Monday)
 
 **Account (`paper-api`):** close equity $99,499.14, day −0.11% vs SPY −3.51% (690.68 IEX) / QQQ −5.48% → +3.40% excess. Week −0.80% vs SPY −8.43%. D1/D4/D5 clear (drawdown −0.97%). No orders placed or filled today; open routine again no-op'd on TJX/WMT (TJX +0.15%, WMT +1.59% on the day).

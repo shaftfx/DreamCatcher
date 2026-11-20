@@ -909,6 +909,15 @@ Total unrealized −$119.62. Deployed $6,861.03 (6.9% of equity). Open risk to s
 - Excess vs SPY: +0.42%
 - D4 weekly loss check: −0.12% > −5% → `weekly_defensive: NO`
 
+## Week closed 2026-W47 (Fri 11/13 close → Fri 11/20 close) — weekly review
+
+- Week return: −0.80% ($100,299.56 → $99,499.14)
+- SPY week return: −8.43% (754.27 → 690.68, IEX); QQQ −10.33%
+- Excess vs SPY: +7.63% (grade B; ≈ 6.85 pts from cash; book −4.26%; see `memory/weekly_review.md`)
+- Realized this week: −$296.56 (ELV, MRK, MMM; 0/3, −0.43R avg)
+- D4 weekly loss check: −0.80% > −5% → `weekly_defensive: NO`
+- Week starting Mon 11/23: C1 resets to 0/3; C2 5/8. Since inception −0.50% vs SPY −9.10% (+8.60%)
+
 ## Week closed 2026-W46 (Fri 11/6 close → Fri 11/13 close) — weekly review
 
 - Week return: +0.35% ($99,952.41 → $100,299.56)

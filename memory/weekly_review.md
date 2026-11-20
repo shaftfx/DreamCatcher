@@ -2,105 +2,147 @@
 
 Overwritten by the Friday weekly routine each week. Prior reviews live in git history.
 
-## Week of 2026-11-09 → 2026-11-13 (2026-W46)
+## Week of 2026-11-16 → 2026-11-20 (2026-W47)
 
-_Written 2026-11-13 ~22:15 UTC by the weekly routine. Figures checked against Alpaca: account, positions, orders since 11/7, daily and 15-min portfolio history, SPY/QQQ IEX daily bars, and IEX 11/6 closes for the six names held into the week._
+_Written 2026-11-20 ~22:20 UTC by the weekly routine. Figures checked against Alpaca: account, positions, open orders, orders since 11/13, 15-min and daily portfolio history, SPY/QQQ IEX daily bars, and IEX closes for the watchlist names that open rejected. Open-routine decisions for 11/19 and 11/20 were recovered from branches `claude/brave-shannon-fpht1q` (draft PR #28) and `claude/brave-shannon-0bpiog` (draft PR #30); see "Ops" below._
 
 ### Performance
-- Starting equity: $99,952.41 (Fri 11/6 close)
-- Ending equity: $100,299.56 (Fri 11/13 close, per EOD; Alpaca shows $100,351.80 after hours, mostly ELV marked 442 AH)
-- Week return: **+0.35%** (+$347.15)
-- SPY week return: **+2.57%** (735.40 → 754.27, IEX). QQQ +3.61% (656.31 → 680.01)
-- **Excess vs SPY: −2.22%**
-- Drawdown low this week: $99,971.30 at 09:45 ET Mon 11/9 (15-min history), +0.02% vs the week start. The account never closed a 15-min bar below Friday's close.
-- **New peak:** $100,448.15 at 12:30 ET Thu 11/12. The EOD/midday runs missed it (they recorded $100,428.38); portfolio.md is now updated. Close is −0.15% from it; D5 trigger ≤ $90,403.34.
+- Starting equity: $100,299.56 (Fri 11/13 close)
+- Ending equity: $99,499.14 (Fri 11/20 close, EOD; Alpaca after hours $99,501.70)
+- Week return: **−0.80%** (−$800.42)
+- SPY week return: **−8.43%** (754.27 → 690.68, IEX). QQQ −10.33% (680.01 → 609.75)
+- **Excess vs SPY: +7.63%**
+- Drawdown low: $99,499.14 at the Fri close, −0.80% vs the week start and −0.97% from the $100,475.28 peak (15-min low $99,513.94 on the 16:00 ET bar). D5 trigger ≤ $90,427.75; D4 (−5% weekly) never close.
+- Week high: $100,430.58 at 10:15 ET Mon 11/16 (15-min). No new peak.
+- Since inception (10/23 close $100,000): account −0.50% vs SPY −9.10% (759.83 → 690.68) → **+8.60% excess** over 4 weeks.
 
-**Attribution (exposure vs selection).** Cash was 86% Monday morning and 81% after CTAS/LIN filled.
-- **Book (positions only):** ≈ +$323 on ≈ $18.4k deployed ≈ **+1.75%** vs SPY +2.57%. Per name, 11/6 close (or entry) → 11/13 close:
-  - NOC +$100 (+4.8%), KO +$92 (+3.7%), CTAS +$41 (+1.7%), LIN +$38 (+1.8%), ELV +$31 (+1.5%), DHR +$27 (+1.2%), MRK +$16 (+0.7%), MMM −$22 (−0.8%).
-- **Exposure:** had the ~18% invested matched SPY, the account would have made ≈ +0.47%. So ≈ **−2.1 pts** of the −2.22% is cash drag in an up week.
-- **Selection:** ≈ **−0.8 pts on the book** (≈ −0.15 pts at the account level). A defensive, low-beta book lagged a +2.6% / QQQ +3.6% rebound. 7 of 8 names were green — not bad picks, just low beta.
-- **Two-week view (W45+W46, 10/30 → 11/13):** account +0.42% vs SPY −0.19% → **+0.61% excess**. Cash helped in W45 and hurt in W46 by about the same order of magnitude.
+**Attribution (exposure vs selection).** The account started the week 18.7% invested ($18,789.88 in 8 names) and ended 11.3% invested.
+- **Book (positions only):** −$800 on $18.8k ≈ **−4.26%** vs SPY −8.43% / QQQ −10.33%. Per name, 11/13 close → 11/20 close (or exit):
+  - MRK −$156 (exit), ELV −$142 (exit), DHR −$127, MMM −$92 (exit), LIN −$88, CTAS −$74, NOC −$64, KO −$57. All 8 red.
+- **Exposure:** if the 18.7% invested had matched SPY, the account would have been ≈ −1.58%. So ≈ **+6.85 pts** of the +7.63% is cash.
+- **Selection:** ≈ **+4.2 pts on the book** (≈ +0.78 pts at the account level). The defensive book fell about half as much as SPY in a −8% week. That's real, but it's mostly low beta, which is the same reason it lagged by 0.8 pts in W46's up week.
 
 ### Trades
-- Entries: 2 — CTAS 11 @ 222.48 and LIN 4 @ 514.29, both Mon 11/9 (half size, F+T). Volume leg measured at the open (3.18× and 1.74×).
-- Exits: 0
-- Wins / Losses: n/a (no closed trades; 0 closed since inception)
-- Avg R per closed trade: n/a
-- Best open (whole book): KO +$115.37 (+4.68%, +0.47R vs $246 original risk)
-- Worst open (whole book): DHR −$29.90 (−1.27%, −0.13R vs $236 original risk)
-- This week's entries: CTAS +$41.36 (+0.17R), LIN +$37.56 (+0.18R)
+- Entries: **0**. 6 names were queued across Thu/Fri; the open routine rejected all 6 (details below). C1 0/3.
+- Exits: **3**, all 10% trailing stops.
+- Wins / Losses: **0 / 3** (first closed trades since inception)
+- Avg R per closed: **−0.43R** (realized −$296.56 on $703 original risk; −0.30% of equity)
+- Best: MMM (−$12.19, −0.05R)
+- Worst: MRK (−$173.12, −0.73R)
 
-### Open positions (snapshot, 11/13 close)
-| Ticker | Qty | Cost | Current | Unrl % | Days | Trail stop (hwm) |
-|---|---|---|---|---|---|---|
-| DHR | 10 | 236.01 | 233.02 | −1.27% | 10 | 214.61 (238.45) |
-| ELV | 5 | 425.85 | 432.00 | +1.44% | 10 | 403.69 (448.54) |
-| MMM | 14 | 177.95 | 183.66 | +3.21% | 10 | 177.21 (196.90) |
-| MRK | 16 | 148.82 | 147.76 | −0.71% | 9 | 138.03 (153.37) |
-| KO | 26 | 94.76 | 99.20 | +4.68% | 9 | 89.37 (99.30) |
-| NOC | 4 | 540.06 | 550.43 | +1.92% | 7 | 502.20 (558.00) |
-| CTAS | 11 | 222.48 | 226.24 | +1.69% | 4 | 207.42 (230.47) |
-| LIN | 4 | 514.29 | 523.68 | +1.83% | 4 | 477.18 (530.20) |
+| Exit | Ticker | Qty | Entry → Exit | P&L | R | Held | Trigger |
+|---|---|---|---|---|---|---|---|
+| Wed 11/18 | ELV | 5 | 425.85 → 403.60 | −$111.25 (−5.2%) | −0.52 | 13d | trail 403.69 (hwm 448.54) |
+| Wed 11/18 | MRK | 16 | 148.82 → 138.00 | −$173.12 (−7.3%) | −0.73 | 12d | trail 138.03 (hwm 153.37) |
+| Thu 11/19 | MMM | 14 | 177.95 → 177.08 | −$12.19 (−0.5%) | −0.05 | 20d | trail 177.21 (hwm 196.90) |
 
-- **8/8 open (C2 full since Mon 11/9).** Market value $18,789.88 (18.7%), cash 81.3%. Total unrealized +$309.60. Open risk to trails ≈ $1,413 (1.41%).
-- All 8 GTC 10% trailing stops re-verified live on Alpaca this run (status `new`).
-- Nothing at S2 (−7%) or S3 (+15%).
+**What the open routine rejected** (decisions recovered from the unmerged branches):
 
-**Thesis check:**
-- All eight still on thesis. No guidance cuts, downgrades or thesis-breaking news logged this week.
-- **MMM:** the stop ($0.74 under entry) got there through progress (+10.6% peak on 11/5), not drift. It has since slid to +3.2% and is 3.5% above its trail — the likeliest next exit, near breakeven. It's the only name that lost ground this week.
-- **ELV:** printed 442 after hours Friday (+2.3% vs the 432 close). Cause unknown; Monday premarket should check. It also carries two of its own lawsuits (vs CMS on 2027 MA star ratings, filed 11/6).
-- **CTAS:** FTC/UniFirst decision ~mid-December is the binary risk named at entry.
-- **NOC:** best week (+4.8%); the post-election defense-budget worry hasn't shown up in price.
-- **No position is flat long enough to trip the 30-day rule** (oldest is 10 trading days).
+| Day | Ticker | Reason | Ref/live → 11/20 close | Avoided (approx.) |
+|---|---|---|---|---|
+| Thu 11/19 | UNP | volume 0.40× | 296.91 → 287.21 | ≈ −$78 |
+| Thu 11/19 | TXN | volume 0.53× + above chase | 299.60 → 263.95 (−11.9%) | ≈ −$240 (trail would have hit ≈ 269.6) |
+| Thu 11/19 | TJX | 4EMA stack inverted | 138.48 → 139.69 | ≈ +$20 (missed) |
+| Fri 11/20 | TJX | above chase (142.20 vs 141.58) | 142.20 → 139.69 | ≈ −$43 |
+| Fri 11/20 | WMT | above chase (129.27 vs 127.93) | 129.27 → 128.04 | ≈ −$23 |
+| Fri 11/20 | UNP | 4EMA stack broken | 293.72 → 287.21 | ≈ −$52 |
+
+Net, the open-routine gates kept ≈ $400 (≈ 0.4% of equity) off the table in a −8% week.
+
+### Open positions (11/20 close)
+| Ticker | Qty | Cost | Current | Unrl % | Days | Trail stop (hwm) | S2 line |
+|---|---|---|---|---|---|---|---|
+| DHR | 10 | 236.01 | 220.36 | −6.63% | 15 | 214.61 (238.45) | 219.49 |
+| KO | 26 | 94.76 | 97.00 | +2.36% | 14 | 90.50 (100.56) | 88.13 |
+| NOC | 4 | 540.06 | 534.31 | −1.06% | 12 | 502.20 (558.00) | 502.26 |
+| CTAS | 11 | 222.48 | 219.53 | −1.33% | 9 | 207.42 (230.47) | 206.91 |
+| LIN | 4 | 514.29 | 501.72 | −2.44% | 9 | 477.32 (530.35) | 478.29 |
+
+- **5/8 open.** Market value $11,284.52 (11.3%), cash 88.7%. Total unrealized −$204.10. Open risk to trails ≈ $878 (0.88%).
+- All 5 GTC 10% trailing stops re-verified live on Alpaca this run (status `new`; hwm unchanged).
+- Nothing at S3. **DHR is 0.4% above S2.**
+
+### Step 4 — Closed trades, one by one
+- **ELV:**
+  - Entry framework: F+T half size; held up at entry (Q3 beat, FY guide raised, above 50d).
+  - Catalyst: none forward. The print had already happened. What arrived instead was the CMS CRUSH Medicare Advantage audit proposal (11/17), a sector regulatory shock. ELV was already suing CMS over star ratings, so managed care had a live regulatory headwind at entry, which the universe filter says to avoid. That was a judgment miss, not a rule breach.
+  - Exit: correct. The trail fired at −5.2% before S2 was needed.
+- **MRK:**
+  - Entry framework: F+T half size; held up at entry.
+  - Catalyst: none. It lost the 50d on 11/16, and the BELLWAVE program was discontinued 11/17. Premarket flagged both as weakening but didn't call the thesis broken (exit trigger #4). Selling at the 11/18 open (≈ 141.79) instead of the trail (138.00) would have saved ≈ $61. One pipeline cut doesn't clearly break a beat-and-raise thesis, so I'd make the same call again. But the record should say it cost $61.
+  - Exit: correct by rule. The fill was within 3¢ of the trail, at the 14:00 ET FOMC-minutes print.
+- **MMM:**
+  - Entry framework: F+T half size; worked. It ran to +10.6% (hwm 196.90) by 11/4.
+  - Catalyst: none forward.
+  - Exit: correct by rule, but the rule left money on the table. With the proposed intermediate S3 (7% trail at ≥ +10%), the stop would have been 183.12 and the exit ≈ +$72 instead of −$12, about **$85 better**. That's the third week this gap has shown up.
+
+**Pattern:** all 3 losers were post-earnings F+T entries with no forward catalyst, held 12–20 days through a sector-led selloff. n=3 is too small to call the catalyst-less half-size setup broken, but it is the only setup the account has ever traded (8 of 8 entries). Once 10 have closed, compare its hit rate and avg R before the user widens deployment.
+
+**Open positions, thesis check:**
+- **DHR:** −6.63%, 15 days, hwm only +1.0% over entry. It's drifting without progress, not creeping. Its trail (214.61) sits *below* S2 (219.49), so **Mon midday must cut it if it's ≤ −7%.** Thesis (life-sciences recovery) not broken by news (Microsoft lab-automation partnership 11/20), but price says otherwise.
+- **KO:** on thesis, the only green name.
+- **NOC:** on thesis; −1.1%.
+- **CTAS:** on thesis. The FTC/UniFirst suit is still the binary risk; HSR timing agreement runs to **Dec 11**.
+- **LIN:** on thesis (Kepler upgrade 11/19); −2.4%.
+- **No trail is near entry without progress.** All five trails sit 6–10% under entry.
 
 ### What worked
-- **Rules held all week.** Every gate passed on both entries: P1–P4, C1 (2/3), C2 (stopped further entries at 8/8), S1/S4 (each OTO static leg swapped to a GTC 10% trail in the same run), A1–A6, D1–D5. The CPI D3 blackout on Tue 11/10 was respected.
-- **The volume leg was measured on both entries** (CTAS 3.18×, LIN 1.74×) — last week's process gap is closed. The `bull-open` trigger fired on time all week.
-- **Diversification.** CTAS (industrial services) and LIN (materials) were picked over more health care; HC is 3 of 8.
-- **Selection was positive in absolute terms:** 7 of 8 names up on the week, the book +1.75%.
-- **Calendar work was accurate:** CPI was confirmed for Tue 11/10 (BLS) despite one outlier source saying 11/12; NFP was sourced (+165K).
+- **Every rule held through the worst week since inception:**
+  - The trails exited three names for −0.30% of equity total, each loss ≤ 0.17% of equity.
+  - D1/D4/D5 never close; S2 never needed.
+  - C1 unused; P1–P4 clean on everything queued.
+- **The open routine's gates did what the missing regime gate couldn't.** Volume, chase limit and the 4EMA check rejected all 6 queued names; TXN alone would have fallen 11.9% from its would-be fill. Each rejection was logged with numbers, and the routine didn't re-read volume later to manufacture a pass.
+- **Premarket's regime awareness:** on Fri it deliberately queued 2 of 3 open slots and stated the regime risk on every name.
+- **Defensive selection:** book −4.26% vs SPY −8.43%.
+- **Research process:** EDGAR 8-Ks for guidance claims (TJX/WMT/LOW), Alpaca news for same-day causes (CMS CRUSH). The LOW tariff-refund beat was correctly not counted as a raise.
 
 ### What didn't
-- **The account lagged a strong up week by 2.2 pts.** This is the structural problem, not a one-off: **half-size entries × C2 = 8 slots caps deployment at ~20%**. With C2 full since Monday, the account was locked at 81% cash for the whole rebound and could not add exposure even though UNP passed every gate on 11/9. Even full-size entries under P1 (5%) would cap the account at 40%.
-- **The book was low-beta on the way up too.** +1.75% vs SPY +2.57% and QQQ +3.61%. All-defensive names (staples, health care, defense, industrials) don't keep up in a rebound led by tech.
-- **The intraday peak was missed.** The $100,448.15 high on 11/12 wasn't caught by midday/EOD; only a 15-min history scan found it. Harmless at −0.15% drawdown, but D5 is computed from the peak.
-- **MMM keeps leaking:** +4.7% → +3.2% this week with no rule acting (still the intermediate-S3 gap).
-- **None of last week's four proposals has been acted on yet** (no user commits to RULES/STRATEGY/routines since 11/6; issue #15 has no comments). The DST cron fix has a hard deadline: 2027-03-14.
+- **0 for 3 on closed trades, −0.43R average.** All three were catalyst-less post-earnings holds that the sector tide took out.
+- **ELV was entered into a sector with a live regulatory dispute,** and the universe filter should have caught it.
+- **MMM round-tripped a +10.6% gain to −0.5%.** This is the intermediate-S3 gap, now costed at ≈ $85.
+- **Ops: open-routine records never reached `main`.** Midday and EOD on 11/19–11/20 logged the open routine as "silent, no commit". It did commit and push, but to its session branch. **6 of 10 open-routine commits since 11/5 are only on `claude/brave-shannon-*` branches**, sitting in unmerged draft PRs #12, #17, #21, #25, #28, #30. Probable cause: the `bull-open` trigger has no Step 0 that clones `main` to `/tmp/dreamcatcher`, as premarket does. It works in the session checkout and runs `git push origin main`, which doesn't push the session-branch HEAD. Its Step 7 ("exit silently") adds to the confusion.
+- **A gate drifted from the docs:** the `bull-open` trigger checks a "4EMA stack" that STRATEGY.md leg 3 doesn't list. It's protective (it rejected TJX and UNP), but it's a gate the user never wrote into the playbook.
 
-### Self-grade: **D**
-The rubric is clear: excess vs SPY was −2.22%, with no rule violations, so D. About 2.1 of the 2.22 pts are cash drag that the current rulebook makes unavoidable once C2 is full at half size, and the book itself was up 1.75% with 7 of 8 names green, so the decisions weren't bad. But I graded W45 down from A to B because its excess was mostly cash; the same logic has to cut the other way now, and I don't round up. Two-week excess is +0.61%, which is roughly the honest picture: the strategy has neither beaten nor lost to SPY meaningfully yet, and with 18% deployed it can't do much of either.
+### Self-grade: **B**
+By the letter of the rubric this is an A: +7.63% excess, no rule violations, learnings logged. I'm not taking it. In W45 I cut a cash-driven +2.76% from A to B, and in W46 I wouldn't round a cash-driven −2.22% up. The same logic applies here. About 6.85 of the 7.63 pts came from holding 81–89% cash during an −8.4% SPY week, which is the rulebook's deployment ceiling, not a decision I made. What I can claim:
+- The book beat SPY by 4.2 pts.
+- Every exit was mechanical and small.
+- The open gates avoided ≈ $400 of entries into the slide.
+
+Against that:
+- All three closed trades lost.
+- ELV went into a sector with a live regulatory fight.
+- The account's own records were split across six unmerged branches without anyone noticing for two weeks.
+
+Good risk control and decent decisions, with a selection record that isn't proven yet: a B.
 
 ### Strategy adjustments proposed (PROPOSALS — not applied)
-1. **Fix the deployment ceiling (new, most important).** Half-size entries in 8 slots cap the account at ~20% invested. That guarantees large negative excess in any up market and makes the score mostly a function of SPY's direction. Options for the user:
-   - (a) Default to **full size** (1.0% risk, still ≤ 5% notional per P1) when F+T both pass and the name's RSI/trend are clean; keep half size for marginal setups.
-   - (b) Keep half size but raise **C2 to 12** so more names can be held.
-   - (c) Status quo, and accept that the account is a ~20%-beta portfolio (then compare it to 0.2 × SPY, not SPY).
-
-   I lean (a): it doubles deployment without adding names to track, and P1/P3/S1/S2 still bound the risk per trade.
-2. **Index-regime gate (still open, issue #13).** SPY recovered to 754.27 but is still ~1% under its 50d; QQQ ~4% under. Unchanged recommendation: (b), at most 1 entry/week while SPY < 50d. Note this pulls the opposite way from proposal 1 — the user should decide both together.
-3. **Intermediate S3 step (carried over).** Tighten to a 7% trail at ≥ +10%. MMM is the live example again this week.
-4. **DST-proof the trigger crons (carried over).** Move all five to `CRON_TZ=America/New_York` before Sun 2027-03-14.
-5. **Track the intraday peak properly.** EOD should read today's 15-min portfolio history and take its max into `peak_equity`, not just the close and midday marks.
+1. **Fix where the open routine's commits go (new, ops, most urgent).** Give `bull-open` the same Step 0 as premarket (clone/pull `main` into `/tmp/dreamcatcher` and work there), or change its push to `git push origin HEAD:main`. Change Step 7's "exit silently" to "commit and push the rejection log regardless". Then merge or close draft PRs #12/#17/#21/#25/#28/#30; their content is summarized in research_log so closing them loses nothing material. Check `bull-midday` too: it also lacks Step 0, though its commits have been reaching main.
+2. **Codify or drop the 4EMA-stack check (new).** It's in the open trigger prompt but not in STRATEGY.md leg 3. I lean toward codifying it, since it rejected TJX/UNP correctly this week, so the playbook and the executor agree.
+3. **Index-regime gate (issue #13, still open, now urgent).** SPY is **−9.2% under its 50d** (760.21) and QQQ −14.2%. Per-name gates found 6 candidates in this tape. The open routine's gates caught them, but by luck of construction. Recommendation unchanged: at most 1 new entry/week while SPY < its 50d.
+4. **Deployment ceiling (W46 #1, still open).** This week shows the other side: the ~20% ceiling saved ≈ 6.9 pts. Decide it together with #3, for example full size only when SPY > its 50d and half size below it.
+5. **Intermediate S3 (carried, now costed).** A 7% trail at ≥ +10% would have turned MMM's −$12 into ≈ +$72.
+6. **Universe filter: name the managed-care/MA regulatory risk explicitly (new, small).** "Active major regulatory headwind" should include a pending CMS rule or lawsuit against the regulator. ELV had both at entry.
+7. **DST-proof the trigger crons (carried).** Move all five triggers to `CRON_TZ=America/New_York` before Sun 2027-03-14.
 
 ### Lessons added to learnings.md
-- [risk] Half size × 8 slots caps deployment at ~20%, so in an up week the score is set by SPY's direction, not by picks. Read the excess as mostly a beta readout until the user changes sizing or C2.
-- [ops] Peak equity must come from the 15-min portfolio history, not routine snapshots — W46 found an unrecorded intraday peak.
+- [ops] "Silent" routine ≠ no commit: check `git branch -r` for `claude/*` branches and open draft PRs before calling a routine silent. 6 of 10 open-routine commits never reached main.
+- [entry] In a sub-50d tape, the open routine's chase/volume/EMA gates rejected 6/6 queued names and avoided ≈ $400. Don't loosen chase limits or re-read volume to get a fill, and don't let premarket's "passes all gates" stand in for a regime check.
+- [exit] First 3 closed trades: 0/3, −0.43R, all catalyst-less F+T holds exited by the trail. The intermediate-S3 gap is now quantified (MMM ≈ $85).
 
-### Notes for next week (2026-W47)
+### Notes for next week (2026-W48, Thanksgiving)
+- **Monday item:** DHR closed 220.36, 0.4% above S2 (219.49). Mon midday cuts it if it's ≤ −7%; its trail (214.61) won't catch it.
 - **Calendar:**
-  - Mon 11/16: C1 resets to 0/3, but **C2 is 8/8** — entries only if a stop fills.
-  - HD reports ~Tue 11/17; LOW and WMT ~Wed/Thu 11/18–19 (retail read-throughs; KO is the only consumer name held).
-  - NVDA earnings are likely the week of 11/16 or 11/23 — confirm; it drives QQQ and the regime question.
-  - Next D3: **FOMC Wed 12/9** (25 bp hike ~86% priced after hot CPI/PPI). Thanksgiving week follows (11/26 closed, 11/27 half day).
-- **Open positions:**
-  - MMM is 3.5% above its 177.21 trail — likeliest exit, near breakeven.
-  - ELV +2.3% after hours Friday: find the cause in Monday premarket.
-  - DHR (−1.27%) is the weakest; nothing near S2.
-- **Watchlist priorities (if a slot opens):**
-  - UNP #1 (passed every gate 11/9; only C2 blocked it).
-  - TXN #2 (T holds; semis read-through from AMAT mixed).
-  - SPGI #3 (F+T ✅; volume was 0.21× on 11/9, A5 near the floor).
-  - TMO/UNH watch-only (HC concentration); MA/ICE watch-only until a raise is confirmed.
-- **Regime:** SPY ~1% under its 50d, QQQ ~4% under. Still no regime gate pending the user's call on issue #13.
+  - No D3 day. Thu 11/26 closed; Fri 11/27 closes 13:00 ET.
+  - Earnings: ZM Mon AMC; MDT/ADI Tue BMO; WDAY/DELL/HPQ Tue AMC; DE Wed.
+  - Wed 11/25 08:30: Q3 GDP 2nd estimate + October PCE, a rates mover with a Dec hike priced.
+  - Next D3: **FOMC Wed 12/9**; Nov NFP presumably Fri 12/4 (confirm).
+  - CTAS: HSR timing agreement ends **Dec 11** (FTC suit risk).
+- **Capacity:** C1 0/3, C2 5/8 (6/8 slots free if DHR is cut).
+- **Watchlist priorities:**
+  - **WMT #1:** F+T ✅; was only blocked by the chase; closed 128.04. Re-base the entry ref.
+  - **TJX #2:** chase-blocked; 4EMA stack still inverted.
+  - **UNP:** watch-only until its EMA stack repairs; 287.21 is now under its 50d (≈ 288), so premarket's "drop if under 50d" rule applies.
+  - **TXN:** drop. It closed 263.95, well under its 50d.
+  - SPGI, TMO, ICE, MA, LOW: watch-only as before.
+- **Regime:** SPY −9.2% under its 50d, QQQ −14.2%, after an −8.4% week. Every queue should restate it until the user rules on #13.
