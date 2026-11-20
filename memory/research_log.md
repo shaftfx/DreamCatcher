@@ -636,6 +636,16 @@ Queue for Wed 11/4 (Tue 11/3 is the midterm election, so the plan is no entry Tu
 
 **Ops ⚠️ still unfixed (checked list_triggers this run):** `bull-open` is still `35 13 * * 1-5` UTC = 08:35 ET (55 min pre-open) and its inline prompt still says "Do NOT check intraday volume", out of sync with `routines/open.md`. Needs the user: `CRON_TZ=America/New_York 35 9 * * 1-5` + prompt sync.
 
+### 2026-11-20 17:42 UTC — MIDDAY — POSITION MANAGEMENT (Fri, no actions; DHR 1.2% from S2)
+
+**Account (`paper-api`, O5 ✅):** equity $99,632.20, day +$25.44 (+0.03%) vs SPY −2.18% (IEX 700.25, near its 699.33 low). D1 clear (cap −$1,992.14); D5 clear (−0.84% from $100,475.28 peak). Cash = BP $88,214.62, multiplier 1 (A4 ✅). `halt_today` stays NO.
+
+**Orders since EOD 11/19:** none placed, filled or cancelled. The open routine fired 14:35 UTC and finished OK in ~2 min, but bought neither TJX nor WMT and pushed no commit — second day running with no record of why.
+
+**S2 (−7%):** none. **DHR −5.88%** (222.14, at its 222.11 day low; S2 219.49 is 1.2% away). The 10% trail (214.61) sits below S2, so a breach this afternoon won't be caught until Mon midday. DHR/Microsoft lab partnership headline 13:01 UTC; nothing thesis-breaking. **S3 (+15%):** none; best KO +2.87%. **S4:** all 5 SELL trailing stops (10%, GTC, status `new`) verified; no hwm moved.
+
+**For EOD/weekly:** if DHR closes ≤ 219.49, flag for Mon midday cut. Open-routine silent no-op remains the top ops item for the weekly review.
+
 ### 2026-11-20 11:10 UTC — PREMARKET — WATCHLIST REFRESH + QUEUE (Fri, not D3, 3 slots open, 2 queued)
 
 **Clock:** fired 06:10 ET (Alpaca clock), market closed, opens 09:30 ET. Timing correct. **Account (`paper-api`, O5 ✅):** ACTIVE. Equity $99,648.34 pre-open; last_equity $99,606.76 (EOD logged $99,612.15). Cash = BP $88,214.62, multiplier 1 (A4 ✅). LMV $11,433.72. Flags all NO. Drawdown −0.82% from the $100,475.28 peak (D5 clear). All 5 GTC 10% trails live (status `new`); no hwm moved, no fills since EOD. Perplexity not used (no key in env). News from Alpaca's news endpoint; WMT guidance from the SEC 8-K (EDGAR full-text search); calendar from WebSearch (still nothing indexed for 11/20 premarket futures).

@@ -9,8 +9,8 @@
 - **Prior EOD (UTC):** 2026-11-18 21:17. Close equity $99,766.32 (−0.28% vs SPY −0.28%)
 - **Premarket refresh (UTC):** 2026-11-20 11:10 (premarket routine, 06:10 ET Fri; Alpaca clock confirms closed, opens 09:30). Pre-open equity $99,648.34 (Alpaca last_equity $99,606.76, re-marked from the $99,612.15 EOD read). Cash $88,214.62 = BP, multiplier 1 ✅; LMV $11,433.72. Drawdown −0.82% from the $100,475.28 peak (D5 clear, trigger ≤ $90,427.75). 5/8; all 5 GTC 10% trails live (status `new`); no hwm moved; no orders filled since EOD. Fri 11/20 not D3; C1 0/3, C2 5/8 → TJX/WMT queued half (UNP alternate), see research_log
 - **Prior premarket refresh (UTC):** 2026-11-19 11:08. Pre-open equity $99,781.58; 6/8
-- **Midday refresh (UTC):** 2026-11-19 17:43 (midday routine, 12:43 ET Thu; Alpaca clock confirms open). Equity $99,631.20 (day −$137.82 / −0.14% vs last_equity $99,769.02; D1 clear, cap −$1,995.38). Cash $88,214.69 = BP, multiplier 1 ✅; LMV $11,416.51. Drawdown −0.84% from the $100,475.28 peak (D5 clear, trigger ≤ $90,427.75). **MMM stopped out** on its 10% trail at 17:06 UTC (14 @ 177.08, −$12.19). 5/8; all 5 remaining GTC 10% trails live (status `new`, no hwm moved). Nothing at S2/S3, no actions. **Open routine placed no orders today** (UNP/TXN/TJX not bought) and pushed no commit, so the reason is unrecorded. SPY 723.62 (−0.92% IEX)
-- **Prior midday refresh (UTC):** 2026-11-18 17:42 (12:42 ET Wed). Equity $99,827.02 (−0.22%); 8/8; no actions
+- **Midday refresh (UTC):** 2026-11-20 17:42 (midday routine, 12:42 ET Fri; Alpaca clock confirms open). Equity $99,632.20 (day +$25.44 / +0.03% vs last_equity $99,606.76; D1 clear, cap −$1,992.14). Cash $88,214.62 = BP, multiplier 1 ✅; LMV $11,417.58. Drawdown −0.84% from the $100,475.28 peak (D5 clear, trigger ≤ $90,427.75). 5/8; all 5 GTC 10% trails live (status `new`, no hwm moved); no orders placed or filled since EOD 11/19. Nothing at S2/S3, no actions. **DHR −5.88% (222.14), 1.2% above its S2 line 219.49, at its intraday low.** Open routine again placed no orders (TJX/WMT not bought) and pushed no commit. SPY 700.25 (−2.18% IEX) → ≈ +2.21% excess
+- **Prior midday refresh (UTC):** 2026-11-19 17:43 (12:43 ET Thu). Equity $99,631.20 (−0.14%); MMM trail stop-out; 5/8
 - **Open-routine refresh (UTC):** 2026-11-18 14:35 (open routine, 09:35 ET Wed; Alpaca clock confirms open). Equity $99,953.26 (day −$96.23 / −0.10% vs last_equity $100,049.49; D1 clear). Cash $81,509.68 = BP, multiplier 1 ✅; LMV $18,443.58. Drawdown −0.52% from the $100,475.28 peak (D5 clear). 8/8; all 8 GTC 10% trails live (status `new`, no hwm moved); no orders filled. No entries: nothing queued, C2 full. Marks: DHR 228.63 (−3.13%), MRK 141.79 (−4.72%, S2 138.40 is 2.4% away), ELV 430.85 (+1.17%), KO 98.71, NOC 542.91, CTAS 221.79, LIN 511.27, MMM 179.40
 - **Earlier refresh (UTC):** 2026-11-16 11:09 (premarket routine, 06:09 ET Mon). Pre-open equity $100,365.19 (last_equity $100,298.83). Cash $81,509.68 = BP, multiplier 1 ✅; LMV $18,855.51. Drawdown −0.08% from the $100,448.15 peak (D5 clear). 8/8; all 8 GTC 10% trails live; no orders filled since Fri EOD
 - **Cash:** $88,214.62 (Alpaca premarket 11/20; EOD 11/19 read $88,214.69)
@@ -36,6 +36,18 @@
 | LIN | 4 | 514.29 | 2026-11-09 | 2,057.16 | 477.32 (hwm 530.35) | 617.15 | 161 | Q3 adj EPS +9%, FY26 guide raised to $17.82–17.92; materials diversifier (half size, F+T) |
 
 Open positions: **5/8 (3 slots open)**. MMM (14 @ 177.08, −$12.19) stopped out on its 10% trail (stop 177.21, hwm 196.90) at 17:06 UTC 11/19. ELV and MRK stopped out 11/18. All 5 remaining GTC 10% trailing stops re-verified live on Alpaca at 21:16 UTC 11/19 (EOD routine) (S1/S4 ✅). "Risk $ at stop" = (entry − current trail) × qty.
+
+### Midday snapshot (2026-11-20 17:42 UTC, 12:42 ET, Alpaca marks)
+
+| Ticker | Current | Unrealized P&L | % from entry | Intraday $ | S2 (−7%) | Alpaca trail stop (hwm) |
+|---|---|---|---|---|---|---|
+| DHR | 222.14 | −$138.70 | −5.88% | −$54.20 | 219.49 | 214.61 (238.45) |
+| KO | 97.49 | +$70.78 | +2.87% | +$36.27 | 88.13 | 90.50 (100.56) |
+| NOC | 539.80 | −$1.04 | −0.05% | −$10.04 | 502.26 | 502.20 (558.00) |
+| CTAS | 224.32 | +$20.19 | +0.83% | +$59.35 | 206.91 | 207.42 (230.47) |
+| LIN | 508.73 | −$22.26 | −1.08% | −$5.94 | 478.29 | 477.32 (530.35) |
+
+Total unrealized −$71.04. Day +$25.44 (+0.03%) vs SPY −2.18% (715.84 → 700.25 IEX; day range 699.33–718.26) → ≈ +2.21% excess, mostly the 88.5% cash. Nothing at S2 (≤ −7%) or S3 (≥ +15%); no orders placed or cancelled. **DHR is the watch item**: −5.88%, trading at its day low (222.11; prior close 227.62), 1.2% above S2 219.49. Its 10% trail (214.61) sits *below* the S2 line, so a slide through 219.49 this afternoon is not caught automatically; the next midday (Mon 11/23) cuts it if it is ≤ −7% then. News: DHR announced a Microsoft lab-automation partnership 13:01 UTC (not thesis-breaking). CTAS +$59 intraday, KO +$36. All 5 GTC 10% trails live (S1/S4 ✅).
 
 ### Premarket snapshot (2026-11-20 11:10 UTC, Alpaca pre-open marks)
 
