@@ -636,6 +636,12 @@ Queue for Wed 11/4 (Tue 11/3 is the midterm election, so the plan is no entry Tu
 
 **Ops ⚠️ still unfixed (checked list_triggers this run):** `bull-open` is still `35 13 * * 1-5` UTC = 08:35 ET (55 min pre-open) and its inline prompt still says "Do NOT check intraday volume", out of sync with `routines/open.md`. Needs the user: `CRON_TZ=America/New_York 35 9 * * 1-5` + prompt sync.
 
+### 2026-11-20 21:16 UTC — EOD — RECAP (Fri; DHR 0.4% above S2 into Monday)
+
+**Account (`paper-api`):** close equity $99,499.14, day −0.11% vs SPY −3.51% (690.68 IEX) / QQQ −5.48% → +3.40% excess. Week −0.80% vs SPY −8.43%. D1/D4/D5 clear (drawdown −0.97%). No orders placed or filled today; open routine again no-op'd on TJX/WMT (TJX +0.15%, WMT +1.59% on the day).
+
+**For Mon 11/23 midday:** **DHR closed 220.36 (−6.63%)**, IEX low 219.95, 0.4% above S2 219.49. Trail 214.61 sits below S2. If DHR is ≤ 219.49 at Mon midday, S2 cuts it. Regime: SPY now ~−9% under its 50d after a −8.4% week; any queue for Mon should restate the regime risk (issue #13).
+
 ### 2026-11-20 17:42 UTC — MIDDAY — POSITION MANAGEMENT (Fri, no actions; DHR 1.2% from S2)
 
 **Account (`paper-api`, O5 ✅):** equity $99,632.20, day +$25.44 (+0.03%) vs SPY −2.18% (IEX 700.25, near its 699.33 low). D1 clear (cap −$1,992.14); D5 clear (−0.84% from $100,475.28 peak). Cash = BP $88,214.62, multiplier 1 (A4 ✅). `halt_today` stays NO.

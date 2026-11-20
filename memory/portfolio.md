@@ -5,23 +5,23 @@
 ## Account
 
 - **Mode:** paper
-- **Last refresh (UTC):** 2026-11-19 21:16 (EOD routine, 16:16 ET Thu; Alpaca clock confirms closed). Close equity $99,612.15 (day −$156.87 / −0.16% vs last_equity $99,769.02) vs SPY −1.98% (730.33 → 715.84 IEX) → **+1.83% excess**. Cash $88,214.69 = BP, multiplier 1 ✅; LMV $11,397.46. Drawdown −0.86% from the $100,475.28 peak (D5 clear, trigger ≤ $90,427.75). **MMM stopped out** (midday-logged, −$12.19). 5/8; all 5 GTC 10% trails live; no hwm moved. Week to date −0.69% vs SPY −5.10% (D4 clear)
-- **Prior EOD (UTC):** 2026-11-18 21:17. Close equity $99,766.32 (−0.28% vs SPY −0.28%)
+- **Last refresh (UTC):** 2026-11-20 21:16 (EOD routine, 16:16 ET Fri; Alpaca clock confirms closed, next open Mon 11/23 09:30). Close equity $99,499.14 (day −$107.62 / −0.11% vs last_equity $99,606.76) vs SPY −3.51% (715.84 → 690.68 IEX) → **+3.40% excess**. Cash $88,214.62 = BP, multiplier 1 ✅; LMV $11,284.52. Drawdown −0.97% from the $100,475.28 peak (D5 clear, trigger ≤ $90,427.75). No orders placed or filled today. 5/8; all 5 GTC 10% trails live; no hwm moved. **DHR closed 220.36 (−6.63%), 0.4% above S2 219.49.** Week −0.80% vs SPY −8.43% (D4 clear)
+- **Prior EOD (UTC):** 2026-11-19 21:16 (EOD routine, 16:16 ET Thu; Alpaca clock confirms closed). Close equity $99,612.15 (day −$156.87 / −0.16% vs last_equity $99,769.02) vs SPY −1.98% (730.33 → 715.84 IEX) → **+1.83% excess**. Cash $88,214.69 = BP, multiplier 1 ✅; LMV $11,397.46. Drawdown −0.86% from the $100,475.28 peak (D5 clear, trigger ≤ $90,427.75). **MMM stopped out** (midday-logged, −$12.19). 5/8; all 5 GTC 10% trails live; no hwm moved. Week to date −0.69% vs SPY −5.10% (D4 clear)
 - **Premarket refresh (UTC):** 2026-11-20 11:10 (premarket routine, 06:10 ET Fri; Alpaca clock confirms closed, opens 09:30). Pre-open equity $99,648.34 (Alpaca last_equity $99,606.76, re-marked from the $99,612.15 EOD read). Cash $88,214.62 = BP, multiplier 1 ✅; LMV $11,433.72. Drawdown −0.82% from the $100,475.28 peak (D5 clear, trigger ≤ $90,427.75). 5/8; all 5 GTC 10% trails live (status `new`); no hwm moved; no orders filled since EOD. Fri 11/20 not D3; C1 0/3, C2 5/8 → TJX/WMT queued half (UNP alternate), see research_log
 - **Prior premarket refresh (UTC):** 2026-11-19 11:08. Pre-open equity $99,781.58; 6/8
 - **Midday refresh (UTC):** 2026-11-20 17:42 (midday routine, 12:42 ET Fri; Alpaca clock confirms open). Equity $99,632.20 (day +$25.44 / +0.03% vs last_equity $99,606.76; D1 clear, cap −$1,992.14). Cash $88,214.62 = BP, multiplier 1 ✅; LMV $11,417.58. Drawdown −0.84% from the $100,475.28 peak (D5 clear, trigger ≤ $90,427.75). 5/8; all 5 GTC 10% trails live (status `new`, no hwm moved); no orders placed or filled since EOD 11/19. Nothing at S2/S3, no actions. **DHR −5.88% (222.14), 1.2% above its S2 line 219.49, at its intraday low.** Open routine again placed no orders (TJX/WMT not bought) and pushed no commit. SPY 700.25 (−2.18% IEX) → ≈ +2.21% excess
 - **Prior midday refresh (UTC):** 2026-11-19 17:43 (12:43 ET Thu). Equity $99,631.20 (−0.14%); MMM trail stop-out; 5/8
 - **Open-routine refresh (UTC):** 2026-11-18 14:35 (open routine, 09:35 ET Wed; Alpaca clock confirms open). Equity $99,953.26 (day −$96.23 / −0.10% vs last_equity $100,049.49; D1 clear). Cash $81,509.68 = BP, multiplier 1 ✅; LMV $18,443.58. Drawdown −0.52% from the $100,475.28 peak (D5 clear). 8/8; all 8 GTC 10% trails live (status `new`, no hwm moved); no orders filled. No entries: nothing queued, C2 full. Marks: DHR 228.63 (−3.13%), MRK 141.79 (−4.72%, S2 138.40 is 2.4% away), ELV 430.85 (+1.17%), KO 98.71, NOC 542.91, CTAS 221.79, LIN 511.27, MMM 179.40
 - **Earlier refresh (UTC):** 2026-11-16 11:09 (premarket routine, 06:09 ET Mon). Pre-open equity $100,365.19 (last_equity $100,298.83). Cash $81,509.68 = BP, multiplier 1 ✅; LMV $18,855.51. Drawdown −0.08% from the $100,448.15 peak (D5 clear). 8/8; all 8 GTC 10% trails live; no orders filled since Fri EOD
-- **Cash:** $88,214.62 (Alpaca premarket 11/20; EOD 11/19 read $88,214.69)
-- **Equity:** $99,612.15 at the 11/19 close (11/18 close $99,766.32; 11/17 $100,064.43; Fri 11/13 close $100,299.56)
-- **Long market value:** $11,397.46 at the 11/19 close (11.4% deployed; cash 88.6%)
-- **Peak equity:** $100,475.28 (Alpaca `/account` read by the open routine at 09:35 ET Mon 11/16; the 15-min portfolio history tops out at $100,430.58 for the day, but the higher Alpaca reading is adopted because it is the conservative choice for D5). Prior peak $100,448.15 intraday 11/12; best close $100,356.36 on 11/11. Drawdown −0.86% at the 11/19 close (D5 trigger ≤ $90,427.75). 11/19 15-min range $99,587.39–$99,693.67, no new peak
-- **Buying power:** $88,214.69 (= cash), multiplier 1× ✅ (RULES.md A4)
+- **Cash:** $88,214.62 (Alpaca EOD 11/20)
+- **Equity:** $99,499.14 at the 11/20 close (11/19 close $99,612.15; 11/18 close $99,766.32; 11/17 $100,064.43; Fri 11/13 close $100,299.56)
+- **Long market value:** $11,284.52 at the 11/20 close (11.3% deployed; cash 88.7%)
+- **Peak equity:** $100,475.28 (Alpaca `/account` read by the open routine at 09:35 ET Mon 11/16; the 15-min portfolio history tops out at $100,430.58 for the day, but the higher Alpaca reading is adopted because it is the conservative choice for D5). Prior peak $100,448.15 intraday 11/12; best close $100,356.36 on 11/11. Drawdown −0.97% at the 11/20 close (D5 trigger ≤ $90,427.75). 11/20 15-min range $99,513.94–$99,742.57, no new peak
+- **Buying power:** $88,214.62 (= cash), multiplier 1× ✅ (RULES.md A4)
 
 ## Flags
 
-- `halt_today: NO` (reset by EOD 2026-11-19)
+- `halt_today: NO` (reset by EOD 2026-11-20)
 - `halt_until_human: NO`
 - `weekly_defensive: NO`
 
@@ -35,7 +35,19 @@
 | CTAS | 11 | 222.48 | 2026-11-09 | 2,447.28 | 207.42 (hwm 230.47) | 266.98 | 195 | Q1 FY27 beat, FY27 guide raised; FTC/UniFirst decision is a binary risk (half size, F+T) |
 | LIN | 4 | 514.29 | 2026-11-09 | 2,057.16 | 477.32 (hwm 530.35) | 617.15 | 161 | Q3 adj EPS +9%, FY26 guide raised to $17.82–17.92; materials diversifier (half size, F+T) |
 
-Open positions: **5/8 (3 slots open)**. MMM (14 @ 177.08, −$12.19) stopped out on its 10% trail (stop 177.21, hwm 196.90) at 17:06 UTC 11/19. ELV and MRK stopped out 11/18. All 5 remaining GTC 10% trailing stops re-verified live on Alpaca at 21:16 UTC 11/19 (EOD routine) (S1/S4 ✅). "Risk $ at stop" = (entry − current trail) × qty.
+Open positions: **5/8 (3 slots open)**. MMM (14 @ 177.08, −$12.19) stopped out on its 10% trail (stop 177.21, hwm 196.90) at 17:06 UTC 11/19. ELV and MRK stopped out 11/18. All 5 remaining GTC 10% trailing stops re-verified live on Alpaca at 21:16 UTC 11/20 (EOD routine) (S1/S4 ✅). "Risk $ at stop" = (entry − current trail) × qty.
+
+### EOD snapshot (2026-11-20 close)
+
+| Ticker | Close | Value | Unrealized P&L | % from entry | Day chg $ | Days held | S2 (−7%) | Alpaca trail stop (hwm) |
+|---|---|---|---|---|---|---|---|---|
+| DHR | 220.36 | $2,203.60 | −$156.50 | −6.63% | −$72.00 | 15 | 219.49 | 214.61 (238.45) |
+| KO | 97.00 | $2,522.00 | +$58.17 | +2.36% | +$23.66 | 14 | 88.13 | 90.50 (100.56) |
+| NOC | 534.31 | $2,137.24 | −$23.00 | −1.06% | −$32.00 | 12 | 502.26 | 502.20 (558.00) |
+| CTAS | 219.53 | $2,414.78 | −$32.50 | −1.33% | +$6.66 | 9 | 206.91 | 207.42 (230.47) |
+| LIN | 501.72 | $2,006.89 | −$50.27 | −2.44% | −$33.95 | 9 | 478.29 | 477.32 (530.35) |
+
+Total unrealized −$204.10. Market value $11,284.52 (11.3%); cash 88.7%. Day: account −$107.62 (−0.11%) vs SPY −3.51% (715.84 → 690.68 IEX, low 686.75) / QQQ −5.48% (645.10 → 609.75) → **+3.40% excess**. Book ≈ −$108 on ~$11.4k ≈ −0.95%, ~2.6 pts better than SPY (KO/CTAS green). No orders placed, filled or cancelled today. **DHR is the Monday item:** it slid from 222.14 at midday to 220.36 (IEX close 220.69, low 219.95), 0.4% above S2 219.49; its trail (214.61) won't catch an S2 breach, so Mon midday must cut it if ≤ −7% then. Nothing at S3. Week (Fri 11/13 → Fri 11/20): −0.80% vs SPY −8.43% (+7.63% excess); realized −$296.56 (ELV, MRK, MMM). Open routine placed no orders again (TJX/WMT queued); TJX closed +0.15%, WMT +1.59%. Days held = trading days since entry. All 5 trails live (status `new`); no hwm moved.
 
 ### Midday snapshot (2026-11-20 17:42 UTC, 12:42 ET, Alpaca marks)
 
@@ -667,7 +679,29 @@ Total unrealized −$109.13. All 3 GTC trailing stops are live (S1/S4 ✅). None
 
 Total unrealized −$119.62. Deployed $6,861.03 (6.9% of equity). Open risk to stops ≈ $678 (0.68%). Open positions 3/8 (C2).
 
-## Today's P&L (2026-11-18 close)
+## Today's P&L (2026-11-20 close)
+
+- Today open equity (last_equity): $99,606.76 → close equity: $99,499.14
+- Daily return: −0.11% (−$107.62)
+- SPY daily return: −3.51% (715.84 → 690.68, IEX); QQQ −5.48%
+- **Excess vs SPY: +3.40%**
+- Realized P&L today: $0 (no fills)
+- Drawdown from peak: −0.97% (D5 threshold −10%)
+- D1 daily loss cap: −0.11% > −2% → not breached
+
+## Week closed Fri 11/20 (Fri 11/13 close → Fri 11/20 close)
+
+- Week return: −0.80% ($100,299.56 → $99,499.14)
+- SPY week return: −8.43% (754.27 → 690.68, IEX)
+- Excess vs SPY: +7.63%
+- D4 weekly loss check: −0.80% > −5% → `weekly_defensive: NO`
+- Week of 11/23 starts with C1 0/3, C2 5/8
+
+## Prior day P&L (2026-11-19 close)
+
+- Close equity $99,612.15, daily −0.16% vs SPY −1.98% → +1.83% excess (see 11/19 EOD snapshot)
+
+## Prior day P&L (2026-11-18 close)
 
 - Today open equity (last_equity): $100,049.49 → close equity: $99,766.32
 - Daily return: −0.28% (−$283.17)
@@ -885,7 +919,8 @@ Total unrealized −$119.62. Deployed $6,861.03 (6.9% of equity). Open risk to s
 
 ## New entries this week
 
-- **Week of 11/16:** 0 / 3 so far. C2 is now 5/8 after the ELV/MRK (11/18) and MMM (11/19) trail stop-outs. The open routine placed nothing on Thu 11/19 (UNP/TXN queued; outcome not logged).
+- **Week of 11/23:** 0 / 3 (starts Mon). C2 5/8.
+- **Week of 11/16:** 0 / 3 (closed). C2 went 8/8 → 5/8 after the ELV/MRK (11/18) and MMM (11/19) trail stop-outs. The open routine placed nothing Thu 11/19 (UNP/TXN queued) or Fri 11/20 (TJX/WMT queued); outcome not logged either day.
 - **Week of 11/9:** 2 / 3 — CTAS and LIN on Mon 11/9. C2 is 8/8, so no further entries until a position closes.
 - Week of 11/2: 3 / 3 — MRK and KO on Mon 11/2, NOC on Wed 11/4.
 - Prior week (10/26): 3/3, DHR, ELV, MMM (all 2026-10-30).
