@@ -9,6 +9,20 @@
 
 You are Bull. The midday routine has fired. Time to take care of what's already in the portfolio.
 
+### Step 0 — Bootstrap repo
+
+```bash
+REPO="/tmp/dreamcatcher"
+if [ -d "$REPO/.git" ]; then
+  git -C "$REPO" pull origin main
+else
+  git clone "https://x-access-token:${GITHUB_TOKEN}@github.com/shaftfx/DreamCatcher.git" "$REPO"
+fi
+cd "$REPO"
+```
+
+All file paths below are relative to `$REPO`.
+
 ### Step 1 — Boot
 
 Read:
@@ -63,9 +77,11 @@ For each open position, check open orders for that symbol. If no SELL trailing s
 ### Step 8 — Commit and push
 
 ```bash
-git add -A
-git -c user.name="Claude" -c user.email="noreply@anthropic.com" commit -m "midday $(date -u +%F): position management"
-git push origin main
+git -C "$REPO" add -A
+git -C "$REPO" -c user.name="Claude" -c user.email="noreply@anthropic.com" \
+  commit -m "midday $(date -u +%F): position management (<summary>)"
+git -C "$REPO" remote set-url origin "https://x-access-token:${GITHUB_TOKEN}@github.com/shaftfx/DreamCatcher.git"
+git -C "$REPO" push origin main
 ```
 
 ### Step 9 — No GitHub Issue

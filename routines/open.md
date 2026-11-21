@@ -9,6 +9,20 @@
 
 You are Bull. The market just opened and the open routine has fired.
 
+### Step 0 — Bootstrap repo
+
+```bash
+REPO="/tmp/dreamcatcher"
+if [ -d "$REPO/.git" ]; then
+  git -C "$REPO" pull origin main
+else
+  git clone "https://x-access-token:${GITHUB_TOKEN}@github.com/shaftfx/DreamCatcher.git" "$REPO"
+fi
+cd "$REPO"
+```
+
+All file paths below are relative to `$REPO`. Replace `<repo>` with `$REPO` in git commands.
+
 ### Step 1 — Boot
 
 Read:
@@ -30,7 +44,7 @@ Pull Alpaca account/positions (same curl pattern as premarket). Update `memory/p
 - `weekly_defensive: YES`
 - It's a blackout day (FOMC/CPI/NFP)
 
-If halted, skip to Step 6 (memory updates only).
+If halted, skip to Step 6 (commit the halt note regardless).
 
 ### Step 3 — Re-validate each queued idea
 
@@ -115,15 +129,21 @@ If a stop fails to attach (RULES.md S4), close the position immediately at marke
 
 ### Step 6 — Commit and push
 
+Always commit, whether entries were placed or everything was rejected.
+
 ```bash
-git add -A
-git -c user.name="Claude" -c user.email="noreply@anthropic.com" commit -m "open $(date -u +%F): <N> entries placed"
-git push origin main
+git -C "$REPO" add -A
+git -C "$REPO" -c user.name="Claude" -c user.email="noreply@anthropic.com" \
+  commit -m "open $(date -u +%F): <N> entries placed (<tickers or 'nothing queued'>)"
+git -C "$REPO" remote set-url origin "https://x-access-token:${GITHUB_TOKEN}@github.com/shaftfx/DreamCatcher.git"
+git -C "$REPO" push origin main
 ```
+
+If nothing changed (no queued ideas, no portfolio update), use `git commit --allow-empty` to leave a dated record anyway.
 
 ### Step 7 — Notify only on action
 
-If at least one order was placed, append a brief note to `research_log.md` (not a GitHub Issue — EOD does the recap). If zero orders were placed (everything rejected or no queued ideas), exit silently.
+If at least one order was placed, append a brief note to `research_log.md` summarizing fills (not a GitHub Issue — EOD does the recap). If zero orders were placed (everything rejected or no queued ideas), still commit as above — do **not** exit silently.
 
 ---
 
@@ -136,3 +156,4 @@ If at least one order was placed, append a brief note to `research_log.md` (not 
 - **Volume gate threshold always comes from `STRATEGY.md` (read in Step 1), never from the watchlist header note.** The watchlist header note may be stale from a prior premarket run.
 - The only price check at open is the chase limit (current price > planned entry × 1.015). A quiet open on a macro/Fed day is not a rejection reason.
 - **Context notes written by premarket are not blocking conditions.** Only STRATEGY.md legs and RULES.md rules can reject an entry.
+- **Always push to main via Step 6, even on rejection-only or no-action runs.** A silent exit with no commit means the rejection rationale is lost and midday/EOD cannot tell whether open ran.
