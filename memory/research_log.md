@@ -634,6 +634,14 @@ Queue for Wed 11/4 (Tue 11/3 is the midterm election, so the plan is no entry Tu
 
 **Ops ⚠️ still unfixed (checked list_triggers this run):** `bull-open` is still `35 13 * * 1-5` UTC = 08:35 ET (55 min pre-open) and its inline prompt still says "Do NOT check intraday volume", out of sync with `routines/open.md`. Needs the user: `CRON_TZ=America/New_York 35 9 * * 1-5` + prompt sync.
 
+### 2026-11-23 21:16 UTC — EOD — RECAP (Mon; +0.24% vs SPY +4.62%, low-beta book lagged the rebound)
+
+**Account (`paper-api`):** close equity $99,749.96, day +0.24% vs SPY +4.62% (722.56 IEX) / QQQ +6.80% → −4.37% excess. Week (from Fri close) +0.25%. D1/D4/D5 clear (drawdown −0.72%). Entries: WMT 19 @ 127.46, TGT 13 @ 164.89 (open); no exits. 7/8, C1 2/3, all 7 trails live; WMT/TGT trails ratcheted (116.94 / 152.90).
+
+Recap issue: #33.
+
+**For Tue 11/24:** not D3. 1 C1 slot and 1 C2 slot left; nothing queued. TJX stays out until its 4EMA stack restacks. Premarket should recompute the regime: SPY bounced to 722.56 but is still well under its 50d (~760), so one green day doesn't change the regime note. DHR 226.10 (−4.20%) is 3.0% above S2; still the watch item. Tue: MDT/ADI BMO; WDAY/DELL/HPQ AMC. Wed: GDP + Oct PCE 08:30.
+
 ### 2026-11-23 14:40 UTC — OPEN — EXECUTION SUMMARY (2 entries: WMT, TGT; TJX rejected)
 
 **Clock:** fired 09:36 ET (Alpaca clock open, timing correct). **Account (`paper-api`, O5 ✅):** ACTIVE, equity $99,561.31 at 09:36 (last_equity $99,508.63), cash = BP $88,214.62, multiplier 1 (A4 ✅). **Halt checks:** `halt_today` NO, `halt_until_human` NO, `weekly_defensive` NO, D3 NO (Mon 11/23). C1 0/3, C2 5/8. All 5 existing GTC 10% trails live. The repo was worked from the session checkout (already at `main` 3cca5f1); the push goes to `main`.
