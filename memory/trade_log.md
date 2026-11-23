@@ -15,6 +15,8 @@ Append-only ledger. Every fill — entry or exit — gets one row. Never edit hi
 | 2026-11-18T19:00:39Z | trail (EOD logged) | SELL | ELV | 5 | 403.60 | — | — | — | −111.25 | 10% trailing stop hit (stop 403.69, hwm 448.54); CMS CRUSH Medicare Advantage audit proposal drove a −7.6% day. Held 13 days |
 | 2026-11-18T19:01:32Z | trail (EOD logged) | SELL | MRK | 16 | 138.00 | — | — | — | −173.12 | 10% trailing stop hit (stop 138.03, hwm 153.37); under 50d since 11/16, BELLWAVE program discontinued 11/17. Held 12 days |
 | 2026-11-19T17:06:04Z | trail (midday logged) | SELL | MMM | 14 | 177.08 | — | — | — | −12.19 | 10% trailing stop hit (stop 177.21, hwm 196.90); trail had ratcheted to within $0.74 of entry. Held 20 days |
+| 2026-11-23T14:38:55Z | open | BUY | WMT | 19 | 127.46 | trail 10% (stop 114.68, hwm 127.42) | 152.95 (×1.20, 2R vs trail) | 242.82 | — | Half size F+T: Q3 FY27 beat, FY27 guide raised again; above 50d (116.65), RSI 60.4, EMA order intact (px ≈ 8EMA), vol 1.66× |
+| 2026-11-23T14:39:22Z | open | BUY | TGT | 13 | 164.89 | trail 10% (stop 148.50, hwm 165.00) | 197.87 (×1.20, 2R vs trail) | 213.04 | — | Half size F+T (alternate for TJX): Q3 comps +5.6%, FY26 sales guide raised; above 50d (155.93), RSI 57.8, EMA stack intact, vol 2.80×. Partial fill 13/15 (remainder cancelled) |
 
 <!-- Example row format (do not check in real data here):
 | 2026-04-26T13:36:12Z | open | BUY | AAPL | 14 | 178.20 | trail 10% | — | 99.96 | — | iPhone 17 catalyst + tech confirmation |

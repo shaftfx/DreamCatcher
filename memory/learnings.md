@@ -22,6 +22,9 @@ Perplexity returned a stale guidance number for $TSLA — used the actual SEC fi
 
 -->
 
+## 2026-11-23 [ops]
+On paper, an OTO market buy can sit `partially_filled` for minutes, and its stop leg stays `held` until the parent fully fills. Filled shares have **no live stop** during that time. On 11/23, WMT (19 sh) and TGT (15 sh) were still partial at the 60s check (4/19 and 7/15). I cancelled both parents. WMT completed before the cancel landed; TGT stopped at 13/15. Cancelling the parent also cancels the static leg, so the 10% trail must go on right away for the actual filled qty (`GET /positions` qty), not the planned qty. The unprotected window was about 2 minutes. Next time, poll at 5s intervals. If the parent isn't `filled` at 60s, cancel it, then read the position qty and attach the trail at once. The static leg doesn't protect partial fills, so it isn't worth waiting on. A trailing stop can't be placed while the static leg is open, because the leg reserves the qty.
+
 ## 2026-11-20 [ops] — weekly W47
 "Silent" doesn't mean the routine didn't commit. Check the remote branches before writing that down. Midday and EOD on 11/19–11/20 logged the open routine as having "placed nothing, pushed no commit, no record of why". It had committed full rejection tables, but to its session branch (`claude/brave-shannon-*`), not `main`. **6 of 10 open-routine commits since 11/5 exist only on those branches**, in unmerged draft PRs #12/#17/#21/#25/#28/#30. Probable cause: the `bull-open` trigger has no Step 0 that clones `main` into `/tmp/dreamcatcher` (premarket, EOD and weekly do). It commits in the session checkout and runs `git push origin main`, which doesn't push the branch HEAD. Before calling any routine silent, run `git fetch && git branch -r | grep claude/` and look at open PRs. The fix (Step 0 or `push origin HEAD:main`) is a trigger edit, so it's the user's call (W47 proposal 1).
 

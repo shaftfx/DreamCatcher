@@ -8,9 +8,9 @@ _Last refresh: 2026-11-23 premarket (Mon, not D3). Technicals recomputed this ru
 
 | Ticker | Added | Thesis (1 line) | Catalyst | Catalyst Date | Status (11/20 close · SMA50 · RSI14 · 20-bar swing low · 4EMA stack) |
 |---|---|---|---|---|---|
-| WMT | 2026-11-20 | Q3 FY27 rev +5.2% to $188.8B, adj EPS $0.65 vs $0.64; FY27 guide **raised** again (net sales cc +4.9–5.2%; adj op inc +8.0–8.6%) ([8-K EX-99.1](https://www.sec.gov/Archives/edgar/data/104169/000010416926000168/earningsreleasefy27q3.htm)) | earnings passed 11/19; next ER ~mid-Feb | — | **#1 queued half**, F+T ✅: 128.04 (+1.59%) · 116.65 (+9.8%) · 64.0 · 118.13 · stack ✅. Above 20d EMA (124.73). Lowest beta on the list |
-| TJX | 2026-11-19 | Q3 FY27 adj EPS $1.34 (+5%), comps +4%; FY27 adj EPS guide **raised** to $5.17–5.20 ([8-K](https://www.sec.gov/Archives/edgar/data/109198/000010919826000058/tjxq3fy27earningspressrele.htm)) | earnings passed 11/18; next ER ~late Feb | — | **#2 queued half**, F+T ✅: 139.69 (+0.15%) · 136.94 (+2.0%) · 52.5 · 129.47 · stack ❌ (open routine's 4EMA check rejected it 11/19). Above 20d EMA (137.88) |
-| TGT | 2026-11-23 | Q3 adj EPS $2.65 vs $2.07 est (incl. $0.50 tariff refund; ex-refund +21% y/y), comps +5.6% on traffic +5.0%; FY26 sales guide **raised** to ~+6% (+1 pt); FY EPS $10.65–11.40 incl. ~$2.14 refunds; Nov MTD in line ([release](https://corporate.target.com/press/release/2026/11/target-corporation-reports-third-quarter-earnings)) | earnings passed 11/18; Black Friday 11/27 sales read | — | **#3 alternate**, F+T ✅: 165.98 (−0.88%) · 156.82 (+5.8%) · 59.4 · 145.56 · stack ✅. F ⚠️: EPS is refund-heavy; the sales raise and traffic are the clean part |
+| WMT | 2026-11-20 | Q3 FY27 rev +5.2% to $188.8B, adj EPS $0.65 vs $0.64; FY27 guide **raised** again (net sales cc +4.9–5.2%; adj op inc +8.0–8.6%) ([8-K EX-99.1](https://www.sec.gov/Archives/edgar/data/104169/000010416926000168/earningsreleasefy27q3.htm)) | earnings passed 11/19; next ER ~mid-Feb | — | **HELD** (bought 11/23 open, 19 @ 127.46; move to portfolio) — was #1 queued half, F+T ✅: 128.04 (+1.59%) · 116.65 (+9.8%) · 64.0 · 118.13 · stack ✅. Above 20d EMA (124.73). Lowest beta on the list |
+| TJX | 2026-11-19 | Q3 FY27 adj EPS $1.34 (+5%), comps +4%; FY27 adj EPS guide **raised** to $5.17–5.20 ([8-K](https://www.sec.gov/Archives/edgar/data/109198/000010919826000058/tjxq3fy27earningspressrele.htm)) | earnings passed 11/18; next ER ~late Feb | — | **rejected 11/23 open** (4EMA inverted 137.31/137.30/137.69/138.80) — was #2 queued half, F+T ✅: 139.69 (+0.15%) · 136.94 (+2.0%) · 52.5 · 129.47 · stack ❌ (open routine's 4EMA check rejected it 11/19). Above 20d EMA (137.88) |
+| TGT | 2026-11-23 | Q3 adj EPS $2.65 vs $2.07 est (incl. $0.50 tariff refund; ex-refund +21% y/y), comps +5.6% on traffic +5.0%; FY26 sales guide **raised** to ~+6% (+1 pt); FY EPS $10.65–11.40 incl. ~$2.14 refunds; Nov MTD in line ([release](https://corporate.target.com/press/release/2026/11/target-corporation-reports-third-quarter-earnings)) | earnings passed 11/18; Black Friday 11/27 sales read | — | **HELD** (bought 11/23 open, 13 @ 164.89) — was #3 alternate, F+T ✅: 165.98 (−0.88%) · 156.82 (+5.8%) · 59.4 · 145.56 · stack ✅. F ⚠️: EPS is refund-heavy; the sales raise and traffic are the clean part |
 | SPGI | 2026-11-09 | Q3 adj EPS $4.58 vs ~$4.42; FY26 adj EPS guide **raised** ([8-K](https://www.sec.gov/Archives/edgar/data/0000064040/000006404026000053/spgi3q2026-earningsrelease.htm)) | GS Financials conf + UBS tech conf presentations (Dec); next ER ~2/8/27 | — | watch-only (weakening): 439.73 · 431.38 (+1.9%) · 42.2 · 438.42 · stack ❌. Held 439 by $0.73; remove on a close under 438.42. A5 marginal |
 | ICE | 2026-11-09 | Record Q3: rev +15%, adj EPS $2.02 +18% ([8-K](https://www.sec.gov/Archives/edgar/data/0001571949/000110465926119880/tm2628301d1_ex99-1.htm)); no FY raise found | MarketAxess close, Q1 2027 | Q1 2027 | watch-only (F ⚠️ raise unconfirmed): 170.12 · 161.81 (+5.1%) · 52.1 · stack ✅. CEO sold ~$32M (Form 4, 11/20) |
 | MA | 2026-11-09 | Q3 adj EPS $5.31 vs $5.17; outlook reaffirmed, not raised ([8-K](https://www.sec.gov/Archives/edgar/data/0001141391/000114139126000122/ma09302026-exx991xearnings.htm)) | swipe-fee settlement approval (no date) | — | watch-only (F ⚠️ no raise): 626.15 · 607.10 (+3.1%) · 46.1 · stack ✅ |
@@ -634,6 +634,31 @@ Queue for Wed 11/4 (Tue 11/3 is the midterm election, so the plan is no entry Tu
 
 **Ops ⚠️ still unfixed (checked list_triggers this run):** `bull-open` is still `35 13 * * 1-5` UTC = 08:35 ET (55 min pre-open) and its inline prompt still says "Do NOT check intraday volume", out of sync with `routines/open.md`. Needs the user: `CRON_TZ=America/New_York 35 9 * * 1-5` + prompt sync.
 
+### 2026-11-23 14:40 UTC — OPEN — EXECUTION SUMMARY (2 entries: WMT, TGT; TJX rejected)
+
+**Clock:** fired 09:36 ET (Alpaca clock open, timing correct). **Account (`paper-api`, O5 ✅):** ACTIVE, equity $99,561.31 at 09:36 (last_equity $99,508.63), cash = BP $88,214.62, multiplier 1 (A4 ✅). **Halt checks:** `halt_today` NO, `halt_until_human` NO, `weekly_defensive` NO, D3 NO (Mon 11/23). C1 0/3, C2 5/8. All 5 existing GTC 10% trails live. The repo was worked from the session checkout (already at `main` 3cca5f1); the push goes to `main`.
+
+**Gates, one read at 09:36 ET** (Alpaca IEX: last trade, daily bars for SMA50/RSI14/EMA 8-12-21-55, 1-min bars for volume 09:30–09:36 vs the median of the same window over 20 prior sessions; threshold **1.0× from STRATEGY.md**):
+
+| Ticker | Last | Chase limit | SMA50 | RSI | EMA 8/12/21/55 | Vol (×median) | News since 11/21 | Result |
+|---|---|---|---|---|---|---|---|---|
+| WMT | 127.00 | 129.96 ✅ | 116.65 ✅ | 60.4 ✅ | 127.01 / 126.51 / 124.73 / 119.27: order ✅; price $0.015 under 8EMA | 1.66× ✅ | retailers approached re: Grubhub sale (not thesis-relevant) | **placed** |
+| TJX | 137.80 | 141.79 ✅ | 136.52 ✅ | 49.9 ✅ | 137.31 / 137.30 / 137.69 / 138.80: **inverted** (8,12 < 21 < 55) ❌ | 2.79× ✅ | none | **rejected** (4EMA stack inverted, third straight day) |
+| TGT | 164.48 | 168.47 ✅ | 155.93 ✅ | 57.8 ✅ | 163.65 / 162.41 / 160.26 / 156.14: intact, price above 8EMA ✅ | 2.80× ✅ | none | **placed** (alternate, filled TJX's slot) |
+
+WMT judgment call: the EMA ordering (the stack) was intact; price sat 1.5¢ (0.01%) under the 8EMA on the single read. Per `KNOWLEDGE/indicators.md` ("not a pixel-perfect checklist; 3+ failing means wait") that's one marginal item, not a broken stack, so I passed it. I did not re-read to make it pass. Rule gates for both: P1 ✅ (2.4% / 2.2%), P2 ✅ (not held), P3 ✅ (risk at trail $243 / $213 ≈ 0.24% / 0.21% of equity), P4 ✅ (target = fill × 1.20), C1 ✅ (0 → 2/3), C2 ✅ (5 → 7/8), C3 ✅, A1–A6 ✅.
+
+**Execution:** OTO market buys (`bull-20261123-WMT-open`, `bull-20261123-TGT-open`) at 14:37 UTC with static stops 117.80 / 145.56. Both were still **partially filled** at the 60s check (WMT 4→18/19, TGT 7→11/15), and the OTO stop legs stayed `held`, so the filled shares had no live stop. At 14:39:2x I cancelled both parents. WMT completed 19/19 @ 127.46 before the cancel landed; TGT stopped at **13/15 @ 164.89**, with the remainder cancelled. Both static legs were cancelled with the parents. At 14:39:4x I placed GTC 10% trails, verified `new` at 14:39:51: **WMT stop 114.68 (hwm 127.42); TGT stop 148.50 (hwm 165.00)** (S1/S4 ✅). The unprotected window was about 2 minutes from the first fill.
+
+| Ticker | Qty | Fill | Cost | Trail stop | Initial stop (sizing) | Target ×1.20 |
+|---|---|---|---|---|---|---|
+| WMT | 19 | 127.46 | $2,421.73 | 114.68 | 117.26 (8% floor; swing low 118.13) | 152.95 |
+| TGT | 13 | 164.89 | $2,143.54 | 148.50 | 145.56 (swing low) | 197.87 |
+
+Post-trade: equity $99,588.59, cash = BP $83,649.35, LMV $15,939.24 (16.0% deployed). 7/8 positions, C1 2/3. Retail theme ≈ 4.6% of equity (WMT + TGT). The 3rd slot (C1) stays open per the premarket regime note. **For midday:** DHR was 225.76 at 09:36 (−4.35%), back above S2; it is still the S2 watch item.
+
+**Decision:** WMT `placed`, TGT `placed (13/15 partial)`, TJX `rejected` (4EMA inverted).
+
 ### 2026-11-23 11:08 UTC — PREMARKET — WATCHLIST REFRESH + QUEUE (Mon, not D3, 3 slots open, 2 queued)
 
 **Clock:** fired 06:08 ET (Alpaca clock), market closed, opens 09:30 ET. Timing correct. **Account (`paper-api`, O5 ✅):** ACTIVE. Equity $99,573.83 pre-open; last_equity $99,508.63 (EOD logged $99,499.14). Cash = BP $88,214.62, multiplier 1 (A4 ✅). LMV $11,359.21. Flags all NO. Drawdown −0.90% from the $100,475.28 peak (D5 clear, trigger ≤ $90,427.75). All 5 GTC 10% trails live (status `new`); no hwm moved, no fills since EOD. Perplexity not used (no key in env). News from Alpaca's news endpoint; TGT guidance from Target's press release; WebSearch had no coverage of Fri 11/20's −3.5% or Mon futures (index lag again).
@@ -650,9 +675,9 @@ Queue for Wed 11/4 (Tue 11/3 is the midterm election, so the plan is no entry Tu
 
 | Rank | Ticker | Entry ref | Shares | $ (% eq) | Live stop (10% trail) | Initial stop | Target (×1.20) | Chase limit | Risk $ (trail / initial) | decision |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 1 | WMT | 128.04 | 19 | 2,433 (2.4%) | 115.24 | 117.80 (8% floor; swing low 118.13) | 153.65 | 129.96 | 243 / 195 | queued half |
-| 2 | TJX | 139.69 | 17 | 2,375 (2.4%) | 125.72 | 128.51 (8% floor; swing low 129.47) | 167.63 | 141.79 | 237 / 190 | queued half |
-| 3 | TGT | 165.98 | 15 | 2,490 (2.5%) | 149.38 | 145.56 (swing low; 8% floor 152.70) | 199.18 | 168.47 | 249 / 306 | queued half (alternate; only if WMT or TJX fails a gate) |
+| 1 | WMT | 128.04 | 19 | 2,433 (2.4%) | 115.24 | 117.80 (8% floor; swing low 118.13) | 153.65 | 129.96 | 243 / 195 | **placed** at open 11/23 (19 @ 127.46) — was: queued half |
+| 2 | TJX | 139.69 | 17 | 2,375 (2.4%) | 125.72 | 128.51 (8% floor; swing low 129.47) | 167.63 | 141.79 | 237 / 190 | **rejected** at open 11/23 (4EMA stack inverted) — was: queued half |
+| 3 | TGT | 165.98 | 15 | 2,490 (2.5%) | 149.38 | 145.56 (swing low; 8% floor 152.70) | 199.18 | 168.47 | 249 / 306 | **placed** at open 11/23 (13/15 @ 164.89, partial) — was: queued half (alternate) |
 
 **Ranking rationale:** WMT has the second filed FY27 raise of the year, the strongest trend (+9.8% over its 50d, RSI 64, stack intact) and the lowest beta; it rose 1.6% on Friday's −3.5% SPY day. TJX's raise is filed and it held its post-print gap through two down days, but its 4EMA stack is still inverted, so the open routine will likely reject it again; that's the routine's call. TGT's sales raise and +5% traffic are real, but $0.50 of Q3 EPS and ~$2.14 of FY EPS are tariff refunds, so it's the alternate. All three are big-box retail: taking two puts ≈ 4.8% of equity in one consumer theme, acceptable at half size. Context note: Black Friday (11/27) reads will move all three.
 
