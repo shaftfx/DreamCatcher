@@ -1266,3 +1266,7 @@ Proposals for the user: (1) an index-regime gate, leaning toward at most 1 entry
 ### 2026-11-11 14:36 UTC — OPEN — NO ENTRIES (C2 full, nothing queued)
 
 **Clock:** the market is open (09:36 ET). **Halt checks:** `halt_today` NO, `halt_until_human` NO, `weekly_defensive` NO, D3 NO (Veterans Day; NYSE open, bonds closed). Paper mode confirmed (O5). **Queue:** premarket queued nothing because C2 is 8/8, and no stop filled overnight or at the open. All 8 positions are still held. **Stops:** all 8 GTC 10% trailing stops are live on Alpaca. CTAS's hwm rose to 225.83, which moves its stop to 203.25. **Marks at 09:36 ET:** equity $100,214.93 (−0.10% day). MRK at −1.59% and DHR at −0.31% are the only names below entry; neither is close to S2 (−7%). No orders were placed.
+
+### 2026-11-24 14:36 UTC — OPEN (Tue, 09:36 ET)
+
+No `decision: queued` entries from the 11/24 premarket, so there was nothing to re-validate and no orders were placed. Halt flags clear, not D3, C1 2/3, C2 7/8. Equity $99,935.32 (+0.19% on the day). All 7 trails live. MDT stays pending its 11/24 BMO print; Wed premarket owns it.
