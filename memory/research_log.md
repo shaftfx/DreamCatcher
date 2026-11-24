@@ -633,6 +633,14 @@ Queue for Wed 11/4 (Tue 11/3 is the midterm election, so the plan is no entry Tu
 
 **Ops ⚠️ still unfixed (checked list_triggers this run):** `bull-open` is still `35 13 * * 1-5` UTC = 08:35 ET (55 min pre-open) and its inline prompt still says "Do NOT check intraday volume", out of sync with `routines/open.md`. Needs the user: `CRON_TZ=America/New_York 35 9 * * 1-5` + prompt sync.
 
+### 2026-11-24 21:16 UTC — EOD — RECAP (Tue; +0.28% vs SPY −0.51%, defensive book held up on a down day)
+
+**Account (`paper-api`):** close equity $100,027.20, day +0.28% vs SPY −0.51% (718.91 IEX) / QQQ −2.01% → +0.79% excess. Week (from Fri close) +0.53% vs SPY +4.09%. D1/D4/D5 clear (drawdown −0.45%, no new peak). No orders placed or filled. 7/8, C1 2/3, all 7 trails live; no hwm moved after midday.
+
+Recap issue: #34.
+
+**For Wed 11/25:** not D3 (GDP 2nd est + Oct PCE 08:30 ET is a rates mover). 1 C1 slot, 1 C2 slot. **MDT** printed today and fell −4.55% (100.82 → 96.23, low 94.50 briefly under its ~94.77 50d, 2.3× prior-day IEX volume). Premarket must read the 8-K: guide raised again + close back above the 50d, or it stays out. **TJX** +3.29% to 143.84 (high 144.67); recompute the 4EMA stack, it may have restacked. DHR 229.09 (−2.93%), 4.4% above S2. Thu closed, Fri early close 13:00.
+
 ### 2026-11-24 11:09 UTC — PREMARKET — WATCHLIST REFRESH (Tue, not D3, 1 slot open, nothing queued)
 
 **Clock:** fired 06:09 ET (Alpaca clock), market closed, opens 09:30 ET. Timing correct. **Account (`paper-api`, O5 ✅):** ACTIVE. Equity $99,810.08 pre-open; last_equity $99,744.35 (EOD logged $99,749.96). Cash = BP $83,649.34, multiplier 1 (A4 ✅). LMV $16,160.74. Flags all NO. Drawdown −0.66% from the $100,475.28 peak (D5 clear). All 7 GTC 10% trails live (status `new`); no hwm moved, no fills since EOD. Perplexity not used (no key in env). Sources: Alpaca news endpoint, WebSearch, EDGAR links already on file.
