@@ -634,6 +634,18 @@ Queue for Wed 11/4 (Tue 11/3 is the midterm election, so the plan is no entry Tu
 
 **Ops ⚠️ still unfixed (checked list_triggers this run):** `bull-open` is still `35 13 * * 1-5` UTC = 08:35 ET (55 min pre-open) and its inline prompt still says "Do NOT check intraday volume", out of sync with `routines/open.md`. Needs the user: `CRON_TZ=America/New_York 35 9 * * 1-5` + prompt sync.
 
+### 2026-11-25 17:42 UTC — MIDDAY — POSITION MANAGEMENT (Wed, no actions; 8/8 trails live)
+
+**Account (`paper-api`, O5 ✅):** equity $100,116.83, day +$81.76 (+0.08%) vs SPY −1.14% (IEX 710.71) / QQQ −2.19%. D1 clear (cap −$2,000.70); D5 clear (−0.36% from the $100,475.28 peak). Cash = BP $81,166.84, multiplier 1 (A4 ✅). `halt_today` stays NO.
+
+**Orders since open:** none filled or cancelled. CL OTO (25 @ 99.30, 14:37 UTC) confirmed on Alpaca; its trail ratcheted hwm 99.36 → 100.50 (stop 90.45).
+
+**Ops:** the open routine's commit 7b595d6 again sat only on `claude/brave-shannon-w1wsku`, not `main` (same issue as learnings 11/20). Midday fast-forwarded main to it before writing, so the CL trade_log row and open entry are now on main.
+
+**S2 (−7%):** none. DHR −3.08% (228.73), 4.2% above S2 219.49; still the watch item. **S3 (+15%):** none; best TGT +4.90%, KO +4.11%. **S4:** all 8 SELL trailing stops (10%, GTC, status `new`, qty = position) verified.
+
+**For EOD:** Thu 11/26 market closed (Thanksgiving); Fri 11/27 13:00 ET early close; C1 3/3 and C2 8/8, so no entries until Mon 11/30.
+
 ### 2026-11-25 14:38 UTC — OPEN — EXECUTION SUMMARY (1 entry: CL; C1 3/3, C2 8/8)
 
 **Clock:** fired 09:36 ET (Alpaca clock open, timing correct). **Account (`paper-api`, O5 ✅):** ACTIVE, equity $99,960.82 at 09:36 (last_equity $100,035.07), cash = BP $83,649.34, multiplier 1 (A4 ✅). **Halt checks:** `halt_today` NO, `halt_until_human` NO, `weekly_defensive` NO, D3 NO (Wed 11/25; GDP/PCE isn't D3). D1 clear. C1 2/3, C2 7/8. All 7 existing GTC 10% trails live. Worked in the session checkout; pushed to the session branch (`claude/brave-shannon-w1wsku`), which is where the 11/23–11/24 routine commits also landed (`origin/main` is still at the 11/23 midday commit, see learning 11/20 [ops]).
