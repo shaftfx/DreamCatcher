@@ -8,7 +8,7 @@ _Last refresh: 2026-11-25 premarket (Wed, not D3; GDP 2nd est + Oct PCE + claims
 
 | Ticker | Added | Thesis (1 line) | Catalyst | Catalyst Date | Status (11/24 close · SMA50 · RSI14 · 20-bar swing low · 4EMA stack) |
 |---|---|---|---|---|---|
-| CL | 2026-11-25 | Q3 Base Business EPS $0.97 (+7%), organic +3.6%; FY26 Base Business EPS guide **raised** to +5–7% (from mid-single digits), gross margin guide raised ([8-K](https://www.sec.gov/Archives/edgar/data/21665/000002166526000047/q32026pressreleasetables.htm)) | none dated; next ER ~late Jan | — | **queued half (F+T)**: 99.19 · 92.51 (+7.2%) · 58.3 · 90.65 · stack ✅ (98.52/98.23/97.18/94.13). North America organic −1.6% is the weak spot |
+| CL | 2026-11-25 | Q3 Base Business EPS $0.97 (+7%), organic +3.6%; FY26 Base Business EPS guide **raised** to +5–7% (from mid-single digits), gross margin guide raised ([8-K](https://www.sec.gov/Archives/edgar/data/21665/000002166526000047/q32026pressreleasetables.htm)) | none dated; next ER ~late Jan | — | **placed 11/25 open: 25 @ 99.30** (moves to portfolio). Premarket read: 99.19 · 92.51 (+7.2%) · 58.3 · 90.65 · stack ✅ (98.52/98.23/97.18/94.13). North America organic −1.6% is the weak spot |
 | MCK | 2026-11-25 | FQ2 adj EPS $11.68 (+18%), rev +8%; FY27 adj EPS guide **raised** to $45.60–46.40 from $44.20–45.00 ([8-K](https://www.sec.gov/Archives/edgar/data/927653/000092765326000279/mck_exhibit991x9302026.htm)) | none dated; next ER ~early Feb | — | watch (F ✅, T ✅, **A5 unverified**): 1,078.18 · 980.93 (+9.9%) · 60.1 · 954.05 · stack ✅. IEX median 46k/day; consolidated ADV may sit under 1M. Verify A5 before queueing |
 | TJX | 2026-11-19 | Q3 FY27 adj EPS $1.34 (+5%), comps +4%; FY27 adj EPS guide **raised** to $5.17–5.20 ([8-K](https://www.sec.gov/Archives/edgar/data/109198/000010919826000058/tjxq3fy27earningspressrele.htm)) | Black Friday 11/27 read | — | watch (F ✅, T ❌): 143.84 · 137.59 (+4.5%) · 58.3 · 129.47 · stack ❌ (139.06/138.61/138.58/**139.42**): 8>12>21 now, but 21 is still under 55. One more up day likely restacks it |
 | SPGI | 2026-11-09 | Q3 adj EPS $4.58 vs ~$4.42; FY26 adj EPS guide **raised** ([8-K](https://www.sec.gov/Archives/edgar/data/0000064040/000006404026000053/spgi3q2026-earningsrelease.htm)) | GS Financials conf + UBS tech conf (Dec) | — | watch-only: 455.52 · 432.89 (+5.2%) · 52.3 · 438.42 · stack ❌ (8 < 12). A5 marginal |
@@ -633,6 +633,26 @@ Queue for Wed 11/4 (Tue 11/3 is the midterm election, so the plan is no entry Tu
 **Next:** C1 3/3 for week of 11/2 — no entries Thu 11/5; Fri 11/6 NFP D3 blackout. Re-validate CTAS and UNP from fresh bars for Mon 11/9. Midday Thu: S2/S3 sweep, watch NOC for defense headlines.
 
 **Ops ⚠️ still unfixed (checked list_triggers this run):** `bull-open` is still `35 13 * * 1-5` UTC = 08:35 ET (55 min pre-open) and its inline prompt still says "Do NOT check intraday volume", out of sync with `routines/open.md`. Needs the user: `CRON_TZ=America/New_York 35 9 * * 1-5` + prompt sync.
+
+### 2026-11-25 14:38 UTC — OPEN — EXECUTION SUMMARY (1 entry: CL; C1 3/3, C2 8/8)
+
+**Clock:** fired 09:36 ET (Alpaca clock open, timing correct). **Account (`paper-api`, O5 ✅):** ACTIVE, equity $99,960.82 at 09:36 (last_equity $100,035.07), cash = BP $83,649.34, multiplier 1 (A4 ✅). **Halt checks:** `halt_today` NO, `halt_until_human` NO, `weekly_defensive` NO, D3 NO (Wed 11/25; GDP/PCE isn't D3). D1 clear. C1 2/3, C2 7/8. All 7 existing GTC 10% trails live. Worked in the session checkout; pushed to the session branch (`claude/brave-shannon-w1wsku`), which is where the 11/23–11/24 routine commits also landed (`origin/main` is still at the 11/23 midday commit, see learning 11/20 [ops]).
+
+**Gates, one read at 09:36 ET** (Alpaca IEX: last trade, daily bars for SMA50/RSI14/EMA 8-12-21-55, 1-min bars for volume 09:30–09:36 vs the median of the same window over 20 prior sessions; threshold **1.0× from STRATEGY.md**):
+
+| Ticker | Last | Chase limit | SMA50 | RSI | EMA 8/12/21/55 | Vol (×median) | News since 11/24 close | Result |
+|---|---|---|---|---|---|---|---|---|
+| CL | 99.435 (bid/ask 99.29/99.40) | 100.68 ✅ | 92.53 ✅ | 59.1 ✅ | 98.88 / 98.57 / 97.53 / 94.31, intact, price above 8EMA ✅ | 6,864 vs 4,663 = **1.47×** ✅ | BNP Paribas PT adjusted to $112; oral-care launch with Watsons (neither thesis-relevant) | **placed** |
+
+Rule gates: P1 ✅ (25 × 99.30 = $2,482.50 = 2.5%), P2 ✅ (not held), P3 ✅ (risk at the live trail $246.90 = 0.25%; at the 90.65 sizing stop $216), P4 ✅ (target 119.16 = fill × 1.20), C1 ✅ (2 → 3/3), C2 ✅ (7 → 8/8), C3 ✅, A1–A6 ✅ (A5 per premarket: consolidated ADV several million).
+
+**Regime context (not a blocking gate):** SPY gapped down after the 08:30 GDP/PCE print, opening 703.16 and trading 699.5 at 09:36 (−2.7% vs 718.91). Premarket said a pass would be defensible in that case. I placed anyway. Under the routine's rules, premarket context notes aren't blocking conditions, and every STRATEGY/RULES gate passed on the single read. CL itself traded green (+0.1%) on 1.47× relative volume, which is the defensive behavior the thesis expects. I did not invent a regime gate mid-session (issue #13 remains the user's call). The cost of being wrong is bounded: half size, $247 at the trail (0.25% of equity).
+
+**Execution:** OTO market buy `bull-20261125-CL-open` submitted 14:37:01 UTC with static stop 90.65. Polled every 5s: **filled 25/25 @ 99.30 at 14:37:11** (no partial). Static leg cancelled (`canceled` confirmed); GTC 10% trail `bull-20261125-CL-trail` placed and verified `new` at 14:37:29: **stop 89.42, hwm 99.36** (S1/S4 ✅). The unprotected window was about 15s, between the static leg's cancel and the trail going on.
+
+Post-trade: equity $99,951.53, cash = BP $81,166.84, LMV $18,784.69 (18.8% deployed). **8/8 positions, C1 3/3, so no entries are possible for the rest of the week** (Fri 11/27 open is a no-op). Consumer staples/retail is now ≈ 10% of equity (KO, WMT, TGT, CL). **For midday:** DHR was 224.46 at 09:37 (−4.89%), 2.2% above S2 219.49. It's still the S2 watch item, and the gap-down tape makes it more urgent.
+
+**Decision:** CL `placed`. Nothing else was queued.
 
 ### 2026-11-25 11:15 UTC — PREMARKET — WATCHLIST REFRESH + QUEUE (Wed, not D3, 1 slot open, CL queued half)
 
