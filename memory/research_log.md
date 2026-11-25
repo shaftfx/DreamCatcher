@@ -4,18 +4,19 @@ Dated entries. Premarket appends new research; other routines append rejected id
 
 ## Active Watchlist
 
-_Last refresh: 2026-11-24 premarket (Tue, not D3). Technicals recomputed this run from Alpaca IEX daily bars through the **Mon 11/23 close**. **C1 2/3, C2 7/8 → 1 slot open. Nothing queued** (reasons in the 11/24 premarket entry). **Regime ⚠️:** SPY 722.56 is −4.9% under its 50d (759.45), RSI 41.5, 4EMA stack inverted. That's better than Friday's −9.1%, but futures gave back the bounce pre-open (ES −0.75%, NQ −1.6% at ~06:00 ET). QQQ −8.3% under its 50d; IWM −4.3%. Still no index-regime gate (issue #13)._
+_Last refresh: 2026-11-25 premarket (Wed, not D3; GDP 2nd est + Oct PCE + claims 08:30 ET). Technicals recomputed this run from Alpaca IEX daily bars through the **Tue 11/24 close**. **C1 2/3, C2 7/8 → 1 slot. Queued: CL (half, F+T).** **Regime ⚠️:** SPY 718.91 is −5.2% under its 50d (758.68), RSI 40.4, 4EMA stack inverted. QQQ −9.9% under its 50d (RSI 39.2); IWM −3.7%. Still no index-regime gate (issue #13)._
 
-| Ticker | Added | Thesis (1 line) | Catalyst | Catalyst Date | Status (11/23 close · SMA50 · RSI14 · 20-bar swing low · 4EMA stack) |
+| Ticker | Added | Thesis (1 line) | Catalyst | Catalyst Date | Status (11/24 close · SMA50 · RSI14 · 20-bar swing low · 4EMA stack) |
 |---|---|---|---|---|---|
-| TJX | 2026-11-19 | Q3 FY27 adj EPS $1.34 (+5%), comps +4%; FY27 adj EPS guide **raised** to $5.17–5.20 ([8-K](https://www.sec.gov/Archives/edgar/data/109198/000010919826000058/tjxq3fy27earningspressrele.htm)) | earnings passed 11/18; Black Friday 11/27 read | — | watch (F ✅, T ❌): 139.26 · 137.20 (+1.5%) · 51.7 · 129.47 · stack ❌ (137.69/137.66/138.05/139.31, 4th straight day inverted). Re-queue only when the stack restacks |
-| MDT | 2026-11-24 | Q1 FY27 rev +13.7% organic, FY27 guide **raised** (organic +7.25–7.75%; EPS $5.94–6.00) ([8-K](https://www.sec.gov/Archives/edgar/data/1613103/000162828026059697/exhibit991-fy27q1earningsr.htm)) | **Q2 FY27 print today 11/24 BMO** (cons $1.35 / $9.49B); investor day **Dec 10–11** | 2026-12-10 | **pending print** (pre-earnings blackout today): 100.82 · 94.77 (+6.4%) · 56.2 · 93.18 · stack ✅. Wed premarket: read the 8-K; add as F+C+T if FY27 guide raised again and the gap holds above the 50d |
-| SPGI | 2026-11-09 | Q3 adj EPS $4.58 vs ~$4.42; FY26 adj EPS guide **raised** ([8-K](https://www.sec.gov/Archives/edgar/data/0000064040/000006404026000053/spgi3q2026-earningsrelease.htm)) | GS Financials conf + UBS tech conf presentations (Dec); next ER ~2/8/27 | — | watch-only: 451.75 · 432.03 (+4.6%) · 50.1 · 438.42 · stack ❌ (8 < 12). Bounced off 438; A5 marginal |
-| ICE | 2026-11-09 | Record Q3: rev +15%, adj EPS $2.02 +18% ([8-K](https://www.sec.gov/Archives/edgar/data/0001571949/000110465926119880/tm2628301d1_ex99-1.htm)); no FY raise found | MarketAxess close, Q1 2027 | Q1 2027 | watch-only (F ⚠️ raise unconfirmed): 172.24 · 162.10 (+6.3%) · 55.4 · 153.93 · stack ✅. CEO sold ~$32M (Form 4, 11/20); OKX tokenized-securities venue launched 11/23 |
-| MA | 2026-11-09 | Q3 adj EPS $5.31 vs $5.17; outlook reaffirmed, not raised ([8-K](https://www.sec.gov/Archives/edgar/data/0001141391/000114139126000122/ma09302026-exx991xearnings.htm)) | swipe-fee settlement approval (no date) | — | watch-only (F ⚠️ no raise): 635.08 · 608.31 (+4.4%) · 50.5 · 605.84 · stack ❌ |
-| LOW | 2026-11-19 | Q3 adj EPS $3.10 incl. $0.34 tariff refund (≈ $2.76 ex-refund, down y/y); FY26 sales guide raised to ~$92.5B ([8-K](https://www.sec.gov/Archives/edgar/data/0000060667/000006066726000126/exhibit991-10302026.htm)) | Analyst & investor conference **Wed 12/9** (also FOMC day) | 2026-12-09 | watch-only (F ⚠️ refund-driven beat): 226.20 · 202.65 (+11.6%) · 61.2 · 195.60 · stack ✅. KGI downgraded to Neutral 11/20 |
+| CL | 2026-11-25 | Q3 Base Business EPS $0.97 (+7%), organic +3.6%; FY26 Base Business EPS guide **raised** to +5–7% (from mid-single digits), gross margin guide raised ([8-K](https://www.sec.gov/Archives/edgar/data/21665/000002166526000047/q32026pressreleasetables.htm)) | none dated; next ER ~late Jan | — | **queued half (F+T)**: 99.19 · 92.51 (+7.2%) · 58.3 · 90.65 · stack ✅ (98.52/98.23/97.18/94.13). North America organic −1.6% is the weak spot |
+| MCK | 2026-11-25 | FQ2 adj EPS $11.68 (+18%), rev +8%; FY27 adj EPS guide **raised** to $45.60–46.40 from $44.20–45.00 ([8-K](https://www.sec.gov/Archives/edgar/data/927653/000092765326000279/mck_exhibit991x9302026.htm)) | none dated; next ER ~early Feb | — | watch (F ✅, T ✅, **A5 unverified**): 1,078.18 · 980.93 (+9.9%) · 60.1 · 954.05 · stack ✅. IEX median 46k/day; consolidated ADV may sit under 1M. Verify A5 before queueing |
+| TJX | 2026-11-19 | Q3 FY27 adj EPS $1.34 (+5%), comps +4%; FY27 adj EPS guide **raised** to $5.17–5.20 ([8-K](https://www.sec.gov/Archives/edgar/data/109198/000010919826000058/tjxq3fy27earningspressrele.htm)) | Black Friday 11/27 read | — | watch (F ✅, T ❌): 143.84 · 137.59 (+4.5%) · 58.3 · 129.47 · stack ❌ (139.06/138.61/138.58/**139.42**): 8>12>21 now, but 21 is still under 55. One more up day likely restacks it |
+| SPGI | 2026-11-09 | Q3 adj EPS $4.58 vs ~$4.42; FY26 adj EPS guide **raised** ([8-K](https://www.sec.gov/Archives/edgar/data/0000064040/000006404026000053/spgi3q2026-earningsrelease.htm)) | GS Financials conf + UBS tech conf (Dec) | — | watch-only: 455.52 · 432.89 (+5.2%) · 52.3 · 438.42 · stack ❌ (8 < 12). A5 marginal |
+| ICE | 2026-11-09 | Record Q3: rev +15%, adj EPS $2.02 +18% ([8-K](https://www.sec.gov/Archives/edgar/data/0001571949/000110465926119880/tm2628301d1_ex99-1.htm)); no FY raise found | CEO presents at GS Financials conf (Dec); MarketAxess close Q1 2027 | Dec | watch-only (F ⚠️ raise unconfirmed): 174.97 · 162.46 (+7.7%) · 59.3 · 153.93 · stack ✅ |
+| MA | 2026-11-09 | Q3 adj EPS $5.31 vs $5.17; outlook reaffirmed, not raised ([8-K](https://www.sec.gov/Archives/edgar/data/0001141391/000114139126000122/ma09302026-exx991xearnings.htm)) | swipe-fee settlement approval (no date) | — | watch-only (F ⚠️ no raise): 647.32 · 609.80 (+6.2%) · 55.9 · 606.25 · stack ❌ |
+| LOW | 2026-11-19 | Q3 adj EPS $3.10 incl. $0.34 tariff refund (≈ $2.76 ex-refund, down y/y); FY26 sales guide raised to ~$92.5B ([8-K](https://www.sec.gov/Archives/edgar/data/0000060667/000006066726000126/exhibit991-10302026.htm)) | Analyst & investor conference **Wed 12/9** (FOMC day) | 2026-12-09 | watch-only (F ⚠️ refund-driven beat): 230.96 · 203.37 (+13.6%) · 64.8 · 197.13 · stack ✅ |
 
-_Changes 11/24: **WMT, TGT moved to portfolio** (bought 11/23). **Added MDT** (prior-quarter raise on file; reports today, so blackout until the print is read). **HD looked at and not added:** Q3 (11/17) sales +4.9%, comps +2.2%; FY26 sales guide nudged up to ~+4.5%, but operating margin is at the low end (~12.4%) and adj EPS growth is only ~+2% ([8-K](https://www.sec.gov/Archives/edgar/data/0000354950/000035495026000184/hd_exhibit991x11012026.htm)), which is a mixed revision, not a clean raise → F ⚠️. It presents at the MS Consumer & Retail conference in early Dec. 6 names. **Leads still not researched for F:** PG (+7.9% over 50d, RSI 61.6, stack ✅), MCD (+9.5%, 64.1 ✅), CL (+6.1%, 55.1 ✅; Argus upgrade to Buy 11/23), WM (+7.2% ✅), RSG (+7.4% ✅), MCK (+7.3% ✅), BRK.B (+6.4% ✅). Each needs a filed raise before it can go on the list. **Pre-earnings blackout:** MDT/ADI (today BMO), WDAY/DELL/HPQ (today AMC), DE (Wed)._
+_Changes 11/25: **MDT removed.** FQ2 (11/24) organic rev +6.5%, non-GAAP EPS $1.34 (−1.4% y/y); FY27 guide **reiterated, not raised** ([8-K](https://www.sec.gov/Archives/edgar/data/1613103/000162828026075604/exhibit991-fy27q2earningsr.htm)). The stock fell −4.55% to 96.23 on 3.4× IEX median volume, and its 4EMA stack inverted (RSI 43.2). The add condition (raise + gap holding) failed. **Added CL** (queued) and **MCK** (watch, A5). **Leads checked and not added (F ⚠️):** PG: FQ1 core EPS +1%, EPS guide maintained; all-in sales range up only for the Thorne deal ([P&G](https://us.pg.com/newsroom/news-releases/PG-Announces-Fiscal-Year-2027-First-Quarter-Results/)). WM: Q3 adj EPS missed, 2026 guide reaffirmed ([Waste360](https://www.waste360.com/industry-insights/wm-reports-6-3-percent-revenue-growth-in-q3-reaffirms-2026-guidance)). MCD: adj EPS +11% beat, but US comps −0.2% on traffic and no raise ([NRN](https://www.nrn.com/quick-service/mcdonald-s-u-s-same-store-sales-decline-on-weak-traffic)). **Still unresearched:** RSG, BRK.B. 7 names._
 
 ---
 
@@ -632,6 +633,37 @@ Queue for Wed 11/4 (Tue 11/3 is the midterm election, so the plan is no entry Tu
 **Next:** C1 3/3 for week of 11/2 — no entries Thu 11/5; Fri 11/6 NFP D3 blackout. Re-validate CTAS and UNP from fresh bars for Mon 11/9. Midday Thu: S2/S3 sweep, watch NOC for defense headlines.
 
 **Ops ⚠️ still unfixed (checked list_triggers this run):** `bull-open` is still `35 13 * * 1-5` UTC = 08:35 ET (55 min pre-open) and its inline prompt still says "Do NOT check intraday volume", out of sync with `routines/open.md`. Needs the user: `CRON_TZ=America/New_York 35 9 * * 1-5` + prompt sync.
+
+### 2026-11-25 11:15 UTC — PREMARKET — WATCHLIST REFRESH + QUEUE (Wed, not D3, 1 slot open, CL queued half)
+
+**Clock:** fired 06:08 ET (Alpaca clock), market closed, opens 09:30 ET; Thu closed, Fri closes 13:00. Timing correct. **Account (`paper-api`, O5 ✅):** ACTIVE. Equity $100,109.15 pre-open; last_equity $100,035.07 (EOD logged $100,027.20). Cash = BP $83,649.34, multiplier 1 (A4 ✅). LMV $16,459.81. Flags all NO. Drawdown −0.36% from the $100,475.28 peak (D5 clear, trigger ≤ $90,427.75). All 7 GTC 10% trails live (status `new`, qty = position). No hwm moved and no fills since EOD. Perplexity not used (no key in env). Sources: Alpaca news endpoint, EDGAR 8-Ks, WebSearch. WebSearch had no 11/25 futures or macro coverage (index lag again), so pre-open futures direction is **unknown**.
+
+**Day status:** Wed 11/25 is **not** D3. 08:30 ET brings Q3 GDP 2nd estimate, October PCE and jobless claims, a heavy rates print with a December hike still priced. DE reports today. C1 **2/3**, C2 **7/8**, D4 clear (week +0.53% at the 11/24 close). Next D3: FOMC Wed 12/9; Nov NFP presumably Fri 12/4.
+
+**Holdings (pre-open Alpaca marks):** DHR 229.09 (−2.93%) is back above its 50d (225.64, RSI 51.1), 4.4% above S2 219.49. Its stack is still inverted (8 < 12), and it is still the S2 watch item. KO 98.67 (+4.12%), NOC 555.83 (+2.92%; Mizuho initiated at Outperform 11/24), CTAS 226.29 (+1.71%), LIN 517.20 (+0.57%), WMT 133.03 (+4.37%; Symbotic $7B automation expansion and "Muse" AI assistant, neither thesis-changing), TGT 176.51 (+7.05%). WMT RSI 71.4 and TGT 68.9 are extended but that isn't an exit signal. Nothing at S2/S3 (TGT needs ≥ 189.62). No thesis-breaking news.
+
+**Step 5 (watchlist):** see the table. MDT removed (guide reiterated, not raised). CL and MCK added (both raises confirmed in 8-Ks). PG, WM, MCD checked and rejected (no raise). 7 names.
+
+**Step 6 (draft entry), CL: `decision: queued` (half size, F+T, no dated catalyst):**
+
+| Item | Value |
+|---|---|
+| Reference price | 99.19 (11/24 close) |
+| Chase limit | ≤ 100.68 (+1.5%) |
+| Initial stop (sizing) | 90.65 (20-bar swing low; lower than the 8% floor 91.25) |
+| Live stop | GTC 10% trail at fill (≈ 89.27 at the ref price) |
+| Target | fill × 1.20 (≈ 119.03) |
+| R/R | 2:1 off the 10% trail (P4 ✅) |
+| Size | half: **25 sh ≈ $2,480 (2.5% of equity, P1 ✅)**; risk at the trail ≈ $248 (0.25%, P3 ✅) |
+| Gates for open | above 50d, RSI 40–70, 4EMA stack intact, volume ≥ 1.0× 20-session median for the same window (one read), no adverse news |
+
+Rule check: P2 ✅ (not held), C1 2 → 3/3, C2 7 → 8/8, C3 ✅, A1–A3/A6 ✅. A5 ✅: CL's consolidated ADV is several million shares, and its IEX median is 336k/day.
+
+**Why CL, and the risks.** It's the only name today with a filed raise plus a clean technical setup and verified liquidity. MCK passes F and T, but A5 is unverified. TJX's stack is still not intact. Risks to state plainly: (1) **Regime.** SPY is −5.2% under its 50d and QQQ −9.9%; per-name gates don't see that (learning 11/19). (2) **08:30 macro.** A hot PCE could gap the tape at the open; the open routine's chase and volume gates are the backstop. (3) **Concentration.** CL would make the book ≈ 10% consumer staples/retail (KO, WMT, TGT, CL). That fits the low-beta posture, but it's correlated. (4) CL's North America volume was −3.7%. (5) Filling the last C2 slot means no capacity until something exits. If the open routine sees SPY gapping down hard after PCE, a pass is defensible and should be logged.
+
+**Notes for the open routine:** CL is the only queued name (25 sh, half). Recompute stop, target and shares from the actual fill. Keep the +1.5% chase limit hard and take one volume read. Use the 11/23 partial-fill procedure: poll every 5s; if the parent isn't filled at 60s, cancel it and trail the actual position qty immediately. Commit to `main`.
+
+**Decision:** CL `queued` (half). MCK, TJX, SPGI, ICE, MA, LOW watch-only. No orders placed by premarket.
 
 ### 2026-11-24 21:16 UTC — EOD — RECAP (Tue; +0.28% vs SPY −0.51%, defensive book held up on a down day)
 
