@@ -634,6 +634,16 @@ Queue for Wed 11/4 (Tue 11/3 is the midterm election, so the plan is no entry Tu
 
 **Ops ⚠️ still unfixed (checked list_triggers this run):** `bull-open` is still `35 13 * * 1-5` UTC = 08:35 ET (55 min pre-open) and its inline prompt still says "Do NOT check intraday volume", out of sync with `routines/open.md`. Needs the user: `CRON_TZ=America/New_York 35 9 * * 1-5` + prompt sync.
 
+### 2026-11-25 21:16 UTC — EOD — RECAP (Wed; +0.01% vs SPY −0.30%, gap-down day recovered, book flat)
+
+**Account (`paper-api`):** close equity $100,045.98, day +0.01% (+$10.91) vs SPY −0.30% (716.735 IEX) / QQQ −0.66% → +0.31% excess (≈ +0.24 pts cash, ≈ +0.07 pts selection). Week (from Fri close) +0.55% vs SPY +3.77%. D1/D4/D5 clear (drawdown −0.43%, no new peak; 15-min high $100,119.44). One fill: CL 25 @ 99.30 at the open; no exits. 8/8, C1 3/3, all 8 trails live (status `new`); no hwm moved after midday.
+
+**Tape:** SPY opened 703.16 after GDP/PCE (−2.2% gap) and closed 716.74, recovering most of it. TGT (−$49.53) and WMT (−$7.60) lagged the recovery; LIN (+$31.12), CTAS, NOC led. DHR 227.35 (−3.67%), 3.6% above S2 219.49, still the watch item.
+
+Recap issue: #36.
+
+**For Fri 11/27 (early close 13:00 ET; Thu closed):** C1 3/3 and C2 8/8, so premarket/open have nothing to queue or place; position management only. **For Mon 11/30 premarket:** C1 resets to 0/3 but C2 stays 8/8 unless a trail fills. Verify MCK's A5 (consolidated ADV) and recheck TJX's stack after the Black Friday read. Book is ≈ 10% staples/retail (KO, WMT, TGT, CL), a correlated cluster.
+
 ### 2026-11-25 17:42 UTC — MIDDAY — POSITION MANAGEMENT (Wed, no actions; 8/8 trails live)
 
 **Account (`paper-api`, O5 ✅):** equity $100,116.83, day +$81.76 (+0.08%) vs SPY −1.14% (IEX 710.71) / QQQ −2.19%. D1 clear (cap −$2,000.70); D5 clear (−0.36% from the $100,475.28 peak). Cash = BP $81,166.84, multiplier 1 (A4 ✅). `halt_today` stays NO.
