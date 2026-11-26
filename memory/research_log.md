@@ -1370,3 +1370,6 @@ Proposals for the user: (1) an index-regime gate, leaning toward at most 1 entry
 ### 2026-11-24 14:36 UTC — OPEN (Tue, 09:36 ET)
 
 No `decision: queued` entries from the 11/24 premarket, so there was nothing to re-validate and no orders were placed. Halt flags clear, not D3, C1 2/3, C2 7/8. Equity $99,935.32 (+0.19% on the day). All 7 trails live. MDT stays pending its 11/24 BMO print; Wed premarket owns it.
+
+### 2026-11-26 21:16 UTC — EOD — HOLIDAY (Thu, Thanksgiving, market closed)
+No session. Alpaca equity $100,040.64 (= last_equity), no orders or fills since EOD 11/25. All 8 GTC 10% trails live, stops/hwm unchanged. D1/D4/D5 clear; `halt_today` reset to NO. Recap posted as issue #38. Nothing queued for Fri 11/27 (C1 3/3, C2 8/8; 13:00 ET early close). For Monday premarket: re-check TJX after the Black Friday read (EMA stack is close to re-aligning) and MCK A5 (consolidated ADV), but entries still need C2 room.
