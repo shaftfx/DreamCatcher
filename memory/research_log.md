@@ -1370,3 +1370,7 @@ Proposals for the user: (1) an index-regime gate, leaning toward at most 1 entry
 ### 2026-11-24 14:36 UTC — OPEN (Tue, 09:36 ET)
 
 No `decision: queued` entries from the 11/24 premarket, so there was nothing to re-validate and no orders were placed. Halt flags clear, not D3, C1 2/3, C2 7/8. Equity $99,935.32 (+0.19% on the day). All 7 trails live. MDT stays pending its 11/24 BMO print; Wed premarket owns it.
+
+### 2026-11-26 14:36 UTC — OPEN (Thu, Thanksgiving — market closed)
+
+The Alpaca clock shows `is_open: false`. The next open is Fri 11/27 at 09:30 ET, with an early close at 13:00. Premarket queued nothing, so there was nothing to re-validate. Halt flags are clear, but C1 is 3/3 and C2 is 8/8, so no new entry would have been possible anyway. No orders were placed and portfolio.md was not changed, because nothing could move while the market was closed.
