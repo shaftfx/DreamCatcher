@@ -640,6 +640,12 @@ Queue for Wed 11/4 (Tue 11/3 is the midterm election, so the plan is no entry Tu
 
 **Ops ⚠️ still unfixed (checked list_triggers this run):** `bull-open` is still `35 13 * * 1-5` UTC = 08:35 ET (55 min pre-open) and its inline prompt still says "Do NOT check intraday volume", out of sync with `routines/open.md`. Needs the user: `CRON_TZ=America/New_York 35 9 * * 1-5` + prompt sync.
 
+### 2026-11-27 21:16 UTC — EOD — RECAP (Fri half day; no trades; −1.58% excess on the day, −4.87% on the week)
+
+**Clock:** fired 16:16 ET (Alpaca `is_open: false`, next open Mon 11/30 09:30). Close equity $100,155.20 (+0.11%) vs SPY +1.69% / QQQ +2.66%. No orders placed or filled. All 8 GTC 10% trails live; LIN hwm 532.78 (stop 479.50). Nothing at S2/S3. DHR 228.89 (−3.02%), 4.3% above S2. Week +0.66% vs SPY +5.53% (D4 clear, `weekly_defensive: NO`). Drawdown −0.32% (D5 clear). `halt_today` reset to NO. GitHub recap issue #40 posted (Recap 2026-11-27).
+
+**Queue for Mon 11/30:** C1 resets to 0/3 but **C2 is 8/8 full**, so no entry is possible unless a position exits. Not D3 on Mon. TJX remains the closest watch name (4EMA stack still just inverted); premarket to re-read it.
+
 ### 2026-11-27 11:08 UTC — PREMARKET — REFRESH (Fri, half day 13:00 ET, not D3; C1 3/3, C2 8/8, nothing queued)
 
 **Clock:** fired 06:08 ET (Alpaca clock `is_open: false`, opens 09:30, **closes 13:00**). Timing correct. **Account (`paper-api`, O5 ✅):** ACTIVE. Pre-open equity $100,030.36 (last_equity $100,040.64). Cash = BP $81,166.83, multiplier 1 (A4 ✅). LMV $18,863.53. Flags all NO. Drawdown −0.44% from the $100,475.28 peak (D5 clear, trigger ≤ $90,427.75). All 8 GTC 10% trails live (status `new`, qty = position, stops/hwm unchanged). No closed or filled orders since EOD 11/25. Perplexity not used (no key in env). Sources: the Alpaca news endpoint and WebSearch.
