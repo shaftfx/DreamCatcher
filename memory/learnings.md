@@ -22,6 +22,15 @@ Perplexity returned a stale guidance number for $TSLA — used the actual SEC fi
 
 -->
 
+## 2026-11-27 [exit] — weekly W48
+A rule in STRATEGY.md that no routine checks never fires. Exit #5 ("flat ±3% for 30+ days → close to recycle capital") is in the playbook, but none of the five trigger prompts checks it. DHR (entry 10/30, hwm only +1.0%, 19 trading days, closed 228.89 = −3.02%) hits 30 calendar days on Mon 11/30, sitting $0.04 outside the band. With C2 at 8/8, that slot is the only path to MCK/TJX. Same lesson as the 10/30 volume gate: every rule needs exactly one routine that measures it. When a weekly or EOD run finds a rule with no owner, name the owner it should have (here: midday, counting calendar days) and flag every position approaching it. Don't act on it outside the owning routine.
+
+## 2026-11-27 [risk] — weekly W48
+The weekly grade at this deployment level is a beta readout in both directions, now shown across four weeks. Up weeks: W46 (SPY +2.57%) and W48 (SPY +5.53%) both graded D, at excess ≈ −0.86 and −0.88 × SPY. Down weeks: W45 and W47 both graded B. The book was 8/8 green this week (≈ +3.8%) and still lagged SPY by ≈ 1.7 pts, because it's all low-beta defensives at ~17–19% deployment. Don't loosen per-name gates or rotate into beta mid-week to fix it. The structural lever is regime-scaled sizing (full size above SPY's 50d, half below), which is the user's call. Meanwhile, premarket ranking should at least note when a candidate would make the book even more defensive.
+
+## 2026-11-27 [entry] — weekly W48
+A chase-limit rejection isn't a lost trade; re-base the name and re-queue it. WMT was rejected at 129.27 on 11/20 (over the 1.5% chase), re-queued with a fresh ref, and filled at 127.46 on Mon 11/23. That was ≈ $34 better on 19 sh, and it's now the book's best name (+4.65%). Keep the chase limit hard, and carry rejected-for-price names forward with a re-based entry ref. Drop them only for a gate that reflects the thesis or trend (50d, F leg), not for price.
+
 ## 2026-11-23 [ops]
 On paper, an OTO market buy can sit `partially_filled` for minutes, and its stop leg stays `held` until the parent fully fills. Filled shares have **no live stop** during that time. On 11/23, WMT (19 sh) and TGT (15 sh) were still partial at the 60s check (4/19 and 7/15). I cancelled both parents. WMT completed before the cancel landed; TGT stopped at 13/15. Cancelling the parent also cancels the static leg, so the 10% trail must go on right away for the actual filled qty (`GET /positions` qty), not the planned qty. The unprotected window was about 2 minutes. Next time, poll at 5s intervals. If the parent isn't `filled` at 60s, cancel it, then read the position qty and attach the trail at once. The static leg doesn't protect partial fills, so it isn't worth waiting on. A trailing stop can't be placed while the static leg is open, because the leg reserves the qty.
 

@@ -1090,6 +1090,16 @@ Total unrealized −$119.62. Deployed $6,861.03 (6.9% of equity). Open risk to s
 - Excess vs SPY: +0.42%
 - D4 weekly loss check: −0.12% > −5% → `weekly_defensive: NO`
 
+## Week closed 2026-W48 (Fri 11/20 close → Fri 11/27 close) — weekly review
+
+- Week return: +0.66% ($99,499.14 → $100,155.20)
+- SPY week return: +5.53% (690.68 → 728.86, IEX); QQQ +6.73%
+- Excess vs SPY: −4.87% (grade D; ≈ −4.6 pts from ~81–89% cash, ≈ −0.3 pts selection; book ≈ +3.8%; see `memory/weekly_review.md`)
+- Realized this week: $0 (no exits). Entries: WMT, TGT (Mon), CL (Wed)
+- D4 weekly loss check: +0.66% > −5% → `weekly_defensive: NO`
+- Week starting Mon 11/30: C1 resets to 0/3; C2 8/8. Since inception +0.16% vs SPY −4.08% (+4.23%)
+- **Mon 11/30 flag:** DHR (entry 10/30) reaches 30+ calendar days; STRATEGY exit #5 (flat ±3% for 30+ days) applies if it's ≥ 228.93 (closed 228.89, −3.02%). KO (entry 11/2) reaches 30 days Wed 12/2 (+3.19% now). No routine owns exit #5; see weekly review
+
 ## Week closed 2026-W47 (Fri 11/13 close → Fri 11/20 close) — weekly review
 
 - Week return: −0.80% ($100,299.56 → $99,499.14)
